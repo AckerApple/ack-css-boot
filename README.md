@@ -1,6 +1,8 @@
 # ack-css-boot
 A base set of short-hand css helper classes. Includes available classes that are commonly used for styling buttons, form inputs, and such.
 
+> scss/ack-css-boot.scss
+
 ```
 .font-arial{font-family:Arial;}
 .font-times{font-family:Times New Roman;}
