@@ -89,7 +89,9 @@ a,.cursor-pointer {cursor:pointer}
 .justify-right {justify-content:flex-end}
 
 .align-center {align-items:center}
-.align-bottom,.align-baseline {align-items:baseline}
+.align-bottom,.align-end {align-items:flex-end}
+.align-fill,.align-stretch {align-items:stretch}
+.align-baseline {align-items:baseline}
 
 
 .opacity-90 {opacity: 0.9}
