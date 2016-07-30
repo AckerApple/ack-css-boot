@@ -1,6 +1,8 @@
 # ack-css-boot
 A base set of short-hand css helper classes. Includes available classes that are commonly used for styling buttons, form inputs, and such.
 
+Many commonly used short-hand classes, that are found in [Ionic](https://www.npmjs.com/package/ionic) and [Bootstrap](https://www.npmjs.com/package/bootstrap-css), can be found here.
+
 > scss/ack-css-boot.scss
 
 ```
@@ -95,7 +97,9 @@ a,.cursor-pointer {cursor:pointer}
 .justify-right {justify-content:flex-end}
 
 .align-center {align-items:center}
-.align-bottom,.align-baseline {align-items:baseline}
+.align-bottom,.align-end {align-items:flex-end}
+.align-fill,.align-stretch {align-items:stretch}
+.align-baseline {align-items:baseline}
 
 
 .opacity-90 {opacity: 0.9}
