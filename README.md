@@ -6,8 +6,8 @@ Many commonly used short-hand classes, that are found in [Ionic](https://www.npm
 > scss/ack-css-boot.scss
 
 ```
-.font-arial {font-family:Arial;}
-.font-times {font-family:Times New Roman;}
+.font-arial {font-family:Arial}
+.font-times {font-family:Times New Roman}
 .font-helvetica {font-family:Helvetica}
 
 .text-overflow {text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
