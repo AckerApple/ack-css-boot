@@ -17,12 +17,12 @@ Many commonly used short-hand classes, that are found in [Ionic](https://www.npm
 > scss/ack-css-boot.scss
 
 ```
-@import "./ack-text-boot"
-@import "./ack-flex-boot"
-@import "./ack-color-boot"
-@import "./ack-block-boot"
-@import "./ack-position-boot"
-@import "./ack-form-boot"
+@import "./ack-text-boot";
+@import "./ack-flex-boot";
+@import "./ack-color-boot";
+@import "./ack-block-boot";
+@import "./ack-position-boot";
+@import "./ack-form-boot";
 ```
 
 
