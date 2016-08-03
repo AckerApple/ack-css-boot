@@ -187,6 +187,7 @@ a,.cursor-pointer {cursor:pointer}
 
 .border-radius-0 {border-radius:0}
 .border-radius-half {border-radius:50%}
+.border-spacing-0 {border-spacing:0}
 
 
 .width-full,.full-width {width:100%}
