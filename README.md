@@ -3,22 +3,41 @@ A base set of short-hand css helper classes. Includes available classes that are
 
 Many commonly used short-hand classes, that are found in [Ionic](https://www.npmjs.com/package/ionic) and [Bootstrap](https://www.npmjs.com/package/bootstrap-css), can be found here.
 
+### Table of Contents
+- [ack-css-boot](#ack-css-boot)
+- [ack-text-boot](#ack-text-boot)
+- [ack-flex-boot](#ack-flex-boot)
+- [ack-color-boot](#ack-color-boot)
+- [ack-block-boot](#ack-block-boot)
+- [ack-position-boot](#ack-position-boot)
+- [ack-form-boot](#ack-form-boot)
+
+## ack-css-boot
+
 > scss/ack-css-boot.scss
 
 ```
+@import "./ack-text-boot"
+@import "./ack-flex-boot"
+@import "./ack-color-boot"
+@import "./ack-block-boot"
+@import "./ack-position-boot"
+@import "./ack-form-boot"
+```
+
+
+## ack-text-boot
+
+> scss/ack-text-boot.scss
+
+```
+.nowrap {white-space:nowrap}
+
 .font-arial {font-family:Arial}
 .font-times {font-family:Times New Roman}
 .font-helvetica {font-family:Helvetica}
 
 .text-overflow {text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
-
-.valign,.valign-top,.vert-align-top {vertical-align:top}
-.valign-middle,.valign-center,.vert-align-middle {vertical-align:middle}
-.valign-bottom,.vert-align-bottom {vertical-align:bottom}
-
-.nowrap {white-space:nowrap}
-
-a,.cursor-pointer {cursor:pointer}
 
 .text-underline,.underline {text-decoration:underline}
 .strong, .bold, .text-bold {font-weight:bold}
@@ -62,22 +81,20 @@ a,.cursor-pointer {cursor:pointer}
 .text-black,.font-black {color: #000}
 .text-white,.font-white {color: #FFF}
 
-.clear,.clear-both,.clear-fix {clear:both}
+.line-height-0 {line-height:0}
+.line-height-half {line-height:50%}
+.line-height-third {line-height:33.3%}
+.line-height-quarter {line-height:25%}
+.line-height-2x {line-height:150%}
+.line-height-3x {line-height:200%}
+```
 
-.pos-absolute,.pos-abs {position:absolute}
-.pos-relative,.pos-rel {position:relative}
-.pos-fixed,.pos-fix {position:fixed}
 
-.z-index-1 {z-index:1}
-.z-index-10 {z-index:10}
-.top-0 {top:0}
-.right-0 {right:0}
-.bottom-0 {bottom:0}
-.left-0 {left:0}
+## ack-flex-boot
 
-.inline-block, .display-inline-block {display:inline-block}
-.block, .display-block {display:block}
+> scss/ack-flex-boot.scss
 
+```
 .flex, .display-flex {display:flex}
 .flex-1 {flex:1 1 10em}
 .flex-2 {flex:2 2 20em}
@@ -100,6 +117,59 @@ a,.cursor-pointer {cursor:pointer}
 .align-bottom,.align-end {align-items:flex-end}
 .align-fill,.align-stretch {align-items:stretch}
 .align-baseline {align-items:baseline}
+```
+
+
+## ack-color-boot
+
+> scss/ack-color-boot.scss
+
+```
+.bg-royal {background-color:#ab57ff}
+.bg-primary {background-color:#337ab7}
+.bg-success {background-color:#dff0d8}
+.bg-info {background-color:#d9edf7}
+.bg-warning {background-color:#fcf8e3}
+.bg-danger {background-color:#f2dede}
+.bg-white {background-color:white}
+.bg-black {background-color:black}
+.bg-grey {background-color:#777}
+.bg-grey-xs {background-color:#999}
+.bg-grey-xxs {background-color:#BBB}
+
+.border-positive {border-color:#0c60ee}
+.border-calm {border-color:#0a9dc7}
+.border-balanced {border-color:#28a54c}
+.border-energized {border-color:#e6b500}
+.border-assertive {border-color:#e42112}
+.border-royal {border-color:#6b46e5}
+.border-dark {border-color:#111111}
+.border-danger {border-color:#d43f3a}
+.border-warning {border-color:#eea236}
+.border-info {border-color:#46b8da}
+.border-success {border-color:#4cae4c}
+.border-primary {border-color:#2e6da4}
+```
+
+
+## ack-block-boot
+
+> scss/ack-block-boot.scss
+
+```
+a,.cursor-pointer {cursor:pointer}
+
+
+.overflow-hidden {overflow:hidden}
+.overflow-auto {overflow:auto}
+.overflow-y-auto {overflow-y:auto}
+.overflow-y-hidden {overflow-y:hidden}
+.overflow-x-auto {overflow-x:auto}
+.overflow-x-hidden {overflow-x:hidden}
+
+
+.inline-block, .display-inline-block {display:inline-block}
+.block, .display-block {display:block}
 
 
 .opacity-90 {opacity: 0.9}
@@ -114,11 +184,17 @@ a,.cursor-pointer {cursor:pointer}
 .opacity-20 {opacity: 0.2}
 .opacity-10 {opacity: 0.1}
 
+
+.border-radius-0 {border-radius:0}
+.border-radius-half {border-radius:50%}
+
+
 .width-full,.full-width {width:100%}
 .width-half,.half-width {width:50%}
 
 .height-full {height:100%}
 .height-half {width:50%}
+
 
 .margin-0 {margin:0}
 .margin-xxs {margin:0.2em}
@@ -176,6 +252,7 @@ a,.cursor-pointer {cursor:pointer}
 .margin-right-md {margin-right:1em}
 .margin-right-lg {margin-right:1.5em}
 
+
 .pad-0 {padding:0}
 .pad-xxs {padding:0.2em}
 .pad-xs {padding:0.4em}
@@ -231,47 +308,41 @@ a,.cursor-pointer {cursor:pointer}
 .pad-right {padding-right:0.8em}
 .pad-right-md {padding-right:1em}
 .pad-right-lg {padding-right:1.5em}
+```
 
 
-.bg-royal {background-color:#ab57ff}
-.bg-primary {background-color:#337ab7}
-.bg-success {background-color:#dff0d8}
-.bg-info {background-color:#d9edf7}
-.bg-warning {background-color:#fcf8e3}
-.bg-danger {background-color:#f2dede}
-.bg-white {background-color:white}
-.bg-black {background-color:black}
-.bg-grey {background-color:#777}
-.bg-grey-xs {background-color:#999}
-.bg-grey-xxs {background-color:#BBB}
+## ack-position-boot
 
+> scss/ack-position-boot.scss
+
+```
+.valign,.valign-top,.vert-align-top {vertical-align:top}
+.valign-middle,.valign-center,.vert-align-middle {vertical-align:middle}
+.valign-bottom,.vert-align-bottom {vertical-align:bottom}
+
+.pos-absolute,.pos-abs {position:absolute}
+.pos-relative,.pos-rel {position:relative}
+.pos-fixed,.pos-fix {position:fixed}
+
+.z-index-1 {z-index:1}
+.z-index-10 {z-index:10}
+.top-0 {top:0}
+.right-0 {right:0}
+.bottom-0 {bottom:0}
+.left-0 {left:0}
+
+
+.clear,.clear-both,.clear-fix {clear:both}
 .float-right, .pull-right {float:right}
 .float-left, .pull-left {float:left}
-
-.border-positive {border-color:#0c60ee}
-.border-calm {border-color:#0a9dc7}
-.border-balanced {border-color:#28a54c}
-.border-energized {border-color:#e6b500}
-.border-assertive {border-color:#e42112}
-.border-royal {border-color:#6b46e5}
-.border-dark {border-color:#111111}
-.border-danger {border-color:#d43f3a}
-.border-warning {border-color:#eea236}
-.border-info {border-color:#46b8da}
-.border-success {border-color:#4cae4c}
-.border-primary {border-color:#2e6da4}
-
-.border-radius-0 {border-radius:0}
-.border-radius-half {border-radius:50%}
-
-.line-height-0 {line-height:0}
-.line-height-half {line-height:50%}
-.line-height-third {line-height:33.3%}
-.line-height-quarter {line-height:25%}
-.line-height-2x {line-height:150%}
-.line-height-3x {line-height:200%}
+```
 
 
+## ack-form-boot
+
+> scss/ack-form-boot.scss
+
+```
 .form-group.has-error label:first-child {
   color:#d43f3a;
 }
