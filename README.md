@@ -509,4 +509,60 @@ a,.cursor-pointer {cursor:pointer}
     display: none !important;
   }
 }
+
+/* HIDDEN COMPARISONS */
+@media (max-width: 438px) {
+  .hidden-lt-xxs{
+    display: none !important;
+  }
+}
+@media (max-width: 439px) {
+  .hidden-lte-xxs{
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden-lt-xs{
+    display: none !important;
+  }
+}
+@media (max-width: 769px) {
+  .hidden-lte-xs{
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hidden-lt-smx{
+    display: none !important;
+  }
+}
+@media (max-width: 577px) {
+  .hidden-lte-smx{
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .hidden-lt-sm{
+    display: none !important;
+  }
+}
+@media (max-width: 993px) {
+  .hidden-lte-sm{
+    display: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hidden-lt-md{
+    display: none !important;
+  }
+}
+@media (max-width: 1201px) {
+  .hidden-lte-md{
+    display: none !important;
+  }
+}
 ```
