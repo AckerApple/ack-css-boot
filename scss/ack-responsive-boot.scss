@@ -74,3 +74,35 @@ lg >= 1200
     display: none !important;
   }
 }
+
+
+/* HIDDEN BELOWS */
+@media (max-width: 437px) {
+  .hidden-below-xxs{
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-below-xs{
+    display: none !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hidden-below-smx{
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .hidden-below-sm{
+    display: none !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hidden-below-md{
+    display: none !important;
+  }
+}

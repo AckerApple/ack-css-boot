@@ -1,6 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.0.13] - 2016-08-04
+### Added
+- responsive below classes
+
 ## [1.0.12] - 2016-08-04
 ### Added
 - ack-responsive-boot
