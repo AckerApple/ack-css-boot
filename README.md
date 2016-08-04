@@ -11,6 +11,7 @@ Many commonly used short-hand classes, that are found in [Ionic](https://www.npm
 - [ack-block-boot](#ack-block-boot)
 - [ack-position-boot](#ack-position-boot)
 - [ack-form-boot](#ack-form-boot)
+- [ack-responsive-boot](#ack-responsive-boot)
 
 ## ack-css-boot
 
@@ -23,6 +24,7 @@ Many commonly used short-hand classes, that are found in [Ionic](https://www.npm
 @import "./ack-block-boot";
 @import "./ack-position-boot";
 @import "./ack-form-boot";
+@import "./ack-responsive-boot";
 ```
 
 
@@ -391,5 +393,88 @@ a,.cursor-pointer {cursor:pointer}
 .form-group.has-error select,
 .form-group.has-error textarea {
   border:1px solid #d43f3a;
+}
+```
+
+
+## ack-responsive-boot
+
+> scss/ack-responsive-boot.scss
+
+> Screen size to size name map
+- xxs > 0 && <= 438
+- xs > 0 && <= 768
+- smx >=576 && < 768
+- sm >= 768 && < 992
+- md >= 992 && < 1200
+- lg >= 1200
+
+```
+@media (max-width: 437px) {
+  .hidden-xxs {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .hidden-smx {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}
+
+
+/* HIDDEN ABOVES */
+@media (min-width: 438px) {
+  .hidden-above-xxs{
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-above-xs{
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .hidden-above-smx{
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-above-sm{
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-above-md{
+    display: none !important;
+  }
 }
 ```
