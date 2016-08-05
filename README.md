@@ -198,7 +198,7 @@ a,.cursor-pointer {cursor:pointer}
 
 
 .overflow-hidden {overflow:hidden}
-.overflow-auto {overflow:auto}
+.overflow, .overflow-auto {overflow:auto}
 .overflow-y-auto {overflow-y:auto}
 .overflow-y-hidden {overflow-y:hidden}
 .overflow-x-auto {overflow-x:auto}
@@ -206,7 +206,7 @@ a,.cursor-pointer {cursor:pointer}
 
 
 .visible, .visibility-visible {visibility:visible}
-.hidden, .visibility-hidden {visibility:hidden}
+.invisible, .visibility-hidden {visibility:hidden}
 
 
 .inline-block, .display-inline-block {display:inline-block}

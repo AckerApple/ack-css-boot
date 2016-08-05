@@ -2,7 +2,7 @@ a,.cursor-pointer {cursor:pointer}
 
 
 .overflow-hidden {overflow:hidden}
-.overflow-auto {overflow:auto}
+.overflow, .overflow-auto {overflow:auto}
 .overflow-y-auto {overflow-y:auto}
 .overflow-y-hidden {overflow-y:hidden}
 .overflow-x-auto {overflow-x:auto}
