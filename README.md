@@ -547,7 +547,7 @@ a,.cursor-pointer {cursor:pointer}
 
 
 /* HIDDEN ABOVES */
-@media (min-width: 438px) {
+@media (min-width: 439px) {
   .hide-gt-xxs, .hide-above-xxs, .hidden-above-xxs {
     display: none !important;
   }
@@ -565,7 +565,7 @@ a,.cursor-pointer {cursor:pointer}
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hide-gt-xs, .hide-above-xs, .hidden-above-xs {
     display: none !important;
   }
@@ -583,7 +583,7 @@ a,.cursor-pointer {cursor:pointer}
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 577px) {
   .hide-gt-smx, .hide-above-smx, .hidden-above-smx {
     display: none !important;
   }
@@ -601,7 +601,7 @@ a,.cursor-pointer {cursor:pointer}
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .hide-gt-sm, .hide-above-sm, .hidden-above-sm{
     display: none !important;
   }
@@ -619,7 +619,7 @@ a,.cursor-pointer {cursor:pointer}
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .hide-gt-md, .hide-above-md, .hidden-above-md{
     display: none !important;
   }
