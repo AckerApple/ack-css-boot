@@ -383,159 +383,164 @@ a,.cursor-pointer {cursor:pointer}
 .pad-right-lg {padding-right:1.5em}
 
 /* TABLE PADDING CLASSES */
-.pad-0.table>tbody>tr>td, .pad-0.table>tbody>tr>th, .pad-0.table>tfoot>tr>td,
-.pad-0.table>tfoot>tr>th,.pad-0.table>thead>tr>td, .pad-0.table>thead>tr>th
+.table-pad-0>tbody>tr>td, .table-pad-0>tbody>tr>th, .table-pad-0>tfoot>tr>td,
+.table-pad-0>tfoot>tr>th,.table-pad-0>thead>tr>td, .table-pad-0>thead>tr>th
 {@extend .pad-0}
 
-.pad-xxs.table>tbody>tr>td, .pad-xxs.table>tbody>tr>th, .pad-xxs.table>tfoot>tr>td,
-.pad-xxs.table>tfoot>tr>th,.pad-xxs.table>thead>tr>td, .pad-xxs.table>thead>tr>th
+.table-pad-xxs>tbody>tr>td, .table-pad-xxs>tbody>tr>th, .table-pad-xxs>tfoot>tr>td,
+.table-pad-xxs>tfoot>tr>th,.table-pad-xxs>thead>tr>td, .table-pad-xxs>thead>tr>th
 {@extend .pad-xxs}
-.pad-xs.table>tbody>tr>td, .pad-xs.table>tbody>tr>th, .pad-xs.table>tfoot>tr>td,
-.pad-xs.table>tfoot>tr>th,.pad-xs.table>thead>tr>td, .pad-xs.table>thead>tr>th
+
+.table-pad-xs>tbody>tr>td, .table-pad-xs>tbody>tr>th, .table-pad-xs>tfoot>tr>td,
+.table-pad-xs>tfoot>tr>th,.table-pad-xs>thead>tr>td, .table-pad-xs>thead>tr>th
 {@extend .pad-xs}
-.pad-sm.table>tbody>tr>td, .pad-sm.table>tbody>tr>th, .pad-sm.table>tfoot>tr>td,
-.pad-sm.table>tfoot>tr>th,.pad-sm.table>thead>tr>td, .pad-sm.table>thead>tr>th
+
+.table-pad-sm>tbody>tr>td, .table-pad-sm>tbody>tr>th, .table-pad-sm>tfoot>tr>td,
+.table-pad-sm>tfoot>tr>th,.table-pad-sm>thead>tr>td, .table-pad-sm>thead>tr>th
 {@extend .pad-sm}
-.pad.table>tbody>tr>td, .pad.table>tbody>tr>th, .pad.table>tfoot>tr>td,
-.pad.table>tfoot>tr>th,.pad.table>thead>tr>td, .pad.table>thead>tr>th
+
+.table-.pad>tbody>tr>td,.table-.pad>tbody>tr>th,.table-.pad>tfoot>tr>td,
+.table-.pad>tfoot>tr>th.table-.pad>thead>tr>td,.table-.pad>thead>tr>th
 {@extend .pad}
-.pad-md.table>tbody>tr>td, .pad-md.table>tbody>tr>th, .pad-md.table>tfoot>tr>td,
-.pad-md.table>tfoot>tr>th,.pad-md.table>thead>tr>td, .pad-md.table>thead>tr>th
+
+.table-pad-md>tbody>tr>td, .table-pad-md>tbody>tr>th, .table-pad-md>tfoot>tr>td,
+.table-pad-md>tfoot>tr>th,.table-pad-md>thead>tr>td, .table-pad-md>thead>tr>th
 {@extend .pad-md}
-.pad-lg.table>tbody>tr>td, .pad-lg.table>tbody>tr>th, .pad-lg.table>tfoot>tr>td,
-.pad-lg.table>tfoot>tr>th,.pad-lg.table>thead>tr>td, .pad-lg.table>thead>tr>th
+
+.table-pad-lg>tbody>tr>td, .table-pad-lg>tbody>tr>th, .table-pad-lg>tfoot>tr>td,
+.table-pad-lg>tfoot>tr>th,.table-pad-lg>thead>tr>td, .table-pad-lg>thead>tr>th
 {@extend .pad-lg}
 
-.pad-v-0.table>tbody>tr>td, .pad-v-0.table>tbody>tr>th, .pad-v-0.table>tfoot>tr>td,
-.pad-v-0.table>tfoot>tr>th,.pad-v-0.table>thead>tr>td, .pad-v-0.table>thead>tr>th
+.table-pad-v-0>tbody>tr>td, .table-pad-v-0>tbody>tr>th, .table-pad-v-0>tfoot>tr>td,
+.table-pad-v-0>tfoot>tr>th,.table-pad-v-0>thead>tr>td, .table-pad-v-0>thead>tr>th
 {@extend .pad-v-0}
-.pad-v-xxs.table>tbody>tr>td, .pad-v-xxs.table>tbody>tr>th, .pad-v-xxs.table>tfoot>tr>td,
-.pad-v-xxs.table>tfoot>tr>th,.pad-v-xxs.table>thead>tr>td, .pad-v-xxs.table>thead>tr>th
+.table-pad-v-xxs>tbody>tr>td, .table-pad-v-xxs>tbody>tr>th, .table-pad-v-xxs>tfoot>tr>td,
+.table-pad-v-xxs>tfoot>tr>th,.table-pad-v-xxs>thead>tr>td, .table-pad-v-xxs>thead>tr>th
 {@extend .pad-v-xxs}
-.pad-v-xs.table>tbody>tr>td, .pad-v-xs.table>tbody>tr>th, .pad-v-xs.table>tfoot>tr>td,
-.pad-v-xs.table>tfoot>tr>th,.pad-v-xs.table>thead>tr>td, .pad-v-xs.table>thead>tr>th
+.table-pad-v-xs>tbody>tr>td, .table-pad-v-xs>tbody>tr>th, .table-pad-v-xs>tfoot>tr>td,
+.table-pad-v-xs>tfoot>tr>th,.table-pad-v-xs>thead>tr>td, .table-pad-v-xs>thead>tr>th
 {@extend .pad-v-xs}
-.pad-v-sm.table>tbody>tr>td, .pad-v-sm.table>tbody>tr>th, .pad-v-sm.table>tfoot>tr>td,
-.pad-v-sm.table>tfoot>tr>th,.pad-v-sm.table>thead>tr>td, .pad-v-sm.table>thead>tr>th
+.table-v-sm>tbody>tr>td, .table-v-sm>tbody>tr>th, .table-v-sm>tfoot>tr>td,
+.table-v-sm>tfoot>tr>th,.table-v-sm>thead>tr>td, .table-v-sm>thead>tr>th
 {@extend .pad-v-sm}
-.pad-v.table>tbody>tr>td, .pad-v.table>tbody>tr>th, .pad-v.table>tfoot>tr>td,
-.pad-v.table>tfoot>tr>th,.pad-v.table>thead>tr>td, .pad-v.table>thead>tr>th
+.table-pad-v>tbody>tr>td, .table-pad-v>tbody>tr>th, .table-pad-v>tfoot>tr>td,
+.table-pad-v>tfoot>tr>th,.table-pad-v>thead>tr>td, .table-pad-v>thead>tr>th
 {@extend .pad-v}
-.pad-v-md.table>tbody>tr>td, .pad-v-md.table>tbody>tr>th, .pad-v-md.table>tfoot>tr>td,
-.pad-v-md.table>tfoot>tr>th,.pad-v-md.table>thead>tr>td, .pad-v-md.table>thead>tr>th
+.table-v-md>tbody>tr>td, .table-v-md>tbody>tr>th, .table-v-md>tfoot>tr>td,
+.table-v-md>tfoot>tr>th,.table-v-md>thead>tr>td, .table-v-md>thead>tr>th
 {@extend .pad-v-md}
-.pad-v-lg.table>tbody>tr>td, .pad-v-lg.table>tbody>tr>th, .pad-v-lg.table>tfoot>tr>td,
-.pad-v-lg.table>tfoot>tr>th,.pad-v-lg.table>thead>tr>td, .pad-v-lg.table>thead>tr>th
+.table-v-lg>tbody>tr>td, .table-v-lg>tbody>tr>th, .table-v-lg>tfoot>tr>td,
+.table-v-lg>tfoot>tr>th,.table-v-lg>thead>tr>td, .table-v-lg>thead>tr>th
 {@extend .pad-v-lg}
 
-.pad-h-0.table>tbody>tr>td, .pad-h-0.table>tbody>tr>th, .pad-h-0.table>tfoot>tr>td,
-.pad-h-0.table>tfoot>tr>th,.pad-h-0.table>thead>tr>td, .pad-h-0.table>thead>tr>th
+.table-pad-h-0>tbody>tr>td, .table-pad-h-0>tbody>tr>th, .table-pad-h-0>tfoot>tr>td,
+.table-pad-h-0>tfoot>tr>th,.table-pad-h-0>thead>tr>td, .table-pad-h-0>thead>tr>th
 {@extend .pad-h-0}
-.pad-h-xxs.table>tbody>tr>td, .pad-h-xxs.table>tbody>tr>th, .pad-h-xxs.table>tfoot>tr>td,
-.pad-h-xxs.table>tfoot>tr>th,.pad-h-xxs.table>thead>tr>td, .pad-h-xxs.table>thead>tr>th
+.table-pad-h-xxs>tbody>tr>td, .table-pad-h-xxs>tbody>tr>th, .table-pad-h-xxs>tfoot>tr>td,
+.table-pad-h-xxs>tfoot>tr>th,.table-pad-h-xxs>thead>tr>td, .table-pad-h-xxs>thead>tr>th
 {@extend .pad-h-xxs}
-.pad-h-xs.table>tbody>tr>td, .pad-h-xs.table>tbody>tr>th, .pad-h-xs.table>tfoot>tr>td,
-.pad-h-xs.table>tfoot>tr>th,.pad-h-xs.table>thead>tr>td, .pad-h-xs.table>thead>tr>th
+.table-pad-h-xs>tbody>tr>td, .table-pad-h-xs>tbody>tr>th, .table-pad-h-xs>tfoot>tr>td,
+.table-pad-h-xs>tfoot>tr>th,.table-pad-h-xs>thead>tr>td, .table-pad-h-xs>thead>tr>th
 {@extend .pad-h-xs}
-.pad-h-sm.table>tbody>tr>td, .pad-h-sm.table>tbody>tr>th, .pad-h-sm.table>tfoot>tr>td,
-.pad-h-sm.table>tfoot>tr>th,.pad-h-sm.table>thead>tr>td, .pad-h-sm.table>thead>tr>th
+.table-pad-h-sm>tbody>tr>td, .table-pad-h-sm>tbody>tr>th, .table-pad-h-sm>tfoot>tr>td,
+.table-pad-h-sm>tfoot>tr>th,.table-pad-h-sm>thead>tr>td, .table-pad-h-sm>thead>tr>th
 {@extend .pad-h-sm}
-.pad-h.table>tbody>tr>td, .pad-h.table>tbody>tr>th, .pad-h.table>tfoot>tr>td,
-.pad-h.table>tfoot>tr>th,.pad-h.table>thead>tr>td, .pad-h.table>thead>tr>th
+tbody-.pad-h.table>tr>td, tbody-.pad-h.table>tr>th, tfoot-.pad-h.table>tr>td,
+tfoot-.pad-h.table>tr>th,thead-.pad-h.table>tr>td, thead-.pad-h.table>tr>th
 {@extend .pad-h}
-.pad-h-md.table>tbody>tr>td, .pad-h-md.table>tbody>tr>th, .pad-h-md.table>tfoot>tr>td,
-.pad-h-md.table>tfoot>tr>th,.pad-h-md.table>thead>tr>td, .pad-h-md.table>thead>tr>th
+.table-pad-h-md>tbody>tr>td, .table-pad-h-md>tbody>tr>th, .table-pad-h-md>tfoot>tr>td,
+.table-pad-h-md>tfoot>tr>th,.table-pad-h-md>thead>tr>td, .table-pad-h-md>thead>tr>th
 {@extend .pad-h-md}
-.pad-h-lg.table>tbody>tr>td, .pad-h-lg.table>tbody>tr>th, .pad-h-lg.table>tfoot>tr>td,
-.pad-h-lg.table>tfoot>tr>th,.pad-h-lg.table>thead>tr>td, .pad-h-lg.table>thead>tr>th
+.table-pad-h-lg>tbody>tr>td, .table-pad-h-lg>tbody>tr>th, .table-pad-h-lg>tfoot>tr>td,
+.table-pad-h-lg>tfoot>tr>th,.table-pad-h-lg>thead>tr>td, .table-pad-h-lg>thead>tr>th
 {@extend .pad-h-lg}
 
-.pad-top-0.table>tbody>tr>td, .pad-top-0.table>tbody>tr>th, .pad-top-0.table>tfoot>tr>td,
-.pad-top-0.table>tfoot>tr>th,.pad-top-0.table>thead>tr>td, .pad-top-0.table>thead>tr>th
+.table-pad-top-0>tbody>tr>td, .table-pad-top-0>tbody>tr>th, .table-pad-top-0>tfoot>tr>td,
+.table-pad-top-0>tfoot>tr>th,.table-pad-top-0>thead>tr>td, .table-pad-top-0>thead>tr>th
 {@extend .pad-top-0}
-.pad-top-xxs.table>tbody>tr>td, .pad-top-xxs.table>tbody>tr>th, .pad-top-xxs.table>tfoot>tr>td,
-.pad-top-xxs.table>tfoot>tr>th,.pad-top-xxs.table>thead>tr>td, .pad-top-xxs.table>thead>tr>th
+.table-pad-top-xxs>tbody>tr>td, .table-pad-top-xxs>tbody>tr>th, .table-pad-top-xxs>tfoot>tr>td,
+.table-pad-top-xxs>tfoot>tr>th,.table-pad-top-xxs>thead>tr>td, .table-pad-top-xxs>thead>tr>th
 {@extend .pad-top-xxs}
-.pad-top-xs.table>tbody>tr>td, .pad-top-xs.table>tbody>tr>th, .pad-top-xs.table>tfoot>tr>td,
-.pad-top-xs.table>tfoot>tr>th,.pad-top-xs.table>thead>tr>td, .pad-top-xs.table>thead>tr>th
+.table-pad-top-xs>tbody>tr>td, .table-pad-top-xs>tbody>tr>th, .table-pad-top-xs>tfoot>tr>td,
+.table-pad-top-xs>tfoot>tr>th,.table-pad-top-xs>thead>tr>td, .table-pad-top-xs>thead>tr>th
 {@extend .pad-top-xs}
-.pad-top-sm.table>tbody>tr>td, .pad-top-sm.table>tbody>tr>th, .pad-top-sm.table>tfoot>tr>td,
-.pad-top-sm.table>tfoot>tr>th,.pad-top-sm.table>thead>tr>td, .pad-top-sm.table>thead>tr>th
+.table-pad-top-sm>tbody>tr>td, .table-pad-top-sm>tbody>tr>th, .table-pad-top-sm>tfoot>tr>td,
+.table-pad-top-sm>tfoot>tr>th,.table-pad-top-sm>thead>tr>td, .table-pad-top-sm>thead>tr>th
 {@extend .pad-top-sm}
-.pad-top.table>tbody>tr>td, .pad-top.table>tbody>tr>th, .pad-top.table>tfoot>tr>td,
-.pad-top.table>tfoot>tr>th,.pad-top.table>thead>tr>td, .pad-top.table>thead>tr>th
+.table-pad-top>tbody>tr>td, .table-pad-top>tbody>tr>th, .table-pad-top>tfoot>tr>td,
+.table-pad-top>tfoot>tr>th,.table-pad-top>thead>tr>td, .table-pad-top>thead>tr>th
 {@extend .pad-top}
-.pad-top-md.table>tbody>tr>td, .pad-top-md.table>tbody>tr>th, .pad-top-md.table>tfoot>tr>td,
-.pad-top-md.table>tfoot>tr>th,.pad-top-md.table>thead>tr>td, .pad-top-md.table>thead>tr>th
+.table-pad-top-md>tbody>tr>td, .table-pad-top-md>tbody>tr>th, .table-pad-top-md>tfoot>tr>td,
+.table-pad-top-md>tfoot>tr>th,.table-pad-top-md>thead>tr>td, .table-pad-top-md>thead>tr>th
 {@extend .pad-top-md}
-.pad-top-lg.table>tbody>tr>td, .pad-top-lg.table>tbody>tr>th, .pad-top-lg.table>tfoot>tr>td,
-.pad-top-lg.table>tfoot>tr>th,.pad-top-lg.table>thead>tr>td, .pad-top-lg.table>thead>tr>th
+.table-pad-top-lg>tbody>tr>td, .table-pad-top-lg>tbody>tr>th, .table-pad-top-lg>tfoot>tr>td,
+.table-pad-top-lg>tfoot>tr>th,.table-pad-top-lg>thead>tr>td, .table-pad-top-lg>thead>tr>th
 {@extend .pad-top-lg}
 
-.pad-bottom-0.table>tbody>tr>td, .pad-bottom-0.table>tbody>tr>th, .pad-bottom-0.table>tfoot>tr>td,
-.pad-bottom-0.table>tfoot>tr>th,.pad-bottom-0.table>thead>tr>td, .pad-bottom-0.table>thead>tr>th
+.table-pad-bottom-0>tbody>tr>td, .table-pad-bottom-0>tbody>tr>th, .table-pad-bottom-0>tfoot>tr>td,
+.table-pad-bottom-0>tfoot>tr>th,.table-pad-bottom-0>thead>tr>td, .table-pad-bottom-0>thead>tr>th
 {@extend .pad-bottom-0}
-.pad-bottom-xxs.table>tbody>tr>td, .pad-bottom-xxs.table>tbody>tr>th, .pad-bottom-xxs.table>tfoot>tr>td,
-.pad-bottom-xxs.table>tfoot>tr>th,.pad-bottom-xxs.table>thead>tr>td, .pad-bottom-xxs.table>thead>tr>th
+.table-pad-bottom-xxs>tbody>tr>td, .table-pad-bottom-xxs>tbody>tr>th, .table-pad-bottom-xxs>tfoot>tr>td,
+.table-pad-bottom-xxs>tfoot>tr>th,.table-pad-bottom-xxs>thead>tr>td, .table-pad-bottom-xxs>thead>tr>th
 {@extend .pad-bottom-xxs}
-.pad-bottom-xs.table>tbody>tr>td, .pad-bottom-xs.table>tbody>tr>th, .pad-bottom-xs.table>tfoot>tr>td,
-.pad-bottom-xs.table>tfoot>tr>th,.pad-bottom-xs.table>thead>tr>td, .pad-bottom-xs.table>thead>tr>th
+.table-pad-bottom-xs>tbody>tr>td, .table-pad-bottom-xs>tbody>tr>th, .table-pad-bottom-xs>tfoot>tr>td,
+.table-pad-bottom-xs>tfoot>tr>th,.table-pad-bottom-xs>thead>tr>td, .table-pad-bottom-xs>thead>tr>th
 {@extend .pad-bottom-xs}
-.pad-bottom-sm.table>tbody>tr>td, .pad-bottom-sm.table>tbody>tr>th, .pad-bottom-sm.table>tfoot>tr>td,
-.pad-bottom-sm.table>tfoot>tr>th,.pad-bottom-sm.table>thead>tr>td, .pad-bottom-sm.table>thead>tr>th
+.table-pad-bottom-sm>tbody>tr>td, .table-pad-bottom-sm>tbody>tr>th, .table-pad-bottom-sm>tfoot>tr>td,
+.table-pad-bottom-sm>tfoot>tr>th,.table-pad-bottom-sm>thead>tr>td, .table-pad-bottom-sm>thead>tr>th
 {@extend .pad-bottom-sm}
-.pad-bottom.table>tbody>tr>td, .pad-bottom.table>tbody>tr>th, .pad-bottom.table>tfoot>tr>td,
-.pad-bottom.table>tfoot>tr>th,.pad-bottom.table>thead>tr>td, .pad-bottom.table>thead>tr>th
+.table-pad-bottom>tbody>tr>td, .table-pad-bottom>tbody>tr>th, .table-pad-bottom>tfoot>tr>td,
+.table-pad-bottom>tfoot>tr>th,.table-pad-bottom>thead>tr>td, .table-pad-bottom>thead>tr>th
 {@extend .pad-bottom}
-.pad-bottom-md.table>tbody>tr>td, .pad-bottom-md.table>tbody>tr>th, .pad-bottom-md.table>tfoot>tr>td,
-.pad-bottom-md.table>tfoot>tr>th,.pad-bottom-md.table>thead>tr>td, .pad-bottom-md.table>thead>tr>th
+.table-pad-bottom-md>tbody>tr>td, .table-pad-bottom-md>tbody>tr>th, .table-pad-bottom-md>tfoot>tr>td,
+.table-pad-bottom-md>tfoot>tr>th,.table-pad-bottom-md>thead>tr>td, .table-pad-bottom-md>thead>tr>th
 {@extend .pad-bottom-md}
-.pad-bottom-lg.table>tbody>tr>td, .pad-bottom-lg.table>tbody>tr>th, .pad-bottom-lg.table>tfoot>tr>td,
-.pad-bottom-lg.table>tfoot>tr>th,.pad-bottom-lg.table>thead>tr>td, .pad-bottom-lg.table>thead>tr>th
+.table-pad-bottom-lg>tbody>tr>td, .table-pad-bottom-lg>tbody>tr>th, .table-pad-bottom-lg>tfoot>tr>td,
+.table-pad-bottom-lg>tfoot>tr>th,.table-pad-bottom-lg>thead>tr>td, .table-pad-bottom-lg>thead>tr>th
 {@extend .pad-bottom-lg}
 
-.pad-left-0.table>tbody>tr>td, .pad-left-0.table>tbody>tr>th, .pad-left-0.table>tfoot>tr>td,
-.pad-left-0.table>tfoot>tr>th,.pad-left-0.table>thead>tr>td, .pad-left-0.table>thead>tr>th
+.table-pad-left-0>tbody>tr>td, .table-pad-left-0>tbody>tr>th, .table-pad-left-0>tfoot>tr>td,
+.table-pad-left-0>tfoot>tr>th,.table-pad-left-0>thead>tr>td, .table-pad-left-0>thead>tr>th
 {@extend .pad-left-0}
-.pad-left-xxs.table>tbody>tr>td, .pad-left-xxs.table>tbody>tr>th, .pad-left-xxs.table>tfoot>tr>td,
-.pad-left-xxs.table>tfoot>tr>th,.pad-left-xxs.table>thead>tr>td, .pad-left-xxs.table>thead>tr>th
+.table-pad-left-xxs>tbody>tr>td, .table-pad-left-xxs>tbody>tr>th, .table-pad-left-xxs>tfoot>tr>td,
+.table-pad-left-xxs>tfoot>tr>th,.table-pad-left-xxs>thead>tr>td, .table-pad-left-xxs>thead>tr>th
 {@extend .pad-left-xxs}
-.pad-left-xs.table>tbody>tr>td, .pad-left-xs.table>tbody>tr>th, .pad-left-xs.table>tfoot>tr>td,
-.pad-left-xs.table>tfoot>tr>th,.pad-left-xs.table>thead>tr>td, .pad-left-xs.table>thead>tr>th
+.table-pad-left-xs>tbody>tr>td, .table-pad-left-xs>tbody>tr>th, .table-pad-left-xs>tfoot>tr>td,
+.table-pad-left-xs>tfoot>tr>th,.table-pad-left-xs>thead>tr>td, .table-pad-left-xs>thead>tr>th
 {@extend .pad-left-xs}
-.pad-left-sm.table>tbody>tr>td, .pad-left-sm.table>tbody>tr>th, .pad-left-sm.table>tfoot>tr>td,
-.pad-left-sm.table>tfoot>tr>th,.pad-left-sm.table>thead>tr>td, .pad-left-sm.table>thead>tr>th
+.table-pad-left-sm>tbody>tr>td, .table-pad-left-sm>tbody>tr>th, .table-pad-left-sm>tfoot>tr>td,
+.table-pad-left-sm>tfoot>tr>th,.table-pad-left-sm>thead>tr>td, .table-pad-left-sm>thead>tr>th
 {@extend .pad-left-sm}
-.pad-left.table>tbody>tr>td, .pad-left.table>tbody>tr>th, .pad-left.table>tfoot>tr>td,
-.pad-left.table>tfoot>tr>th,.pad-left.table>thead>tr>td, .pad-left.table>thead>tr>th
+.table-pad-left>tbody>tr>td, .table-pad-left>tbody>tr>th, .table-pad-left>tfoot>tr>td,
+.table-pad-left>tfoot>tr>th,.table-pad-left>thead>tr>td, .table-pad-left>thead>tr>th
 {@extend .pad-left}
-.pad-left-md.table>tbody>tr>td, .pad-left-md.table>tbody>tr>th, .pad-left-md.table>tfoot>tr>td,
-.pad-left-md.table>tfoot>tr>th,.pad-left-md.table>thead>tr>td, .pad-left-md.table>thead>tr>th
+.table-pad-left-md>tbody>tr>td, .table-pad-left-md>tbody>tr>th, .table-pad-left-md>tfoot>tr>td,
+.table-pad-left-md>tfoot>tr>th,.table-pad-left-md>thead>tr>td, .table-pad-left-md>thead>tr>th
 {@extend .pad-left-md}
-.pad-left-lg.table>tbody>tr>td, .pad-left-lg.table>tbody>tr>th, .pad-left-lg.table>tfoot>tr>td,
-.pad-left-lg.table>tfoot>tr>th,.pad-left-lg.table>thead>tr>td, .pad-left-lg.table>thead>tr>th
+.table-pad-left-lg>tbody>tr>td, .table-pad-left-lg>tbody>tr>th, .table-pad-left-lg>tfoot>tr>td,
+.table-pad-left-lg>tfoot>tr>th,.table-pad-left-lg>thead>tr>td, .table-pad-left-lg>thead>tr>th
 {@extend .pad-left-lg}
 
-.pad-right-0.table>tbody>tr>td, .pad-right-0.table>tbody>tr>th, .pad-right-0.table>tfoot>tr>td,
-.pad-right-0.table>tfoot>tr>th,.pad-right-0.table>thead>tr>td, .pad-right-0.table>thead>tr>th
+.table-pad-right-0>tbody>tr>td, .table-pad-right-0>tbody>tr>th, .table-pad-right-0>tfoot>tr>td,
+.table-pad-right-0>tfoot>tr>th,.table-pad-right-0>thead>tr>td, .table-pad-right-0>thead>tr>th
 {@extend .pad-right-0}
-.pad-right-xxs.table>tbody>tr>td, .pad-right-xxs.table>tbody>tr>th, .pad-right-xxs.table>tfoot>tr>td,
-.pad-right-xxs.table>tfoot>tr>th,.pad-right-xxs.table>thead>tr>td, .pad-right-xxs.table>thead>tr>th
+.table-pad-right-xxs>tbody>tr>td, .table-pad-right-xxs>tbody>tr>th, .table-pad-right-xxs>tfoot>tr>td,
+.table-pad-right-xxs>tfoot>tr>th,.table-pad-right-xxs>thead>tr>td, .table-pad-right-xxs>thead>tr>th
 {@extend .pad-right-xxs}
-.pad-right-xs.table>tbody>tr>td, .pad-right-xs.table>tbody>tr>th, .pad-right-xs.table>tfoot>tr>td,
-.pad-right-xs.table>tfoot>tr>th,.pad-right-xs.table>thead>tr>td, .pad-right-xs.table>thead>tr>th
+.table-pad-right-xs>tbody>tr>td, .table-pad-right-xs>tbody>tr>th, .table-pad-right-xs>tfoot>tr>td,
+.table-pad-right-xs>tfoot>tr>th,.table-pad-right-xs>thead>tr>td, .table-pad-right-xs>thead>tr>th
 {@extend .pad-right-xs}
-.pad-right-sm.table>tbody>tr>td, .pad-right-sm.table>tbody>tr>th, .pad-right-sm.table>tfoot>tr>td,
-.pad-right-sm.table>tfoot>tr>th,.pad-right-sm.table>thead>tr>td, .pad-right-sm.table>thead>tr>th
+.table-pad-right-sm>tbody>tr>td, .table-pad-right-sm>tbody>tr>th, .table-pad-right-sm>tfoot>tr>td,
+.table-pad-right-sm>tfoot>tr>th,.table-pad-right-sm>thead>tr>td, .table-pad-right-sm>thead>tr>th
 {@extend .pad-right-sm}
-.pad-right.table>tbody>tr>td, .pad-right.table>tbody>tr>th, .pad-right.table>tfoot>tr>td,
-.pad-right.table>tfoot>tr>th,.pad-right.table>thead>tr>td, .pad-right.table>thead>tr>th
+.table-pad-right>tbody>tr>td, .table-pad-right>tbody>tr>th, .table-pad-right>tfoot>tr>td,
+.table-pad-right>tfoot>tr>th,.table-pad-right>thead>tr>td, .table-pad-right>thead>tr>th
 {@extend .pad-right}
-.pad-right-md.table>tbody>tr>td, .pad-right-md.table>tbody>tr>th, .pad-right-md.table>tfoot>tr>td,
-.pad-right-md.table>tfoot>tr>th,.pad-right-md.table>thead>tr>td, .pad-right-md.table>thead>tr>th
+.table-pad-right-md>tbody>tr>td, .table-pad-right-md>tbody>tr>th, .table-pad-right-md>tfoot>tr>td,
+.table-pad-right-md>tfoot>tr>th,.table-pad-right-md>thead>tr>td, .table-pad-right-md>thead>tr>th
 {@extend .pad-right-md}
-.pad-right-lg.table>tbody>tr>td, .pad-right-lg.table>tbody>tr>th, .pad-right-lg.table>tfoot>tr>td,
-.pad-right-lg.table>tfoot>tr>th,.pad-right-lg.table>thead>tr>td, .pad-right-lg.table>thead>tr>th
+.table-pad-right-lg>tbody>tr>td, .table-pad-right-lg>tbody>tr>th, .table-pad-right-lg>tfoot>tr>td,
+.table-pad-right-lg>tfoot>tr>th,.table-pad-right-lg>thead>tr>td, .table-pad-right-lg>thead>tr>th
 {@extend .pad-right-lg}
 
 
