@@ -1,12 +1,15 @@
 {
   "name": "ack-css-boot",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "A base set of short-hand css helper classes. Includes available classes that are commonly used for styling buttons, form inputs, and such.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:css",
-    "build:css": "node-sass scss/ -o dist/ --output-style compressed --source-map true"
+    "test": "ionic test",
+    "build": "npm run build:css && npm run build:index",
+    "build:css": "npm run build:css:dist && npm run build:css:www",
+    "build:css:dist": "node-sass scss/ -o dist/ --output-style compressed --source-map true",
+    "build:css:www": "node-sass scss/ack-css-boot.scss -o www/ --output-style true",
+    "build:index": "pug index.pug --out www"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
   },
   "homepage": "https://github.com/ackerapple/ack-css-boot#readme",
   "devDependencies": {
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.8.0",
+    "pug": "^2.0.0-beta5"
   }
 }
