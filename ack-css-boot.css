@@ -769,6 +769,66 @@ a, .cursor-pointer {
 .pad-right-lg {
   padding-right: 1.5em; }
 
+.min-height {
+  min-height: 0; }
+
+.min-width {
+  min-width: 0; }
+
+.max-height {
+  max-height: 100%; }
+
+.max-width {
+  max-width: 100%; }
+
+.max-height-50 {
+  max-height: 50px; }
+
+.max-width-50 {
+  max-width: 50px; }
+
+.max-height-100 {
+  max-height: 100px; }
+
+.max-width-100 {
+  max-width: 100px; }
+
+.max-height-500 {
+  max-height: 500px; }
+
+.max-width-500 {
+  max-width: 500px; }
+
+.max-height-1000 {
+  max-height: 1000px; }
+
+.max-width-1000 {
+  max-width: 1000px; }
+
+.min-height-50 {
+  min-height: 50px; }
+
+.min-width-50 {
+  min-width: 50px; }
+
+.min-height-100 {
+  min-height: 100px; }
+
+.min-width-100 {
+  min-width: 100px; }
+
+.min-height-500 {
+  min-height: 500px; }
+
+.min-width-500 {
+  min-width: 500px; }
+
+.min-height-1000 {
+  min-height: 1000px; }
+
+.min-width-1000 {
+  min-width: 1000px; }
+
 /* TABLE PADDING CLASSES */
 .table-pad-0 > tbody > tr > td, .table-pad-0 > tbody > tr > th, .table-pad-0 > tfoot > tr > td,
 .table-pad-0 > tfoot > tr > th, .table-pad-0 > thead > tr > td, .table-pad-0 > thead > tr > th,
@@ -1077,66 +1137,6 @@ table > tfoot > tr > th.pad-right-md, table > thead > tr > td.pad-right-md, tabl
 table > tbody > tr > td.pad-right-lg, table > tbody > tr > th.pad-right-lg, table > tfoot > tr > td.pad-right-lg,
 table > tfoot > tr > th.pad-right-lg, table > thead > tr > td.pad-right-lg, table > thead > tr > th.pad-right-lg {
   padding-right: 1.5em; }
-
-.min-height {
-  min-height: 0; }
-
-.min-width {
-  min-width: 0; }
-
-.max-height {
-  max-height: 100%; }
-
-.max-width {
-  max-width: 100%; }
-
-.max-height-50 {
-  max-height: 50px; }
-
-.max-width-50 {
-  max-width: 50px; }
-
-.max-height-100 {
-  max-height: 100px; }
-
-.max-width-100 {
-  max-width: 100px; }
-
-.max-height-500 {
-  max-height: 500px; }
-
-.max-width-500 {
-  max-width: 500px; }
-
-.max-height-1000 {
-  max-height: 1000px; }
-
-.max-width-1000 {
-  max-width: 1000px; }
-
-.min-height-50 {
-  min-height: 50px; }
-
-.min-width-50 {
-  min-width: 50px; }
-
-.min-height-100 {
-  min-height: 100px; }
-
-.min-width-100 {
-  min-width: 100px; }
-
-.min-height-500 {
-  min-height: 500px; }
-
-.min-width-500 {
-  min-width: 500px; }
-
-.min-height-1000 {
-  min-height: 1000px; }
-
-.min-width-1000 {
-  min-width: 1000px; }
 
 .valign, .valign-top, .vert-align-top {
   vertical-align: top; }
