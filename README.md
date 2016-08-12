@@ -137,7 +137,6 @@ Learn about css short-hand classes such as .pad, .margin, .text-lg, and more...
 .bg-white,.bg-lite {background-color:white}
 .bg-black {background-color:black}
 
-.bg-royal {background-color:#ab57ff}
 .bg-primary {background-color:#337ab7}
 .bg-success {background-color:#dff0d8}
 .bg-info {background-color:#d9edf7}
@@ -169,30 +168,28 @@ Learn about css short-hand classes such as .pad, .margin, .text-lg, and more...
 .border-success {border-color:#4cae4c}
 .border-primary {border-color:#2e6da4}
 
-.bg-royal {background-color:#ab57ff}
-.bg-primary {background-color:#337ab7}
-.bg-success {background-color:#dff0d8}
-.bg-info {background-color:#d9edf7}
-.bg-warning {background-color:#fcf8e3}
-.bg-danger {background-color:#f2dede}
-.bg-white {background-color:white}
-.bg-black {background-color:black}
-.bg-grey {background-color:#777}
-.bg-grey-xs {background-color:#999}
-.bg-grey-xxs {background-color:#BBB}
+.border-1-0,.border-1-black {border-color:#000;border-width:1px;border-style:solid}
+.border-1-f,.border-1-white {border-color:#FFF;border-width:1px;border-style:solid}
+.border-1-positive {border-color:#0c60ee;border-width:1px;border-style:solid}
+.border-1-calm {border-color:#0a9dc7;border-width:1px;border-style:solid}
+.border-1-balanced {border-color:#28a54c;border-width:1px;border-style:solid}
+.border-1-energized {border-color:#e6b500;border-width:1px;border-style:solid}
+.border-1-assertive {border-color:#e42112;border-width:1px;border-style:solid}
+.border-1-royal {border-color:#6b46e5;border-width:1px;border-style:solid}
+.border-1-dark {border-color:#111111;border-width:1px;border-style:solid}
+.border-1-danger {border-color:#d43f3a;border-width:1px;border-style:solid}
+.border-1-warning {border-color:#eea236;border-width:1px;border-style:solid}
+.border-1-info {border-color:#46b8da;border-width:1px;border-style:solid}
+.border-1-success {border-color:#4cae4c;border-width:1px;border-style:solid}
+.border-1-primary {border-color:#2e6da4;border-width:1px;border-style:solid}
 
-.border-positive {border-color:#0c60ee}
-.border-calm {border-color:#0a9dc7}
-.border-balanced {border-color:#28a54c}
-.border-energized {border-color:#e6b500}
-.border-assertive {border-color:#e42112}
-.border-royal {border-color:#6b46e5}
-.border-dark {border-color:#111111}
-.border-danger {border-color:#d43f3a}
-.border-warning {border-color:#eea236}
-.border-info {border-color:#46b8da}
-.border-success {border-color:#4cae4c}
-.border-primary {border-color:#2e6da4}
+
+.hover-text-shadow-grey-blur:hover{
+  text-shadow:0 0 4px #777
+}
+.hover-text-shadow-white-blur:hover{
+  text-shadow:0 0 4px #FFF
+}
 ```
 
 
