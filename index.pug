@@ -7,56 +7,151 @@ html(lang="en")
     link(href="./ack-css-boot.css" rel="stylesheet" type="text/css")
 
   body.font-helvetica
+    h3 ack-text-boot
+    .flex.flex-wrap
+      .pad.text-5x .text-5x
+      .pad.text-4x .text-4x
+      .pad.text-3x .text-3x
+      .pad.text-2x .text-2x
+      .pad.text-lg .text-lg
+      .pad.text-md .text-md
+      .pad.text-sm .text-sm
+      .pad.text-smx .text-smx
+      .pad.text-xs .text-xs
+      .pad.text-xxs .text-xxs
+
     h3 ack-block-boot
     .pad-h
+      h4 border
+      .flex.flex-wrap.align-top
+        .margin.pad.border-1
+          |.border-1
+        .margin.pad.border-1-info
+          |.border-1-info
+        .margin.pad.border-2.border-success
+          |.border-2.border-success
+        .margin.pad.border-3.border-dashed.border-warning
+          |.border-3.border-dashed.border-warning
+        .margin.pad.border-4.border-dotted.border-danger
+          |.border-4.border-dotted.border-danger
+        .margin.pad.border-5
+          |.border-5
+      
+    .pad-h
       h4 pad
-      .flex.flex-wrap.align-bottom
-        .pad-xxs.border-1-info
-          |.pad-xxs
-        .pad-xs.border-1-info
-          |.pad-xs
-        .pad-sm.border-1-info
-          |.pad-sm
-        .pad.border-1-info
-          |.pad
-        .pad-md.border-1-info
-          |.pad-md
-        .pad-lg.border-1-info
-          |.pad-lg
+      .inline-block.pad-xxs.border-1-info.valign
+        |.pad-xxs
+      .inline-block.pad-xs.border-1-info.valign
+        |.pad-xs
+      .inline-block.pad-sm.border-1-info.valign
+        |.pad-sm
+      .inline-block.pad.border-1-info.valign
+        |.pad
+      .inline-block.pad-md.border-1-info.valign
+        |.pad-md
+      .inline-block.pad-lg.border-1-info.valign
+        |.pad-lg
     .pad-h
       h4 margin
-      .flex.flex-wrap.align-bottom
-        .border-1-energized
-          .margin-xxs.border-1-info
-            |.margin-xxs
-        .border-1-energized
-          .margin-xs.border-1-info
-            |.margin-xs
-        .border-1-energized
-          .margin-sm.border-1-info
-            |.margin-sm
-        .border-1-energized
-          .margin.border-1-info
-            |.margin
-        .border-1-energized
-          .margin-md.border-1-info
-            |.margin-md
-        .border-1-energized
-          .margin-lg.border-1-info
-            |.margin-lg
+      .inline-block.valign.border-1-energized
+        .margin-xxs.border-1-info
+          |.margin-xxs
+      .inline-block.valign.border-1-energized
+        .margin-xs.border-1-info
+          |.margin-xs
+      .inline-block.valign.border-1-energized
+        .margin-sm.border-1-info
+          |.margin-sm
+      .inline-block.valign.border-1-energized
+        .margin.border-1-info
+          |.margin
+      .inline-block.valign.border-1-energized
+        .margin-md.border-1-info
+          |.margin-md
+      .inline-block.valign.border-1-energized
+        .margin-lg.border-1-info
+          |.margin-lg
     .pad-h
       h4 table-pad
-      table.table-pad
-        thead
-          tr
-            td.bg-info col1
-            td.bg-info col2
-            td.bg-info col3
-        tbody
-          tr
-            td.bg-info.pad-0 no-pad-row1
-            td.bg-info.pad-0 no-pad-row2
-            td.bg-info.pad-0 no-pad-row3
+      .flex.flex-wrap.align-top
+        .pad-xs
+          h5 table-pad-xxs
+          table.table-pad-xxs
+            thead
+              tr
+                td.bg-info col1
+                td.bg-info col2
+                td.bg-info col3
+            tbody
+              tr
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+        .pad-xs
+          h5 table-pad-xs
+          table.table-pad-xs
+            thead
+              tr
+                td.bg-info col1
+                td.bg-info col2
+                td.bg-info col3
+            tbody
+              tr
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+        .pad-xs
+          h5 table-pad-sm
+          table.table-pad-sm
+            thead
+              tr
+                td.bg-info col1
+                td.bg-info col2
+                td.bg-info col3
+            tbody
+              tr
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+        .pad-xs
+          h5 table-pad
+          table.table-pad
+            thead
+              tr
+                td.bg-info col1
+                td.bg-info col2
+                td.bg-info col3
+            tbody
+              tr
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+        .pad-xs
+          h5 table-pad-md
+          table.table-pad-md
+            thead
+              tr
+                td.bg-info col1
+                td.bg-info col2
+                td.bg-info col3
+            tbody
+              tr
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+                td.bg-info.pad-0 .pad-0
+        .pad-xs
+          h5 table-pad-lg
+          table.table-pad-lg
+            thead
+              tr
+                td.bg-info col1
+                td.bg-info col2
+                td.bg-info col3
+            tbody
+            tr
+              td.bg-info.pad-0 .pad-0
+              td.bg-info.pad-0 .pad-0
+              td.bg-info.pad-0 .pad-0
 
     h3 ack-color-boot
     .flex.flex-wrap

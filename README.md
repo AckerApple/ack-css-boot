@@ -4,7 +4,7 @@ A base set of short-hand css helper classes. Includes available classes that are
 Many commonly used short-hand classes, that are found in [Ionic](https://www.npmjs.com/package/ionic) and [Bootstrap](https://www.npmjs.com/package/bootstrap-css), can be found here.
 
 ### Table of Contents
-- [Usage and Examples](#examples)
+- [Usage and Examples](#usage-and-examples)
 - [ack-css-boot](#ack-css-boot)
 - [ack-text-boot](#ack-text-boot)
 - [ack-flex-boot](#ack-flex-boot)
