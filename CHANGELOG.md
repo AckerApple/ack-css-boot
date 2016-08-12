@@ -1,6 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.0.29] - 2016-08-12
+### Added
+- table classes
+
 ## [1.0.19] - 2016-08-04
 ### Added
 - responsive hide width/height/max-width/max-height classes
