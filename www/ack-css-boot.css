@@ -624,8 +624,8 @@ a, .cursor-pointer {
 .table-pad-sm > tfoot > tr > th, .table-pad-sm > thead > tr > td, .table-pad-sm > thead > tr > th {
   padding: 0.6em; }
 
-.pad, .table-.pad > tbody > tr > td, .table-.pad > tbody > tr > th, .table-.pad > tfoot > tr > td,
-.table-.pad > tfoot > tr > th.table-.pad > thead > tr > td, .table-.pad > thead > tr > th {
+.pad, .table-pad > tbody > tr > td, .table-pad > tbody > tr > th, .table-pad > tfoot > tr > td,
+.table-pad > tfoot > tr > th, .table-pad > thead > tr > td, .table-pad > thead > tr > th {
   padding: 0.8em; }
 
 .pad-md, .table-pad-md > tbody > tr > td, .table-pad-md > tbody > tr > th, .table-pad-md > tfoot > tr > td,
@@ -691,8 +691,8 @@ a, .cursor-pointer {
   padding-left: 0.6em;
   padding-right: 0.6em; }
 
-.pad-h, tbody-.pad-h.table > tr > td, tbody-.pad-h.table > tr > th, tfoot-.pad-h.table > tr > td,
-tfoot-.pad-h.table > tr > th, thead-.pad-h.table > tr > td, thead-.pad-h.table > tr > th {
+.pad-h, .table-pad-h > tbody > tr > td, .table-pad-h > tbody > tr > th, .table-pad-h > tfoot > tr > td,
+.table-pad-h > tfoot > tr > th, .table-pad-h > thead > tr > td, .table-pad-h > thead > tr > th {
   padding-left: 0.8em;
   padding-right: 0.8em; }
 
