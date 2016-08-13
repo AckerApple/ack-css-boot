@@ -129,7 +129,10 @@
 .flex-evenly, .flex-space-around, .justify-space-around {
   justify-content: space-around; }
 
-.flex-valign, .flex-valign-top, .align-center {
+.flex-valign {
+  align-items: start; }
+
+.flex-valign-center, .flex-valign-middle, .align-center {
   align-items: center; }
 
 .flex-valign-bottom, .align-bottom, .align-end {
