@@ -19,6 +19,8 @@ Learn about css short-hand classes such as .pad, .margin, .text-lg, and more...
 
 [tap here to see demos](https://ackerapple.github.io/ack-css-boot/)
 
+All examples seen below, are written in [Sass](http://sass-lang.com/) and then compiled to css in the /dist folder.
+
 
 ## ack-css-boot
 
@@ -97,15 +99,15 @@ Learn about css short-hand classes such as .pad, .margin, .text-lg, and more...
   flex-wrap:wrap;flex-direction:row;/*required for safari*/
 }
 
-.justify-left {justify-content:flex-start}
-.justify-center {justify-content:center}
-.justify-evenly, .justify-space-between {justify-content:space-between}
-.justify-center-evenly, .justify-space-around {justify-content:space-around}
-.justify-right {justify-content:flex-end}
+.flex-left, .justify-left {justify-content:flex-start}
+.flex-center, .justify-center {justify-content:center}
+.flex-right, .justify-right {justify-content:flex-end}
+.flex-apart, .flex-space-between, .justify-apart, .justify-space-between {justify-content:space-between}
+.flex-evenly, .flex-space-around, .justify-space-around {justify-content:space-around}
 
-.align-center {align-items:center}
+.flex-center-heights, .align-center {align-items:center}
 .align-bottom,.align-end {align-items:flex-end}
-.align-fill,.align-stretch {align-items:stretch}
+.flex-fill, .align-fill, .align-stretch {align-items:stretch}
 .align-baseline {align-items:baseline}
 ```
 
@@ -256,12 +258,14 @@ a, .cursor-pointer {cursor:pointer}
 .border-spacing-0 {border-spacing:0}
 .border-collapse {border-collapse:collapse}
 .border-separate, .border-collapse-seperate {border-collapse:separate}
-.border-1 {border-width:1px}
-.border-2 {border-width:2px}
-.border-3 {border-width:3px}
-.border-4 {border-width:4px}
-.border-6 {border-width:6px}
-.border-8 {border-width:8px}
+.border-1 {border-width:1px;border-style:solid;border-color:black;}
+.border-2 {border-width:2px;border-style:solid;border-color:black;}
+.border-3 {border-width:3px;border-style:solid;border-color:black;}
+.border-4 {border-width:4px;border-style:solid;border-color:black;}
+.border-5 {border-width:5px;border-style:solid;border-color:black;}
+.border-6 {border-width:6px;border-style:solid;border-color:black;}
+.border-7 {border-width:7px;border-style:solid;border-color:black;}
+.border-8 {border-width:8px;border-style:solid;border-color:black;}
 .border-solid {border-style:solid}
 .border-dotted {border-style:dotted}
 .border-dashed {border-style:dashed}
@@ -400,6 +404,8 @@ a, .cursor-pointer {cursor:pointer}
 .max-width-100 {max-width:100px}
 .max-height-500 {max-height:500px}
 .max-width-500 {max-width:500px}
+.max-height-900 {max-height:900px}
+.max-width-900 {max-width:900px}
 .max-height-1000 {max-height:1000px}
 .max-width-1000 {max-width:1000px}
 .min-height-50 {min-height:50px}

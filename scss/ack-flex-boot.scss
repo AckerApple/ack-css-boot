@@ -11,13 +11,13 @@
   flex-wrap:wrap;flex-direction:row;/*required for safari*/
 }
 
-.justify-left {justify-content:flex-start}
-.justify-center {justify-content:center}
-.justify-evenly, .justify-space-between {justify-content:space-between}
-.justify-center-evenly, .justify-space-around {justify-content:space-around}
-.justify-right {justify-content:flex-end}
+.flex-left, .justify-left {justify-content:flex-start}
+.flex-center, .justify-center {justify-content:center}
+.flex-right, .justify-right {justify-content:flex-end}
+.flex-apart, .flex-space-between, .justify-apart, .justify-space-between {justify-content:space-between}
+.flex-evenly, .flex-space-around, .justify-space-around {justify-content:space-around}
 
-.align-center {align-items:center}
+.flex-center-heights, .align-center {align-items:center}
 .align-bottom,.align-end {align-items:flex-end}
-.align-fill,.align-stretch {align-items:stretch}
+.flex-fill, .align-fill, .align-stretch {align-items:stretch}
 .align-baseline {align-items:baseline}
