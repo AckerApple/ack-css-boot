@@ -255,7 +255,7 @@ a, .cursor-pointer {
 .border-separate, .border-collapse-seperate {
   border-collapse: separate; }
 
-.border.border-1 {
+.border, .border-1 {
   border-width: 1px;
   border-style: solid;
   border-color: black; }
