@@ -1,6 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.1.0] - 2016-08-12
+### Breaking Change
+- How flex-# classes adjust
+
 ## [1.0.29] - 2016-08-12
 ### Added
 - table classes

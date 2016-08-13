@@ -91,22 +91,22 @@
   display: flex; }
 
 .flex-1 {
-  flex: 1 1 10em; }
+  flex-grow: 1; }
 
 .flex-2 {
-  flex: 2 2 20em; }
+  flex-grow: 2; }
 
 .flex-3 {
-  flex: 3 3 45em; }
+  flex-grow: 3; }
 
 .flex-4 {
-  flex: 4 4 60em; }
+  flex-grow: 4; }
 
 .flex-5 {
-  flex: 5 5 75em; }
+  flex-grow: 5; }
 
 .flex-6 {
-  flex: 6 6 90em; }
+  flex-grow: 6; }
 
 .flex-flow-inline, .flex-wrap {
   flex-flow: row wrap;
