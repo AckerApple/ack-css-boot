@@ -15,15 +15,15 @@ html(lang="en")
       br
       h3 Table of Contents
       .flex.flex-wrap
-        li.pad-sm
+        .pad-sm
           a(href="#ack-flex-boot") ack-flex-boot
-        li.pad-sm
+        .pad-sm
           a(href="#ack-text-boot") ack-text-boot
-        li.pad-sm
+        .pad-sm
           a(href="#ack-block-boot") ack-block-boot
-        li.pad-sm
+        .pad-sm
           a(href="#ack-color-boot") ack-color-boot
-        li.pad-sm
+        .pad-sm
           a(href="#ack-responsive-boot") ack-responsive-boot
       h2(id="ack-flex-boot") ack-flex-boot
       .pad
@@ -54,14 +54,14 @@ html(lang="en")
           .pad.bg-info.margin-xs Apple
         .flex.flex-wrap.flex-evenly
           .pad-sm
-            h4 .flex-center-heights
+            h4 .flex-valign
             .border-1-info
-              .flex.flex-center-heights
+              .flex.flex-valign
                 .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
                 .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
                 .pad.bg-info.margin-xs Apple
           .pad-sm
-            h4 .align-bottom
+            h4 .flex-valign-bottom
             .border-1-info
               .flex.align-bottom
                 .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
@@ -83,8 +83,9 @@ html(lang="en")
                 .pad.bg-info.margin-xs Apple
 
 
+        h3 Flex Inner Classes
 
-        h4 Flex Evenly
+        h4 .flex-1 Flex Evenly
         .flex.flex-wrap(style="align-items:stretch")
           .flex-1.bg-info.border-1-warning
             .pad-xs
@@ -175,7 +176,7 @@ html(lang="en")
             .pad-xs
               .text-xs .flex-1
         
-        h4 Flex Double
+        h4 .flex-2 Flex Double
         .flex.flex-wrap
           .flex-2.border-1-warning
             .pad-xs.bg-info
@@ -266,7 +267,7 @@ html(lang="en")
             .pad-xs
               .text-xs .flex-1
 
-        h4 Flex Triple
+        h4 .flex-3 Flex Triple
         .flex.flex-wrap
           .flex-3.border-1-warning
             .pad-xs.bg-info
@@ -357,7 +358,7 @@ html(lang="en")
             .pad-xs
               .text-xs .flex-1
 
-        h4 Flex Quad
+        h4 .flex-4 Flex Quad
         .flex.flex-wrap
           .flex-4.bg-info.border-1-warning
             .pad-xs
@@ -449,7 +450,7 @@ html(lang="en")
               .text-xs .flex-1
 
 
-        h4 Flex Five
+        h4 .flex-5 Flex Five
         .flex.flex-wrap
           .flex-5.bg-info.border-1-warning
             .pad-xs
@@ -540,7 +541,7 @@ html(lang="en")
             .pad-xs
               .text-xs .flex-1
 
-        h4 Flex Six
+        h4 .flex-6 Flex Six
         .flex.flex-wrap
           .flex-6.bg-info.border-1-warning
             .pad-xs
@@ -944,69 +945,69 @@ html(lang="en")
         .flex-1.border-1-success
 
     .flex.flex-wrap
-      .flex-1.margin.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.margin.pad.margin.flex.flex-valign
         .hide-xxs.pad.bg-success visible
         .margin.pad .hide-xxs
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-xs.pad.bg-success visible
         .margin.pad .hide-xs
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-smx.pad.bg-success visible
         .margin.pad .hide-smx
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-sm.pad.bg-success visible
         .margin.pad .hide-sm
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-md.pad.bg-success visible
         .margin.pad .hide-md
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lg.pad.bg-success visible
         .margin.pad .hide-lg
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-print.pad.bg-success visible
         .margin.pad .hide-print
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-gt-xxs.pad.bg-success visible
         .margin.pad .hide-gt-xxs
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-gt-xs.pad.bg-success visible
         .margin.pad .hide-gt-xs
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-gt-smx.pad.bg-success visible
         .margin.pad .hide-gt-smx
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-gt-sm.pad.bg-success visible
         .margin.pad .hide-gt-sm
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-gt-md.pad.bg-success visible
         .margin.pad .hide-gt-md
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lte-xxs.pad.bg-success visible
         .margin.pad .hide-lte-xxs
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lt-xxs.pad.bg-success visible
         .margin.pad .hide-lt-xxs
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lte-xs.pad.bg-success visible
         .margin.pad .hide-lte-xs
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lt-xs.pad.bg-success visible
         .margin.pad .hide-lt-xs
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lte-smx.pad.bg-success visible
         .margin.pad .hide-lte-smx
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lt-smx.pad.bg-success visible
         .margin.pad .hide-lt-smx
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lte-sm.pad.bg-success visible
         .margin.pad .hide-lte-sm
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lt-sm.pad.bg-success visible
         .margin.pad .hide-lt-sm
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lte-md.pad.bg-success visible
         .margin.pad .hide-lte-md
-      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+      .flex-1.pad.margin.flex.flex-valign
         .hide-lt-md.pad.bg-success visible
         .margin.pad .hide-lt-md

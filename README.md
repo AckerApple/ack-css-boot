@@ -105,8 +105,8 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .flex-apart, .flex-space-between, .justify-apart, .justify-space-between {justify-content:space-between}
 .flex-evenly, .flex-space-around, .justify-space-around {justify-content:space-around}
 
-.flex-center-heights, .align-center {align-items:center}
-.align-bottom,.align-end {align-items:flex-end}
+.flex-valign, .flex-valign-top, .align-center {align-items:center}
+.flex-valign-bottom, .align-bottom,.align-end {align-items:flex-end}
 .flex-fill, .align-fill, .align-stretch {align-items:stretch}
 .align-baseline {align-items:baseline}
 ```
