@@ -909,78 +909,104 @@ html(lang="en")
           |.text-black,.font-black
         .flex-1.margin-xs.pad.text-white.font-white
           |.text-white,.font-white
-      h2(id="ack-responsive-boot") ack-responsive-boot
-      ul
-        li.margin-sm xxs &gt; 0 &amp;&amp; &lt;= 438
-        li.margin-sm xs &gt; 0 &amp;&amp; &lt;= 768
-        li.margin-sm smx &gt;= 576 &amp;&amp; &lt; 768
-        li.margin-sm sm &gt;= 768 &amp;&amp; &lt; 992
-        li.margin-sm md &gt;= 992 &amp;&amp; &lt; 1200
-        li.margin-sm lg &gt;= 1200
-      .flex.flex-wrap
-        .flex-1.margin.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-xxs.pad.bg-success visible
-          .margin.pad .hide-xxs
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-xs.pad.bg-success visible
-          .margin.pad .hide-xs
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-smx.pad.bg-success visible
-          .margin.pad .hide-smx
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-sm.pad.bg-success visible
-          .margin.pad .hide-sm
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-md.pad.bg-success visible
-          .margin.pad .hide-md
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lg.pad.bg-success visible
-          .margin.pad .hide-lg
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-print.pad.bg-success visible
-          .margin.pad .hide-print
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-gt-xxs.pad.bg-success visible
-          .margin.pad .hide-gt-xxs
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-gt-xs.pad.bg-success visible
-          .margin.pad .hide-gt-xs
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-gt-smx.pad.bg-success visible
-          .margin.pad .hide-gt-smx
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-gt-sm.pad.bg-success visible
-          .margin.pad .hide-gt-sm
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-gt-md.pad.bg-success visible
-          .margin.pad .hide-gt-md
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lte-xxs.pad.bg-success visible
-          .margin.pad .hide-lte-xxs
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lt-xxs.pad.bg-success visible
-          .margin.pad .hide-lt-xxs
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lte-xs.pad.bg-success visible
-          .margin.pad .hide-lte-xs
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lt-xs.pad.bg-success visible
-          .margin.pad .hide-lt-xs
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lte-smx.pad.bg-success visible
-          .margin.pad .hide-lte-smx
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lt-smx.pad.bg-success visible
-          .margin.pad .hide-lt-smx
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lte-sm.pad.bg-success visible
-          .margin.pad .hide-lte-sm
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lt-sm.pad.bg-success visible
-          .margin.pad .hide-lt-sm
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lte-md.pad.bg-success visible
-          .margin.pad .hide-lte-md
-        .flex-1.pad.margin.flex.flex-center-heights.border-1-info
-          .hide-lt-md.pad.bg-success visible
-          .margin.pad .hide-lt-md
+  .text-left
+    h2(id="ack-responsive-boot") ack-responsive-boot
+
+    div(style="border-left:1px dotted black")
+      h5 width guide
+      .flex.align-center(style="max-width:438px;")
+        div
+          .pad-xs xxs &gt; 0 &amp;&amp; &lt;= 438
+        .flex-1.border-1-success
+      .flex.align-center(style="max-width:768px;")
+        div
+          .pad-xs xs &gt; 0 &amp;&amp; &lt;= 768
+        .flex-1.border-1-success
+      .flex.align-center(style="max-width:768px;")
+        .flex-6.flex.align-center(style="max-width:575px;")
+          .pad-xs smx &gt;= 576 &amp;&amp; &lt; 768
+          .flex-1.border-1-warning
+        .flex-1.border-1-success
+      .flex.align-center(style="max-width:992px;")
+        .flex-6.flex.align-center(style="max-width:768px;")
+          .pad-xs sm &gt;= 768 &amp;&amp; &lt; 992
+          .flex-1.border-1-warning
+        .flex-1.border-1-success
+      .flex.align-center(style="max-width:1200px;")
+        .flex-6.flex.align-center(style="max-width:992px;")
+          .pad-xs md &gt;= 992 &amp;&amp; &lt; 1200
+          .flex-1.border-1-warning
+        .flex-1.border-1-success
+      .flex.align-center
+        .flex.align-center(style="max-width:1200px;flex-grow:100;")
+          .pad-xs lg &gt;= 1200
+          .flex-1.border-1-warning
+        .flex-1.border-1-success
+
+    .flex.flex-wrap
+      .flex-1.margin.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-xxs.pad.bg-success visible
+        .margin.pad .hide-xxs
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-xs.pad.bg-success visible
+        .margin.pad .hide-xs
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-smx.pad.bg-success visible
+        .margin.pad .hide-smx
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-sm.pad.bg-success visible
+        .margin.pad .hide-sm
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-md.pad.bg-success visible
+        .margin.pad .hide-md
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lg.pad.bg-success visible
+        .margin.pad .hide-lg
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-print.pad.bg-success visible
+        .margin.pad .hide-print
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-gt-xxs.pad.bg-success visible
+        .margin.pad .hide-gt-xxs
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-gt-xs.pad.bg-success visible
+        .margin.pad .hide-gt-xs
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-gt-smx.pad.bg-success visible
+        .margin.pad .hide-gt-smx
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-gt-sm.pad.bg-success visible
+        .margin.pad .hide-gt-sm
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-gt-md.pad.bg-success visible
+        .margin.pad .hide-gt-md
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lte-xxs.pad.bg-success visible
+        .margin.pad .hide-lte-xxs
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lt-xxs.pad.bg-success visible
+        .margin.pad .hide-lt-xxs
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lte-xs.pad.bg-success visible
+        .margin.pad .hide-lte-xs
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lt-xs.pad.bg-success visible
+        .margin.pad .hide-lt-xs
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lte-smx.pad.bg-success visible
+        .margin.pad .hide-lte-smx
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lt-smx.pad.bg-success visible
+        .margin.pad .hide-lt-smx
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lte-sm.pad.bg-success visible
+        .margin.pad .hide-lte-sm
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lt-sm.pad.bg-success visible
+        .margin.pad .hide-lt-sm
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lte-md.pad.bg-success visible
+        .margin.pad .hide-lte-md
+      .flex-1.pad.margin.flex.flex-center-heights.border-1-info
+        .hide-lt-md.pad.bg-success visible
+        .margin.pad .hide-lt-md
