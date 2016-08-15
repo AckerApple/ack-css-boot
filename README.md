@@ -21,6 +21,8 @@ Learn about css short-hand classes such as .pad, .margin, .text-lg, and more...
 
 All examples seen below, are written in [Sass](http://sass-lang.com/) and then compiled to css in the /dist folder.
 
+> NOTE: ack-css-boot makes every attempt to avoid using the !important declaration. It is highly advised that the ack-css-boot.css file, be the LAST stylesheet file loaded in order to have short-hand css rules override other stylesheet rules.
+
 
 ## Primary Style File
 
@@ -118,6 +120,14 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 > scss/ack-color-boot.scss
 
 ```
+.text-positive {color:#0c60ee}
+.text-calm {color:#0a9dc7}
+.text-balanced {color:#28a54c}
+.text-energized {color:#e6b500}
+.text-assertive {color:#e42112}
+.text-royal {color:#6b46e5}
+.text-dark {color:#111111}
+
 .text-primary {color:#337ab7}
 .text-success {color:#3c763d}
 .text-info {color:#31708f}
@@ -126,7 +136,7 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 
 .text-muted-lg {color:#333}
 .text-muted-md {color:#555}
-.text-muted {color:#777}
+.text-grey, .text-muted {color:#777}
 .text-muted-sm, .text-muted-2x {color:#AAA}
 .text-muted-xs, .text-muted-3x {color:#BAB}
 
@@ -159,6 +169,9 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .bg-royal {background-color:#886aea}
 .bg-dark {background-color:#444444}
 
+.border-grey {border-color:#666}
+.border-grey-xs {border-color:#888}
+.border-grey-xxs {border-color:#AAA}
 .border-positive {border-color:#0c60ee}
 .border-calm {border-color:#0a9dc7}
 .border-balanced {border-color:#28a54c}
@@ -174,6 +187,7 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 
 .border-1-0,.border-1-black {border-color:#000;border-width:1px;border-style:solid}
 .border-1-f,.border-1-white {border-color:#FFF;border-width:1px;border-style:solid}
+.border-stable {border-color:#e7e7e7}
 .border-1-positive {border-color:#0c60ee;border-width:1px;border-style:solid}
 .border-1-calm {border-color:#0a9dc7;border-width:1px;border-style:solid}
 .border-1-balanced {border-color:#28a54c;border-width:1px;border-style:solid}
@@ -259,7 +273,12 @@ a, .cursor-pointer {cursor:pointer}
 .border-spacing-0 {border-spacing:0}
 .border-collapse {border-collapse:collapse}
 .border-separate, .border-collapse-seperate {border-collapse:separate}
-.border.border-1 {border-width:1px;border-style:solid;border-color:black;}
+.border-0 {border:0}
+.border-top-0 {border-top:0}
+.border-right-0 {border-right:0}
+.border-left-0 {border-left:0}
+.border-bottom-0 {border-bottom:0}
+.border,.border-1 {border-width:1px;border-style:solid;border-color:black;}
 .border-2 {border-width:2px;border-style:solid;border-color:black;}
 .border-3 {border-width:3px;border-style:solid;border-color:black;}
 .border-4 {border-width:4px;border-style:solid;border-color:black;}
