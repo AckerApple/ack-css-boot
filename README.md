@@ -54,6 +54,7 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 
 .text-underline,.underline {text-decoration:underline}
 .strong, .bold, .text-bold {font-weight:bold}
+.italic, .text-italic {font-style: italic}
 
 .text-left {text-align:left}
 .text-right {text-align:right}
@@ -62,6 +63,7 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .text-uppercase {text-transform: uppercase}
 .text-lowercase {text-transform: lowercase}
 .text-capitalize {text-transform: capitalize}
+
 
 .text-5x {font-size:200%}
 .text-4x {font-size:185%}
