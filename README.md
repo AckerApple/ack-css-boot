@@ -134,11 +134,12 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .text-warning {color:#8a6d3b}
 .text-danger {color:#a94442}
 
-.text-muted-lg {color:#333}
-.text-muted-md {color:#555}
+.text-grey-lg, .text-muted-lg {color:#333}
+.text-grey-md, .text-muted-md {color:#555}
 .text-grey, .text-muted {color:#777}
-.text-muted-sm, .text-muted-2x {color:#AAA}
-.text-muted-xs, .text-muted-3x {color:#BAB}
+.text-grey-2x, .text-grey-sm, .text-muted-sm, .text-muted-2x {color:#999}
+.text-grey-3x, .text-grey-xs, .text-muted-xs, .text-muted-3x {color:#BBB}
+.text-grey-4x, .text-grey-xxs, .text-muted-xxs, .text-muted-4x {color:#CCC}
 
 .text-green,.font-green {color: #060}
 .text-orange,.font-orange {color: #C60}
@@ -157,8 +158,9 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .bg-warning {background-color:#fcf8e3}
 .bg-danger {background-color:#f2dede}
 .bg-grey {background-color:#777}
-.bg-grey-xs {background-color:#999}
-.bg-grey-xxs {background-color:#BBB}
+.bg-grey-xs,.bg-grey-2x {background-color:#999}
+.bg-grey-xxs,.bg-grey-3x {background-color:#BBB}
+.bg-grey-4x {background-color:#CCC}
 
 .bg-stable {background-color:#f8f8f8}
 .bg-positive {background-color:#387ef5}
@@ -170,8 +172,9 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .bg-dark {background-color:#444444}
 
 .border-grey {border-color:#666}
-.border-grey-xs {border-color:#888}
-.border-grey-xxs {border-color:#AAA}
+.border-grey-xs, .border-grey-2x {border-color:#888}
+.border-grey-xxs, .border-grey-3x {border-color:#AAA}
+.border-grey-4x {border-color:#CCC}
 .border-positive {border-color:#0c60ee}
 .border-calm {border-color:#0a9dc7}
 .border-balanced {border-color:#28a54c}
@@ -188,18 +191,18 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .border-1-0,.border-1-black {border-color:#000;border-width:1px;border-style:solid}
 .border-1-f,.border-1-white {border-color:#FFF;border-width:1px;border-style:solid}
 .border-stable {border-color:#e7e7e7}
-.border-1-positive {border-color:#0c60ee;border-width:1px;border-style:solid}
-.border-1-calm {border-color:#0a9dc7;border-width:1px;border-style:solid}
-.border-1-balanced {border-color:#28a54c;border-width:1px;border-style:solid}
-.border-1-energized {border-color:#e6b500;border-width:1px;border-style:solid}
-.border-1-assertive {border-color:#e42112;border-width:1px;border-style:solid}
-.border-1-royal {border-color:#6b46e5;border-width:1px;border-style:solid}
-.border-1-dark {border-color:#111111;border-width:1px;border-style:solid}
-.border-1-danger {border-color:#d43f3a;border-width:1px;border-style:solid}
-.border-1-warning {border-color:#eea236;border-width:1px;border-style:solid}
-.border-1-info {border-color:#46b8da;border-width:1px;border-style:solid}
-.border-1-success {border-color:#4cae4c;border-width:1px;border-style:solid}
-.border-1-primary {border-color:#2e6da4;border-width:1px;border-style:solid}
+.border-1-positive {border-color:#0c60ee}
+.border-1-calm {border-color:#0a9dc7}
+.border-1-balanced {border-color:#28a54c}
+.border-1-energized {border-color:#e6b500}
+.border-1-assertive {border-color:#e42112}
+.border-1-royal {border-color:#6b46e5}
+.border-1-dark {border-color:#111111}
+.border-1-danger {border-color:#d43f3a}
+.border-1-warning {border-color:#eea236}
+.border-1-info {border-color:#46b8da}
+.border-1-success {border-color:#4cae4c}
+.border-1-primary {border-color:#2e6da4}
 
 
 .hover-text-shadow-grey-blur:hover{

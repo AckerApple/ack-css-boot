@@ -12,11 +12,12 @@
 .text-warning {color:#8a6d3b}
 .text-danger {color:#a94442}
 
-.text-muted-lg {color:#333}
-.text-muted-md {color:#555}
+.text-grey-lg, .text-muted-lg {color:#333}
+.text-grey-md, .text-muted-md {color:#555}
 .text-grey, .text-muted {color:#777}
-.text-muted-sm, .text-muted-2x {color:#AAA}
-.text-muted-xs, .text-muted-3x {color:#BAB}
+.text-grey-2x, .text-grey-sm, .text-muted-sm, .text-muted-2x {color:#999}
+.text-grey-3x, .text-grey-xs, .text-muted-xs, .text-muted-3x {color:#BBB}
+.text-grey-4x, .text-grey-xxs, .text-muted-xxs, .text-muted-4x {color:#CCC}
 
 .text-green,.font-green {color: #060}
 .text-orange,.font-orange {color: #C60}
@@ -35,8 +36,9 @@
 .bg-warning {background-color:#fcf8e3}
 .bg-danger {background-color:#f2dede}
 .bg-grey {background-color:#777}
-.bg-grey-xs {background-color:#999}
-.bg-grey-xxs {background-color:#BBB}
+.bg-grey-xs,.bg-grey-2x {background-color:#999}
+.bg-grey-xxs,.bg-grey-3x {background-color:#BBB}
+.bg-grey-4x {background-color:#CCC}
 
 .bg-stable {background-color:#f8f8f8}
 .bg-positive {background-color:#387ef5}
@@ -48,8 +50,9 @@
 .bg-dark {background-color:#444444}
 
 .border-grey {border-color:#666}
-.border-grey-xs {border-color:#888}
-.border-grey-xxs {border-color:#AAA}
+.border-grey-xs, .border-grey-2x {border-color:#888}
+.border-grey-xxs, .border-grey-3x {border-color:#AAA}
+.border-grey-4x {border-color:#BBB}
 .border-positive {border-color:#0c60ee}
 .border-calm {border-color:#0a9dc7}
 .border-balanced {border-color:#28a54c}
