@@ -5,7 +5,7 @@ Many commonly used short-hand classes, that are found in [Ionic](https://www.npm
 
 ### Table of Contents
 - [Usage and Examples](#usage-and-examples)
-- [ack-css-boot](#ack-css-boot)
+- [Primary Style File](#primary-style-file)
 - [ack-text-boot](#ack-text-boot)
 - [ack-flex-boot](#ack-flex-boot)
 - [ack-color-boot](#ack-color-boot)
@@ -22,7 +22,7 @@ Learn about css short-hand classes such as .pad, .margin, .text-lg, and more...
 All examples seen below, are written in [Sass](http://sass-lang.com/) and then compiled to css in the /dist folder.
 
 
-## ack-css-boot
+## Primary Style File
 
 > scss/ack-css-boot.scss
 
