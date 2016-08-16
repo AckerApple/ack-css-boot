@@ -1,6 +1,13 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.1] - 2016-08-16
+### Altered
+- Docs now pad and margin with 2x 3x classes instead of md and lg
+### Added
+- More max-width, max-height, min-width, min-height classes
+- margin and pad 2x 3x classes
+
 ## [1.2.0] - 2016-08-16
 ### Added
 - .text-6x, .text-7x, .text-8x, .text-9x
