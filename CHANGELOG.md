@@ -1,6 +1,12 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.0] - 2016-08-16
+### Added
+- .text-6x, .text-7x, .text-8x, .text-9x
+### Breaking Change
+- .text-5, .text-4, .text-3x, and .text-2x have been reduced in size
+
 ## [1.1.9] - 2016-08-15
 ### Added
 - more greys

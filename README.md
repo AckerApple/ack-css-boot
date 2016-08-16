@@ -53,8 +53,21 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .text-overflow {text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 
 .text-underline,.underline {text-decoration:underline}
-.strong, .bold, .text-bold {font-weight:bold}
 .italic, .text-italic {font-style: italic}
+
+.strong, .bold, .text-bold, .font-bold, .font-weight-bold {font-weight:bold}
+.font-bolder, .font-weight-bolder {font-weight:bolder}
+.font-normal, .font-weight-normal {font-weight:normal}
+.font-lighter, .font-weight-lighter {font-weight:lighter}
+.font-100, .font-weight-100 {font-weight:100}
+.font-200, .font-weight-200 {font-weight:200}
+.font-300, .font-weight-300 {font-weight:300}
+.font-400, .font-weight-400 {font-weight:400}
+.font-500, .font-weight-500 {font-weight:500}
+.font-600, .font-weight-600 {font-weight:600}
+.font-700, .font-weight-700 {font-weight:700}
+.font-800, .font-weight-800 {font-weight:800}
+.font-900, .font-weight-900 {font-weight:900}
 
 .text-left {text-align:left}
 .text-right {text-align:right}
@@ -65,12 +78,14 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .text-capitalize {text-transform: capitalize}
 
 
-.text-5x {font-size:200%}
-.text-4x {font-size:185%}
-.text-3x {font-size:160%}
-.text-2x {font-size:145%}
-.text-lg {font-size:130%}
-.text-md {font-size:115%}
+.text-9x {font-size:260%}
+.text-8x {font-size:230%}
+.text-7x {font-size:200%}
+.text-6x {font-size:185%}
+.text-5x {font-size:160%}
+.text-4x {font-size:145%}
+.text-lg, .text-3x {font-size:130%}
+.text-md, .text-2x {font-size:115%}
 .text-sm {font-size:90%}
 .text-smx {font-size:85%}
 .text-xs {font-size:75%}
