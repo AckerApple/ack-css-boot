@@ -113,10 +113,9 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .flex-5 {flex-grow:5}
 .flex-6 {flex-grow:6}
 
-.flex-flow-inline, .flex-wrap {
-  flex-flow:row wrap;
-  flex-wrap:wrap;flex-direction:row;/*required for safari*/
-}
+.flex-wrap {flex-wrap:wrap}
+.flex-stacked, .flex-column, .flex-direction-column {flex-direction: column}
+.flex-wrap-inline, .flex-flow-inline {flex-wrap:wrap;flex-direction:row}
 
 .flex-left, .justify-left {justify-content:flex-start}
 .flex-center, .justify-center {justify-content:center}

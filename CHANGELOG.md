@@ -1,6 +1,12 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.3] - 2016-08-17
+### Removed
+- .flex-wrap used to have an unneccessary "flex-flow:row" definition
+### Added
+- .flex-stacked
+
 ## [1.2.1] - 2016-08-16
 ### Altered
 - Docs now pad and margin with 2x 3x classes instead of md and lg
