@@ -343,15 +343,6 @@ a, .cursor-pointer {
   border-style: solid;
   border-color: black; }
 
-.border-solid {
-  border-style: solid; }
-
-.border-dotted {
-  border-style: dotted; }
-
-.border-dashed {
-  border-style: dashed; }
-
 .border-1-positive,
 .border-1-calm,
 .border-1-balanced,
@@ -366,6 +357,15 @@ a, .cursor-pointer {
 .border-1-primary {
   border-width: 1px;
   border-style: solid; }
+
+.border-solid {
+  border-style: solid; }
+
+.border-dotted {
+  border-style: dotted; }
+
+.border-dashed {
+  border-style: dashed; }
 
 .border-0 {
   border: 0; }
