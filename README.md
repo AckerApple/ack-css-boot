@@ -114,8 +114,10 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .flex-6 {flex-grow:6}
 
 .flex-wrap {flex-wrap:wrap}
-.flex-stacked, .flex-column, .flex-direction-column {flex-direction: column}
-.flex-wrap-inline, .flex-flow-inline {flex-wrap:wrap;flex-direction:row}
+.flex-stacked, .flex-column, .flex-columns, .flex-direction-column {flex-direction: column}
+.flex-inline, .flex-row, .flex-rows, .flex-direction-row {flex-direction: row}
+.flex-row-wrap, .flex-wrap-rows, .flex-wrap-inline, .flex-flow-inline {flex-wrap:wrap;flex-direction:row}
+.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stacked, .flex-flow-stacked {flex-wrap:wrap;flex-direction:column}
 
 .flex-left, .justify-left {justify-content:flex-start}
 .flex-center, .justify-center {justify-content:center}

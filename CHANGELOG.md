@@ -1,11 +1,14 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
-## [1.2.3] - 2016-08-17
-### Removed
-- .flex-wrap used to have an unneccessary "flex-flow:row" definition
+## [1.2.5] - 2016-08-17
+### Breaking Change
+- .flex-wrap had unneccessary "flex-flow:row" definition (not changing minor vnum due to minor number change only yesterday)
 ### Added
+- .flex-inline
 - .flex-stacked
+- .flex-row-wrap
+- .flex-column-wrap
 
 ## [1.2.1] - 2016-08-16
 ### Altered
