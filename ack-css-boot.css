@@ -153,11 +153,15 @@
 .flex-6 {
   flex-grow: 6; }
 
-.flex-flow-inline, .flex-wrap {
-  flex-flow: row wrap;
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.flex-stacked, .flex-column, .flex-direction-column {
+  flex-direction: column; }
+
+.flex-wrap-inline, .flex-flow-inline {
   flex-wrap: wrap;
-  flex-direction: row;
-  /*required for safari*/ }
+  flex-direction: row; }
 
 .flex-left, .justify-left {
   justify-content: flex-start; }
