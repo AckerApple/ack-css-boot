@@ -92,552 +92,98 @@ html(lang="en")
 
         h3 Flex Inner Classes
 
-        h4 .flex-1 Flex Evenly
-        .flex.flex-wrap(style="align-items:stretch")
-          .flex-1.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-              br
-              br
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-1.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-1.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-1.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-1.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-1.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        
-        h4 .flex-2 Flex Double
-        .flex.flex-wrap
-          .flex-2.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-2
-              br
-              br
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-2.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-2
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-2.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-2
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-2.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-2
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-2.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-2
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-2.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-2
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
+        each size in [[1,'Flex Evenly'],[2,'Flex Double'],[3,'Flex Triple'],[4,'Flex Quad'],[5,'Flex Five'],[6,'Flex Six']]
+          h4.margin-bottom-xxs .flex-#{size[0]} #{size[1]}
+          .flex.flex-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-info
+                .text-xs .flex-#{size[0]}
+                br
+                br
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+          .flex.flex-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-info
+                .text-xs .flex-#{size[0]}
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+          .flex.flex-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-info
+                .text-xs .flex-#{size[0]}
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+          .flex.flex-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-info
+                .text-xs .flex-#{size[0]}
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+          .flex.flex-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-info
+                .text-xs .flex-#{size[0]}
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+          .flex.flex-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-info
+                .text-xs .flex-#{size[0]}
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
 
-        h4 .flex-3 Flex Triple
-        .flex.flex-wrap
-          .flex-3.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-3
-              br
-              br
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-3.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-3
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-3.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-3
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-3.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-3
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-3.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-3
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-3.border-1-warning
-            .pad-xs.bg-info
-              .text-xs .flex-3
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-
-        h4 .flex-4 Flex Quad
-        .flex.flex-wrap
-          .flex-4.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-4
-              br
-              br
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-4.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-4
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-4.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-4
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-4.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-4
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-4.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-4
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-4.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-4
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-
-
-        h4 .flex-5 Flex Five
-        .flex.flex-wrap
-          .flex-5.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-5
-              br
-              br
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-5.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-5
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-5.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-5
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-5.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-5
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-5.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-5
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-5.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-5
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-
-        h4 .flex-6 Flex Six
-        .flex.flex-wrap
-          .flex-6.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-6
-              br
-              br
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-6.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-6
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-6.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-6
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-6.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-6
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-6.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-6
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-        .flex.flex-wrap
-          .flex-6.bg-info.border-1-warning
-            .pad-xs
-              .text-xs .flex-6
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
-          .flex-1.border-1-warning
-            .pad-xs
-              .text-xs .flex-1
 
       h2(id="ack-text-boot") ack-text-boot
       .flex.flex-wrap        
@@ -713,9 +259,9 @@ html(lang="en")
         .flex.flex-wrap.align-top
           .margin.pad.border
             |.border
-          .margin.pad.border-1-info
+          .margin.pad.border-1
             |.border-1
-          .margin.pad.border-2.border-success
+          .margin.pad.border-2
             |.border-2
           .margin.pad.border-3.border-dashed
             |.border-3.border-dashed
@@ -895,12 +441,8 @@ html(lang="en")
           |.bg-positive.border-positive
         .flex-1.margin-xs.pad.bg-calm.border-calm.border-3.border-solid
           |.bg-calm.border-calm
-        .flex-1.margin-xs.pad.bg-balanced.border-balanced.border-3.border-solid
-          |.bg-balanced.border-balanced
         .flex-1.margin-xs.pad.bg-energized.border-energized.border-3.border-solid
           |.bg-energized.border-energized
-        .flex-1.margin-xs.pad.bg-assertive.border-assertive.border-3.border-solid
-          |.bg-assertive.border-assertive
         .flex-1.margin-xs.pad.bg-dark.border-dark.border-3.border-solid
           |.bg-dark.border-dark
 
@@ -957,24 +499,16 @@ html(lang="en")
         .flex-1.margin-xs.pad.text-white.font-white
           |.text-white,.font-white
 
-        h4 border
-        .flex.flex-wrap.align-top
-          .margin.pad.border-1-info
-            |.border-1-info
-          .margin.pad.border-1.border-success
-            |.border-1.border-success
-          .margin.pad.border-1-warning.border-dashed
-            |.border-1-warning.border-dashed
-          .margin.pad.border-1.border-dotted.border-danger
-            |.border-1.border-dotted.border-danger
-          .margin.pad.border-1-info.border-top-0
-            |.border-top-0
-          .margin.pad.border-1.border-success.border-right-0
-            |.border-right-0
-          .margin.pad.border-1-warning.border-dashed.border-bottom-0
-            |.border-bottom-0
-          .margin.pad.border-1.border-dotted.border-danger.border-left-0
-            |.border-left-0
+      h4 border
+      .flex.flex-wrap.align-top
+        .margin.pad.border-1-info
+          |.border-1-info
+        .margin.pad.border-1.border-success
+          |.border-1.border-success
+        .margin.pad.border-1-warning.border-dashed
+          |.border-1-warning.border-dashed
+        .margin.pad.border-1.border-dotted.border-danger
+          |.border-1.border-dotted.border-danger
 
   .text-left
     h2(id="ack-responsive-boot") ack-responsive-boot

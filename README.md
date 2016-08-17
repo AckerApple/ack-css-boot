@@ -300,9 +300,6 @@ a, .cursor-pointer {cursor:pointer}
 .border-6 {border-width:6px;border-style:solid;border-color:black;}
 .border-7 {border-width:7px;border-style:solid;border-color:black;}
 .border-8 {border-width:8px;border-style:solid;border-color:black;}
-.border-solid {border-style:solid}
-.border-dotted {border-style:dotted}
-.border-dashed {border-style:dashed}
 
 .border-1-positive,
 .border-1-calm,
@@ -316,6 +313,10 @@ a, .cursor-pointer {cursor:pointer}
 .border-1-info,
 .border-1-success,
 .border-1-primary {border-width:1px;border-style:solid}
+
+.border-solid {border-style:solid}
+.border-dotted {border-style:dotted}
+.border-dashed {border-style:dashed}
 
 .border-0 {border:0}
 .border-top-0 {border-top:0}
