@@ -1,10 +1,12 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
-## [1.2.5] - 2016-08-17
+## [1.2.6] - 2016-08-17
 ### Breaking Change
 - .flex-wrap had unneccessary "flex-flow:row" definition (not changing minor vnum due to minor number change only yesterday)
 ### Added
+- .margin-4x classes
+- .pad-4x classes
 - .flex-inline
 - .flex-stacked
 - .flex-row-wrap

@@ -4,6 +4,7 @@ $em-sm: 0.6em;
 $em: 0.8em;
 $em-md: 1em;
 $em-lg: 1.5em;
+$em-4x: 2em;
 
 
 
@@ -103,6 +104,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin {margin:$em}
 .margin-2x, .margin-md {margin:$em-md}
 .margin-3x, .margin-lg {margin:$em-lg}
+.margin-4x {margin:$em-4x}
 
 .margin-v-0 {margin-top:0;margin-bottom:0}
 .margin-v-xxs {margin-top:$em-xxs;margin-bottom:$em-xxs}
@@ -111,6 +113,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-v {margin-top:$em;margin-bottom:$em}
 .margin-v-2x, .margin-v-md {margin-top:$em-md;margin-bottom:$em-md}
 .margin-v-3x, .margin-v-lg {margin-top:$em-lg;margin-bottom:$em-lg}
+.margin-v-4x {margin-top:$em-4x;margin-bottom:$em-4x}
 
 .margin-h-0 {margin-left:0;margin-right:0}
 .margin-h-xxs {margin-left:$em-xxs;margin-right:$em-xxs}
@@ -119,6 +122,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-h {margin-left:$em;margin-right:$em}
 .margin-h-2x, .margin-h-md {margin-left:$em-md;margin-right:$em-md}
 .margin-h-3x, .margin-h-lg {margin-left:$em-lg;margin-right:$em-lg}
+.margin-h-4x {margin-left:$em-4x;margin-right:$em-4x}
 
 .margin-top-0 {margin-top:0}
 .margin-top-xxs {margin-top:$em-xxs}
@@ -126,7 +130,8 @@ a, .cursor-pointer {cursor:pointer}
 .margin-top-sm {margin-top:$em-sm}
 .margin-top {margin-top:$em}
 .margin-top-2x, .margin-top-md {margin-top:$em-md}
-.margin-top-2x, .margin-top-lg {margin-top:$em-lg}
+.margin-top-3x, .margin-top-lg {margin-top:$em-lg}
+.margin-top-4x, .margin-top-lg {margin-top:$em-4x}
 
 .margin-bottom-0 {margin-bottom:0}
 .margin-bottom-xxs {margin-bottom:$em-xxs}
@@ -135,6 +140,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-bottom {margin-bottom:$em}
 .margin-bottom-2x, .margin-bottom-md {margin-bottom:$em-md}
 .margin-bottom-3x, .margin-bottom-lg {margin-bottom:$em-lg}
+.margin-bottom-4x {margin-bottom:$em-4x}
 
 .margin-left-0 {margin-left:0}
 .margin-left-xxs {margin-left:$em-xxs}
@@ -143,6 +149,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-left {margin-left:$em}
 .margin-left-2x, .margin-left-md {margin-left:$em-md}
 .margin-left-3x, .margin-left-lg {margin-left:$em-lg}
+.margin-left-4x {margin-left:$em-4x}
 
 .margin-right-0 {margin-right:0}
 .margin-right-xxs {margin-right:$em-xxs}
@@ -151,6 +158,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-right {margin-right:$em}
 .margin-right-2x, .margin-right-md {margin-right:$em-md}
 .margin-right-3x, .margin-right-lg {margin-right:$em-lg}
+.margin-right-4x {margin-right:$em-4x}
 
 
 .pad-0 {padding:0}
@@ -160,6 +168,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad {padding:$em}
 .pad-2x, .pad-md {padding:$em-md}
 .pad-3x, .pad-lg {padding:$em-lg}
+.pad-4x {padding:$em-4x}
 
 .pad-v-0 {padding-top:0;padding-bottom:0}
 .pad-v-xxs {padding-top:$em-xxs;padding-bottom:$em-xxs}
@@ -168,6 +177,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-v {padding-top:$em;padding-bottom:$em}
 .pad-v-2x, .pad-v-md {padding-top:$em-md;padding-bottom:$em-md}
 .pad-v-3x, .pad-v-lg {padding-top:$em-lg;padding-bottom:$em-lg}
+.pad-v-4x {padding-top:$em-4x;padding-bottom:$em-4x}
 
 .pad-h-0 {padding-left:0;padding-right:0}
 .pad-h-xxs {padding-left:$em-xxs;padding-right:$em-xxs}
@@ -176,6 +186,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-h {padding-left:$em;padding-right:$em}
 .pad-h-2x, .pad-h-md {padding-left:$em-md;padding-right:$em-md}
 .pad-h-3x, .pad-h-lg {padding-left:$em-lg;padding-right:$em-lg}
+.pad-h-4x {padding-left:$em-4x;padding-right:$em-4x}
 
 .pad-top-0 {padding-top:0}
 .pad-top-xxs {padding-top:$em-xxs}
@@ -184,6 +195,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-top {padding-top:$em}
 .pad-top-2x, .pad-top-md {padding-top:$em-md}
 .pad-top-3x, .pad-top-lg {padding-top:$em-lg}
+.pad-top-4x {padding-top:$em-4x}
 
 .pad-bottom-0 {padding-bottom:0}
 .pad-bottom-xxs {padding-bottom:$em-xxs}
@@ -192,6 +204,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-bottom {padding-bottom:$em}
 .pad-bottom-2x, .pad-bottom-md {padding-bottom:$em-md}
 .pad-bottom-3x, .pad-bottom-lg {padding-bottom:$em-lg}
+.pad-bottom-4x {padding-bottom:$em-4x}
 
 .pad-left-0 {padding-left:0}
 .pad-left-xxs {padding-left:$em-xxs}
@@ -200,6 +213,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-left {padding-left:$em}
 .pad-left-2x, .pad-left-md {padding-left:$em-md}
 .pad-left-3x, .pad-left-lg {padding-left:$em-lg}
+.pad-left-4x {padding-left:$em-4x}
 
 .pad-right-0 {padding-right:0}
 .pad-right-xxs {padding-right:$em-xxs}
@@ -208,6 +222,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-right {padding-right:$em}
 .pad-right-2x, .pad-right-md {padding-right:$em-md}
 .pad-right-3x, .pad-right-lg {padding-right:$em-lg}
+.pad-right-4x {padding-right:$em-4x}
 
 
 .max-height {max-height:100%}

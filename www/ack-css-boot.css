@@ -432,6 +432,9 @@ a, .cursor-pointer {
 .margin-3x, .margin-lg {
   margin: 1.5em; }
 
+.margin-4x {
+  margin: 2em; }
+
 .margin-v-0 {
   margin-top: 0;
   margin-bottom: 0; }
@@ -459,6 +462,10 @@ a, .cursor-pointer {
 .margin-v-3x, .margin-v-lg {
   margin-top: 1.5em;
   margin-bottom: 1.5em; }
+
+.margin-v-4x {
+  margin-top: 2em;
+  margin-bottom: 2em; }
 
 .margin-h-0 {
   margin-left: 0;
@@ -488,6 +495,10 @@ a, .cursor-pointer {
   margin-left: 1.5em;
   margin-right: 1.5em; }
 
+.margin-h-4x {
+  margin-left: 2em;
+  margin-right: 2em; }
+
 .margin-top-0 {
   margin-top: 0; }
 
@@ -506,8 +517,11 @@ a, .cursor-pointer {
 .margin-top-2x, .margin-top-md {
   margin-top: 1em; }
 
-.margin-top-2x, .margin-top-lg {
+.margin-top-3x, .margin-top-lg {
   margin-top: 1.5em; }
+
+.margin-top-4x, .margin-top-lg {
+  margin-top: 2em; }
 
 .margin-bottom-0 {
   margin-bottom: 0; }
@@ -530,6 +544,9 @@ a, .cursor-pointer {
 .margin-bottom-3x, .margin-bottom-lg {
   margin-bottom: 1.5em; }
 
+.margin-bottom-4x {
+  margin-bottom: 2em; }
+
 .margin-left-0 {
   margin-left: 0; }
 
@@ -550,6 +567,9 @@ a, .cursor-pointer {
 
 .margin-left-3x, .margin-left-lg {
   margin-left: 1.5em; }
+
+.margin-left-4x {
+  margin-left: 2em; }
 
 .margin-right-0 {
   margin-right: 0; }
@@ -572,6 +592,9 @@ a, .cursor-pointer {
 .margin-right-3x, .margin-right-lg {
   margin-right: 1.5em; }
 
+.margin-right-4x {
+  margin-right: 2em; }
+
 .pad-0 {
   padding: 0; }
 
@@ -592,6 +615,9 @@ a, .cursor-pointer {
 
 .pad-3x, .pad-lg {
   padding: 1.5em; }
+
+.pad-4x {
+  padding: 2em; }
 
 .pad-v-0 {
   padding-top: 0;
@@ -621,6 +647,10 @@ a, .cursor-pointer {
   padding-top: 1.5em;
   padding-bottom: 1.5em; }
 
+.pad-v-4x {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
 .pad-h-0 {
   padding-left: 0;
   padding-right: 0; }
@@ -649,6 +679,10 @@ a, .cursor-pointer {
   padding-left: 1.5em;
   padding-right: 1.5em; }
 
+.pad-h-4x {
+  padding-left: 2em;
+  padding-right: 2em; }
+
 .pad-top-0 {
   padding-top: 0; }
 
@@ -669,6 +703,9 @@ a, .cursor-pointer {
 
 .pad-top-3x, .pad-top-lg {
   padding-top: 1.5em; }
+
+.pad-top-4x {
+  padding-top: 2em; }
 
 .pad-bottom-0 {
   padding-bottom: 0; }
@@ -691,6 +728,9 @@ a, .cursor-pointer {
 .pad-bottom-3x, .pad-bottom-lg {
   padding-bottom: 1.5em; }
 
+.pad-bottom-4x {
+  padding-bottom: 2em; }
+
 .pad-left-0 {
   padding-left: 0; }
 
@@ -712,6 +752,9 @@ a, .cursor-pointer {
 .pad-left-3x, .pad-left-lg {
   padding-left: 1.5em; }
 
+.pad-left-4x {
+  padding-left: 2em; }
+
 .pad-right-0 {
   padding-right: 0; }
 
@@ -732,6 +775,9 @@ a, .cursor-pointer {
 
 .pad-right-3x, .pad-right-lg {
   padding-right: 1.5em; }
+
+.pad-right-4x {
+  padding-right: 2em; }
 
 .max-height {
   max-height: 100%; }
