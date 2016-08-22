@@ -1,3 +1,4 @@
+-colorArray = ["primary","success","info","warning","danger","grey","grey2x","grey3x","grey4x","stable","positive","calm","balanced","energized","assertive","royal","dark"]
 doctype html
 html(lang="en")
   head
@@ -52,11 +53,37 @@ html(lang="en")
           .pad.bg-info.margin-xs Acker
           .pad.bg-info.margin-xs Dawn
           .pad.bg-info.margin-xs Apple
-        h4 .flex-stacked
-        .flex.flex-stacked
-          .pad.bg-info.margin-xs Acker
-          .pad.bg-info.margin-xs Dawn
-          .pad.bg-info.margin-xs Apple
+        .flex.flex-wrap
+          .pad.margin.border.border-grey
+            h4 .flex-stacked
+            .flex.flex-stacked
+              .pad.bg-info.margin-xs Acker
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
+          .pad.margin.border.border-grey
+            h4
+              div .flex-stacked
+              div .flex-center
+            .flex.flex-stacked.flex-center
+              .pad.bg-info.margin-xs Acker Dawn Apple
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
+          .pad.margin.border.border-grey
+            h4
+              div .flex-stacked
+              div .flex-left
+            .flex.flex-stacked.flex-left
+              .pad.bg-info.margin-xs Acker Dawn Apple
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
+          .pad.margin.border.border-grey
+            h4
+              div .flex-stacked
+              div .flex-right
+            .flex.flex-stacked.flex-right
+              .pad.bg-info.margin-xs Acker Dawn Apple
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
 
         .flex.flex-row-wrap.flex-evenly
           .pad-sm
@@ -234,13 +261,18 @@ html(lang="en")
         .pad.line-height-3x .line-height-3x
 
 
-      .flex
-        .flex-1.text-2x.pad.hover-text-shadow-white-blur.bg-grey.text-white.text-center
+      .flex.flex-wrap
+        .flex-1.pad.hover-text-shadow-white-blur.bg-grey.text-white.text-center
           |.hover-text-shadow-white-blur
           .text-xs (hover with mouse)
-        .flex-1.text-2x.pad.hover-text-shadow-grey-blur.text-center
+        .flex-1.pad.hover-text-shadow-grey-blur.text-center
           |.hover-text-shadow-grey-blur
           .text-grey.text-xs (hover with mouse)
+
+        each x in colorArray
+          .flex-1.pad.text-center(class="hover-bg-"+x)
+            |.hover-bg-#{x}
+            .text-grey.text-xs (hover with mouse)
 
       h2(id="ack-block-boot") ack-block-boot
 
@@ -339,8 +371,21 @@ html(lang="en")
           .margin-4x.border-1-info
             |.margin-4x
       .pad-h
-        h4 table-pad
+        h4 table
         .flex.flex-row-wrap.align-top
+          .pad-xs
+            h5 .border-collapse
+            table.table-pad.border-collapse
+              thead
+                tr
+                  td.bg-info col1
+                  td.bg-info col2
+                  td.bg-info col3
+              tbody
+                tr
+                  td.bg-info.pad-0 .pad-0
+                  td.bg-info.pad-0 .pad-0
+                  td.bg-info.pad-0 .pad-0
           .pad-xs
             h5 table-pad-xxs
             table.table-pad-xxs
@@ -520,6 +565,32 @@ html(lang="en")
           |.border-1-warning.border-dashed
         .margin.pad.border-1.border-dotted.border-danger
           |.border-1.border-dotted.border-danger
+
+      h4 table
+      .flex.flex-row-wrap.align-top
+        .pad-xs
+          h5.margin-bottom-xs
+            div .table-striped
+            div .table-hover
+          table.table-hover.table-striped.pad
+            tbody
+              each x in [0,1,2,3]
+                tr
+                  td col1
+                  td col2
+                  td col3
+        each x in colorArray
+          .pad-xs
+            h5.margin-bottom-xs
+              div .table-striped-#{x}
+              div .table-hover-#{x}
+            table.pad(class="table-hover-"+x+" table-striped-"+x)
+              tbody
+                each x in [0,1,2,3]
+                  tr
+                    td col1
+                    td col2
+                    td col3
 
   .text-left
     h2(id="ack-responsive-boot") ack-responsive-boot

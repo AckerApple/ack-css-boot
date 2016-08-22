@@ -130,6 +130,14 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .flex-valign-bottom, .align-bottom,.align-end {align-items:flex-end}
 .flex-fill, .align-fill, .align-stretch {align-items:stretch}
 .align-baseline {align-items:baseline}
+
+
+.flex-stacked.flex-center, .flex-column.flex-center, .flex-columns.flex-center, .flex-direction-column.flex-center
+{align-items:center}
+.flex-stacked.flex-left, .flex-column.flex-left, .flex-columns.flex-left, .flex-direction-column.flex-left
+{align-items:flex-start}
+.flex-stacked.flex-right, .flex-column.flex-right, .flex-columns.flex-right, .flex-direction-column.flex-right
+{align-items:flex-end}
 ```
 
 
@@ -138,6 +146,25 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 > scss/ack-color-boot.scss
 
 ```
+$bg-primary:#337ab7;
+$bg-success:#dff0d8;
+$bg-info:#d9edf7;
+$bg-warning:#fcf8e3;
+$bg-danger:#f2dede;
+$bg-grey:#777;
+$bg-grey2x:#999;
+$bg-grey3x:#BBB;
+$bg-grey4x:#CCC;
+$bg-stable:#f8f8f8;
+$bg-positive:#387ef5;
+$bg-calm:#11c1f3;
+$bg-balanced:#33cd5f;
+$bg-energized:#ffc900;
+$bg-assertive:#ef473a;
+$bg-royal:#886aea;
+$bg-dark:#444444;
+
+
 .text-positive {color:#0c60ee}
 .text-calm {color:#0a9dc7}
 .text-balanced {color:#28a54c}
@@ -170,29 +197,28 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .bg-white,.bg-lite {background-color:white}
 .bg-black {background-color:black}
 
-.bg-primary {background-color:#337ab7}
-.bg-success {background-color:#dff0d8}
-.bg-info {background-color:#d9edf7}
-.bg-warning {background-color:#fcf8e3}
-.bg-danger {background-color:#f2dede}
-.bg-grey {background-color:#777}
-.bg-grey-xs,.bg-grey-2x {background-color:#999}
-.bg-grey-xxs,.bg-grey-3x {background-color:#BBB}
-.bg-grey-4x {background-color:#CCC}
-
-.bg-stable {background-color:#f8f8f8}
-.bg-positive {background-color:#387ef5}
-.bg-calm {background-color:#11c1f3}
-.bg-balanced {background-color:#33cd5f}
-.bg-energized {background-color:#ffc900}
-.bg-assertive {background-color:#ef473a}
-.bg-royal {background-color:#886aea}
-.bg-dark {background-color:#444444}
+.bg-primary {background-color:$bg-primary}
+.bg-success {background-color:$bg-success}
+.bg-info {background-color:$bg-info}
+.bg-warning {background-color:$bg-warning}
+.bg-danger {background-color:$bg-danger}
+.bg-grey {background-color:$bg-grey}
+.bg-grey-xs,.bg-grey-2x {background-color:$bg-grey2x}
+.bg-grey-xxs,.bg-grey-3x {background-color:$bg-grey3x}
+.bg-grey-4x {background-color:$bg-grey4x}
+.bg-stable {background-color:$bg-stable}
+.bg-positive {background-color:$bg-positive}
+.bg-calm {background-color:$bg-calm}
+.bg-balanced {background-color:$bg-balanced}
+.bg-energized {background-color:$bg-energized}
+.bg-assertive {background-color:$bg-assertive}
+.bg-royal {background-color:$bg-royal}
+.bg-dark {background-color:$bg-dark}
 
 .border-grey {border-color:#666}
 .border-grey-xs, .border-grey-2x {border-color:#888}
 .border-grey-xxs, .border-grey-3x {border-color:#AAA}
-.border-grey-4x {border-color:#CCC}
+.border-grey-4x {border-color:#BBB}
 .border-positive {border-color:#0c60ee}
 .border-calm {border-color:#0a9dc7}
 .border-balanced {border-color:#28a54c}
@@ -229,6 +255,60 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .hover-text-shadow-white-blur:hover{
   text-shadow:0 0 4px #FFF
 }
+
+.table-hover > tbody > tr:hover {background-color: #f5f5f5}
+.table-striped > tbody > tr:nth-of-type(odd) {background-color: #f1f1f1}
+.hover-bg-primary:hover,
+.table-striped-primary > tbody > tr:nth-of-type(odd),
+.table-hover-primary > tbody > tr:hover {background-color: $bg-primary}
+.hover-bg-success:hover,
+.table-striped-success > tbody > tr:nth-of-type(odd),
+.table-hover-success > tbody > tr:hover {background-color: $bg-success}
+.hover-bg-info:hover,
+.table-striped-info > tbody > tr:nth-of-type(odd),
+.table-hover-info > tbody > tr:hover {background-color: $bg-info}
+.hover-bg-warning:hover,
+.table-striped-warning > tbody > tr:nth-of-type(odd),
+.table-hover-warning > tbody > tr:hover {background-color: $bg-warning}
+.hover-bg-danger:hover,
+.table-striped-danger > tbody > tr:nth-of-type(odd),
+.table-hover-danger > tbody > tr:hover {background-color: $bg-danger}
+.hover-bg-grey:hover,
+.table-striped-grey > tbody > tr:nth-of-type(odd),
+.table-hover-grey > tbody > tr:hover {background-color: $bg-grey}
+.hover-bg-grey2x:hover,
+.table-striped-grey2x > tbody > tr:nth-of-type(odd),
+.table-hover-grey2x > tbody > tr:hover {background-color: $bg-grey2x}
+.hover-bg-grey3x:hover,
+.table-striped-grey3x > tbody > tr:nth-of-type(odd),
+.table-hover-grey3x > tbody > tr:hover {background-color: $bg-grey3x}
+.hover-bg-grey4x:hover,
+.table-striped-grey4x > tbody > tr:nth-of-type(odd),
+.table-hover-grey4x > tbody > tr:hover {background-color: $bg-grey4x}
+.hover-bg-stable:hover,
+.table-striped-stable > tbody > tr:nth-of-type(odd),
+.table-hover-stable > tbody > tr:hover {background-color: $bg-stable}
+.hover-bg-positive:hover,
+.table-striped-positive > tbody > tr:nth-of-type(odd),
+.table-hover-positive > tbody > tr:hover {background-color: $bg-positive}
+.hover-bg-calm:hover,
+.table-striped-calm > tbody > tr:nth-of-type(odd),
+.table-hover-calm > tbody > tr:hover {background-color: $bg-calm}
+.hover-bg-balanced:hover,
+.table-striped-balanced > tbody > tr:nth-of-type(odd),
+.table-hover-balanced > tbody > tr:hover {background-color: $bg-balanced}
+.hover-bg-energized:hover,
+.table-striped-energized > tbody > tr:nth-of-type(odd),
+.table-hover-energized > tbody > tr:hover {background-color: $bg-energized}
+.hover-bg-assertive:hover,
+.table-striped-assertive > tbody > tr:nth-of-type(odd),
+.table-hover-assertive > tbody > tr:hover {background-color: $bg-assertive}
+.hover-bg-royal:hover,
+.table-striped-royal > tbody > tr:nth-of-type(odd),
+.table-hover-royal > tbody > tr:hover {background-color: $bg-royal}
+.hover-bg-dark:hover,
+.table-striped-dark > tbody > tr:nth-of-type(odd),
+.table-hover-dark > tbody > tr:hover {background-color: $bg-dark}
 ```
 
 

@@ -1,6 +1,11 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.7] - 2016-08-22
+### Added
+- bg hover classes
+- table color striping
+
 ## [1.2.6] - 2016-08-17
 ### Breaking Change
 - .flex-wrap had unneccessary "flex-flow:row" definition (not changing minor vnum due to minor number change only yesterday)

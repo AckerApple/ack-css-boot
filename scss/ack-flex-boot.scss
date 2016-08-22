@@ -23,3 +23,11 @@
 .flex-valign-bottom, .align-bottom,.align-end {align-items:flex-end}
 .flex-fill, .align-fill, .align-stretch {align-items:stretch}
 .align-baseline {align-items:baseline}
+
+
+.flex-stacked.flex-center, .flex-column.flex-center, .flex-columns.flex-center, .flex-direction-column.flex-center
+{align-items:center}
+.flex-stacked.flex-left, .flex-column.flex-left, .flex-columns.flex-left, .flex-direction-column.flex-left
+{align-items:flex-start}
+.flex-stacked.flex-right, .flex-column.flex-right, .flex-columns.flex-right, .flex-direction-column.flex-right
+{align-items:flex-end}

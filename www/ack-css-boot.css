@@ -200,6 +200,15 @@
 .align-baseline {
   align-items: baseline; }
 
+.flex-stacked.flex-center, .flex-column.flex-center, .flex-columns.flex-center, .flex-direction-column.flex-center {
+  align-items: center; }
+
+.flex-stacked.flex-left, .flex-column.flex-left, .flex-columns.flex-left, .flex-direction-column.flex-left {
+  align-items: flex-start; }
+
+.flex-stacked.flex-right, .flex-column.flex-right, .flex-columns.flex-right, .flex-direction-column.flex-right {
+  align-items: flex-end; }
+
 a, .cursor-pointer {
   cursor: pointer; }
 
@@ -1949,3 +1958,94 @@ lg >= 1200
 
 .hover-text-shadow-white-blur:hover {
   text-shadow: 0 0 4px #FFF; }
+
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5; }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f1f1f1; }
+
+.hover-bg-primary:hover,
+.table-striped-primary > tbody > tr:nth-of-type(odd),
+.table-hover-primary > tbody > tr:hover {
+  background-color: #337ab7; }
+
+.hover-bg-success:hover,
+.table-striped-success > tbody > tr:nth-of-type(odd),
+.table-hover-success > tbody > tr:hover {
+  background-color: #dff0d8; }
+
+.hover-bg-info:hover,
+.table-striped-info > tbody > tr:nth-of-type(odd),
+.table-hover-info > tbody > tr:hover {
+  background-color: #d9edf7; }
+
+.hover-bg-warning:hover,
+.table-striped-warning > tbody > tr:nth-of-type(odd),
+.table-hover-warning > tbody > tr:hover {
+  background-color: #fcf8e3; }
+
+.hover-bg-danger:hover,
+.table-striped-danger > tbody > tr:nth-of-type(odd),
+.table-hover-danger > tbody > tr:hover {
+  background-color: #f2dede; }
+
+.hover-bg-grey:hover,
+.table-striped-grey > tbody > tr:nth-of-type(odd),
+.table-hover-grey > tbody > tr:hover {
+  background-color: #777; }
+
+.hover-bg-grey2x:hover,
+.table-striped-grey2x > tbody > tr:nth-of-type(odd),
+.table-hover-grey2x > tbody > tr:hover {
+  background-color: #999; }
+
+.hover-bg-grey3x:hover,
+.table-striped-grey3x > tbody > tr:nth-of-type(odd),
+.table-hover-grey3x > tbody > tr:hover {
+  background-color: #BBB; }
+
+.hover-bg-grey4x:hover,
+.table-striped-grey4x > tbody > tr:nth-of-type(odd),
+.table-hover-grey4x > tbody > tr:hover {
+  background-color: #CCC; }
+
+.hover-bg-stable:hover,
+.table-striped-stable > tbody > tr:nth-of-type(odd),
+.table-hover-stable > tbody > tr:hover {
+  background-color: #f8f8f8; }
+
+.hover-bg-positive:hover,
+.table-striped-positive > tbody > tr:nth-of-type(odd),
+.table-hover-positive > tbody > tr:hover {
+  background-color: #387ef5; }
+
+.hover-bg-calm:hover,
+.table-striped-calm > tbody > tr:nth-of-type(odd),
+.table-hover-calm > tbody > tr:hover {
+  background-color: #11c1f3; }
+
+.hover-bg-balanced:hover,
+.table-striped-balanced > tbody > tr:nth-of-type(odd),
+.table-hover-balanced > tbody > tr:hover {
+  background-color: #33cd5f; }
+
+.hover-bg-energized:hover,
+.table-striped-energized > tbody > tr:nth-of-type(odd),
+.table-hover-energized > tbody > tr:hover {
+  background-color: #ffc900; }
+
+.hover-bg-assertive:hover,
+.table-striped-assertive > tbody > tr:nth-of-type(odd),
+.table-hover-assertive > tbody > tr:hover {
+  background-color: #ef473a; }
+
+.hover-bg-royal:hover,
+.table-striped-royal > tbody > tr:nth-of-type(odd),
+.table-hover-royal > tbody > tr:hover {
+  background-color: #886aea; }
+
+.hover-bg-dark:hover,
+.table-striped-dark > tbody > tr:nth-of-type(odd),
+.table-hover-dark > tbody > tr:hover {
+  background-color: #444444; }
