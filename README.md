@@ -172,6 +172,8 @@ $bg-grey:#777 !default;
 $bg-grey-2x:#999 !default;
 $bg-grey-3x:#BBB !default;
 $bg-grey-4x:#CCC !default;
+$bg-grey-5x:#DDD !default;
+$bg-grey-6x:#EEE !default;
 $bg-stable:#f8f8f8 !default;
 $bg-positive:#387ef5 !default;
 $bg-calm:#11c1f3 !default;
@@ -202,6 +204,8 @@ $bg-dark:#444444 !default;
 .text-grey-2x, .text-grey-sm, .text-muted-sm, .text-muted-2x {color:#999}
 .text-grey-3x, .text-grey-xs, .text-muted-xs, .text-muted-3x {color:#BBB}
 .text-grey-4x, .text-grey-xxs, .text-muted-xxs, .text-muted-4x {color:#CCC}
+.text-grey-5x {color:#DDD}
+.text-grey-6x {color:#EEE}
 
 .text-green,.font-green {color: #060}
 .text-orange,.font-orange {color: #C60}
@@ -223,6 +227,8 @@ $bg-dark:#444444 !default;
 .bg-grey-xs,.bg-grey-2x {background-color:$bg-grey-2x}
 .bg-grey-xxs,.bg-grey-3x {background-color:$bg-grey-3x}
 .bg-grey-4x {background-color:$bg-grey-4x}
+.bg-grey-5x {background-color:$bg-grey-5x}
+.bg-grey-6x {background-color:$bg-grey-6x}
 .bg-stable {background-color:$bg-stable}
 .bg-positive {background-color:$bg-positive}
 .bg-calm {background-color:$bg-calm}
@@ -236,6 +242,8 @@ $bg-dark:#444444 !default;
 .border-grey-xs, .border-grey-2x {border-color:#888}
 .border-grey-xxs, .border-grey-3x {border-color:#AAA}
 .border-grey-4x {border-color:#BBB}
+.border-grey-5x {border-color:#CCC}
+.border-grey-6x {border-color:#DDD}
 .border-positive {border-color:#0c60ee}
 .border-calm {border-color:#0a9dc7}
 .border-balanced {border-color:#28a54c}
@@ -283,6 +291,8 @@ $bg-dark:#444444 !default;
 .table-striped-grey-2x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-2x}
 .table-striped-grey-3x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-3x}
 .table-striped-grey-4x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-4x}
+.table-striped-grey-5x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-5x}
+.table-striped-grey-6x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-6x}
 .table-striped-stable > tbody > tr:nth-of-type(odd) {@extend .bg-stable}
 .table-striped-positive > tbody > tr:nth-of-type(odd) {@extend .bg-positive}
 .table-striped-calm > tbody > tr:nth-of-type(odd) {@extend .bg-calm}
@@ -302,6 +312,8 @@ $bg-dark:#444444 !default;
 .hover-bg-grey-2x:hover, .table-hover-grey-2x > tbody > tr:hover {background-color:$bg-grey-2x}
 .hover-bg-grey-3x:hover, .table-hover-grey-3x > tbody > tr:hover {background-color:$bg-grey-3x}
 .hover-bg-grey-4x:hover, .table-hover-grey-4x > tbody > tr:hover {background-color:$bg-grey-4x}
+.hover-bg-grey-5x:hover, .table-hover-grey-5x > tbody > tr:hover {background-color:$bg-grey-5x}
+.hover-bg-grey-6x:hover, .table-hover-grey-6x > tbody > tr:hover {background-color:$bg-grey-6x}
 .hover-bg-stable:hover, .table-hover-stable > tbody > tr:hover {background-color:$bg-stable}
 .hover-bg-positive:hover, .table-hover-positive > tbody > tr:hover {background-color:$bg-positive}
 .hover-bg-calm:hover, .table-hover-calm > tbody > tr:hover {background-color:$bg-calm}
