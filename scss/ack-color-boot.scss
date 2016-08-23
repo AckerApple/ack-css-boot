@@ -52,7 +52,6 @@ $bg-dark:#444444 !default;
 
 .bg-white,.bg-lite {background-color:white}
 .bg-black {background-color:black}
-
 .bg-primary {background-color:$bg-primary}
 .bg-success {background-color:$bg-success}
 .bg-info {background-color:$bg-info}
@@ -117,25 +116,83 @@ $bg-dark:#444444 !default;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {background-color: #f1f1f1}
-.table-striped-primary > tbody > tr:nth-of-type(odd) {@extend .bg-primary}
-.table-striped-success > tbody > tr:nth-of-type(odd) {@extend .bg-success}
-.table-striped-info > tbody > tr:nth-of-type(odd) {@extend .bg-info}
-.table-striped-warning > tbody > tr:nth-of-type(odd) {@extend .bg-warning}
-.table-striped-danger > tbody > tr:nth-of-type(odd) {@extend .bg-danger}
-.table-striped-grey > tbody > tr:nth-of-type(odd) {@extend .bg-grey}
-.table-striped-grey-2x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-2x}
-.table-striped-grey-3x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-3x}
-.table-striped-grey-4x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-4x}
-.table-striped-grey-5x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-5x}
-.table-striped-grey-6x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-6x}
-.table-striped-stable > tbody > tr:nth-of-type(odd) {@extend .bg-stable}
-.table-striped-positive > tbody > tr:nth-of-type(odd) {@extend .bg-positive}
-.table-striped-calm > tbody > tr:nth-of-type(odd) {@extend .bg-calm}
-.table-striped-balanced > tbody > tr:nth-of-type(odd) {@extend .bg-balanced}
-.table-striped-energized > tbody > tr:nth-of-type(odd) {@extend .bg-energized}
-.table-striped-assertive > tbody > tr:nth-of-type(odd) {@extend .bg-assertive}
-.table-striped-royal > tbody > tr:nth-of-type(odd) {@extend .bg-royal}
-.table-striped-dark > tbody > tr:nth-of-type(odd) {@extend .bg-dark}
+.table-striped-primary > tbody > tr:nth-of-type(odd)
+{background-color:$bg-primary}
+.table-striped-success > tbody > tr:nth-of-type(odd)
+{background-color:$bg-success}
+.table-striped-info > tbody > tr:nth-of-type(odd)
+{background-color:$bg-info}
+.table-striped-warning > tbody > tr:nth-of-type(odd)
+{background-color:$bg-warning}
+.table-striped-danger > tbody > tr:nth-of-type(odd)
+{background-color:$bg-danger}
+.table-striped-grey > tbody > tr:nth-of-type(odd)
+{background-color:$bg-grey}
+.table-striped-grey-2x > tbody > tr:nth-of-type(odd)
+{background-color:$bg-grey-2x}
+.table-striped-grey-3x > tbody > tr:nth-of-type(odd)
+{background-color:$bg-grey-3x}
+.table-striped-grey-4x > tbody > tr:nth-of-type(odd)
+{background-color:$bg-grey-4x}
+.table-striped-grey-5x > tbody > tr:nth-of-type(odd)
+{background-color:$bg-grey-5x}
+.table-striped-grey-6x > tbody > tr:nth-of-type(odd)
+{background-color:$bg-grey-6x}
+.table-striped-stable > tbody > tr:nth-of-type(odd)
+{background-color:$bg-stable}
+.table-striped-positive > tbody > tr:nth-of-type(odd)
+{background-color:$bg-positive}
+.table-striped-calm > tbody > tr:nth-of-type(odd)
+{background-color:$bg-calm}
+.table-striped-balanced > tbody > tr:nth-of-type(odd)
+{background-color:$bg-balanced}
+.table-striped-energized > tbody > tr:nth-of-type(odd)
+{background-color:$bg-energized}
+.table-striped-assertive > tbody > tr:nth-of-type(odd)
+{background-color:$bg-assertive}
+.table-striped-royal > tbody > tr:nth-of-type(odd)
+{background-color:$bg-royal}
+.table-striped-dark > tbody > tr:nth-of-type(odd)
+{background-color:$bg-dark}
+
+table[class*="table-striped-"] > tbody > tr.bg-primary
+{background-color:$bg-primary}
+table[class*="table-striped-"] > tbody > tr.bg-success
+{background-color:$bg-success}
+table[class*="table-striped-"] > tbody > tr.bg-info
+{background-color:$bg-info}
+table[class*="table-striped-"] > tbody > tr.bg-warning
+{background-color:$bg-warning}
+table[class*="table-striped-"] > tbody > tr.bg-danger
+{background-color:$bg-danger}
+table[class*="table-striped-"] > tbody > tr.bg-grey
+{background-color:$bg-grey}
+table[class*="table-striped-"] > tbody > tr.grey-2x
+{background-color:$bg-grey-2x}
+table[class*="table-striped-"] > tbody > tr.grey-3x
+{background-color:$bg-grey-3x}
+table[class*="table-striped-"] > tbody > tr.grey-4x
+{background-color:$bg-grey-4x}
+table[class*="table-striped-"] > tbody > tr.grey-5x
+{background-color:$bg-grey-5x}
+table[class*="table-striped-"] > tbody > tr.grey-6x
+{background-color:$bg-grey-6x}
+table[class*="table-striped-"] > tbody > tr.bg-stable
+{background-color:$bg-stable}
+table[class*="table-striped-"] > tbody > tr.bg-positive
+{background-color:$bg-positive}
+table[class*="table-striped-"] > tbody > tr.bg-calm
+{background-color:$bg-calm}
+table[class*="table-striped-"] > tbody > tr.bg-balanced
+{background-color:$bg-balanced}
+table[class*="table-striped-"] > tbody > tr.bg-energized
+{background-color:$bg-energized}
+table[class*="table-striped-"] > tbody > tr.bg-assertive
+{background-color:$bg-assertive}
+table[class*="table-striped-"] > tbody > tr.bg-royal
+{background-color:$bg-royal}
+table[class*="table-striped-"] > tbody > tr.bg-dark
+{background-color:$bg-dark}
 
 .table-hover > tbody > tr:hover {background-color: #f5f5f5}
 .hover-bg-primary:hover, .table-hover-primary > tbody > tr:hover {background-color:$bg-primary}
