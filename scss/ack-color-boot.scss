@@ -177,40 +177,194 @@ table[class*="table-striped-"] > tbody > tr.grey-5x
 {background-color:$bg-grey-5x}
 table[class*="table-striped-"] > tbody > tr.grey-6x
 {background-color:$bg-grey-6x}
-table[class*="table-striped-"] > tbody > tr.bg-stable
+[class*="table-striped-"] > tbody > tr.bg-stable
 {background-color:$bg-stable}
-table[class*="table-striped-"] > tbody > tr.bg-positive
+[class*="table-striped-"] > tbody > tr.bg-positive
 {background-color:$bg-positive}
-table[class*="table-striped-"] > tbody > tr.bg-calm
+[class*="table-striped-"] > tbody > tr.bg-calm
 {background-color:$bg-calm}
-table[class*="table-striped-"] > tbody > tr.bg-balanced
+[class*="table-striped-"] > tbody > tr.bg-balanced
 {background-color:$bg-balanced}
-table[class*="table-striped-"] > tbody > tr.bg-energized
+[class*="table-striped-"] > tbody > tr.bg-energized
 {background-color:$bg-energized}
-table[class*="table-striped-"] > tbody > tr.bg-assertive
+[class*="table-striped-"] > tbody > tr.bg-assertive
 {background-color:$bg-assertive}
-table[class*="table-striped-"] > tbody > tr.bg-royal
+[class*="table-striped-"] > tbody > tr.bg-royal
 {background-color:$bg-royal}
-table[class*="table-striped-"] > tbody > tr.bg-dark
+[class*="table-striped-"] > tbody > tr.bg-dark
 {background-color:$bg-dark}
 
 .table-hover > tbody > tr:hover {background-color: #f5f5f5}
-.hover-bg-primary:hover, .table-hover-primary > tbody > tr:hover {background-color:$bg-primary}
-.hover-bg-success:hover, .table-hover-success > tbody > tr:hover {background-color:$bg-success}
-.hover-bg-info:hover, .table-hover-info > tbody > tr:hover {background-color:$bg-info}
-.hover-bg-warning:hover, .table-hover-warning > tbody > tr:hover {background-color:$bg-warning}
-.hover-bg-danger:hover, .table-hover-danger > tbody > tr:hover {background-color:$bg-danger}
-.hover-bg-grey:hover, .table-hover-grey > tbody > tr:hover {background-color:$bg-grey}
-.hover-bg-grey-2x:hover, .table-hover-grey-2x > tbody > tr:hover {background-color:$bg-grey-2x}
-.hover-bg-grey-3x:hover, .table-hover-grey-3x > tbody > tr:hover {background-color:$bg-grey-3x}
-.hover-bg-grey-4x:hover, .table-hover-grey-4x > tbody > tr:hover {background-color:$bg-grey-4x}
-.hover-bg-grey-5x:hover, .table-hover-grey-5x > tbody > tr:hover {background-color:$bg-grey-5x}
-.hover-bg-grey-6x:hover, .table-hover-grey-6x > tbody > tr:hover {background-color:$bg-grey-6x}
-.hover-bg-stable:hover, .table-hover-stable > tbody > tr:hover {background-color:$bg-stable}
-.hover-bg-positive:hover, .table-hover-positive > tbody > tr:hover {background-color:$bg-positive}
-.hover-bg-calm:hover, .table-hover-calm > tbody > tr:hover {background-color:$bg-calm}
-.hover-bg-balanced:hover, .table-hover-balanced > tbody > tr:hover {background-color:$bg-balanced}
-.hover-bg-energized:hover, .table-hover-energized > tbody > tr:hover {background-color:$bg-energized}
-.hover-bg-assertive:hover, .table-hover-assertive > tbody > tr:hover {background-color:$bg-assertive}
-.hover-bg-royal:hover, .table-hover-royal > tbody > tr:hover {background-color:$bg-royal}
-.hover-bg-dark:hover, .table-hover-dark > tbody > tr:hover {background-color:$bg-dark}
+.hover-bg-primary:hover, .table-hover-primary > tbody > tr:hover,
+[class*="table-striped-"].table-hover-primary > tbody > tr:hover
+{background-color:$bg-primary}
+.hover-bg-success:hover, .table-hover-success > tbody > tr:hover,
+[class*="table-striped-"].table-hover-success > tbody > tr:hover
+{background-color:$bg-success}
+.hover-bg-info:hover, .table-hover-info > tbody > tr:hover,
+[class*="table-striped-"].table-hover-info > tbody > tr:hover
+{background-color:$bg-info}
+.hover-bg-warning:hover, .table-hover-warning > tbody > tr:hover,
+[class*="table-striped-"].table-hover-warning > tbody > tr:hover
+{background-color:$bg-warning}
+.hover-bg-danger:hover, .table-hover-danger > tbody > tr:hover,
+[class*="table-striped-"].table-hover-danger > tbody > tr:hover
+{background-color:$bg-danger}
+.hover-bg-grey:hover, .table-hover-grey > tbody > tr:hover,
+[class*="table-striped-"].table-hover-grey > tbody > tr:hover
+{background-color:$bg-grey}
+.hover-bg-grey-2x:hover, .table-hover-grey-2x > tbody > tr:hover,
+[class*="table-striped-"].table-hover-grey-2x > tbody > tr:hover
+{background-color:$bg-grey-2x}
+.hover-bg-grey-3x:hover, .table-hover-grey-3x > tbody > tr:hover,
+[class*="table-striped-"].table-hover-grey-3x > tbody > tr:hover
+{background-color:$bg-grey-3x}
+.hover-bg-grey-4x:hover, .table-hover-grey-4x > tbody > tr:hover,
+[class*="table-striped-"].table-hover-grey-4x > tbody > tr:hover
+{background-color:$bg-grey-4x}
+.hover-bg-grey-5x:hover, .table-hover-grey-5x > tbody > tr:hover,
+[class*="table-striped-"].table-hover-grey-5x > tbody > tr:hover
+{background-color:$bg-grey-5x}
+.hover-bg-grey-6x:hover, .table-hover-grey-6x > tbody > tr:hover,
+[class*="table-striped-"].table-hover-grey-6x > tbody > tr:hover
+{background-color:$bg-grey-6x}
+.hover-bg-stable:hover, .table-hover-stable > tbody > tr:hover,
+[class*="table-striped-"].table-hover-stable > tbody > tr:hover
+{background-color:$bg-stable}
+.hover-bg-positive:hover, .table-hover-positive > tbody > tr:hover,
+[class*="table-striped-"].table-hover-positive > tbody > tr:hover
+{background-color:$bg-positive}
+.hover-bg-calm:hover, .table-hover-calm > tbody > tr:hover,
+[class*="table-striped-"].table-hover-calm > tbody > tr:hover
+{background-color:$bg-calm}
+.hover-bg-balanced:hover, .table-hover-balanced > tbody > tr:hover,
+[class*="table-striped-"].table-hover-balanced > tbody > tr:hover
+{background-color:$bg-balanced}
+.hover-bg-energized:hover, .table-hover-energized > tbody > tr:hover,
+[class*="table-striped-"].table-hover-energized > tbody > tr:hover
+{background-color:$bg-energized}
+.hover-bg-assertive:hover, .table-hover-assertive > tbody > tr:hover,
+[class*="table-striped-"].table-hover-assertive > tbody > tr:hover
+{background-color:$bg-assertive}
+.hover-bg-royal:hover, .table-hover-royal > tbody > tr:hover,
+[class*="table-striped-"].table-hover-royal > tbody > tr:hover
+{background-color:$bg-royal}
+.hover-bg-dark:hover, .table-hover-dark > tbody > tr:hover,
+[class*="table-striped-"].table-hover-dark > tbody > tr:hover
+{background-color:$bg-dark}
+
+
+.table-lines-primary {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-primary}}}
+  > thead > tr > th {@extend .border-primary}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-primary}}}
+  > tbody + tbody {@extend .border-primary}
+}
+.table-lines-success {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-success}}}
+  > thead > tr > th {@extend .border-success}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-success}}}
+  > tbody + tbody {@extend .border-success}
+}
+.table-lines-info {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-info}}}
+  > thead > tr > th {@extend .border-info}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-info}}}
+  > tbody + tbody {@extend .border-info}
+}
+.table-lines-warning {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-warning}}}
+  > thead > tr > th {@extend .border-warning}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-warning}}}
+  > tbody + tbody {@extend .border-warning}
+}
+.table-lines-danger {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-danger}}}
+  > thead > tr > th {@extend .border-danger}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-danger}}}
+  > tbody + tbody {@extend .border-danger}
+}
+.table-lines-grey {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-grey}}}
+  > thead > tr > th {@extend .border-grey}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-grey}}}
+  > tbody + tbody {@extend .border-grey}
+}
+.table-lines-grey-2x {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-grey-2x}}}
+  > thead > tr > th {@extend .border-grey-2x}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-grey-2x}}}
+  > tbody + tbody {@extend .border-grey-2x}
+}
+.table-lines-grey-3x {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-grey-3x}}}
+  > thead > tr > th {@extend .border-grey-3x}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-grey-3x}}}
+  > tbody + tbody {@extend .border-grey-3x}
+}
+.table-lines-grey-4x {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-grey-4x}}}
+  > thead > tr > th {@extend .border-grey-4x}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-grey-4x}}}
+  > tbody + tbody {@extend .border-grey-4x}
+}
+.table-lines-grey-5x {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-grey-5x}}}
+  > thead > tr > th {@extend .border-grey-5x}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-grey-5x}}}
+  > tbody + tbody {@extend .border-grey-5x}
+}
+.table-lines-grey-6x {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-grey-6x}}}
+  > thead > tr > th {@extend .border-grey-6x}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-grey-6x}}}
+  > tbody + tbody {@extend .border-grey-6x}
+}
+.table-lines-stable {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-stable}}}
+  > thead > tr > th {@extend .border-stable}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-stable}}}
+  > tbody + tbody {@extend .border-stable}
+}
+.table-lines-positive {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-positive}}}
+  > thead > tr > th {@extend .border-positive}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-positive}}}
+  > tbody + tbody {@extend .border-positive}
+}
+.table-lines-calm {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-calm}}}
+  > thead > tr > th {@extend .border-calm}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-calm}}}
+  > tbody + tbody {@extend .border-calm}
+}
+.table-lines-balanced {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-balanced}}}
+  > thead > tr > th {@extend .border-balanced}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-balanced}}}
+  > tbody + tbody {@extend .border-balanced}
+}
+.table-lines-energized {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-energized}}}
+  > thead > tr > th {@extend .border-energized}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-energized}}}
+  > tbody + tbody {@extend .border-energized}
+}
+.table-lines-assertive {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-assertive}}}
+  > thead > tr > th {@extend .border-assertive}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-assertive}}}
+  > tbody + tbody {@extend .border-assertive}
+}
+.table-lines-royal {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-royal}}}
+  > thead > tr > th {@extend .border-royal}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-royal}}}
+  > tbody + tbody {@extend .border-royal}
+}
+.table-lines-dark {
+  > thead,> tbody,> tfoot {> tr {> th, > td {@extend .border-dark}}}
+  > thead > tr > th {@extend .border-dark}
+  > caption + thead,> colgroup + thead,> thead:first-child {> tr:first-child {> th, > td {@extend .border-dark}}}
+  > tbody + tbody {@extend .border-dark}
+}

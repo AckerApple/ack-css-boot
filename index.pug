@@ -31,94 +31,95 @@ html(lang="en")
       p.text-muted CSS flex box layout made extremely simple
       p.text-sm.text-info A .flex class exists to set display:flex; but it is hardly needed. All .flex- classes extend .flex
       .pad
-        h4 .flex-center
-        .flex-center
-          .pad.bg-info.margin-xs Acker
-          .pad.bg-info.margin-xs Dawn
-          .pad.bg-info.margin-xs Apple
-        h4 .flex-left
-        .flex-left
-          .pad.bg-info.margin-xs Acker
-          .pad.bg-info.margin-xs Dawn
-          .pad.bg-info.margin-xs Apple
-        h4 .flex-right
-        .flex-right
-          .pad.bg-info.margin-xs Acker
-          .pad.bg-info.margin-xs Dawn
-          .pad.bg-info.margin-xs Apple
-        h4 .flex-evenly
-        .flex-evenly
-          .pad.bg-info.margin-xs Acker
-          .pad.bg-info.margin-xs Dawn
-          .pad.bg-info.margin-xs Apple
-        h4 .flex-apart
-        .flex-apart
-          .pad.bg-info.margin-xs Acker
-          .pad.bg-info.margin-xs Dawn
-          .pad.bg-info.margin-xs Apple
+        .flex-wrap.flex-center
+          .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+            h4.margin-top-0 .flex-center
+            .flex-center
+              .pad.bg-info.margin-xs Acker
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
+          .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+            h4.margin-top-0 .flex-left
+            .flex-left
+              .pad.bg-info.margin-xs Acker
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
+          .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+            h4.margin-top-0 .flex-right
+            .flex-right
+              .pad.bg-info.margin-xs Acker
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
+          .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+            h4.margin-top-0 .flex-evenly
+            .flex-evenly
+              .pad.bg-info.margin-xs Acker
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
+          .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+            h4.margin-top-0 .flex-apart
+            .flex-apart
+              .pad.bg-info.margin-xs Acker
+              .pad.bg-info.margin-xs Dawn
+              .pad.bg-info.margin-xs Apple
 
-        .flex-row-wrap.flex-evenly
-          .pad-sm
-            h4 .flex-valign
-            .border-1-info
-              .flex-valign
-                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Apple]
-          .pad-sm
-            h4 .flex-valign-center
-            .border-1-info
-              .flex-valign-center
-                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Apple]
-          .pad-sm
-            h4 .flex-valign-bottom
-            .border-1-info
-              .flex-valign-bottom
-                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Apple]
-          .pad-sm
-            h4 .flex-fill
-            .border-1-info
-              .flex-fill
-                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Apple]
-          .pad-sm
-            h4 .flex-baseline
-            .border-1-info
-              .flex-baseline
-                .pad.bg-info.margin-xs #[.pad-xs.underline Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs.underline Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs.underline Apple]
+        .flex-evenly.flex-wrap
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0 .flex-valign
+            .flex-valign
+              .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs Apple]
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0 .flex-valign-center
+            .flex-valign-center
+              .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs Apple]
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0 .flex-valign-bottom
+            .flex-valign-bottom
+              .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs Apple]
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0 .flex-fill
+            .flex-fill
+              .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs Apple]
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0 .flex-baseline
+            .flex-baseline
+              .pad.bg-info.margin-xs #[.pad-xs.underline Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs.underline Dawn]#[.pad-xs Apple]
+              .pad.bg-info.margin-xs #[.pad-xs.underline Apple]
 
-        .flex-wrap
-          .pad.margin.border.border-grey
-            h4 .flex-stacked
+        .flex-wrap.flex-evenly
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0 .flex-stacked
             .flex-stacked
               .pad.bg-info.margin-xs Acker
               .pad.bg-info.margin-xs Dawn
               .pad.bg-info.margin-xs Apple
-          .pad.margin.border.border-grey
-            h4
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0
               div .flex-stacked
               div .flex-center
             .flex-stacked.flex-center
               .pad.bg-info.margin-xs Acker Dawn Apple
               .pad.bg-info.margin-xs Dawn
               .pad.bg-info.margin-xs Apple
-          .pad.margin.border.border-grey
-            h4
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0
               div .flex-stacked
               div .flex-left
             .flex-stacked.flex-left
               .pad.bg-info.margin-xs Acker Dawn Apple
               .pad.bg-info.margin-xs Dawn
               .pad.bg-info.margin-xs Apple
-          .pad.margin.border.border-grey
-            h4
+          .pad-xs.margin-xs.border-1-info
+            h4.margin-top-0
               div .flex-stacked
               div .flex-right
             .flex-stacked.flex-right
@@ -298,112 +299,112 @@ html(lang="en")
       .pad-h
         h4 border
         .flex-row-wrap.align-top
-          .margin.pad.border
+          .bg-info.margin.pad.border
             |.border
-          .margin.pad.border-1
+          .bg-info.margin.pad.border-1
             |.border-1
-          .margin.pad.border-2
+          .bg-info.margin.pad.border-2
             |.border-2
-          .margin.pad.border-3.border-dashed
+          .bg-info.margin.pad.border-3.border-dashed
             |.border-3.border-dashed
-          .margin.pad.border-4.border-dotted
+          .bg-info.margin.pad.border-4.border-dotted
             |.border-4.border-dotted
-          .margin.pad.border-5
+          .bg-info.margin.pad.border-5
             |.border-5
-          .margin.pad.border.border-top-0
+          .bg-info.margin.pad.border.border-top-0
             |.border-top-0
-          .margin.pad.border.border-left-0
+          .bg-info.margin.pad.border.border-left-0
             |.border-left-0
-          .margin.pad.border.border-bottom-0
+          .bg-info.margin.pad.border.border-bottom-0
             |.border-bottom-0
-          .margin.pad.border.border-right-0
+          .bg-info.margin.pad.border.border-right-0
             |.border-right-0
 
-          .margin.pad.border-top
+          .bg-info.margin.pad.border-top
             |.border-top
-          .margin.pad.border-right
+          .bg-info.margin.pad.border-right
             |.border-right
-          .margin.pad.border-bottom
+          .bg-info.margin.pad.border-bottom
             |.border-bottom
-          .margin.pad.border-left
+          .bg-info.margin.pad.border-left
             |.border-left
 
-          .margin.pad.border-top-2
+          .bg-info.margin.pad.border-top-2
             |.border-top-2
-          .margin.pad.border-right-2
+          .bg-info.margin.pad.border-right-2
             |.border-right-2
-          .margin.pad.border-bottom-2
+          .bg-info.margin.pad.border-bottom-2
             |.border-bottom-2
-          .margin.pad.border-left-2
+          .bg-info.margin.pad.border-left-2
             |.border-left-2
 
-          .margin.pad.border-top-3
+          .bg-info.margin.pad.border-top-3
             |.border-top-3
-          .margin.pad.border-right-3
+          .bg-info.margin.pad.border-right-3
             |.border-right-3
-          .margin.pad.border-bottom-3
+          .bg-info.margin.pad.border-bottom-3
             |.border-bottom-3
-          .margin.pad.border-left-3
+          .bg-info.margin.pad.border-left-3
             |.border-left-3
 
-          .margin.pad.border-top-4
+          .bg-info.margin.pad.border-top-4
             |.border-top-4
-          .margin.pad.border-right-4
+          .bg-info.margin.pad.border-right-4
             |.border-right-4
-          .margin.pad.border-bottom-4
+          .bg-info.margin.pad.border-bottom-4
             |.border-bottom-4
-          .margin.pad.border-left-4
+          .bg-info.margin.pad.border-left-4
             |.border-left-4
 
-          .margin.pad.border-top-5
+          .bg-info.margin.pad.border-top-5
             |.border-top-5
-          .margin.pad.border-right-5
+          .bg-info.margin.pad.border-right-5
             |.border-right-5
-          .margin.pad.border-bottom-5
+          .bg-info.margin.pad.border-bottom-5
             |.border-bottom-5
-          .margin.pad.border-left-5
+          .bg-info.margin.pad.border-left-5
             |.border-left-5
 
-          .margin.pad.border-top-6
+          .bg-info.margin.pad.border-top-6
             |.border-top-6
-          .margin.pad.border-right-6
+          .bg-info.margin.pad.border-right-6
             |.border-right-6
-          .margin.pad.border-bottom-6
+          .bg-info.margin.pad.border-bottom-6
             |.border-bottom-6
-          .margin.pad.border-left-6
+          .bg-info.margin.pad.border-left-6
             |.border-left-6
 
-          .margin.pad.border-top-7
+          .bg-info.margin.pad.border-top-7
             |.border-top-7
-          .margin.pad.border-right-7
+          .bg-info.margin.pad.border-right-7
             |.border-right-7
-          .margin.pad.border-bottom-7
+          .bg-info.margin.pad.border-bottom-7
             |.border-bottom-7
-          .margin.pad.border-left-7
+          .bg-info.margin.pad.border-left-7
             |.border-left-7
 
-          .margin.pad.border-top-8
+          .bg-info.margin.pad.border-top-8
             |.border-top-8
-          .margin.pad.border-right-8
+          .bg-info.margin.pad.border-right-8
             |.border-right-8
-          .margin.pad.border-bottom-8
+          .bg-info.margin.pad.border-bottom-8
             |.border-bottom-8
-          .margin.pad.border-left-8
+          .bg-info.margin.pad.border-left-8
             |.border-left-8
 
-          .margin.pad.bg-info.border-radius-0 .border-radius-0
-          .margin.pad.bg-info.border-radius-3 .border-radius-3
-          .margin.pad.bg-info.border-radius-4 .border-radius-4
-          .margin.pad.bg-info.border-radius-5 .border-radius-5
-          .margin.pad.bg-info.border-radius-6 .border-radius-6
-          .margin.pad.bg-info.border-radius-7 .border-radius-7
-          .margin.pad.bg-info.border-radius-8 .border-radius-8
-          .margin.pad.bg-info.border-radius-9 .border-radius-9
-          .margin.pad.bg-info.border-radius-10 .border-radius-10
-          .margin.pad.bg-info.border-radius-15 .border-radius-15
-          .margin.pad.bg-info.border-radius-20 .border-radius-20
-          .margin.pad.bg-info.border-radius-25 .border-radius-25
-          .margin.pad.bg-info.border-radius-half .border-radius-half
+          .border.border-grey.margin.pad.bg-info.border-radius-0 .border-radius-0
+          .border.border-grey.margin.pad.bg-info.border-radius-3 .border-radius-3
+          .border.border-grey.margin.pad.bg-info.border-radius-4 .border-radius-4
+          .border.border-grey.margin.pad.bg-info.border-radius-5 .border-radius-5
+          .border.border-grey.margin.pad.bg-info.border-radius-6 .border-radius-6
+          .border.border-grey.margin.pad.bg-info.border-radius-7 .border-radius-7
+          .border.border-grey.margin.pad.bg-info.border-radius-8 .border-radius-8
+          .border.border-grey.margin.pad.bg-info.border-radius-9 .border-radius-9
+          .border.border-grey.margin.pad.bg-info.border-radius-10 .border-radius-10
+          .border.border-grey.margin.pad.bg-info.border-radius-15 .border-radius-15
+          .border.border-grey.margin.pad.bg-info.border-radius-20 .border-radius-20
+          .border.border-grey.margin.pad.bg-info.border-radius-25 .border-radius-25
+          .border.border-grey.margin.pad.bg-info.border-radius-half .border-radius-half
 
         
       .pad-h
@@ -453,23 +454,48 @@ html(lang="en")
             table.table-pad.border-collapse
               thead
                 tr
+                  th.bg-info head1
+                  th.bg-info head2
+                  th.bg-info head3
+              tbody
+                tr
                   td.bg-info col1
                   td.bg-info col2
                   td.bg-info col3
+                tr
+                  td.bg-info col1
+                  td.bg-info col2
+                  td.bg-info col3
+          .pad-xs
+            h5 .table-lines
+            table.table-pad.border-collapse.table-lines
+              thead
+                tr
+                  th head1
+                  th head2
+                  th head3
               tbody
                 tr
-                  td.bg-info.pad-0 .pad-0
-                  td.bg-info.pad-0 .pad-0
-                  td.bg-info.pad-0 .pad-0
+                  td col1
+                  td col2
+                  td col3
+                tr
+                  td col1
+                  td col2
+                  td col3
           .pad-xs
             h5 table-pad-xxs
             table.table-pad-xxs
               thead
                 tr
+                  th.bg-info head1
+                  th.bg-info head2
+                  th.bg-info head3
+              tbody
+                tr
                   td.bg-info col1
                   td.bg-info col2
                   td.bg-info col3
-              tbody
                 tr
                   td.bg-info.pad-0 .pad-0
                   td.bg-info.pad-0 .pad-0
@@ -479,10 +505,14 @@ html(lang="en")
             table.table-pad-xs
               thead
                 tr
+                  th.bg-info head1
+                  th.bg-info head2
+                  th.bg-info head3
+              tbody
+                tr
                   td.bg-info col1
                   td.bg-info col2
                   td.bg-info col3
-              tbody
                 tr
                   td.bg-info.pad-0 .pad-0
                   td.bg-info.pad-0 .pad-0
@@ -492,10 +522,14 @@ html(lang="en")
             table.table-pad-sm
               thead
                 tr
+                  th.bg-info head1
+                  th.bg-info head2
+                  th.bg-info head3
+              tbody
+                tr
                   td.bg-info col1
                   td.bg-info col2
                   td.bg-info col3
-              tbody
                 tr
                   td.bg-info.pad-0 .pad-0
                   td.bg-info.pad-0 .pad-0
@@ -505,10 +539,14 @@ html(lang="en")
             table.table-pad
               thead
                 tr
+                  th.bg-info head1
+                  th.bg-info head2
+                  th.bg-info head3
+              tbody
+                tr
                   td.bg-info col1
                   td.bg-info col2
                   td.bg-info col3
-              tbody
                 tr
                   td.bg-info.pad-0 .pad-0
                   td.bg-info.pad-0 .pad-0
@@ -518,10 +556,14 @@ html(lang="en")
             table.table-pad-md
               thead
                 tr
+                  th.bg-info head1
+                  th.bg-info head2
+                  th.bg-info head3
+              tbody
+                tr
                   td.bg-info col1
                   td.bg-info col2
                   td.bg-info col3
-              tbody
                 tr
                   td.bg-info.pad-0 .pad-0
                   td.bg-info.pad-0 .pad-0
@@ -531,14 +573,18 @@ html(lang="en")
             table.table-pad-lg
               thead
                 tr
+                  th.bg-info head1
+                  th.bg-info head2
+                  th.bg-info head3
+              tbody
+                tr
                   td.bg-info col1
                   td.bg-info col2
                   td.bg-info col3
-              tbody
-              tr
-                td.bg-info.pad-0 .pad-0
-                td.bg-info.pad-0 .pad-0
-                td.bg-info.pad-0 .pad-0
+                tr
+                  td.bg-info.pad-0 .pad-0
+                  td.bg-info.pad-0 .pad-0
+                  td.bg-info.pad-0 .pad-0
 
       h2(id="ack-color-boot") ack-color-boot
       .flex-row-wrap
@@ -659,9 +705,47 @@ html(lang="en")
       .flex-row-wrap.align-top
         .pad-xs
           h5.margin-bottom-xs
+            br
+            |.table-lines
+          table.table-lines.table-pad-xs.border-collapse
+            thead
+              tr
+                th head1
+                th head2
+                th head3
+            tbody
+              each x in [0,1,2,3]
+                tr
+                  td col1
+                  td col2
+                  td col3
+        each x in colorArray
+          .pad-xs
+            h5.margin-bottom-xs
+              div .table-lines
+              div .table-lines-#{x}
+            table.table-lines.table-pad-xs.border-collapse(class="table-lines-"+x)
+              thead
+                tr
+                  th head1
+                  th head2
+                  th head3
+              tbody
+                each x in [0,1,2,3]
+                  tr
+                    td col1
+                    td col2
+                    td col3
+        .pad-xs
+          h5.margin-bottom-xs
             div .table-striped
             div .table-hover
           table.table-hover.table-striped.table-pad-xs
+            thead
+              tr
+                th head1
+                th head2
+                th head3
             tbody
               each x in [0,1,2,3]
                 tr
@@ -674,6 +758,11 @@ html(lang="en")
               div .table-striped-#{x}
               div .table-hover-#{x}
             table.table-pad-xs(class="table-hover-"+x+" table-striped-"+x)
+              thead
+                tr
+                  th head1
+                  th head2
+                  th head3
               tbody
                 each x in [0,1,2,3]
                   tr
@@ -683,6 +772,11 @@ html(lang="en")
         .pad-xs
           h5.margin-bottom-xs MiXeD ExAmPlE
           table.table-hover-primary.table-striped-warning.table-pad-xs
+            thead
+              tr
+                th head1
+                th head2
+                th head3
             tbody
               each x in [0,1,2,3]
                 tr

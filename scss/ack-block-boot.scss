@@ -609,3 +609,22 @@ table>tfoot>tr>th.pad-right-md, table>thead>tr>td.pad-right-md, table>thead>tr>t
 table>tbody>tr>td.pad-right-lg, table>tbody>tr>th.pad-right-lg, table>tfoot>tr>td.pad-right-lg,
 table>tfoot>tr>th.pad-right-lg, table>thead>tr>td.pad-right-lg, table>thead>tr>th.pad-right-lg
 {padding-right:$em-lg}
+
+.table-lines {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th, > td {@extend .border-bottom;border-color:#DDD;}
+    }
+  }
+  > thead > tr > th {@extend .border-bottom-2;border-color:#DDD;}
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th, > td {@extend .border-top-0;border-color:#DDD;}
+    }
+  }
+  > tbody + tbody {@extend .border-top-2;border-color:#DDD;}
+}
