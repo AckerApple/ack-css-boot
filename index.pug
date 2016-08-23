@@ -576,7 +576,7 @@ html(lang="en")
           h5.margin-bottom-xs
             div .table-striped
             div .table-hover
-          table.table-hover.table-striped.pad
+          table.table-hover.table-striped.table-pad-xs
             tbody
               each x in [0,1,2,3]
                 tr
@@ -588,13 +588,22 @@ html(lang="en")
             h5.margin-bottom-xs
               div .table-striped-#{x}
               div .table-hover-#{x}
-            table.pad(class="table-hover-"+x+" table-striped-"+x)
+            table.table-pad-xs(class="table-hover-"+x+" table-striped-"+x)
               tbody
                 each x in [0,1,2,3]
                   tr
                     td col1
                     td col2
                     td col3
+        .pad-xs
+          h5.margin-bottom-xs MiXeD ExAmPlE
+          table.table-hover-primary.table-striped-warning.table-pad-xs
+            tbody
+              each x in [0,1,2,3]
+                tr
+                  td col1
+                  td col2
+                  td col3
 
   .text-left
     h2(id="ack-responsive-boot") ack-responsive-boot

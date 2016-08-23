@@ -1,7 +1,7 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
-## [1.2.8] - 2016-08-23
+## [1.2.9] - 2016-08-23
 - .flex is implied into .flex- classes
 - sass variables are in a default like mode
 

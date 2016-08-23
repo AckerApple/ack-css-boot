@@ -108,56 +108,40 @@ $bg-dark:#444444 !default;
   text-shadow:0 0 4px #FFF
 }
 
-.table-hover > tbody > tr:hover {background-color: #f5f5f5}
 .table-striped > tbody > tr:nth-of-type(odd) {background-color: #f1f1f1}
-.hover-bg-primary:hover,
-.table-striped-primary > tbody > tr:nth-of-type(odd),
-.table-hover-primary > tbody > tr:hover {@extend .bg-primary}
-.hover-bg-success:hover,
-.table-striped-success > tbody > tr:nth-of-type(odd),
-.table-hover-success > tbody > tr:hover {@extend .bg-success}
-.hover-bg-info:hover,
-.table-striped-info > tbody > tr:nth-of-type(odd),
-.table-hover-info > tbody > tr:hover {@extend .bg-info}
-.hover-bg-warning:hover,
-.table-striped-warning > tbody > tr:nth-of-type(odd),
-.table-hover-warning > tbody > tr:hover {@extend .bg-warning}
-.hover-bg-danger:hover,
-.table-striped-danger > tbody > tr:nth-of-type(odd),
-.table-hover-danger > tbody > tr:hover {@extend .bg-danger}
-.hover-bg-grey:hover,
-.table-striped-grey > tbody > tr:nth-of-type(odd),
-.table-hover-grey > tbody > tr:hover {@extend .bg-grey}
-.hover-bg-grey-2x:hover,
-.table-striped-grey-2x > tbody > tr:nth-of-type(odd),
-.table-hover-grey-2x > tbody > tr:hover {@extend .bg-grey-2x}
-.hover-bg-grey-3x:hover,
-.table-striped-grey-3x > tbody > tr:nth-of-type(odd),
-.table-hover-grey-3x > tbody > tr:hover {@extend .bg-grey-3x}
-.hover-bg-grey-4x:hover,
-.table-striped-grey-4x > tbody > tr:nth-of-type(odd),
-.table-hover-grey-4x > tbody > tr:hover {@extend .bg-grey-4x}
-.hover-bg-stable:hover,
-.table-striped-stable > tbody > tr:nth-of-type(odd),
-.table-hover-stable > tbody > tr:hover {@extend .bg-stable}
-.hover-bg-positive:hover,
-.table-striped-positive > tbody > tr:nth-of-type(odd),
-.table-hover-positive > tbody > tr:hover {@extend .bg-positive}
-.hover-bg-calm:hover,
-.table-striped-calm > tbody > tr:nth-of-type(odd),
-.table-hover-calm > tbody > tr:hover {@extend .bg-calm}
-.hover-bg-balanced:hover,
-.table-striped-balanced > tbody > tr:nth-of-type(odd),
-.table-hover-balanced > tbody > tr:hover {@extend .bg-balanced}
-.hover-bg-energized:hover,
-.table-striped-energized > tbody > tr:nth-of-type(odd),
-.table-hover-energized > tbody > tr:hover {@extend .bg-energized}
-.hover-bg-assertive:hover,
-.table-striped-assertive > tbody > tr:nth-of-type(odd),
-.table-hover-assertive > tbody > tr:hover {@extend .bg-assertive}
-.hover-bg-royal:hover,
-.table-striped-royal > tbody > tr:nth-of-type(odd),
-.table-hover-royal > tbody > tr:hover {@extend .bg-royal}
-.hover-bg-dark:hover,
-.table-striped-dark > tbody > tr:nth-of-type(odd),
-.table-hover-dark > tbody > tr:hover {@extend .bg-dark}
+.table-striped-primary > tbody > tr:nth-of-type(odd) {@extend .bg-primary}
+.table-striped-success > tbody > tr:nth-of-type(odd) {@extend .bg-success}
+.table-striped-info > tbody > tr:nth-of-type(odd) {@extend .bg-info}
+.table-striped-warning > tbody > tr:nth-of-type(odd) {@extend .bg-warning}
+.table-striped-danger > tbody > tr:nth-of-type(odd) {@extend .bg-danger}
+.table-striped-grey > tbody > tr:nth-of-type(odd) {@extend .bg-grey}
+.table-striped-grey-2x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-2x}
+.table-striped-grey-3x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-3x}
+.table-striped-grey-4x > tbody > tr:nth-of-type(odd) {@extend .bg-grey-4x}
+.table-striped-stable > tbody > tr:nth-of-type(odd) {@extend .bg-stable}
+.table-striped-positive > tbody > tr:nth-of-type(odd) {@extend .bg-positive}
+.table-striped-calm > tbody > tr:nth-of-type(odd) {@extend .bg-calm}
+.table-striped-balanced > tbody > tr:nth-of-type(odd) {@extend .bg-balanced}
+.table-striped-energized > tbody > tr:nth-of-type(odd) {@extend .bg-energized}
+.table-striped-assertive > tbody > tr:nth-of-type(odd) {@extend .bg-assertive}
+.table-striped-royal > tbody > tr:nth-of-type(odd) {@extend .bg-royal}
+.table-striped-dark > tbody > tr:nth-of-type(odd) {@extend .bg-dark}
+
+.table-hover > tbody > tr:hover {background-color: #f5f5f5}
+.hover-bg-primary:hover, .table-hover-primary > tbody > tr:hover {background-color:$bg-primary}
+.hover-bg-success:hover, .table-hover-success > tbody > tr:hover {background-color:$bg-success}
+.hover-bg-info:hover, .table-hover-info > tbody > tr:hover {background-color:$bg-info}
+.hover-bg-warning:hover, .table-hover-warning > tbody > tr:hover {background-color:$bg-warning}
+.hover-bg-danger:hover, .table-hover-danger > tbody > tr:hover {background-color:$bg-danger}
+.hover-bg-grey:hover, .table-hover-grey > tbody > tr:hover {background-color:$bg-grey}
+.hover-bg-grey-2x:hover, .table-hover-grey-2x > tbody > tr:hover {background-color:$bg-grey-2x}
+.hover-bg-grey-3x:hover, .table-hover-grey-3x > tbody > tr:hover {background-color:$bg-grey-3x}
+.hover-bg-grey-4x:hover, .table-hover-grey-4x > tbody > tr:hover {background-color:$bg-grey-4x}
+.hover-bg-stable:hover, .table-hover-stable > tbody > tr:hover {background-color:$bg-stable}
+.hover-bg-positive:hover, .table-hover-positive > tbody > tr:hover {background-color:$bg-positive}
+.hover-bg-calm:hover, .table-hover-calm > tbody > tr:hover {background-color:$bg-calm}
+.hover-bg-balanced:hover, .table-hover-balanced > tbody > tr:hover {background-color:$bg-balanced}
+.hover-bg-energized:hover, .table-hover-energized > tbody > tr:hover {background-color:$bg-energized}
+.hover-bg-assertive:hover, .table-hover-assertive > tbody > tr:hover {background-color:$bg-assertive}
+.hover-bg-royal:hover, .table-hover-royal > tbody > tr:hover {background-color:$bg-royal}
+.hover-bg-dark:hover, .table-hover-dark > tbody > tr:hover {background-color:$bg-dark}
