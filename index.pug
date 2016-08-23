@@ -1,4 +1,4 @@
--colorArray = ["primary","success","info","warning","danger","grey","grey2x","grey3x","grey4x","stable","positive","calm","balanced","energized","assertive","royal","dark"]
+-colorArray = ["primary","success","info","warning","danger","grey","grey-2x","grey-3x","grey-4x","stable","positive","calm","balanced","energized","assertive","royal","dark"]
 doctype html
 html(lang="en")
   head
@@ -15,7 +15,7 @@ html(lang="en")
       br
       br
       h3 Table of Contents
-      .flex.flex-row-wrap
+      .flex-row-wrap
         .pad-sm
           a(href="#ack-flex-boot") ack-flex-boot
         .pad-sm
@@ -26,37 +26,78 @@ html(lang="en")
           a(href="#ack-color-boot") ack-color-boot
         .pad-sm
           a(href="#ack-responsive-boot") ack-responsive-boot
+      br
       h2(id="ack-flex-boot") ack-flex-boot
+      p.text-muted CSS flex box layout made extremely simple
+      p.text-sm.text-info A .flex class exists to set display:flex; but it is hardly needed. All .flex- classes extend .flex
       .pad
         h4 .flex-center
-        .flex.flex-center
+        .flex-center
           .pad.bg-info.margin-xs Acker
           .pad.bg-info.margin-xs Dawn
           .pad.bg-info.margin-xs Apple
         h4 .flex-left
-        .flex.flex-left
+        .flex-left
           .pad.bg-info.margin-xs Acker
           .pad.bg-info.margin-xs Dawn
           .pad.bg-info.margin-xs Apple
         h4 .flex-right
-        .flex.flex-right
+        .flex-right
           .pad.bg-info.margin-xs Acker
           .pad.bg-info.margin-xs Dawn
           .pad.bg-info.margin-xs Apple
         h4 .flex-evenly
-        .flex.flex-evenly
+        .flex-evenly
           .pad.bg-info.margin-xs Acker
           .pad.bg-info.margin-xs Dawn
           .pad.bg-info.margin-xs Apple
         h4 .flex-apart
-        .flex.flex-apart
+        .flex-apart
           .pad.bg-info.margin-xs Acker
           .pad.bg-info.margin-xs Dawn
           .pad.bg-info.margin-xs Apple
-        .flex.flex-wrap
+
+        .flex-row-wrap.flex-evenly
+          .pad-sm
+            h4 .flex-valign
+            .border-1-info
+              .flex-valign
+                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs Apple]
+          .pad-sm
+            h4 .flex-valign-center
+            .border-1-info
+              .flex-valign-center
+                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs Apple]
+          .pad-sm
+            h4 .flex-valign-bottom
+            .border-1-info
+              .flex-valign-bottom
+                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs Apple]
+          .pad-sm
+            h4 .flex-fill
+            .border-1-info
+              .flex-fill
+                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs Apple]
+          .pad-sm
+            h4 .flex-baseline
+            .border-1-info
+              .flex-baseline
+                .pad.bg-info.margin-xs #[.pad-xs.underline Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs.underline Dawn]#[.pad-xs Apple]
+                .pad.bg-info.margin-xs #[.pad-xs.underline Apple]
+
+        .flex-wrap
           .pad.margin.border.border-grey
             h4 .flex-stacked
-            .flex.flex-stacked
+            .flex-stacked
               .pad.bg-info.margin-xs Acker
               .pad.bg-info.margin-xs Dawn
               .pad.bg-info.margin-xs Apple
@@ -64,7 +105,7 @@ html(lang="en")
             h4
               div .flex-stacked
               div .flex-center
-            .flex.flex-stacked.flex-center
+            .flex-stacked.flex-center
               .pad.bg-info.margin-xs Acker Dawn Apple
               .pad.bg-info.margin-xs Dawn
               .pad.bg-info.margin-xs Apple
@@ -72,7 +113,7 @@ html(lang="en")
             h4
               div .flex-stacked
               div .flex-left
-            .flex.flex-stacked.flex-left
+            .flex-stacked.flex-left
               .pad.bg-info.margin-xs Acker Dawn Apple
               .pad.bg-info.margin-xs Dawn
               .pad.bg-info.margin-xs Apple
@@ -80,54 +121,17 @@ html(lang="en")
             h4
               div .flex-stacked
               div .flex-right
-            .flex.flex-stacked.flex-right
+            .flex-stacked.flex-right
               .pad.bg-info.margin-xs Acker Dawn Apple
               .pad.bg-info.margin-xs Dawn
               .pad.bg-info.margin-xs Apple
-
-        .flex.flex-row-wrap.flex-evenly
-          .pad-sm
-            h4 .flex-valign
-            .border-1-info
-              .flex.flex-valign
-                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Apple]
-          .pad-sm
-            h4 .flex-valign-center
-            .border-1-info
-              .flex.flex-valign-center
-                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Apple]
-          .pad-sm
-            h4 .flex-valign-bottom
-            .border-1-info
-              .flex.align-bottom
-                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Apple]
-          .pad-sm
-            h4 .flex-fill
-            .border-1-info
-              .flex.flex-fill
-                .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs Apple]
-          .pad-sm
-            h4 .align-baseline
-            .border-1-info
-              .flex.align-baseline
-                .pad.bg-info.margin-xs #[.pad-xs.underline Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs.underline Dawn]#[.pad-xs Apple]
-                .pad.bg-info.margin-xs #[.pad-xs.underline Apple]
 
 
         h3 Flex Inner Classes
 
         each size in [[1,'Flex Evenly'],[2,'Flex Double'],[3,'Flex Triple'],[4,'Flex Quad'],[5,'Flex Five'],[6,'Flex Six']]
           h4.margin-bottom-xxs .flex-#{size[0]} #{size[1]}
-          .flex.flex-row-wrap
+          .flex-row-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex-#{size[0]}
@@ -136,7 +140,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex.flex-row-wrap
+          .flex-row-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex-#{size[0]}
@@ -146,20 +150,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex.flex-row-wrap
-            .border-1-warning(class="flex-"+size[0])
-              .pad-xs.bg-info
-                .text-xs .flex-#{size[0]}
-            .flex-1.border-1-warning
-              .pad-xs
-                .text-xs .flex-1
-            .flex-1.border-1-warning
-              .pad-xs
-                .text-xs .flex-1
-            .flex-1.border-1-warning
-              .pad-xs
-                .text-xs .flex-1
-          .flex.flex-row-wrap
+          .flex-row-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex-#{size[0]}
@@ -172,10 +163,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-            .flex-1.border-1-warning
-              .pad-xs
-                .text-xs .flex-1
-          .flex.flex-row-wrap
+          .flex-row-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex-#{size[0]}
@@ -191,10 +179,26 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
+          .flex-row-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-info
+                .text-xs .flex-#{size[0]}
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex.flex-row-wrap
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+            .flex-1.border-1-warning
+              .pad-xs
+                .text-xs .flex-1
+          .flex-row-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex-#{size[0]}
@@ -219,7 +223,7 @@ html(lang="en")
 
 
       h2(id="ack-text-boot") ack-text-boot
-      .flex.flex-row-wrap        
+      .flex-row-wrap        
         .text-2x.pad.font-arial
           |.font-arial
         .text-2x.pad.font-times
@@ -261,7 +265,7 @@ html(lang="en")
         .pad.line-height-3x .line-height-3x
 
 
-      .flex.flex-wrap
+      .flex-wrap
         .flex-1.pad.hover-text-shadow-white-blur.bg-grey.text-white.text-center
           |.hover-text-shadow-white-blur
           .text-xs (hover with mouse)
@@ -278,7 +282,7 @@ html(lang="en")
 
       .pad-h
         h4 opacity
-      .flex.flex-row-wrap
+      .flex-row-wrap
         .flex-1.text-white.pad.margin.bg-black.opacity-90 .opacity-90
         .flex-1.text-white.pad.margin.bg-black.opacity-80 .opacity-80
         .flex-1.text-white.pad.margin.bg-black.opacity-75 .opacity-75
@@ -294,7 +298,7 @@ html(lang="en")
 
       .pad-h
         h4 border
-        .flex.flex-row-wrap.align-top
+        .flex-row-wrap.align-top
           .margin.pad.border
             |.border
           .margin.pad.border-1
@@ -372,7 +376,7 @@ html(lang="en")
             |.margin-4x
       .pad-h
         h4 table
-        .flex.flex-row-wrap.align-top
+        .flex-row-wrap.align-top
           .pad-xs
             h5 .border-collapse
             table.table-pad.border-collapse
@@ -466,7 +470,7 @@ html(lang="en")
                 td.bg-info.pad-0 .pad-0
 
       h2(id="ack-color-boot") ack-color-boot
-      .flex.flex-row-wrap
+      .flex-row-wrap
         .flex-1.margin-xs.pad.bg-info.border-info.border-3.border-solid
           |.bg-info.border-info
         .flex-1.margin-xs.pad.bg-danger.border-danger.border-3.border-solid
@@ -503,7 +507,7 @@ html(lang="en")
           |.bg-dark.border-dark
 
 
-      .flex.flex-row-wrap
+      .flex-row-wrap
         .flex-1.margin-xs.pad.text-positive
           |.text-positive
         .flex-1.margin-xs.pad.text-calm
@@ -556,7 +560,7 @@ html(lang="en")
           |.text-white,.font-white
 
       h4 border
-      .flex.flex-row-wrap.align-top
+      .flex-row-wrap.align-top
         .margin.pad.border-1-info
           |.border-1-info
         .margin.pad.border-1.border-success
@@ -567,7 +571,7 @@ html(lang="en")
           |.border-1.border-dotted.border-danger
 
       h4 table
-      .flex.flex-row-wrap.align-top
+      .flex-row-wrap.align-top
         .pad-xs
           h5.margin-bottom-xs
             div .table-striped
@@ -580,7 +584,7 @@ html(lang="en")
                   td col2
                   td col3
         each x in colorArray
-          .pad-xs
+          .pad-xs(class=x=='stable'?"bg-grey-3x":null)
             h5.margin-bottom-xs
               div .table-striped-#{x}
               div .table-hover-#{x}
@@ -597,99 +601,143 @@ html(lang="en")
 
     div(style="border-left:1px dotted black")
       h5 width guide
-      .flex.align-center(style="max-width:438px;")
+      .flex-valign-center(style="max-width:438px;")
         div
           .pad-xs xxs &gt; 0 &amp;&amp; &lt;= 438
         .flex-1.border-1-success
-      .flex.align-center(style="max-width:768px;")
+      .flex-valign-center(style="max-width:768px;")
         div
           .pad-xs xs &gt; 0 &amp;&amp; &lt;= 768
         .flex-1.border-1-success
-      .flex.align-center(style="max-width:768px;")
-        .flex-6.flex.align-center(style="max-width:575px;")
+      .flex-valign-center(style="max-width:768px;")
+        .flex-6.flex-valign-center(style="max-width:575px;")
           .pad-xs smx &gt;= 576 &amp;&amp; &lt; 768
           .flex-1.border-1-warning
         .flex-1.border-1-success
-      .flex.align-center(style="max-width:992px;")
-        .flex-6.flex.align-center(style="max-width:768px;")
+      .flex-valign-center(style="max-width:992px;")
+        .flex-6.flex-valign-center(style="max-width:768px;")
           .pad-xs sm &gt;= 768 &amp;&amp; &lt; 992
           .flex-1.border-1-warning
         .flex-1.border-1-success
-      .flex.align-center(style="max-width:1200px;")
-        .flex-6.flex.align-center(style="max-width:992px;")
+      .flex-valign-center(style="max-width:1200px;")
+        .flex-6.flex-valign-center(style="max-width:992px;")
           .pad-xs md &gt;= 992 &amp;&amp; &lt; 1200
           .flex-1.border-1-warning
         .flex-1.border-1-success
-      .flex.align-center
-        .flex.align-center(style="max-width:1200px;flex-grow:100;")
+      .flex-valign-center
+        .flex-valign-center(style="max-width:1200px;flex-grow:100;")
           .pad-xs lg &gt;= 1200
           .flex-1.border-1-warning
         .flex-1.border-1-success
 
-    .flex.flex-row-wrap
-      .flex-1.margin.pad.margin.flex.flex-valign
-        .hide-xxs.pad.bg-success visible
-        .margin.pad .hide-xxs
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-xs.pad.bg-success visible
-        .margin.pad .hide-xs
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-smx.pad.bg-success visible
-        .margin.pad .hide-smx
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-sm.pad.bg-success visible
-        .margin.pad .hide-sm
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-md.pad.bg-success visible
-        .margin.pad .hide-md
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lg.pad.bg-success visible
-        .margin.pad .hide-lg
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-print.pad.bg-success visible
-        .margin.pad .hide-print
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-gt-xxs.pad.bg-success visible
-        .margin.pad .hide-gt-xxs
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-gt-xs.pad.bg-success visible
-        .margin.pad .hide-gt-xs
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-gt-smx.pad.bg-success visible
-        .margin.pad .hide-gt-smx
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-gt-sm.pad.bg-success visible
-        .margin.pad .hide-gt-sm
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-gt-md.pad.bg-success visible
-        .margin.pad .hide-gt-md
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lte-xxs.pad.bg-success visible
-        .margin.pad .hide-lte-xxs
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lt-xxs.pad.bg-success visible
-        .margin.pad .hide-lt-xxs
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lte-xs.pad.bg-success visible
-        .margin.pad .hide-lte-xs
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lt-xs.pad.bg-success visible
-        .margin.pad .hide-lt-xs
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lte-smx.pad.bg-success visible
-        .margin.pad .hide-lte-smx
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lt-smx.pad.bg-success visible
-        .margin.pad .hide-lt-smx
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lte-sm.pad.bg-success visible
-        .margin.pad .hide-lte-sm
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lt-sm.pad.bg-success visible
-        .margin.pad .hide-lt-sm
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lte-md.pad.bg-success visible
-        .margin.pad .hide-lte-md
-      .flex-1.pad.margin.flex.flex-valign
-        .hide-lt-md.pad.bg-success visible
-        .margin.pad .hide-lt-md
+    .flex-row-wrap
+      .border.border-success.flex-1.margin.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-xxs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-xxs
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-xs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-xs
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-smx.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-smx
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-sm.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-sm
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-md.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-md
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lg.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lg
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-print.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-print
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-gt-xxs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-gt-xxs
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-gt-xs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-gt-xs
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-gt-smx.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-gt-smx
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-gt-sm.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-gt-sm
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-gt-md.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-gt-md
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lte-xxs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lte-xxs
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lt-xxs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lt-xxs
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lte-xs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lte-xs
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lt-xs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lt-xs
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lte-smx.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lte-smx
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lt-smx.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lt-smx
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lte-sm.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lte-sm
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lt-sm.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lt-sm
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lte-md.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lte-md
+      .border.border-success.flex-1.pad.margin.flex-valign
+        .pos-rel
+          .pos-abs.hide-lt-md.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
+          .pad.bg-dark hidden
+        .pad .hide-lt-md

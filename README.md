@@ -113,23 +113,40 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .flex-5 {flex-grow:5}
 .flex-6 {flex-grow:6}
 
-.flex-wrap {flex-wrap:wrap}
-.flex-stacked, .flex-column, .flex-columns, .flex-direction-column {flex-direction: column}
-.flex-inline, .flex-row, .flex-rows, .flex-direction-row {flex-direction: row}
-.flex-row-wrap, .flex-wrap-rows, .flex-wrap-inline, .flex-flow-inline {flex-wrap:wrap;flex-direction:row}
-.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stacked, .flex-flow-stacked {flex-wrap:wrap;flex-direction:column}
+.flex-wrap {flex-wrap:wrap;@extend .flex}
+.flex-stacked, .flex-column, .flex-columns, .flex-direction-column {flex-direction: column;@extend .flex}
+.flex-inline, .flex-row, .flex-rows, .flex-direction-row {flex-direction: row;@extend .flex}
+.flex-row-wrap, .flex-wrap-rows, .flex-wrap-inline, .flex-flow-inline {flex-wrap:wrap;flex-direction:row;@extend .flex}
+.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stacked, .flex-flow-stacked {flex-wrap:wrap;flex-direction:column;@extend .flex}
 
-.flex-left, .justify-left {justify-content:flex-start}
-.flex-center, .justify-center {justify-content:center}
-.flex-right, .justify-right {justify-content:flex-end}
-.flex-apart, .flex-space-between, .justify-apart, .justify-space-between {justify-content:space-between}
-.flex-evenly, .flex-space-around, .justify-space-around {justify-content:space-around}
+.justify-left {justify-content:flex-start}
+.flex-left {@extend .flex, .justify-left}
 
-.flex-valign, .flex-top, .flex-valign-top {align-items:flex-start}
-.flex-valign-center, .flex-valign-middle, .align-center {align-items:center}
-.flex-valign-bottom, .align-bottom,.align-end {align-items:flex-end}
-.flex-fill, .align-fill, .align-stretch {align-items:stretch}
+.justify-center {justify-content:center}
+.flex-center {@extend .flex, .justify-center}
+
+.justify-right {justify-content:flex-end}
+.flex-right {@extend .flex, .justify-right}
+
+.justify-apart, .justify-space-between {justify-content:space-between}
+.flex-apart, .flex-space-between {@extend .flex, .justify-apart}
+
+.justify-space-around {justify-content:space-around}
+.flex-evenly, .flex-space-around {@extend .flex, .justify-space-around}
+
+.flex-valign, .flex-top, .flex-valign-top {align-items:flex-start;@extend .flex}
+
+.align-center {align-items:center}
+.flex-valign-center, .flex-valign-middle {@extend .flex, .align-center}
+
+.align-bottom,.align-end {align-items:flex-end}
+.flex-valign-bottom {@extend .flex, .align-bottom}
+
+.align-fill, .align-stretch {align-items:stretch}
+.flex-fill {@extend .flex, .align-fill}
+
 .align-baseline {align-items:baseline}
+.flex-baseline {@extend .flex, .align-baseline}
 
 
 .flex-stacked.flex-center, .flex-column.flex-center, .flex-columns.flex-center, .flex-direction-column.flex-center
@@ -146,23 +163,23 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 > scss/ack-color-boot.scss
 
 ```
-$bg-primary:#337ab7;
-$bg-success:#dff0d8;
-$bg-info:#d9edf7;
-$bg-warning:#fcf8e3;
-$bg-danger:#f2dede;
-$bg-grey:#777;
-$bg-grey2x:#999;
-$bg-grey3x:#BBB;
-$bg-grey4x:#CCC;
-$bg-stable:#f8f8f8;
-$bg-positive:#387ef5;
-$bg-calm:#11c1f3;
-$bg-balanced:#33cd5f;
-$bg-energized:#ffc900;
-$bg-assertive:#ef473a;
-$bg-royal:#886aea;
-$bg-dark:#444444;
+$bg-primary:#337ab7 !default;
+$bg-success:#dff0d8 !default;
+$bg-info:#d9edf7 !default;
+$bg-warning:#fcf8e3 !default;
+$bg-danger:#f2dede !default;
+$bg-grey:#777 !default;
+$bg-grey-2x:#999 !default;
+$bg-grey-3x:#BBB !default;
+$bg-grey-4x:#CCC !default;
+$bg-stable:#f8f8f8 !default;
+$bg-positive:#387ef5 !default;
+$bg-calm:#11c1f3 !default;
+$bg-balanced:#33cd5f !default;
+$bg-energized:#ffc900 !default;
+$bg-assertive:#ef473a !default;
+$bg-royal:#886aea !default;
+$bg-dark:#444444 !default;
 
 
 .text-positive {color:#0c60ee}
@@ -203,9 +220,9 @@ $bg-dark:#444444;
 .bg-warning {background-color:$bg-warning}
 .bg-danger {background-color:$bg-danger}
 .bg-grey {background-color:$bg-grey}
-.bg-grey-xs,.bg-grey-2x {background-color:$bg-grey2x}
-.bg-grey-xxs,.bg-grey-3x {background-color:$bg-grey3x}
-.bg-grey-4x {background-color:$bg-grey4x}
+.bg-grey-xs,.bg-grey-2x {background-color:$bg-grey-2x}
+.bg-grey-xxs,.bg-grey-3x {background-color:$bg-grey-3x}
+.bg-grey-4x {background-color:$bg-grey-4x}
 .bg-stable {background-color:$bg-stable}
 .bg-positive {background-color:$bg-positive}
 .bg-calm {background-color:$bg-calm}
@@ -260,55 +277,55 @@ $bg-dark:#444444;
 .table-striped > tbody > tr:nth-of-type(odd) {background-color: #f1f1f1}
 .hover-bg-primary:hover,
 .table-striped-primary > tbody > tr:nth-of-type(odd),
-.table-hover-primary > tbody > tr:hover {background-color: $bg-primary}
+.table-hover-primary > tbody > tr:hover {@extend .bg-primary}
 .hover-bg-success:hover,
 .table-striped-success > tbody > tr:nth-of-type(odd),
-.table-hover-success > tbody > tr:hover {background-color: $bg-success}
+.table-hover-success > tbody > tr:hover {@extend .bg-success}
 .hover-bg-info:hover,
 .table-striped-info > tbody > tr:nth-of-type(odd),
-.table-hover-info > tbody > tr:hover {background-color: $bg-info}
+.table-hover-info > tbody > tr:hover {@extend .bg-info}
 .hover-bg-warning:hover,
 .table-striped-warning > tbody > tr:nth-of-type(odd),
-.table-hover-warning > tbody > tr:hover {background-color: $bg-warning}
+.table-hover-warning > tbody > tr:hover {@extend .bg-warning}
 .hover-bg-danger:hover,
 .table-striped-danger > tbody > tr:nth-of-type(odd),
-.table-hover-danger > tbody > tr:hover {background-color: $bg-danger}
+.table-hover-danger > tbody > tr:hover {@extend .bg-danger}
 .hover-bg-grey:hover,
 .table-striped-grey > tbody > tr:nth-of-type(odd),
-.table-hover-grey > tbody > tr:hover {background-color: $bg-grey}
-.hover-bg-grey2x:hover,
-.table-striped-grey2x > tbody > tr:nth-of-type(odd),
-.table-hover-grey2x > tbody > tr:hover {background-color: $bg-grey2x}
-.hover-bg-grey3x:hover,
-.table-striped-grey3x > tbody > tr:nth-of-type(odd),
-.table-hover-grey3x > tbody > tr:hover {background-color: $bg-grey3x}
-.hover-bg-grey4x:hover,
-.table-striped-grey4x > tbody > tr:nth-of-type(odd),
-.table-hover-grey4x > tbody > tr:hover {background-color: $bg-grey4x}
+.table-hover-grey > tbody > tr:hover {@extend .bg-grey}
+.hover-bg-grey-2x:hover,
+.table-striped-grey-2x > tbody > tr:nth-of-type(odd),
+.table-hover-grey-2x > tbody > tr:hover {@extend .bg-grey-2x}
+.hover-bg-grey-3x:hover,
+.table-striped-grey-3x > tbody > tr:nth-of-type(odd),
+.table-hover-grey-3x > tbody > tr:hover {@extend .bg-grey-3x}
+.hover-bg-grey-4x:hover,
+.table-striped-grey-4x > tbody > tr:nth-of-type(odd),
+.table-hover-grey-4x > tbody > tr:hover {@extend .bg-grey-4x}
 .hover-bg-stable:hover,
 .table-striped-stable > tbody > tr:nth-of-type(odd),
-.table-hover-stable > tbody > tr:hover {background-color: $bg-stable}
+.table-hover-stable > tbody > tr:hover {@extend .bg-stable}
 .hover-bg-positive:hover,
 .table-striped-positive > tbody > tr:nth-of-type(odd),
-.table-hover-positive > tbody > tr:hover {background-color: $bg-positive}
+.table-hover-positive > tbody > tr:hover {@extend .bg-positive}
 .hover-bg-calm:hover,
 .table-striped-calm > tbody > tr:nth-of-type(odd),
-.table-hover-calm > tbody > tr:hover {background-color: $bg-calm}
+.table-hover-calm > tbody > tr:hover {@extend .bg-calm}
 .hover-bg-balanced:hover,
 .table-striped-balanced > tbody > tr:nth-of-type(odd),
-.table-hover-balanced > tbody > tr:hover {background-color: $bg-balanced}
+.table-hover-balanced > tbody > tr:hover {@extend .bg-balanced}
 .hover-bg-energized:hover,
 .table-striped-energized > tbody > tr:nth-of-type(odd),
-.table-hover-energized > tbody > tr:hover {background-color: $bg-energized}
+.table-hover-energized > tbody > tr:hover {@extend .bg-energized}
 .hover-bg-assertive:hover,
 .table-striped-assertive > tbody > tr:nth-of-type(odd),
-.table-hover-assertive > tbody > tr:hover {background-color: $bg-assertive}
+.table-hover-assertive > tbody > tr:hover {@extend .bg-assertive}
 .hover-bg-royal:hover,
 .table-striped-royal > tbody > tr:nth-of-type(odd),
-.table-hover-royal > tbody > tr:hover {background-color: $bg-royal}
+.table-hover-royal > tbody > tr:hover {@extend .bg-royal}
 .hover-bg-dark:hover,
 .table-striped-dark > tbody > tr:nth-of-type(odd),
-.table-hover-dark > tbody > tr:hover {background-color: $bg-dark}
+.table-hover-dark > tbody > tr:hover {@extend .bg-dark}
 ```
 
 
@@ -317,12 +334,13 @@ $bg-dark:#444444;
 > scss/ack-block-boot.scss
 
 ```
-$em-xxs: 0.2em;
-$em-xs: 0.4em;
-$em-sm: 0.6em;
-$em: 0.8em;
-$em-md: 1em;
-$em-lg: 1.5em;
+$em-xxs: 0.2em !default;
+$em-xs: 0.4em !default;
+$em-sm: 0.6em !default;
+$em: 0.8em !default;
+$em-md: 1em !default;
+$em-lg: 1.5em !default;
+$em-4x: 2em !default;
 
 
 
@@ -422,6 +440,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin {margin:$em}
 .margin-2x, .margin-md {margin:$em-md}
 .margin-3x, .margin-lg {margin:$em-lg}
+.margin-4x {margin:$em-4x}
 
 .margin-v-0 {margin-top:0;margin-bottom:0}
 .margin-v-xxs {margin-top:$em-xxs;margin-bottom:$em-xxs}
@@ -430,6 +449,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-v {margin-top:$em;margin-bottom:$em}
 .margin-v-2x, .margin-v-md {margin-top:$em-md;margin-bottom:$em-md}
 .margin-v-3x, .margin-v-lg {margin-top:$em-lg;margin-bottom:$em-lg}
+.margin-v-4x {margin-top:$em-4x;margin-bottom:$em-4x}
 
 .margin-h-0 {margin-left:0;margin-right:0}
 .margin-h-xxs {margin-left:$em-xxs;margin-right:$em-xxs}
@@ -438,6 +458,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-h {margin-left:$em;margin-right:$em}
 .margin-h-2x, .margin-h-md {margin-left:$em-md;margin-right:$em-md}
 .margin-h-3x, .margin-h-lg {margin-left:$em-lg;margin-right:$em-lg}
+.margin-h-4x {margin-left:$em-4x;margin-right:$em-4x}
 
 .margin-top-0 {margin-top:0}
 .margin-top-xxs {margin-top:$em-xxs}
@@ -445,7 +466,8 @@ a, .cursor-pointer {cursor:pointer}
 .margin-top-sm {margin-top:$em-sm}
 .margin-top {margin-top:$em}
 .margin-top-2x, .margin-top-md {margin-top:$em-md}
-.margin-top-2x, .margin-top-lg {margin-top:$em-lg}
+.margin-top-3x, .margin-top-lg {margin-top:$em-lg}
+.margin-top-4x, .margin-top-lg {margin-top:$em-4x}
 
 .margin-bottom-0 {margin-bottom:0}
 .margin-bottom-xxs {margin-bottom:$em-xxs}
@@ -454,6 +476,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-bottom {margin-bottom:$em}
 .margin-bottom-2x, .margin-bottom-md {margin-bottom:$em-md}
 .margin-bottom-3x, .margin-bottom-lg {margin-bottom:$em-lg}
+.margin-bottom-4x {margin-bottom:$em-4x}
 
 .margin-left-0 {margin-left:0}
 .margin-left-xxs {margin-left:$em-xxs}
@@ -462,6 +485,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-left {margin-left:$em}
 .margin-left-2x, .margin-left-md {margin-left:$em-md}
 .margin-left-3x, .margin-left-lg {margin-left:$em-lg}
+.margin-left-4x {margin-left:$em-4x}
 
 .margin-right-0 {margin-right:0}
 .margin-right-xxs {margin-right:$em-xxs}
@@ -470,6 +494,7 @@ a, .cursor-pointer {cursor:pointer}
 .margin-right {margin-right:$em}
 .margin-right-2x, .margin-right-md {margin-right:$em-md}
 .margin-right-3x, .margin-right-lg {margin-right:$em-lg}
+.margin-right-4x {margin-right:$em-4x}
 
 
 .pad-0 {padding:0}
@@ -479,6 +504,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad {padding:$em}
 .pad-2x, .pad-md {padding:$em-md}
 .pad-3x, .pad-lg {padding:$em-lg}
+.pad-4x {padding:$em-4x}
 
 .pad-v-0 {padding-top:0;padding-bottom:0}
 .pad-v-xxs {padding-top:$em-xxs;padding-bottom:$em-xxs}
@@ -487,6 +513,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-v {padding-top:$em;padding-bottom:$em}
 .pad-v-2x, .pad-v-md {padding-top:$em-md;padding-bottom:$em-md}
 .pad-v-3x, .pad-v-lg {padding-top:$em-lg;padding-bottom:$em-lg}
+.pad-v-4x {padding-top:$em-4x;padding-bottom:$em-4x}
 
 .pad-h-0 {padding-left:0;padding-right:0}
 .pad-h-xxs {padding-left:$em-xxs;padding-right:$em-xxs}
@@ -495,6 +522,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-h {padding-left:$em;padding-right:$em}
 .pad-h-2x, .pad-h-md {padding-left:$em-md;padding-right:$em-md}
 .pad-h-3x, .pad-h-lg {padding-left:$em-lg;padding-right:$em-lg}
+.pad-h-4x {padding-left:$em-4x;padding-right:$em-4x}
 
 .pad-top-0 {padding-top:0}
 .pad-top-xxs {padding-top:$em-xxs}
@@ -503,6 +531,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-top {padding-top:$em}
 .pad-top-2x, .pad-top-md {padding-top:$em-md}
 .pad-top-3x, .pad-top-lg {padding-top:$em-lg}
+.pad-top-4x {padding-top:$em-4x}
 
 .pad-bottom-0 {padding-bottom:0}
 .pad-bottom-xxs {padding-bottom:$em-xxs}
@@ -511,6 +540,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-bottom {padding-bottom:$em}
 .pad-bottom-2x, .pad-bottom-md {padding-bottom:$em-md}
 .pad-bottom-3x, .pad-bottom-lg {padding-bottom:$em-lg}
+.pad-bottom-4x {padding-bottom:$em-4x}
 
 .pad-left-0 {padding-left:0}
 .pad-left-xxs {padding-left:$em-xxs}
@@ -519,6 +549,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-left {padding-left:$em}
 .pad-left-2x, .pad-left-md {padding-left:$em-md}
 .pad-left-3x, .pad-left-lg {padding-left:$em-lg}
+.pad-left-4x {padding-left:$em-4x}
 
 .pad-right-0 {padding-right:0}
 .pad-right-xxs {padding-right:$em-xxs}
@@ -527,6 +558,7 @@ a, .cursor-pointer {cursor:pointer}
 .pad-right {padding-right:$em}
 .pad-right-2x, .pad-right-md {padding-right:$em-md}
 .pad-right-3x, .pad-right-lg {padding-right:$em-lg}
+.pad-right-4x {padding-right:$em-4x}
 
 
 .max-height {max-height:100%}

@@ -6,23 +6,40 @@
 .flex-5 {flex-grow:5}
 .flex-6 {flex-grow:6}
 
-.flex-wrap {flex-wrap:wrap}
-.flex-stacked, .flex-column, .flex-columns, .flex-direction-column {flex-direction: column}
-.flex-inline, .flex-row, .flex-rows, .flex-direction-row {flex-direction: row}
-.flex-row-wrap, .flex-wrap-rows, .flex-wrap-inline, .flex-flow-inline {flex-wrap:wrap;flex-direction:row}
-.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stacked, .flex-flow-stacked {flex-wrap:wrap;flex-direction:column}
+.flex-wrap {flex-wrap:wrap;@extend .flex}
+.flex-stacked, .flex-column, .flex-columns, .flex-direction-column {flex-direction: column;@extend .flex}
+.flex-inline, .flex-row, .flex-rows, .flex-direction-row {flex-direction: row;@extend .flex}
+.flex-row-wrap, .flex-wrap-rows, .flex-wrap-inline, .flex-flow-inline {flex-wrap:wrap;flex-direction:row;@extend .flex}
+.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stacked, .flex-flow-stacked {flex-wrap:wrap;flex-direction:column;@extend .flex}
 
-.flex-left, .justify-left {justify-content:flex-start}
-.flex-center, .justify-center {justify-content:center}
-.flex-right, .justify-right {justify-content:flex-end}
-.flex-apart, .flex-space-between, .justify-apart, .justify-space-between {justify-content:space-between}
-.flex-evenly, .flex-space-around, .justify-space-around {justify-content:space-around}
+.justify-left {justify-content:flex-start}
+.flex-left {@extend .flex, .justify-left}
 
-.flex-valign, .flex-top, .flex-valign-top {align-items:flex-start}
-.flex-valign-center, .flex-valign-middle, .align-center {align-items:center}
-.flex-valign-bottom, .align-bottom,.align-end {align-items:flex-end}
-.flex-fill, .align-fill, .align-stretch {align-items:stretch}
+.justify-center {justify-content:center}
+.flex-center {@extend .flex, .justify-center}
+
+.justify-right {justify-content:flex-end}
+.flex-right {@extend .flex, .justify-right}
+
+.justify-apart, .justify-space-between {justify-content:space-between}
+.flex-apart, .flex-space-between {@extend .flex, .justify-apart}
+
+.justify-space-around {justify-content:space-around}
+.flex-evenly, .flex-space-around {@extend .flex, .justify-space-around}
+
+.flex-valign, .flex-top, .flex-valign-top {align-items:flex-start;@extend .flex}
+
+.align-center {align-items:center}
+.flex-valign-center, .flex-valign-middle {@extend .flex, .align-center}
+
+.align-bottom,.align-end {align-items:flex-end}
+.flex-valign-bottom {@extend .flex, .align-bottom}
+
+.align-fill, .align-stretch {align-items:stretch}
+.flex-fill {@extend .flex, .align-fill}
+
 .align-baseline {align-items:baseline}
+.flex-baseline {@extend .flex, .align-baseline}
 
 
 .flex-stacked.flex-center, .flex-column.flex-center, .flex-columns.flex-center, .flex-direction-column.flex-center
