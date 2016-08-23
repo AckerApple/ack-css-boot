@@ -1805,89 +1805,55 @@ lg >= 1200
 .bg-black {
   background-color: black; }
 
-.bg-primary, .hover-bg-primary:hover,
-.table-striped-primary > tbody > tr:nth-of-type(odd),
-.table-hover-primary > tbody > tr:hover {
+.bg-primary, .table-striped-primary > tbody > tr:nth-of-type(odd) {
   background-color: #337ab7; }
 
-.bg-success, .hover-bg-success:hover,
-.table-striped-success > tbody > tr:nth-of-type(odd),
-.table-hover-success > tbody > tr:hover {
+.bg-success, .table-striped-success > tbody > tr:nth-of-type(odd) {
   background-color: #dff0d8; }
 
-.bg-info, .hover-bg-info:hover,
-.table-striped-info > tbody > tr:nth-of-type(odd),
-.table-hover-info > tbody > tr:hover {
+.bg-info, .table-striped-info > tbody > tr:nth-of-type(odd) {
   background-color: #d9edf7; }
 
-.bg-warning, .hover-bg-warning:hover,
-.table-striped-warning > tbody > tr:nth-of-type(odd),
-.table-hover-warning > tbody > tr:hover {
+.bg-warning, .table-striped-warning > tbody > tr:nth-of-type(odd) {
   background-color: #fcf8e3; }
 
-.bg-danger, .hover-bg-danger:hover,
-.table-striped-danger > tbody > tr:nth-of-type(odd),
-.table-hover-danger > tbody > tr:hover {
+.bg-danger, .table-striped-danger > tbody > tr:nth-of-type(odd) {
   background-color: #f2dede; }
 
-.bg-grey, .hover-bg-grey:hover,
-.table-striped-grey > tbody > tr:nth-of-type(odd),
-.table-hover-grey > tbody > tr:hover {
+.bg-grey, .table-striped-grey > tbody > tr:nth-of-type(odd) {
   background-color: #777; }
 
-.bg-grey-xs, .bg-grey-2x, .hover-bg-grey-2x:hover,
-.table-striped-grey-2x > tbody > tr:nth-of-type(odd),
-.table-hover-grey-2x > tbody > tr:hover {
+.bg-grey-xs, .bg-grey-2x, .table-striped-grey-2x > tbody > tr:nth-of-type(odd) {
   background-color: #999; }
 
-.bg-grey-xxs, .bg-grey-3x, .hover-bg-grey-3x:hover,
-.table-striped-grey-3x > tbody > tr:nth-of-type(odd),
-.table-hover-grey-3x > tbody > tr:hover {
+.bg-grey-xxs, .bg-grey-3x, .table-striped-grey-3x > tbody > tr:nth-of-type(odd) {
   background-color: #BBB; }
 
-.bg-grey-4x, .hover-bg-grey-4x:hover,
-.table-striped-grey-4x > tbody > tr:nth-of-type(odd),
-.table-hover-grey-4x > tbody > tr:hover {
+.bg-grey-4x, .table-striped-grey-4x > tbody > tr:nth-of-type(odd) {
   background-color: #CCC; }
 
-.bg-stable, .hover-bg-stable:hover,
-.table-striped-stable > tbody > tr:nth-of-type(odd),
-.table-hover-stable > tbody > tr:hover {
+.bg-stable, .table-striped-stable > tbody > tr:nth-of-type(odd) {
   background-color: #f8f8f8; }
 
-.bg-positive, .hover-bg-positive:hover,
-.table-striped-positive > tbody > tr:nth-of-type(odd),
-.table-hover-positive > tbody > tr:hover {
+.bg-positive, .table-striped-positive > tbody > tr:nth-of-type(odd) {
   background-color: #387ef5; }
 
-.bg-calm, .hover-bg-calm:hover,
-.table-striped-calm > tbody > tr:nth-of-type(odd),
-.table-hover-calm > tbody > tr:hover {
+.bg-calm, .table-striped-calm > tbody > tr:nth-of-type(odd) {
   background-color: #11c1f3; }
 
-.bg-balanced, .hover-bg-balanced:hover,
-.table-striped-balanced > tbody > tr:nth-of-type(odd),
-.table-hover-balanced > tbody > tr:hover {
+.bg-balanced, .table-striped-balanced > tbody > tr:nth-of-type(odd) {
   background-color: #33cd5f; }
 
-.bg-energized, .hover-bg-energized:hover,
-.table-striped-energized > tbody > tr:nth-of-type(odd),
-.table-hover-energized > tbody > tr:hover {
+.bg-energized, .table-striped-energized > tbody > tr:nth-of-type(odd) {
   background-color: #ffc900; }
 
-.bg-assertive, .hover-bg-assertive:hover,
-.table-striped-assertive > tbody > tr:nth-of-type(odd),
-.table-hover-assertive > tbody > tr:hover {
+.bg-assertive, .table-striped-assertive > tbody > tr:nth-of-type(odd) {
   background-color: #ef473a; }
 
-.bg-royal, .hover-bg-royal:hover,
-.table-striped-royal > tbody > tr:nth-of-type(odd),
-.table-hover-royal > tbody > tr:hover {
+.bg-royal, .table-striped-royal > tbody > tr:nth-of-type(odd) {
   background-color: #886aea; }
 
-.bg-dark, .hover-bg-dark:hover,
-.table-striped-dark > tbody > tr:nth-of-type(odd),
-.table-hover-dark > tbody > tr:hover {
+.bg-dark, .table-striped-dark > tbody > tr:nth-of-type(odd) {
   background-color: #444444; }
 
 .border-grey {
@@ -1993,8 +1959,59 @@ lg >= 1200
 .hover-text-shadow-white-blur:hover {
   text-shadow: 0 0 4px #FFF; }
 
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f1f1f1; }
+
 .table-hover > tbody > tr:hover {
   background-color: #f5f5f5; }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #f1f1f1; }
+.hover-bg-primary:hover, .table-hover-primary > tbody > tr:hover {
+  background-color: #337ab7; }
+
+.hover-bg-success:hover, .table-hover-success > tbody > tr:hover {
+  background-color: #dff0d8; }
+
+.hover-bg-info:hover, .table-hover-info > tbody > tr:hover {
+  background-color: #d9edf7; }
+
+.hover-bg-warning:hover, .table-hover-warning > tbody > tr:hover {
+  background-color: #fcf8e3; }
+
+.hover-bg-danger:hover, .table-hover-danger > tbody > tr:hover {
+  background-color: #f2dede; }
+
+.hover-bg-grey:hover, .table-hover-grey > tbody > tr:hover {
+  background-color: #777; }
+
+.hover-bg-grey-2x:hover, .table-hover-grey-2x > tbody > tr:hover {
+  background-color: #999; }
+
+.hover-bg-grey-3x:hover, .table-hover-grey-3x > tbody > tr:hover {
+  background-color: #BBB; }
+
+.hover-bg-grey-4x:hover, .table-hover-grey-4x > tbody > tr:hover {
+  background-color: #CCC; }
+
+.hover-bg-stable:hover, .table-hover-stable > tbody > tr:hover {
+  background-color: #f8f8f8; }
+
+.hover-bg-positive:hover, .table-hover-positive > tbody > tr:hover {
+  background-color: #387ef5; }
+
+.hover-bg-calm:hover, .table-hover-calm > tbody > tr:hover {
+  background-color: #11c1f3; }
+
+.hover-bg-balanced:hover, .table-hover-balanced > tbody > tr:hover {
+  background-color: #33cd5f; }
+
+.hover-bg-energized:hover, .table-hover-energized > tbody > tr:hover {
+  background-color: #ffc900; }
+
+.hover-bg-assertive:hover, .table-hover-assertive > tbody > tr:hover {
+  background-color: #ef473a; }
+
+.hover-bg-royal:hover, .table-hover-royal > tbody > tr:hover {
+  background-color: #886aea; }
+
+.hover-bg-dark:hover, .table-hover-dark > tbody > tr:hover {
+  background-color: #444444; }
