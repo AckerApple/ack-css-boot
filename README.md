@@ -589,6 +589,7 @@ a, .cursor-pointer {cursor:pointer}
 .opacity-25, .opacity-third {opacity: 0.25}
 .opacity-20 {opacity: 0.2}
 .opacity-10 {opacity: 0.1}
+.opacity-0 {opacity: 0}
 
 .border-radius-0 {border-radius:0}
 .border-radius-3 {border-radius:3px}
@@ -602,6 +603,8 @@ a, .cursor-pointer {cursor:pointer}
 .border-radius-15 {border-radius:15px}
 .border-radius-20 {border-radius:20px}
 .border-radius-25 {border-radius:25px}
+.border-radius-third {border-radius:33.3%}
+.border-radius-quarter {border-radius:25%}
 .border-radius-half {border-radius:50%}
 .border-spacing-0 {border-spacing:0}
 .border-collapse {border-collapse:collapse}

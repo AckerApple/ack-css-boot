@@ -1,9 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
-1.2.14
-## [1.2.9] - 2016-09-09
+1.2.15
+## [1.2.10] - 2016-09-09
 - Added back more forcebale .flex# classes (.flex1, .flex2)
+- Added .opacity-0
 
 ## [1.2.9] - 2016-08-23
 - .flex is implied into .flex- classes
