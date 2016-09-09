@@ -106,12 +106,20 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 
 ```
 .flex, .display-flex {display:flex}
-.flex-1 {flex-grow:1}
-.flex-2 {flex-grow:2}
-.flex-3 {flex-grow:3}
-.flex-4 {flex-grow:4}
-.flex-5 {flex-grow:5}
-.flex-6 {flex-grow:6}
+
+.flex1 {flex:1 1 10em}
+.flex2 {flex:2 2 20em}
+.flex3 {flex:3 3 45em}
+.flex4 {flex:4 4 60em}
+.flex5 {flex:5 5 75em}
+.flex6 {flex:6 6 90em}
+
+.flex-grow-1,.flex-1 {flex-grow:1}
+.flex-grow-2,.flex-2 {flex-grow:2}
+.flex-grow-3,.flex-3 {flex-grow:3}
+.flex-grow-4,.flex-4 {flex-grow:4}
+.flex-grow-5,.flex-5 {flex-grow:5}
+.flex-grow-6,.flex-6 {flex-grow:6}
 
 .flex-wrap {flex-wrap:wrap;@extend .flex}
 .flex-stacked, .flex-column, .flex-columns, .flex-direction-column {flex-direction: column;@extend .flex}

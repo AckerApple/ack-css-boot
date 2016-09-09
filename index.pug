@@ -131,7 +131,8 @@ html(lang="en")
         h3 Flex Inner Classes
 
         each size in [[1,'Flex Evenly'],[2,'Flex Double'],[3,'Flex Triple'],[4,'Flex Quad'],[5,'Flex Five'],[6,'Flex Six']]
-          h4.margin-bottom-xxs .flex-#{size[0]} #{size[1]}
+          h4.margin-bottom-xxs #{size[1]} Examples
+          p.pad-left.text-grey.text-sm .flex#{size[0]} is more forceful to achieve desired widths but quicker to create wrapping rows versus .flex-#{size[0]}
           .flex-row-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
@@ -142,8 +143,19 @@ html(lang="en")
               .pad-xs
                 .text-xs .flex-1
           .flex-row-wrap
-            .border-1-warning(class="flex-"+size[0])
+            .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-info
+                .text-xs .flex#{size[0]}
+                br
+                br
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+          .text-grey-2x.text-center.text-xs (two element example above)
+          br
+          .flex-row-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-grey-3x
                 .text-xs .flex-#{size[0]}
             .flex-1.border-1-warning
               .pad-xs
@@ -151,6 +163,18 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
+          .flex-row-wrap
+            .border-1-warning(class="flex"+size[0])
+              .pad-xs.bg-grey-3x
+                .text-xs .flex#{size[0]}
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+          .text-grey-2x.text-center.text-xs (three element example above)
+          br
           .flex-row-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
@@ -165,8 +189,23 @@ html(lang="en")
               .pad-xs
                 .text-xs .flex-1
           .flex-row-wrap
-            .border-1-warning(class="flex-"+size[0])
+            .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-info
+                .text-xs .flex#{size[0]}
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+          .text-grey-2x.text-center.text-xs (four element example above)
+          br
+          .flex-row-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-grey-3x
                 .text-xs .flex-#{size[0]}
             .flex-1.border-1-warning
               .pad-xs
@@ -180,6 +219,24 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
+          .flex-row-wrap
+            .border-1-warning(class="flex"+size[0])
+              .pad-xs.bg-grey-3x
+                .text-xs .flex#{size[0]}
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+          .text-grey-2x.text-center.text-xs (five element example above)
+          br
           .flex-row-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
@@ -200,8 +257,29 @@ html(lang="en")
               .pad-xs
                 .text-xs .flex-1
           .flex-row-wrap
-            .border-1-warning(class="flex-"+size[0])
+            .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-info
+                .text-xs .flex#{size[0]}
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+          .text-grey-2x.text-center.text-xs (six element example above)
+          br
+          .flex-row-wrap
+            .border-1-warning(class="flex-"+size[0])
+              .pad-xs.bg-grey-3x
                 .text-xs .flex-#{size[0]}
             .flex-1.border-1-warning
               .pad-xs
@@ -221,6 +299,29 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
+          .flex-row-wrap
+            .border-1-warning(class="flex"+size[0])
+              .pad-xs.bg-grey-3x
+                .text-xs .flex#{size[0]}
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+            .flex1.border-1-warning
+              .pad-xs
+                .text-xs .flex1
+          .text-grey-2x.text-center.text-xs (seven element example above)
 
 
       h2(id="ack-text-boot") ack-text-boot
