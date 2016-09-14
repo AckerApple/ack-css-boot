@@ -559,8 +559,7 @@ $em-4x: 2em !default;
 
 
 
-a, .cursor-pointer {cursor:pointer}
-
+.cursor-pointer {cursor:pointer}
 
 .overflow-hidden {overflow:hidden}
 .overflow, .overflow-auto {overflow:auto}
@@ -570,6 +569,7 @@ a, .cursor-pointer {cursor:pointer}
 .overflow-x-hidden {overflow-x:hidden}
 
 
+.hide,.hidden,.display-none {display:none;}
 .visible, .visibility-visible {visibility:visible}
 .invisible, .visibility-hidden {visibility:hidden}
 
@@ -827,6 +827,37 @@ a, .cursor-pointer {cursor:pointer}
 .pad-right-3x, .pad-right-lg {padding-right:$em-lg}
 .pad-right-4x {padding-right:$em-4x}
 
+
+.height-50 {height:50px}
+.width-50 {width:50px}
+.height-60 {height:60px}
+.width-60 {width:60px}
+.height-70 {height:70px}
+.width-70 {width:70px}
+.height-80 {height:80px}
+.width-80 {width:80px}
+.height-90 {height:90px}
+.width-90 {width:90px}
+.height-100 {height:100px}
+.width-100 {width:100px}
+.height-200 {height:200px}
+.width-200 {width:200px}
+.height-300 {height:300px}
+.width-300 {width:300px}
+.height-400 {height:400px}
+.width-400 {width:400px}
+.height-500 {height:500px}
+.width-500 {width:500px}
+.height-600 {height:600px}
+.width-600 {width:600px}
+.height-700 {height:700px}
+.width-700 {width:700px}
+.height-800 {height:800px}
+.width-800 {width:800px}
+.height-900 {height:900px}
+.width-900 {width:900px}
+.height-1000 {height:1000px}
+.width-1000 {width:1000px}
 
 .max-height {max-height:100%}
 .max-width {max-width:100%}
@@ -1624,6 +1655,13 @@ table>tfoot>tr>th.pad-right-lg, table>thead>tr>td.pad-right-lg, table>thead>tr>t
     max-height:0 !important;overflow:hidden !important;
   }
 }
+```
+
+## ack-overrides
+
+> scss/ack-overrides.scss
+```
+a, button {cursor:pointer}
 ```
 
 > Compiled versions, .css files, can be found in ack-cssboot/dist/
