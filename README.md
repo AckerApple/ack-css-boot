@@ -109,10 +109,10 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 
 .flex1 {flex:1 1 10em}
 .flex2 {flex:2 2 20em}
-.flex3 {flex:3 3 45em}
-.flex4 {flex:4 4 60em}
-.flex5 {flex:5 5 75em}
-.flex6 {flex:6 6 90em}
+.flex3 {flex:3 3 30em}
+.flex4 {flex:4 4 40em}
+.flex5 {flex:5 5 50em}
+.flex6 {flex:6 6 60em}
 
 .flex-grow-1,.flex-1 {flex-grow:1}
 .flex-grow-2,.flex-2 {flex-grow:2}
@@ -122,10 +122,21 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .flex-grow-6,.flex-6 {flex-grow:6}
 
 .flex-wrap {flex-wrap:wrap;@extend .flex}
-.flex-stacked, .flex-column, .flex-columns, .flex-direction-column {flex-direction: column;@extend .flex}
-.flex-inline, .flex-row, .flex-rows, .flex-direction-row {flex-direction: row;@extend .flex}
-.flex-row-wrap, .flex-wrap-rows, .flex-wrap-inline, .flex-flow-inline {flex-wrap:wrap;flex-direction:row;@extend .flex}
-.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stacked, .flex-flow-stacked {flex-wrap:wrap;flex-direction:column;@extend .flex}
+
+.flex-stack, .flex-stacked, .flex-column, .flex-columns, .flex-direction-column
+{flex-direction: column;@extend .flex}
+
+.flex-stack-reverse, .flex-column-reverse, .flex-columns-reverse, .flex-direction-column-reverse
+{flex-direction: column-reverse;@extend .flex}
+
+.flex-inline, .flex-row, .flex-rows, .flex-direction-row
+{flex-direction: row;@extend .flex}
+
+.flex-row-wrap, .flex-wrap-rows, .flex-wrap-inline, .flex-flow-inline
+{flex-wrap:wrap;flex-direction:row;@extend .flex}
+
+.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stack, .flex-wrap-stacked, .flex-flow-stack, .flex-flow-stacked
+{flex-wrap:wrap;flex-direction:column;@extend .flex}
 
 .justify-left {justify-content:flex-start}
 .flex-left {@extend .flex, .justify-left}
@@ -157,11 +168,14 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .flex-baseline {@extend .flex, .align-baseline}
 
 
-.flex-stacked.flex-center, .flex-column.flex-center, .flex-columns.flex-center, .flex-direction-column.flex-center
+.flex-stack.flex-center, .flex-stacked.flex-center, .flex-column.flex-center, .flex-columns.flex-center, .flex-direction-column.flex-center,
+.flex-stack-reverse.flex-center, .flex-column-reverse.flex-center, .flex-columns-reverse.flex-center, .flex-direction-column-reverse.flex-center
 {align-items:center}
-.flex-stacked.flex-left, .flex-column.flex-left, .flex-columns.flex-left, .flex-direction-column.flex-left
+.flex-stack.flex-left, .flex-stacked.flex-left, .flex-column.flex-left, .flex-columns.flex-left, .flex-direction-column.flex-left,
+.flex-stack-reverse.flex-left, .flex-column-reverse.flex-left, .flex-columns-reverse.flex-left, .flex-direction-column-reverse.flex-left
 {align-items:flex-start}
-.flex-stacked.flex-right, .flex-column.flex-right, .flex-columns.flex-right, .flex-direction-column.flex-right
+.flex-stack.flex-right, .flex-stacked.flex-right, .flex-column.flex-right, .flex-columns.flex-right, .flex-direction-column.flex-right,
+.flex-stack-reverse.flex-right, .flex-column-reverse.flex-right, .flex-columns-reverse.flex-right, .flex-direction-column-reverse.flex-right
 {align-items:flex-end}
 ```
 
@@ -569,7 +583,7 @@ $em-4x: 2em !default;
 .overflow-x-hidden {overflow-x:hidden}
 
 
-.hide,.hidden,.display-none {display:none;}
+.hide,.hidden,.display-none {display:none}
 .visible, .visibility-visible {visibility:visible}
 .invisible, .visibility-hidden {visibility:hidden}
 
