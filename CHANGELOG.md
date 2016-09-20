@@ -1,6 +1,9 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.18] - 2016-09-20
+- Added .no-unserline and .text-decoration-none
+
 ## [1.2.17] - 2016-09-15
 - Added flex-stack reverse classes
 

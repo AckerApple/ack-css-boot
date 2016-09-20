@@ -53,6 +53,7 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 .text-overflow {text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 
 .text-underline,.underline {text-decoration:underline}
+.no-underline, .text-decoration-none {text-decoration:none}
 .italic, .text-italic {font-style: italic}
 
 .strong, .bold, .text-bold, .font-bold, .font-weight-bold {font-weight:bold}

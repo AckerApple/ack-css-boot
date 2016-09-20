@@ -18,6 +18,9 @@
 .text-underline, .underline {
   text-decoration: underline; }
 
+.no-underline, .text-decoration-none {
+  text-decoration: none; }
+
 .italic, .text-italic {
   font-style: italic; }
 
