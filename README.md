@@ -606,21 +606,26 @@ $em-4x: 2em !default;
 .opacity-10 {opacity: 0.1}
 .opacity-0 {opacity: 0}
 
-.border-radius-0 {border-radius:0}
-.border-radius-3 {border-radius:3px}
-.border-radius-4 {border-radius:4px}
-.border-radius-5 {border-radius:5px}
-.border-radius-6 {border-radius:6px}
-.border-radius-7 {border-radius:7px}
-.border-radius-8 {border-radius:8px}
-.border-radius-9 {border-radius:9px}
-.border-radius-10 {border-radius:10px}
-.border-radius-15 {border-radius:15px}
-.border-radius-20 {border-radius:20px}
-.border-radius-25 {border-radius:25px}
-.border-radius-third {border-radius:33.3%}
-.border-radius-quarter {border-radius:25%}
-.border-radius-half {border-radius:50%}
+.radius-0, .border-radius-0 {border-radius:0}
+.radius-3, .border-radius-3 {border-radius:3px}
+.radius-4, .border-radius-4 {border-radius:4px}
+.radius-5, .border-radius-5 {border-radius:5px}
+.radius-6, .border-radius-6 {border-radius:6px}
+.radius-7, .border-radius-7 {border-radius:7px}
+.radius-8, .border-radius-8 {border-radius:8px}
+.radius-9, .border-radius-9 {border-radius:9px}
+.radius-10, .border-radius-10 {border-radius:10px}
+.radius-15, .border-radius-15 {border-radius:15px}
+.radius-20, .border-radius-20 {border-radius:20px}
+.radius-25, .border-radius-25 {border-radius:25px}
+.radius-third, .border-radius-third {border-radius:33.3%}
+.radius-quarter, .border-radius-quarter {border-radius:25%}
+.radius-half, .border-radius-half {border-radius:50%}
+.radius-left-0 {border-top-left-radius:0;border-bottom-left-radius:0}
+.radius-right-0 {border-top-right-radius:0;border-bottom-right-radius:0}
+.radius-top-0 {border-top-left-radius:0;border-top-right-radius:0}
+.radius-bottom-0 {border-bottom-right-radius:0;border-bottom-left-radius:0}
+
 .border-spacing-0 {border-spacing:0}
 .border-collapse {border-collapse:collapse}
 .border-separate, .border-collapse-seperate {border-collapse:separate}
@@ -842,7 +847,18 @@ $em-4x: 2em !default;
 .pad-right-3x, .pad-right-lg {padding-right:$em-lg}
 .pad-right-4x {padding-right:$em-4x}
 
-
+.height-5 {height:5px}
+.width-5 {width:5px}
+.height-10 {height:10px}
+.width-10 {width:10px}
+.height-15 {height:15px}
+.width-15 {width:15px}
+.height-20 {height:20px}
+.width-20 {width:20px}
+.height-30 {height:30px}
+.width-30 {width:30px}
+.height-40 {height:40px}
+.width-40 {width:40px}
 .height-50 {height:50px}
 .width-50 {width:50px}
 .height-60 {height:60px}

@@ -308,50 +308,66 @@
 .opacity-0 {
   opacity: 0; }
 
-.border-radius-0 {
+.radius-0, .border-radius-0 {
   border-radius: 0; }
 
-.border-radius-3 {
+.radius-3, .border-radius-3 {
   border-radius: 3px; }
 
-.border-radius-4 {
+.radius-4, .border-radius-4 {
   border-radius: 4px; }
 
-.border-radius-5 {
+.radius-5, .border-radius-5 {
   border-radius: 5px; }
 
-.border-radius-6 {
+.radius-6, .border-radius-6 {
   border-radius: 6px; }
 
-.border-radius-7 {
+.radius-7, .border-radius-7 {
   border-radius: 7px; }
 
-.border-radius-8 {
+.radius-8, .border-radius-8 {
   border-radius: 8px; }
 
-.border-radius-9 {
+.radius-9, .border-radius-9 {
   border-radius: 9px; }
 
-.border-radius-10 {
+.radius-10, .border-radius-10 {
   border-radius: 10px; }
 
-.border-radius-15 {
+.radius-15, .border-radius-15 {
   border-radius: 15px; }
 
-.border-radius-20 {
+.radius-20, .border-radius-20 {
   border-radius: 20px; }
 
-.border-radius-25 {
+.radius-25, .border-radius-25 {
   border-radius: 25px; }
 
-.border-radius-third {
+.radius-third, .border-radius-third {
   border-radius: 33.3%; }
 
-.border-radius-quarter {
+.radius-quarter, .border-radius-quarter {
   border-radius: 25%; }
 
-.border-radius-half {
+.radius-half, .border-radius-half {
   border-radius: 50%; }
+
+.radius-left-0 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.radius-right-0 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.radius-top-0 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.radius-bottom-0 {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
 
 .border-spacing-0 {
   border-spacing: 0; }
@@ -2310,6 +2326,12 @@ lg >= 1200
 
 .border-primary, .table-lines-primary > thead > tr > th, .table-lines-primary > thead > tr > td, .table-lines-primary > tbody > tr > th, .table-lines-primary > tbody > tr > td, .table-lines-primary > tfoot > tr > th, .table-lines-primary > tfoot > tr > td, .table-lines-primary > caption + thead > tr:first-child > th, .table-lines-primary > caption + thead > tr:first-child > td, .table-lines-primary > colgroup + thead > tr:first-child > th, .table-lines-primary > colgroup + thead > tr:first-child > td, .table-lines-primary > thead:first-child > tr:first-child > th, .table-lines-primary > thead:first-child > tr:first-child > td, .table-lines-primary > tbody + tbody {
   border-color: #2e6da4; }
+
+.border-white {
+  border-color: #FFF; }
+
+.border-black {
+  border-color: #000; }
 
 .border-1-0, .border-1-black {
   border-color: #000;

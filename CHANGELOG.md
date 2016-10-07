@@ -1,6 +1,9 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.19] - 2016-10-07
+- Added .radius shorthand of border-radius
+
 ## [1.2.18] - 2016-09-20
 - Added .no-unserline and .text-decoration-none
 

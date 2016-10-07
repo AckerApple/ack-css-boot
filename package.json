@@ -1,10 +1,10 @@
 {
   "name": "ack-css-boot",
-  "version": "1.2.18",
+  "version": "1.2.19",
   "description": "A base set of short-hand css helper classes. Includes available classes that are commonly used for styling buttons, form inputs, and such.",
   "main": "index.js",
   "scripts": {
-    "test": "ionic test",
+    "test": "ionic serve",
     "build": "npm run build:css && npm run build:index",
     "build:css": "npm run build:css:dist && npm run build:css:www",
     "build:css:dist": "node-sass scss/ -o dist/ --output-style compressed --source-map true",
