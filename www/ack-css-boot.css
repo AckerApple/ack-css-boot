@@ -2452,140 +2452,140 @@ lg >= 1200
 .table-striped-dark > tbody > tr:nth-of-type(odd) {
   background-color: #444444; }
 
-table[class*="table-striped-"] > tbody > tr.bg-primary {
+table[class*="table-striped"] > tbody > tr.bg-primary {
   background-color: #337ab7; }
 
-table[class*="table-striped-"] > tbody > tr.bg-success {
+table[class*="table-striped"] > tbody > tr.bg-success {
   background-color: #dff0d8; }
 
-table[class*="table-striped-"] > tbody > tr.bg-info {
+table[class*="table-striped"] > tbody > tr.bg-info {
   background-color: #d9edf7; }
 
-table[class*="table-striped-"] > tbody > tr.bg-warning {
+table[class*="table-striped"] > tbody > tr.bg-warning {
   background-color: #fcf8e3; }
 
-table[class*="table-striped-"] > tbody > tr.bg-danger {
+table[class*="table-striped"] > tbody > tr.bg-danger {
   background-color: #f2dede; }
 
-table[class*="table-striped-"] > tbody > tr.bg-grey {
+table[class*="table-striped"] > tbody > tr.bg-grey {
   background-color: #777; }
 
-table[class*="table-striped-"] > tbody > tr.grey-2x {
+table[class*="table-striped"] > tbody > tr.grey-2x {
   background-color: #999; }
 
-table[class*="table-striped-"] > tbody > tr.grey-3x {
+table[class*="table-striped"] > tbody > tr.grey-3x {
   background-color: #BBB; }
 
-table[class*="table-striped-"] > tbody > tr.grey-4x {
+table[class*="table-striped"] > tbody > tr.grey-4x {
   background-color: #CCC; }
 
-table[class*="table-striped-"] > tbody > tr.grey-5x {
+table[class*="table-striped"] > tbody > tr.grey-5x {
   background-color: #DDD; }
 
-table[class*="table-striped-"] > tbody > tr.grey-6x {
+table[class*="table-striped"] > tbody > tr.grey-6x {
   background-color: #EEE; }
 
-[class*="table-striped-"] > tbody > tr.bg-stable {
+[class*="table-striped"] > tbody > tr.bg-stable {
   background-color: #f8f8f8; }
 
-[class*="table-striped-"] > tbody > tr.bg-positive {
+[class*="table-striped"] > tbody > tr.bg-positive {
   background-color: #387ef5; }
 
-[class*="table-striped-"] > tbody > tr.bg-calm {
+[class*="table-striped"] > tbody > tr.bg-calm {
   background-color: #11c1f3; }
 
-[class*="table-striped-"] > tbody > tr.bg-balanced {
+[class*="table-striped"] > tbody > tr.bg-balanced {
   background-color: #33cd5f; }
 
-[class*="table-striped-"] > tbody > tr.bg-energized {
+[class*="table-striped"] > tbody > tr.bg-energized {
   background-color: #ffc900; }
 
-[class*="table-striped-"] > tbody > tr.bg-assertive {
+[class*="table-striped"] > tbody > tr.bg-assertive {
   background-color: #ef473a; }
 
-[class*="table-striped-"] > tbody > tr.bg-royal {
+[class*="table-striped"] > tbody > tr.bg-royal {
   background-color: #886aea; }
 
-[class*="table-striped-"] > tbody > tr.bg-dark {
+[class*="table-striped"] > tbody > tr.bg-dark {
   background-color: #444444; }
 
 .table-hover > tbody > tr:hover {
   background-color: #f5f5f5; }
 
 .hover-bg-primary:hover, .table-hover-primary > tbody > tr:hover,
-[class*="table-striped-"].table-hover-primary > tbody > tr:hover {
+[class*="table-striped"].table-hover-primary > tbody > tr:hover {
   background-color: #337ab7; }
 
 .hover-bg-success:hover, .table-hover-success > tbody > tr:hover,
-[class*="table-striped-"].table-hover-success > tbody > tr:hover {
+[class*="table-striped"].table-hover-success > tbody > tr:hover {
   background-color: #dff0d8; }
 
 .hover-bg-info:hover, .table-hover-info > tbody > tr:hover,
-[class*="table-striped-"].table-hover-info > tbody > tr:hover {
+[class*="table-striped"].table-hover-info > tbody > tr:hover {
   background-color: #d9edf7; }
 
 .hover-bg-warning:hover, .table-hover-warning > tbody > tr:hover,
-[class*="table-striped-"].table-hover-warning > tbody > tr:hover {
+[class*="table-striped"].table-hover-warning > tbody > tr:hover {
   background-color: #fcf8e3; }
 
 .hover-bg-danger:hover, .table-hover-danger > tbody > tr:hover,
-[class*="table-striped-"].table-hover-danger > tbody > tr:hover {
+[class*="table-striped"].table-hover-danger > tbody > tr:hover {
   background-color: #f2dede; }
 
 .hover-bg-grey:hover, .table-hover-grey > tbody > tr:hover,
-[class*="table-striped-"].table-hover-grey > tbody > tr:hover {
+[class*="table-striped"].table-hover-grey > tbody > tr:hover {
   background-color: #777; }
 
 .hover-bg-grey-2x:hover, .table-hover-grey-2x > tbody > tr:hover,
-[class*="table-striped-"].table-hover-grey-2x > tbody > tr:hover {
+[class*="table-striped"].table-hover-grey-2x > tbody > tr:hover {
   background-color: #999; }
 
 .hover-bg-grey-3x:hover, .table-hover-grey-3x > tbody > tr:hover,
-[class*="table-striped-"].table-hover-grey-3x > tbody > tr:hover {
+[class*="table-striped"].table-hover-grey-3x > tbody > tr:hover {
   background-color: #BBB; }
 
 .hover-bg-grey-4x:hover, .table-hover-grey-4x > tbody > tr:hover,
-[class*="table-striped-"].table-hover-grey-4x > tbody > tr:hover {
+[class*="table-striped"].table-hover-grey-4x > tbody > tr:hover {
   background-color: #CCC; }
 
 .hover-bg-grey-5x:hover, .table-hover-grey-5x > tbody > tr:hover,
-[class*="table-striped-"].table-hover-grey-5x > tbody > tr:hover {
+[class*="table-striped"].table-hover-grey-5x > tbody > tr:hover {
   background-color: #DDD; }
 
 .hover-bg-grey-6x:hover, .table-hover-grey-6x > tbody > tr:hover,
-[class*="table-striped-"].table-hover-grey-6x > tbody > tr:hover {
+[class*="table-striped"].table-hover-grey-6x > tbody > tr:hover {
   background-color: #EEE; }
 
 .hover-bg-stable:hover, .table-hover-stable > tbody > tr:hover,
-[class*="table-striped-"].table-hover-stable > tbody > tr:hover {
+[class*="table-striped"].table-hover-stable > tbody > tr:hover {
   background-color: #f8f8f8; }
 
 .hover-bg-positive:hover, .table-hover-positive > tbody > tr:hover,
-[class*="table-striped-"].table-hover-positive > tbody > tr:hover {
+[class*="table-striped"].table-hover-positive > tbody > tr:hover {
   background-color: #387ef5; }
 
 .hover-bg-calm:hover, .table-hover-calm > tbody > tr:hover,
-[class*="table-striped-"].table-hover-calm > tbody > tr:hover {
+[class*="table-striped"].table-hover-calm > tbody > tr:hover {
   background-color: #11c1f3; }
 
 .hover-bg-balanced:hover, .table-hover-balanced > tbody > tr:hover,
-[class*="table-striped-"].table-hover-balanced > tbody > tr:hover {
+[class*="table-striped"].table-hover-balanced > tbody > tr:hover {
   background-color: #33cd5f; }
 
 .hover-bg-energized:hover, .table-hover-energized > tbody > tr:hover,
-[class*="table-striped-"].table-hover-energized > tbody > tr:hover {
+[class*="table-striped"].table-hover-energized > tbody > tr:hover {
   background-color: #ffc900; }
 
 .hover-bg-assertive:hover, .table-hover-assertive > tbody > tr:hover,
-[class*="table-striped-"].table-hover-assertive > tbody > tr:hover {
+[class*="table-striped"].table-hover-assertive > tbody > tr:hover {
   background-color: #ef473a; }
 
 .hover-bg-royal:hover, .table-hover-royal > tbody > tr:hover,
-[class*="table-striped-"].table-hover-royal > tbody > tr:hover {
+[class*="table-striped"].table-hover-royal > tbody > tr:hover {
   background-color: #886aea; }
 
 .hover-bg-dark:hover, .table-hover-dark > tbody > tr:hover,
-[class*="table-striped-"].table-hover-dark > tbody > tr:hover {
+[class*="table-striped"].table-hover-dark > tbody > tr:hover {
   background-color: #444444; }
 
 a, button {
