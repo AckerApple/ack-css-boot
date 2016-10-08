@@ -1,6 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.23] - 2016-10-08
+### Added
+- .child-margin .child-pad .child-hover-bg classes
+
 ## [1.2.19] - 2016-10-07
 ### Added
 - .radius shorthand of border-radius

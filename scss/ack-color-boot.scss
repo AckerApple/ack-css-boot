@@ -117,140 +117,199 @@ $bg-dark:#444444 !default;
   text-shadow:0 0 4px #FFF
 }
 
+.child-striped > *:nth-of-type(odd) {background-color: #f1f1f1},
 .table-striped > tbody > tr:nth-of-type(odd) {background-color: #f1f1f1}
+.child-striped-primary > *:nth-of-type(odd),
 .table-striped-primary > tbody > tr:nth-of-type(odd)
 {background-color:$bg-primary}
+.child-striped-success > *:nth-of-type(odd),
 .table-striped-success > tbody > tr:nth-of-type(odd)
 {background-color:$bg-success}
+.child-striped-info > *:nth-of-type(odd),
 .table-striped-info > tbody > tr:nth-of-type(odd)
 {background-color:$bg-info}
+.child-striped-warning > *:nth-of-type(odd),
 .table-striped-warning > tbody > tr:nth-of-type(odd)
 {background-color:$bg-warning}
+.child-striped-danger > *:nth-of-type(odd),
 .table-striped-danger > tbody > tr:nth-of-type(odd)
 {background-color:$bg-danger}
+.child-striped-grey > *:nth-of-type(odd),
 .table-striped-grey > tbody > tr:nth-of-type(odd)
 {background-color:$bg-grey}
+.child-striped-grey-2x > *:nth-of-type(odd),
 .table-striped-grey-2x > tbody > tr:nth-of-type(odd)
 {background-color:$bg-grey-2x}
+.child-striped-grey-3x > *:nth-of-type(odd),
 .table-striped-grey-3x > tbody > tr:nth-of-type(odd)
 {background-color:$bg-grey-3x}
+.child-striped-grey-4x > *:nth-of-type(odd),
 .table-striped-grey-4x > tbody > tr:nth-of-type(odd)
 {background-color:$bg-grey-4x}
+.child-striped-grey-5x > *:nth-of-type(odd),
 .table-striped-grey-5x > tbody > tr:nth-of-type(odd)
 {background-color:$bg-grey-5x}
+.child-striped-grey-6x > *:nth-of-type(odd),
 .table-striped-grey-6x > tbody > tr:nth-of-type(odd)
 {background-color:$bg-grey-6x}
+.child-striped-stable > *:nth-of-type(odd),
 .table-striped-stable > tbody > tr:nth-of-type(odd)
 {background-color:$bg-stable}
+.child-striped-positive > *:nth-of-type(odd),
 .table-striped-positive > tbody > tr:nth-of-type(odd)
 {background-color:$bg-positive}
+.child-striped-calm > *:nth-of-type(odd),
 .table-striped-calm > tbody > tr:nth-of-type(odd)
 {background-color:$bg-calm}
+.child-striped-balanced > *:nth-of-type(odd),
 .table-striped-balanced > tbody > tr:nth-of-type(odd)
 {background-color:$bg-balanced}
+.child-striped-energized > *:nth-of-type(odd),
 .table-striped-energized > tbody > tr:nth-of-type(odd)
 {background-color:$bg-energized}
+.child-striped-assertive > *:nth-of-type(odd),
 .table-striped-assertive > tbody > tr:nth-of-type(odd)
 {background-color:$bg-assertive}
+.child-striped-royal > *:nth-of-type(odd),
 .table-striped-royal > tbody > tr:nth-of-type(odd)
 {background-color:$bg-royal}
+.child-striped-dark > *:nth-of-type(odd),
 .table-striped-dark > tbody > tr:nth-of-type(odd)
 {background-color:$bg-dark}
 
-table[class*="table-striped"] > tbody > tr.bg-primary
+/* anti sub classes */
+[class*="child-striped"] > *.bg-primary,
+[class*="table-striped"] > tbody > tr.bg-primary
 {background-color:$bg-primary}
-table[class*="table-striped"] > tbody > tr.bg-success
+[class*="child-striped"] > *.bg-success,
+[class*="table-striped"] > tbody > tr.bg-success
 {background-color:$bg-success}
-table[class*="table-striped"] > tbody > tr.bg-info
+[class*="child-striped"] > *.bg-info,
+[class*="table-striped"] > tbody > tr.bg-info
 {background-color:$bg-info}
-table[class*="table-striped"] > tbody > tr.bg-warning
+[class*="child-striped"] > *.bg-warning,
+[class*="table-striped"] > tbody > tr.bg-warning
 {background-color:$bg-warning}
-table[class*="table-striped"] > tbody > tr.bg-danger
+[class*="child-striped"] > *.bg-danger,
+[class*="table-striped"] > tbody > tr.bg-danger
 {background-color:$bg-danger}
-table[class*="table-striped"] > tbody > tr.bg-grey
+[class*="child-striped"] > *.bg-grey,
+[class*="table-striped"] > tbody > tr.bg-grey
 {background-color:$bg-grey}
-table[class*="table-striped"] > tbody > tr.grey-2x
+[class*="child-striped"] > *.grey-2x,
+[class*="table-striped"] > tbody > tr.grey-2x
 {background-color:$bg-grey-2x}
-table[class*="table-striped"] > tbody > tr.grey-3x
+[class*="child-striped"] > *.grey-3x,
+[class*="table-striped"] > tbody > tr.grey-3x
 {background-color:$bg-grey-3x}
-table[class*="table-striped"] > tbody > tr.grey-4x
+[class*="child-striped"] > *.grey-4x,
+[class*="table-striped"] > tbody > tr.grey-4x
 {background-color:$bg-grey-4x}
-table[class*="table-striped"] > tbody > tr.grey-5x
+[class*="child-striped"] > *.grey-5x,
+[class*="table-striped"] > tbody > tr.grey-5x
 {background-color:$bg-grey-5x}
-table[class*="table-striped"] > tbody > tr.grey-6x
+[class*="child-striped"] > *.grey-6x,
+[class*="table-striped"] > tbody > tr.grey-6x
 {background-color:$bg-grey-6x}
+[class*="child-striped"] > *.bg-stable,
 [class*="table-striped"] > tbody > tr.bg-stable
 {background-color:$bg-stable}
+[class*="child-striped"] > *.bg-positive,
 [class*="table-striped"] > tbody > tr.bg-positive
 {background-color:$bg-positive}
+[class*="child-striped"] > *.bg-calm,
 [class*="table-striped"] > tbody > tr.bg-calm
 {background-color:$bg-calm}
+[class*="child-striped"] > *.bg-balanced,
 [class*="table-striped"] > tbody > tr.bg-balanced
 {background-color:$bg-balanced}
+[class*="child-striped"] > *.bg-energized,
 [class*="table-striped"] > tbody > tr.bg-energized
 {background-color:$bg-energized}
+[class*="child-striped"] > *.bg-assertive,
 [class*="table-striped"] > tbody > tr.bg-assertive
 {background-color:$bg-assertive}
+[class*="child-striped"] > *.bg-royal,
 [class*="table-striped"] > tbody > tr.bg-royal
 {background-color:$bg-royal}
+[class*="child-striped"] > *.bg-dark,
 [class*="table-striped"] > tbody > tr.bg-dark
 {background-color:$bg-dark}
 
 .table-hover > tbody > tr:hover {background-color: #f5f5f5}
+.child-hover-bg-primary > *:hover,
 .hover-bg-primary:hover, .table-hover-primary > tbody > tr:hover,
 [class*="table-striped"].table-hover-primary > tbody > tr:hover
 {background-color:$bg-primary}
+.child-hover-bg-success > *:hover,
 .hover-bg-success:hover, .table-hover-success > tbody > tr:hover,
 [class*="table-striped"].table-hover-success > tbody > tr:hover
 {background-color:$bg-success}
+.child-hover-bg-info > *:hover,
 .hover-bg-info:hover, .table-hover-info > tbody > tr:hover,
 [class*="table-striped"].table-hover-info > tbody > tr:hover
 {background-color:$bg-info}
+.child-hover-bg-warning > *:hover,
 .hover-bg-warning:hover, .table-hover-warning > tbody > tr:hover,
 [class*="table-striped"].table-hover-warning > tbody > tr:hover
 {background-color:$bg-warning}
+.child-hover-bg-danger > *:hover,
 .hover-bg-danger:hover, .table-hover-danger > tbody > tr:hover,
 [class*="table-striped"].table-hover-danger > tbody > tr:hover
 {background-color:$bg-danger}
+.child-hover-bg-grey > *:hover,
 .hover-bg-grey:hover, .table-hover-grey > tbody > tr:hover,
 [class*="table-striped"].table-hover-grey > tbody > tr:hover
 {background-color:$bg-grey}
+.child-hover-bg-grey-2x > *:hover,
 .hover-bg-grey-2x:hover, .table-hover-grey-2x > tbody > tr:hover,
 [class*="table-striped"].table-hover-grey-2x > tbody > tr:hover
 {background-color:$bg-grey-2x}
+.child-hover-bg-grey-3x > *:hover,
 .hover-bg-grey-3x:hover, .table-hover-grey-3x > tbody > tr:hover,
 [class*="table-striped"].table-hover-grey-3x > tbody > tr:hover
 {background-color:$bg-grey-3x}
+.child-hover-bg-grey-4x > *:hover,
 .hover-bg-grey-4x:hover, .table-hover-grey-4x > tbody > tr:hover,
 [class*="table-striped"].table-hover-grey-4x > tbody > tr:hover
 {background-color:$bg-grey-4x}
+.child-hover-bg-grey-5x > *:hover,
 .hover-bg-grey-5x:hover, .table-hover-grey-5x > tbody > tr:hover,
 [class*="table-striped"].table-hover-grey-5x > tbody > tr:hover
 {background-color:$bg-grey-5x}
+.child-hover-bg-grey-6x > *:hover,
 .hover-bg-grey-6x:hover, .table-hover-grey-6x > tbody > tr:hover,
 [class*="table-striped"].table-hover-grey-6x > tbody > tr:hover
 {background-color:$bg-grey-6x}
+.child-hover-bg-stable > *:hover,
 .hover-bg-stable:hover, .table-hover-stable > tbody > tr:hover,
 [class*="table-striped"].table-hover-stable > tbody > tr:hover
 {background-color:$bg-stable}
-.hover-bg-positive:hover, .table-hover-positive > tbody > tr:hover,
+.child-hover-bg-positive > *:hover,
+.hover-bg-positive:hover,
 [class*="table-striped"].table-hover-positive > tbody > tr:hover
 {background-color:$bg-positive}
+.child-hover-bg-calm > *:hover,
 .hover-bg-calm:hover, .table-hover-calm > tbody > tr:hover,
 [class*="table-striped"].table-hover-calm > tbody > tr:hover
 {background-color:$bg-calm}
+.child-hover-bg-balanced > *:hover,
 .hover-bg-balanced:hover, .table-hover-balanced > tbody > tr:hover,
 [class*="table-striped"].table-hover-balanced > tbody > tr:hover
 {background-color:$bg-balanced}
+.child-hover-bg-energized > *:hover,
 .hover-bg-energized:hover, .table-hover-energized > tbody > tr:hover,
 [class*="table-striped"].table-hover-energized > tbody > tr:hover
 {background-color:$bg-energized}
+.child-hover-bg-assertive > *:hover,
 .hover-bg-assertive:hover, .table-hover-assertive > tbody > tr:hover,
 [class*="table-striped"].table-hover-assertive > tbody > tr:hover
 {background-color:$bg-assertive}
+.child-hover-bg-royal > *:hover,
 .hover-bg-royal:hover, .table-hover-royal > tbody > tr:hover,
 [class*="table-striped"].table-hover-royal > tbody > tr:hover
 {background-color:$bg-royal}
+.child-hover-bg-dark > *:hover,
 .hover-bg-dark:hover, .table-hover-dark > tbody > tr:hover,
 [class*="table-striped"].table-hover-dark > tbody > tr:hover
 {background-color:$bg-dark}
