@@ -26,6 +26,8 @@ html(lang="en")
           a(href="#ack-color-boot") ack-color-boot
         .pad-sm
           a(href="#ack-responsive-boot") ack-responsive-boot
+        .pad-sm
+          a(href="#ack-form-boot") ack-form-boot
       br
       h2(id="ack-flex-boot") ack-flex-boot
       p.text-muted CSS flex box layout made extremely simple
@@ -1122,3 +1124,33 @@ html(lang="en")
           .pos-abs.hide-lt-md.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]
           .pad.bg-dark hidden
         .pad .hide-lt-md
+
+  .text-left
+    h2(id="ack-form-boot") ack-form-boot
+
+    .flex-wrap.child-pad
+      .form-group.has-error
+        label.block .form-group.has-error
+        div
+          input(type="text" value="invalid value")
+
+      .form-group.has-error
+        div
+          label.form-group-label .form-group.has-error.form-group-label
+        div
+          input(type="text" value="invalid value")
+
+      .form-group.has-error
+        label Some Invalid Radios
+        div
+          label
+            input(type="radio")
+            |test0
+          |&nbsp;
+          label
+            input(type="radio")
+            |test1
+          |&nbsp;
+          label
+            input(type="radio")
+            |test2

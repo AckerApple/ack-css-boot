@@ -39,12 +39,25 @@
 .text-6x {font-size:185%}
 .text-5x {font-size:160%}
 .text-4x {font-size:145%}
-.text-lg, .text-3x {font-size:130%}
-.text-md, .text-2x {font-size:115%}
+.text-3x, .text-lg {font-size:130%}
+.text-2x, .text-md {font-size:115%}
 .text-sm {font-size:90%}
 .text-smx {font-size:85%}
 .text-xs {font-size:75%}
 .text-xxs {font-size:65%}
+
+.hover-text-9x:hover {font-size:260%}
+.hover-text-8x:hover {font-size:230%}
+.hover-text-7x:hover {font-size:200%}
+.hover-text-6x:hover {font-size:185%}
+.hover-text-5x:hover {font-size:160%}
+.hover-text-4x:hover {font-size:145%}
+.hover-text-3x:hover, .text-lg:hover {font-size:130%}
+.hover-text-2x:hover, .text-md:hover {font-size:115%}
+.hover-text-sm:hover {font-size:90%}
+.hover-text-smx:hover {font-size:85%}
+.hover-text-xs:hover {font-size:75%}
+.hover-text-xxs:hover {font-size:65%}
 
 .line-height-0 {line-height:0}
 .line-height-half {line-height:50%}

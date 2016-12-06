@@ -17,3 +17,6 @@
 .clear,.clear-both,.clear-fix {clear:both}
 .float-right, .pull-right {float:right}
 .float-left, .pull-left {float:left}
+
+.child-float-right > * {float:right}
+.child-float-left > * {float:left}

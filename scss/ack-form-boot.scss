@@ -1,9 +1,12 @@
-.form-group.has-error label:first-child {
+/** invalid form group makes primary label red */
+.form-group.has-error > label,
+.form-group.has-error .form-group-label {
   color:#d43f3a;
 }
 
 .form-group.has-error input,
 .form-group.has-error select,
-.form-group.has-error textarea {
+.form-group.has-error textarea,
+.form-group.has-error .form-group-input {
   border:1px solid #d43f3a;
 }

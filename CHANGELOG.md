@@ -1,6 +1,13 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.24] - 2016-12-6
+### Added
+- more child classes
+- .form-group-label class
+### Changed
+- form-group label assumptions
+
 ## [1.2.23] - 2016-10-08
 ### Added
 - .child-margin .child-pad .child-hover-bg classes
