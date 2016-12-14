@@ -15,7 +15,7 @@ html(lang="en")
       br
       br
       h3 Table of Contents
-      .flex-row-wrap
+      .flex-wrap
         .pad-sm
           a(href="#ack-flex-boot") ack-flex-boot
         .pad-sm
@@ -166,7 +166,7 @@ html(lang="en")
         each size in [[1,'Flex Evenly'],[2,'Flex Double'],[3,'Flex Triple'],[4,'Flex Quad'],[5,'Flex Five'],[6,'Flex Six']]
           h4.margin-bottom-xxs #{size[1]} Examples
           p.pad-left.text-grey.text-sm .flex#{size[0]} is more forceful to achieve desired widths but quicker to create wrapping rows versus .flex-#{size[0]}
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex-#{size[0]}
@@ -175,7 +175,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex#{size[0]}
@@ -186,7 +186,7 @@ html(lang="en")
                 .text-xs .flex1
           .text-grey-2x.text-center.text-xs (two element example above)
           br
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-grey-3x
                 .text-xs .flex-#{size[0]}
@@ -196,7 +196,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-grey-3x
                 .text-xs .flex#{size[0]}
@@ -208,7 +208,7 @@ html(lang="en")
                 .text-xs .flex1
           .text-grey-2x.text-center.text-xs (three element example above)
           br
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex-#{size[0]}
@@ -221,7 +221,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex#{size[0]}
@@ -236,7 +236,7 @@ html(lang="en")
                 .text-xs .flex1
           .text-grey-2x.text-center.text-xs (four element example above)
           br
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-grey-3x
                 .text-xs .flex-#{size[0]}
@@ -252,7 +252,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-grey-3x
                 .text-xs .flex#{size[0]}
@@ -270,7 +270,7 @@ html(lang="en")
                 .text-xs .flex1
           .text-grey-2x.text-center.text-xs (five element example above)
           br
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex-#{size[0]}
@@ -289,7 +289,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-info
                 .text-xs .flex#{size[0]}
@@ -310,7 +310,7 @@ html(lang="en")
                 .text-xs .flex1
           .text-grey-2x.text-center.text-xs (six element example above)
           br
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex-"+size[0])
               .pad-xs.bg-grey-3x
                 .text-xs .flex-#{size[0]}
@@ -332,7 +332,7 @@ html(lang="en")
             .flex-1.border-1-warning
               .pad-xs
                 .text-xs .flex-1
-          .flex-row-wrap
+          .flex-wrap
             .border-1-warning(class="flex"+size[0])
               .pad-xs.bg-grey-3x
                 .text-xs .flex#{size[0]}
@@ -358,7 +358,7 @@ html(lang="en")
 
 
       h2(id="ack-text-boot") ack-text-boot
-      .flex-row-wrap        
+      .flex-wrap        
         .text-2x.pad.font-arial
           |.font-arial
         .text-2x.pad.font-times
@@ -416,7 +416,7 @@ html(lang="en")
 
       .pad-h
         h4 opacity
-      .flex-row-wrap
+      .flex-wrap
         .flex-1.text-white.pad.margin.bg-black.opacity-90 .opacity-90
         .flex-1.text-white.pad.margin.bg-black.opacity-80 .opacity-80
         .flex-1.text-white.pad.margin.bg-black.opacity-75 .opacity-75
@@ -432,7 +432,7 @@ html(lang="en")
 
       .pad-h
         h4 border
-        .flex-row-wrap.align-top
+        .flex-wrap.align-top
           .bg-info.margin.pad.border
             |.border
           .bg-info.margin.pad.border-1
@@ -526,19 +526,20 @@ html(lang="en")
           .bg-info.margin.pad.border-left-8
             |.border-left-8
 
-          .border.border-grey.margin.pad.bg-info.radius-0 .radius-0
-          .border.border-grey.margin.pad.bg-info.radius-3 .radius-3
-          .border.border-grey.margin.pad.bg-info.radius-4 .radius-4
-          .border.border-grey.margin.pad.bg-info.radius-5 .radius-5
-          .border.border-grey.margin.pad.bg-info.radius-6 .radius-6
-          .border.border-grey.margin.pad.bg-info.radius-7 .radius-7
-          .border.border-grey.margin.pad.bg-info.radius-8 .radius-8
-          .border.border-grey.margin.pad.bg-info.radius-9 .radius-9
-          .border.border-grey.margin.pad.bg-info.radius-10 .radius-10
-          .border.border-grey.margin.pad.bg-info.radius-15 .radius-15
-          .border.border-grey.margin.pad.bg-info.radius-20 .radius-20
-          .border.border-grey.margin.pad.bg-info.radius-25 .radius-25
-          .border.border-grey.margin.pad.bg-info.radius-half .radius-half
+          each item in ['','-left','-right','-top','-bottom']
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-0") .radius#{item}-0
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-3") .radius#{item}-3
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-4") .radius#{item}-4
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-5") .radius#{item}-5
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-6") .radius#{item}-6
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-7") .radius#{item}-7
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-8") .radius#{item}-8
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-9") .radius#{item}-9
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-10") .radius#{item}-10
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-15") .radius#{item}-15
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-20") .radius#{item}-20
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-25") .radius#{item}-25
+            .border.border-grey.margin.pad.bg-info(class="radius"+item+"-half") .radius#{item}-half
 
           .margin
             .flex
@@ -591,7 +592,7 @@ html(lang="en")
             |.margin-4x
       .pad-h
         h4 table
-        .flex-row-wrap.align-top
+        .flex-wrap.align-top
           .pad-xs
             h5 .border-collapse
             table.table-pad.border-collapse
@@ -730,7 +731,7 @@ html(lang="en")
                   td.bg-info.pad-0 .pad-0
 
       h2(id="ack-color-boot") ack-color-boot
-      .flex-row-wrap
+      .flex-wrap
         .flex-1.margin-xs.pad.bg-info.border-info.border-3
           |.bg-info.border-info
         .flex-1.margin-xs.pad.bg-danger.border-danger.border-3
@@ -771,7 +772,7 @@ html(lang="en")
           |.bg-dark.border-dark
 
 
-      .flex-row-wrap
+      .flex-wrap
         .flex-1.margin-xs.pad.text-positive
           |.text-positive
         .flex-1.margin-xs.pad.text-calm
@@ -828,7 +829,7 @@ html(lang="en")
           |.text-white,.font-white
 
       h4 border
-      .flex-row-wrap.align-top
+      .flex-wrap.align-top
         .margin.pad.border-1-info
           |.border-1-info
         .margin.pad.border.border-success
@@ -845,7 +846,7 @@ html(lang="en")
           |.border-bottom-1.border-assertive.border-bottom-dashed
 
       h4 table
-      .flex-row-wrap.align-top
+      .flex-wrap.align-top
         .pad-xs
           h5.margin-bottom-xs
             br
@@ -1013,7 +1014,7 @@ html(lang="en")
           .flex-1.border-1-warning
         .flex-1.border-1-success
 
-    .flex-row-wrap
+    .flex-wrap
       .border.border-success.flex-1.margin.pad.margin.flex-valign
         .pos-rel
           .pos-abs.hide-xxs.pad.bg-success #[.pos-abs.pas-left-xxs visible]#[.invisible hidden]

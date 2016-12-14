@@ -1,6 +1,13 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+
+## [1.2.25] - 2016-12-14
+### Changed
+- README.md is more condensed and now uses links to offer better jumping around
+### Added
+- more radius classes like .radius-left-5
+
 ## [1.2.24] - 2016-12-6
 ### Added
 - more child classes

@@ -6,7 +6,7 @@ $em-md: 1em !default;
 $em-lg: 1.5em !default;
 $em-4x: 2em !default;
 
-.no-a-style {color:inherit;text-decoration:inherit}
+.no-a-style,.no-a-style:hover {color:inherit;text-decoration:inherit}
 
 .cursor-pointer {cursor:pointer}
 
@@ -55,10 +55,70 @@ $em-4x: 2em !default;
 .radius-third, .border-radius-third {border-radius:33.3%}
 .radius-quarter, .border-radius-quarter {border-radius:25%}
 .radius-half, .border-radius-half {border-radius:50%}
+
 .radius-left-0 {border-top-left-radius:0;border-bottom-left-radius:0}
+.radius-left-3 {border-top-left-radius:3px;border-bottom-left-radius:3px}
+.radius-left-4 {border-top-left-radius:4px;border-bottom-left-radius:4px}
+.radius-left-5 {border-top-left-radius:5px;border-bottom-left-radius:5px}
+.radius-left-6 {border-top-left-radius:6px;border-bottom-left-radius:6px}
+.radius-left-7 {border-top-left-radius:7px;border-bottom-left-radius:7px}
+.radius-left-8 {border-top-left-radius:8px;border-bottom-left-radius:8px}
+.radius-left-9 {border-top-left-radius:9px;border-bottom-left-radius:9px}
+.radius-left-10 {border-top-left-radius:10px;border-bottom-left-radius:10px}
+.radius-left-15 {border-top-left-radius:15px;border-bottom-left-radius:15px}
+.radius-left-20 {border-top-left-radius:20px;border-bottom-left-radius:20px}
+.radius-left-25 {border-top-left-radius:25px;border-bottom-left-radius:25px}
+.radius-left-third {border-top-left-radius:33.3%;border-bottom-left-radius:33.3%}
+.radius-left-quarter {border-top-left-radius:25%;border-bottom-left-radius:25%}
+.radius-left-half {border-top-left-radius:50%;border-bottom-left-radius:50%}
+
 .radius-right-0 {border-top-right-radius:0;border-bottom-right-radius:0}
-.radius-top-0 {border-top-left-radius:0;border-top-right-radius:0}
+.radius-right-3 {border-top-right-radius:3px;border-bottom-right-radius:3px}
+.radius-right-4 {border-top-right-radius:4px;border-bottom-right-radius:4px}
+.radius-right-5 {border-top-right-radius:5px;border-bottom-right-radius:5px}
+.radius-right-6 {border-top-right-radius:6px;border-bottom-right-radius:6px}
+.radius-right-7 {border-top-right-radius:7px;border-bottom-right-radius:7px}
+.radius-right-8 {border-top-right-radius:8px;border-bottom-right-radius:8px}
+.radius-right-9 {border-top-right-radius:9px;border-bottom-right-radius:9px}
+.radius-right-10 {border-top-right-radius:10px;border-bottom-right-radius:10px}
+.radius-right-15 {border-top-right-radius:15px;border-bottom-right-radius:15px}
+.radius-right-20 {border-top-right-radius:20px;border-bottom-right-radius:20px}
+.radius-right-25 {border-top-right-radius:25px;border-bottom-right-radius:25px}
+.radius-right-third {border-top-right-radius:33.3%;border-bottom-right-radius:33.3%}
+.radius-right-quarter {border-top-right-radius:25%;border-bottom-right-radius:25%}
+.radius-right-half {border-top-right-radius:50%;border-bottom-right-radius:50%}
+
+.radius-top-0 {border-top-right-radius:0;border-top-left-radius:0}
+.radius-top-3 {border-top-right-radius:3px;border-top-left-radius:3px}
+.radius-top-4 {border-top-right-radius:4px;border-top-left-radius:4px}
+.radius-top-5 {border-top-right-radius:5px;border-top-left-radius:5px}
+.radius-top-6 {border-top-right-radius:6px;border-top-left-radius:6px}
+.radius-top-7 {border-top-right-radius:7px;border-top-left-radius:7px}
+.radius-top-8 {border-top-right-radius:8px;border-top-left-radius:8px}
+.radius-top-9 {border-top-right-radius:9px;border-top-left-radius:9px}
+.radius-top-10 {border-top-right-radius:10px;border-top-left-radius:10px}
+.radius-top-15 {border-top-right-radius:15px;border-top-left-radius:15px}
+.radius-top-20 {border-top-right-radius:20px;border-top-left-radius:20px}
+.radius-top-25 {border-top-right-radius:25px;border-top-left-radius:25px}
+.radius-top-third {border-top-right-radius:33.3%;border-top-left-radius:33.3%}
+.radius-top-quarter {border-top-right-radius:25%;border-top-left-radius:25%}
+.radius-top-half {border-top-right-radius:50%;border-top-left-radius:50%}
+
 .radius-bottom-0 {border-bottom-right-radius:0;border-bottom-left-radius:0}
+.radius-bottom-3 {border-bottom-right-radius:3px;border-bottom-left-radius:3px}
+.radius-bottom-4 {border-bottom-right-radius:4px;border-bottom-left-radius:4px}
+.radius-bottom-5 {border-bottom-right-radius:5px;border-bottom-left-radius:5px}
+.radius-bottom-6 {border-bottom-right-radius:6px;border-bottom-left-radius:6px}
+.radius-bottom-7 {border-bottom-right-radius:7px;border-bottom-left-radius:7px}
+.radius-bottom-8 {border-bottom-right-radius:8px;border-bottom-left-radius:8px}
+.radius-bottom-9 {border-bottom-right-radius:9px;border-bottom-left-radius:9px}
+.radius-bottom-10 {border-bottom-right-radius:10px;border-bottom-left-radius:10px}
+.radius-bottom-15 {border-bottom-right-radius:15px;border-bottom-left-radius:15px}
+.radius-bottom-20 {border-bottom-right-radius:20px;border-bottom-left-radius:20px}
+.radius-bottom-25 {border-bottom-right-radius:25px;border-bottom-left-radius:25px}
+.radius-bottom-third {border-bottom-right-radius:33.3%;border-bottom-left-radius:33.3%}
+.radius-bottom-quarter {border-bottom-right-radius:25%;border-bottom-left-radius:25%}
+.radius-bottom-half {border-bottom-right-radius:50%;border-bottom-left-radius:50%}
 
 .border-spacing-0 {border-spacing:0}
 .border-collapse {border-collapse:collapse}
@@ -140,10 +200,10 @@ $em-4x: 2em !default;
 
 .child-border-0 > * {border:0}
 .border-0 {border:0}
-.border-top-0 {border-top:0}
-.border-right-0 {border-right:0}
-.border-left-0 {border-left:0}
-.border-bottom-0 {border-bottom:0}
+.border-top-0,.border-v-0 {border-top:0}
+.border-right-0,.border-h-0 {border-right:0}
+.border-left-0,.border-h-0 {border-left:0}
+.border-bottom-0,.border-v-0 {border-bottom:0}
 
 
 .width-0 {width:0}
