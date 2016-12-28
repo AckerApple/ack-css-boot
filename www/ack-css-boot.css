@@ -272,8 +272,10 @@
 .flex-stack-reverse.flex-right, .flex-column-reverse.flex-right, .flex-columns-reverse.flex-right, .flex-direction-column-reverse.flex-right {
   align-items: flex-end; }
 
+.no-a-style {
+  color: inherit; }
+
 .no-a-style, .no-a-style:hover {
-  color: inherit;
   text-decoration: inherit; }
 
 .cursor-pointer {
