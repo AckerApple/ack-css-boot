@@ -6,6 +6,7 @@
 
 .text-overflow {text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 
+.strike, .strike-through, .line-through {text-decoration: line-through;}
 .text-underline,.underline {text-decoration:underline}
 .no-underline, .text-decoration-none {text-decoration:none}
 .italic, .text-italic {font-style: italic}
