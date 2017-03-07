@@ -6,8 +6,8 @@ $em-md: 1em !default;
 $em-lg: 1.5em !default;
 $em-4x: 2em !default;
 
-.no-a-style {color:inherit}
-.no-a-style,.no-a-style:hover {text-decoration:inherit}
+.no-a-style, .no-a-style a {color:inherit}
+.no-a-style, .no-a-style a, .no-a-style:hover, .no-a-style a:hover {text-decoration:inherit}
 
 .cursor-pointer {cursor:pointer}
 

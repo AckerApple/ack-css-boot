@@ -1,6 +1,11 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.28] - 2016-02-21
+### Added
+- .no-a-style has been enhanced to effect child a-tags of .no-a-style
+- .code-sample
+- updated dev dependencies
 
 ## [1.2.25] - 2016-12-14
 ### Changed
