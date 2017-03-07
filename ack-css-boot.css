@@ -15,6 +15,9 @@
   white-space: nowrap;
   overflow: hidden; }
 
+.strike, .strike-through, .line-through {
+  text-decoration: line-through; }
+
 .text-underline, .underline {
   text-decoration: underline; }
 
@@ -272,8 +275,10 @@
 .flex-stack-reverse.flex-right, .flex-column-reverse.flex-right, .flex-columns-reverse.flex-right, .flex-direction-column-reverse.flex-right {
   align-items: flex-end; }
 
-.no-a-style, .no-a-style:hover {
-  color: inherit;
+.no-a-style, .no-a-style a {
+  color: inherit; }
+
+.no-a-style, .no-a-style a, .no-a-style:hover, .no-a-style a:hover {
   text-decoration: inherit; }
 
 .cursor-pointer {
@@ -927,6 +932,9 @@
 
 .border-bottom-0, .border-v-0 {
   border-bottom: 0; }
+
+.width-auto {
+  width: auto; }
 
 .width-0 {
   width: 0; }
@@ -3075,3 +3083,15 @@ lg >= 1200
 
 a, button {
   cursor: pointer; }
+
+.code-sample {
+  display: block;
+  color: #393318;
+  /*width: 100%;*/
+  overflow: auto;
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+  background-color: #e5e7e7;
+  border: 0;
+  padding: .5em;
+  font-size: .9em;
+  line-height: 1.6em; }
