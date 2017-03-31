@@ -71,6 +71,21 @@ $bg-dark:#444444 !default;
 .bg-assertive {background-color:$bg-assertive}
 .bg-royal {background-color:$bg-royal}
 .bg-dark {background-color:$bg-dark}
+.bg-green {background-color: #060}
+.bg-orange {background-color: #C60}
+.bg-red {background-color:#900}
+.bg-blue {background-color: #00F}
+.bg-purple {background-color: #60C}
+.bg-black {background-color: #000}
+.bg-white {background-color: #FFF}
+
+.child-hover-bg-green > *:hover {background-color: #060}
+.child-hover-bg-orange > *:hover {background-color: #C60}
+.child-hover-bg-red > *:hover {background-color:#900}
+.child-hover-bg-blue > *:hover {background-color: #00F}
+.child-hover-bg-purple > *:hover {background-color: #60C}
+.child-hover-bg-black > *:hover {background-color: #000}
+.child-hover-bg-white > *:hover {background-color: #FFF}
 
 .border-grey {border-color:#666}
 .border-grey-xs, .border-grey-2x {border-color:#888}
@@ -109,33 +124,33 @@ $bg-dark:#444444 !default;
 .border-1-success {border-color:#4cae4c}
 .border-1-primary {border-color:#2e6da4}
 
-.hover-text-positive:hover {color:#0c60ee}
-.hover-text-calm:hover {color:#0a9dc7}
-.hover-text-balanced:hover {color:#28a54c}
-.hover-text-energized:hover {color:#e6b500}
-.hover-text-assertive:hover {color:#e42112}
-.hover-text-royal:hover {color:#6b46e5}
-.hover-text-dark:hover {color:#111111}
-.hover-text-primary:hover {color:#337ab7}
-.hover-text-success:hover {color:#3c763d}
-.hover-text-info:hover {color:#31708f}
-.hover-text-warning:hover {color:#8a6d3b}
-.hover-text-danger:hover {color:#a94442}
-.hover-text-grey-lg:hover, .hover-text-muted-lg:hover {color:#333}
-.hover-text-grey-md:hover, .hover-text-muted-md:hover {color:#555}
-.hover-text-grey:hover, .hover-text-muted:hover {color:#777}
-.hover-text-grey-2x:hover, .hover-text-grey-sm:hover, .hover-text-muted-sm:hover, .hover-text-muted-2x:hover {color:#999}
-.hover-text-grey-3x:hover, .hover-text-grey-xs:hover, .hover-text-muted-xs:hover, .hover-text-muted-3x:hover {color:#BBB}
-.hover-text-grey-4x:hover, .hover-text-grey-xxs:hover, .hover-text-muted-xxs:hover, .hover-text-muted-4x:hover {color:#CCC}
-.hover-text-grey-5x:hover {color:#DDD}
-.hover-text-grey-6x:hover {color:#EEE}
-.hover-text-green:hover {color: #060}
-.hover-text-orange:hover {color: #C60}
-.hover-text-red:hover {color:#900}
-.hover-text-blue:hover {color: #00F}
-.hover-text-purple:hover {color: #60C}
-.hover-text-black:hover {color: #000}
-.hover-text-white:hover {color: #FFF}
+.child-hover-text-positive > *:hover, .hover-text-positive:hover {color:#0c60ee}
+.child-hover-text-calm > *:hover, .hover-text-calm:hover {color:#0a9dc7}
+.child-hover-text-balanced > *:hover, .hover-text-balanced:hover {color:#28a54c}
+.child-hover-text-energized > *:hover, .hover-text-energized:hover {color:#e6b500}
+.child-hover-text-assertive > *:hover, .hover-text-assertive:hover {color:#e42112}
+.child-hover-text-royal > *:hover, .hover-text-royal:hover {color:#6b46e5}
+.child-hover-text-dark > *:hover, .hover-text-dark:hover {color:#111111}
+.child-hover-text-primary > *:hover, .hover-text-primary:hover {color:#337ab7}
+.child-hover-text-success > *:hover, .hover-text-success:hover {color:#3c763d}
+.child-hover-text-info > *:hover, .hover-text-info:hover {color:#31708f}
+.child-hover-text-warning > *:hover, .hover-text-warning:hover {color:#8a6d3b}
+.child-hover-text-danger > *:hover, .hover-text-danger:hover {color:#a94442}
+.child-hover-text-grey-lg > *:hover, .hover-text-grey-lg:hover, .hover-text-muted-lg:hover {color:#333}
+.child-hover-text-grey-md > *:hover, .hover-text-grey-md:hover, .hover-text-muted-md:hover {color:#555}
+.child-hover-text-grey > *:hover, .hover-text-grey:hover, .hover-text-muted:hover {color:#777}
+.child-hover-text-grey-2x > *:hover, .hover-text-grey-2x:hover, .hover-text-grey-sm:hover, .hover-text-muted-sm:hover, .hover-text-muted-2x:hover {color:#999}
+.child-hover-text-grey-3x > *:hover, .hover-text-grey-3x:hover, .hover-text-grey-xs:hover, .hover-text-muted-xs:hover, .hover-text-muted-3x:hover {color:#BBB}
+.child-hover-text-grey-4x > *:hover, .hover-text-grey-4x:hover, .hover-text-grey-xxs:hover, .hover-text-muted-xxs:hover, .hover-text-muted-4x:hover {color:#CCC}
+.child-hover-text-grey-5x > *:hover, .hover-text-grey-5x:hover {color:#DDD}
+.child-hover-text-grey-6x > *:hover, .hover-text-grey-6x:hover {color:#EEE}
+.child-hover-text-green > *:hover, .hover-text-green:hover {color: #060}
+.child-hover-text-orange > *:hover, .hover-text-orange:hover {color: #C60}
+.child-hover-text-red > *:hover, .hover-text-red:hover {color:#900}
+.child-hover-text-blue > *:hover, .hover-text-blue:hover {color: #00F}
+.child-hover-text-purple > *:hover, .hover-text-purple:hover {color: #60C}
+.child-hover-text-black > *:hover, .hover-text-black:hover {color: #000}
+.child-hover-text-white > *:hover, .hover-text-white:hover {color: #FFF}
 
 .hover-text-shadow-grey-blur:hover {text-shadow:0 0 4px #777}
 .hover-text-shadow-white-blur:hover {text-shadow:0 0 4px #FFF}

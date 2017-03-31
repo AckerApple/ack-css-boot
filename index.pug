@@ -360,60 +360,89 @@ html(lang="en")
 
 
       h2(id="ack-text-boot") ack-text-boot
-      .flex-wrap        
-        .text-2x.pad.font-arial
+      .flex-wrap.child-pad-sm        
+        .text-2x.border.border-grey-5x.flex-1.font-arial
           |.font-arial
-        .text-2x.pad.font-times
+        .text-2x.border.border-grey-5x.flex-1.font-times
           |.font-times
-        .text-2x.pad.font-helvetica
+        .text-2x.border.border-grey-5x.flex-1.font-helvetica
           |.font-helvetica
-        .pad.text-9x .text-9x
-        .pad.text-8x .text-8x
-        .pad.text-7x .text-7x
-        .pad.text-6x .text-6x
-        .pad.text-5x .text-5x
-        .pad.text-4x .text-4x
-        .pad.text-3x .text-3x
-        .pad.text-2x .text-2x
-        .pad.text-sm .text-sm
-        .pad.text-smx .text-smx
-        .pad.text-xs .text-xs
-        .pad.text-xxs .text-xxs
-        .pad.text-underline .text-underline, .underline
-        .pad.italic .italic, .text-italic
-        .pad.strong .strong, .bold, .text-bold
-        .pad.strike .strike, .line-through
-        .pad.font-bolder .font-bolder
-        .pad.font-normal .font-normal
-        .pad.font-lighter .font-lighter
-        .pad.font-100 .font-100
-        .pad.font-200 .font-200
-        .pad.font-300 .font-300
-        .pad.font-400 .font-400
-        .pad.font-500 .font-500
-        .pad.font-600 .font-600
-        .pad.font-700 .font-700
-        .pad.font-800 .font-800
-        .pad.font-900 .font-900
-        .pad.line-height-0 .line-height-0
-        .pad.line-height-half .line-height-half
-        .pad.line-height-third .line-height-third
-        .pad.line-height-quarter .line-height-quarter
-        .pad.line-height-2x .line-height-2x
-        .pad.line-height-3x .line-height-3x
+        .text-2x.border.border-grey-5x.flex-1.font-fixed-width
+          |.font-fixed-width or .font-courier
+        .border.border-grey-5x.flex-1.text-9x .text-9x
+        .border.border-grey-5x.flex-1.text-8x .text-8x
+        .border.border-grey-5x.flex-1.text-7x .text-7x
+        .border.border-grey-5x.flex-1.text-6x .text-6x
+        .border.border-grey-5x.flex-1.text-5x .text-5x
+        .border.border-grey-5x.flex-1.text-4x .text-4x
+        .border.border-grey-5x.flex-1.text-3x .text-3x
+        .border.border-grey-5x.flex-1.text-2x .text-2x
+        .border.border-grey-5x.flex-1.text-sm .text-sm
+        .border.border-grey-5x.flex-1.text-smx .text-smx
+        .border.border-grey-5x.flex-1.text-xs .text-xs
+        .border.border-grey-5x.flex-1.text-xxs .text-xxs
+        .border.border-grey-5x.flex-1.text-underline .text-underline, .underline
+        .border.border-grey-5x.flex-1.italic .italic, .text-italic
+        .border.border-grey-5x.flex-1.strong .strong, .bold, .text-bold
+        .border.border-grey-5x.flex-1.strike .strike, .line-through
+        .border.border-grey-5x.flex-1.font-bolder .font-bolder
+        .border.border-grey-5x.flex-1.font-normal .font-normal
+        .border.border-grey-5x.flex-1.font-lighter .font-lighter
+        .border.border-grey-5x.flex-1.font-100 .font-100
+        .border.border-grey-5x.flex-1.font-200 .font-200
+        .border.border-grey-5x.flex-1.font-300 .font-300
+        .border.border-grey-5x.flex-1.font-400 .font-400
+        .border.border-grey-5x.flex-1.font-500 .font-500
+        .border.border-grey-5x.flex-1.font-600 .font-600
+        .border.border-grey-5x.flex-1.font-700 .font-700
+        .border.border-grey-5x.flex-1.font-800 .font-800
+        .border.border-grey-5x.flex-1.font-900 .font-900
+        .border.border-grey-5x.flex-1.line-height-0 .line-height-0
+        .border.border-grey-5x.flex-1.line-height-half .line-height-half
+        .border.border-grey-5x.flex-1.line-height-third .line-height-third
+        .border.border-grey-5x.flex-1.line-height-quarter .line-height-quarter
+        .border.border-grey-5x.flex-1.line-height-2x .line-height-2x
+        .border.border-grey-5x.flex-1.line-height-3x .line-height-3x
 
-      .flex-wrap
-        .flex-1.pad.hover-text-shadow-white-blur.bg-grey.text-white.text-center
+      h4 hover-text classes
+      .flex-wrap.child-margin-xxs.child-pad-xs
+        .flex-1.hover-text-shadow-white-blur.bg-grey.text-white.text-center.border.border-grey-5x
           |.hover-text-shadow-white-blur
           .text-xs (hover with mouse)
-        .flex-1.pad.hover-text-shadow-grey-blur.text-center
+        .flex-1.hover-text-shadow-grey-blur.text-center.border.border-grey-5x
           |.hover-text-shadow-grey-blur
           .text-grey.text-xs (hover with mouse)
 
         each x in colorArray
-          .flex-1.pad.text-center(class="hover-bg-"+x)
+          .flex-1.text-center.border.border-grey-5x(class="hover-bg-"+x)
             |.hover-bg-#{x}
             .text-grey.text-xs (hover with mouse)
+
+      .flex-wrap.child-margin-xxs.child-pad-xs
+        .flex-1.border.border-grey-5x.hover-text-9x
+          |.hover-text-9x
+        .flex-1.border.border-grey-5x.hover-text-8x
+          |.hover-text-8x
+        .flex-1.border.border-grey-5x.hover-text-7x
+          |.hover-text-7x
+        .flex-1.border.border-grey-5x.hover-text-6x
+          |.hover-text-6x
+        .flex-1.border.border-grey-5x.hover-text-5x
+          |.hover-text-5x
+        .flex-1.border.border-grey-5x.hover-text-4x
+          |.hover-text-4x
+        .flex-1.border.border-grey-5x.hover-text-3x
+          |.hover-text-3x
+        .flex-1.border.border-grey-5x.hover-text-2x
+          |.hover-text-2x
+        .flex-1.border.border-grey-5x.hover-text-sm
+          |.hover-text-sm
+        .flex-1.border.border-grey-5x.hover-text-smx
+          |.hover-text-smx
+        .flex-1.border.border-grey-5x.hover-text-xs
+          |.hover-text-xs
+        .flex-1.border.border-grey-5x.hover-text-xxs
+          |.hover-text-xxs
 
       h2(id="ack-block-boot") ack-block-boot
 
@@ -982,6 +1011,161 @@ html(lang="en")
                 .td col1
                 .td col2
                 .td col3
+      
+      h4 child hover targeting
+      p Mouse over a child box to see its assigned hover class
+
+      h5.text-positive .child-hover-text-positive.child-hover-bg-positive
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-positive.child-hover-bg-positive
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-calm .child-hover-text-calm.child-hover-bg-calm
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-calm.child-hover-bg-calm
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-balanced .child-hover-text-balanced.child-hover-bg-balanced
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-balanced.child-hover-bg-balanced
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-energized .child-hover-text-energized.child-hover-bg-energized
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-energized.child-hover-bg-energized
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-assertive .child-hover-text-assertive.child-hover-bg-assertive
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-assertive.child-hover-bg-assertive
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-royal .child-hover-text-royal.child-hover-bg-royal
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-royal.child-hover-bg-royal
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-dark .child-hover-text-dark.child-hover-bg-dark
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-dark.child-hover-bg-dark
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-primary .child-hover-text-primary.child-hover-bg-primary
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-primary.child-hover-bg-primary
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-success .child-hover-text-success.child-hover-bg-success
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-success.child-hover-bg-success
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-info .child-hover-text-info.child-hover-bg-info
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-info.child-hover-bg-info
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-warning .child-hover-text-warning.child-hover-bg-warning
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-warning.child-hover-bg-warning
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-danger .child-hover-text-danger.child-hover-bg-danger
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-danger.child-hover-bg-danger
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-grey .child-hover-text-grey.child-hover-bg-grey
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey.child-hover-bg-grey
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-grey-2x .child-hover-text-grey-2x.child-hover-bg-grey-2x
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-2x.child-hover-bg-grey-2x
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-grey-3x .child-hover-text-grey-3x.child-hover-bg-grey-3x
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-3x.child-hover-bg-grey-3x
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-grey-4x .child-hover-text-grey-4x.child-hover-bg-grey-4x
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-4x.child-hover-bg-grey-4x
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-grey-5x .child-hover-text-grey-5x.child-hover-bg-grey-5x
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-5x.child-hover-bg-grey-5x
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-grey-6x .child-hover-text-grey-6x.child-hover-bg-grey-6x
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-6x.child-hover-bg-grey-6x
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-green .child-hover-text-green.child-hover-bg-green
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-green.child-hover-bg-green
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-orange .child-hover-text-orange.child-hover-bg-orange
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-orange.child-hover-bg-orange
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-red .child-hover-text-red.child-hover-bg-red
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-red.child-hover-bg-red
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-blue .child-hover-text-blue.child-hover-bg-blue
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-blue.child-hover-bg-blue
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      h5.text-purple .child-hover-text-purple.child-hover-bg-purple
+      .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-purple.child-hover-bg-purple
+        .flex-1.border acb
+        .flex-1.border 123
+        .flex-1.border xyz
+
+      .bg-grey-2x
+        h5.text-black .child-hover-text-black.child-hover-bg-black
+        .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-black.child-hover-bg-black
+          .flex-1.border.text-white acb
+          .flex-1.border.text-white 123
+          .flex-1.border.text-white xyz
+
+      .bg-grey-2x
+        h5.text-white .child-hover-text-white.child-hover-bg-white
+        .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-white.child-hover-bg-white
+          .flex-1.border acb
+          .flex-1.border 123
+          .flex-1.border xyz
 
     .text-left
       h2(id="ack-responsive-boot") ack-responsive-boot
@@ -1161,11 +1345,32 @@ html(lang="en")
 
     .text-left
       h2(id="Additional Classes") Additional Classes
+      .flex
+        .flex-1
+          h3 .no-scroll-bars
+          .pad.font-fixed-width
+            .p.text-grey-2x.text-xs The bottom overflowing content, has no scroll bars
+            .width-100.height-100.overflow.no-scroll-bars
+              | |*|*|*|*|*|*|*|*|*|*|*=========================
+              | |*|*|*|*|*|*|*|*|*|*|*=========================
+              | |*|*|*|*|*|*|*|*|*|*|*=========================
+              | |*|*|*|*|*|*|*|*|*|*|*=========================
+              | |*|*|*|*|*|*|*|*|*|*|*=========================
+              | |*|*|*|*|*|*|*|*|*|*|*=========================
+              | |*|*|*|*|*|*|*|*|*|*|*=========================
+              | ===============================================
+              | ===============================================
+              | ===============================================
+              | ===============================================
+              | ===============================================
+              | ===============================================
+              | ===============================================
 
-      h3 .code-sample
-      pre.code-sample
-        |&lt;pre class="code-sample"&gt;
-        |  Here is some of my sample code that won't wrap it's lines.
-        |  &lt;br /&gt;
-        |  Unless a line-break appears as part of the code.
-        |&lt;/pre&gt;
+        .flex-1
+          h3 .code-sample
+          pre.code-sample
+            |&lt;pre class="code-sample"&gt;
+            |  Here is some of my sample code that won't wrap it's lines.
+            |  &lt;br /&gt;
+            |  Unless a line-break appears as part of the code.
+            |&lt;/pre&gt;

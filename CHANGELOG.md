@@ -1,7 +1,12 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
-## [1.2.28] - 2016-02-21
+## [1.2.30] - 2017-03-31
+### Added
+- easier to read examples
+- .no-scroll-bars
+
+## [1.2.28] - 2017-02-21
 ### Added
 - .no-a-style has been enhanced to effect child a-tags of .no-a-style
 - .code-sample
