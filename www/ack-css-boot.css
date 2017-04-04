@@ -3150,11 +3150,7 @@ lg >= 1200
   font-size: .9em;
   line-height: 1.6em; }
 
-.code-sample::-webkit-scrollbar {
-  display: none; }
-
-.code-sample::-moz-scrollbar {
-  display: none; }
-
+/*.code-sample::-webkit-scrollbar {display:none}
+.code-sample::-moz-scrollbar {display:none}*/
 a, button {
   cursor: pointer; }
