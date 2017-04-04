@@ -1,6 +1,11 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.31] - 2017-03-31
+### Added
+- .no-scroll-bars-ever
+- .code-sample always has .no-scroll-bars
+
 ## [1.2.30] - 2017-03-31
 ### Added
 - easier to read examples

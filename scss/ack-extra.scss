@@ -1,10 +1,8 @@
-.no-scroll-bars::-webkit-scrollbar {
-    display: none; 
-}
+.no-scroll-bars::-webkit-scrollbar {display:none}
+.no-scroll-bars::-moz-scrollbar {display:none}
 
-.no-scroll-bars::-moz-scrollbar {
-    display: none; 
-}
+.no-scroll-bars-ever *::-webkit-scrollbar {display:none}
+.no-scroll-bars-ever *::-moz-scrollbar {display:none}
 
 .code-sample {
   display: block;
@@ -18,3 +16,6 @@
   font-size:.9em;
   line-height:1.6em;
 }
+
+.code-sample::-webkit-scrollbar {display:none}
+.code-sample::-moz-scrollbar {display:none}

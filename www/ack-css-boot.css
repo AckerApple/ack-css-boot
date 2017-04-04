@@ -3132,6 +3132,12 @@ lg >= 1200
 .no-scroll-bars::-moz-scrollbar {
   display: none; }
 
+.no-scroll-bars-ever *::-webkit-scrollbar {
+  display: none; }
+
+.no-scroll-bars-ever *::-moz-scrollbar {
+  display: none; }
+
 .code-sample {
   display: block;
   color: #393318;
@@ -3143,6 +3149,12 @@ lg >= 1200
   padding: .5em;
   font-size: .9em;
   line-height: 1.6em; }
+
+.code-sample::-webkit-scrollbar {
+  display: none; }
+
+.code-sample::-moz-scrollbar {
+  display: none; }
 
 a, button {
   cursor: pointer; }
