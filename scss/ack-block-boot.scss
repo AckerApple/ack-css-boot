@@ -218,6 +218,7 @@ $em-4x: 2em !default;
 
 
 .margin-0 {margin:0}
+.margin-1 {margin:1px}
 .margin-xxs {margin:$em-xxs}
 .margin-xs {margin:$em-xs}
 .margin-sm {margin:$em-sm}
@@ -227,6 +228,7 @@ $em-4x: 2em !default;
 .margin-4x {margin:$em-4x}
 
 .margin-v-0 {margin-top:0;margin-bottom:0}
+.margin-v-1 {margin-top:1px;margin-bottom:1px}
 .margin-v-xxs {margin-top:$em-xxs;margin-bottom:$em-xxs}
 .margin-v-xs {margin-top:$em-xs;margin-bottom:$em-xs}
 .margin-v-sm {margin-top:$em-sm;margin-bottom:$em-sm}
@@ -236,6 +238,7 @@ $em-4x: 2em !default;
 .margin-v-4x {margin-top:$em-4x;margin-bottom:$em-4x}
 
 .margin-h-0 {margin-left:0;margin-right:0}
+.margin-h-1 {margin-left:1px;margin-right:1px}
 .margin-h-xxs {margin-left:$em-xxs;margin-right:$em-xxs}
 .margin-h-xs {margin-left:$em-xs;margin-right:$em-xs}
 .margin-h-sm {margin-left:$em-sm;margin-right:$em-sm}
@@ -245,6 +248,7 @@ $em-4x: 2em !default;
 .margin-h-4x {margin-left:$em-4x;margin-right:$em-4x}
 
 .margin-top-0 {margin-top:0}
+.margin-top-1 {margin-top:1px}
 .margin-top-xxs {margin-top:$em-xxs}
 .margin-top-xs {margin-top:$em-xs}
 .margin-top-sm {margin-top:$em-sm}
@@ -254,6 +258,7 @@ $em-4x: 2em !default;
 .margin-top-4x, .margin-top-lg {margin-top:$em-4x}
 
 .margin-bottom-0 {margin-bottom:0}
+.margin-bottom-1 {margin-bottom:1px}
 .margin-bottom-xxs {margin-bottom:$em-xxs}
 .margin-bottom-xs {margin-bottom:$em-xs}
 .margin-bottom-sm {margin-bottom:$em-sm}
@@ -263,6 +268,7 @@ $em-4x: 2em !default;
 .margin-bottom-4x {margin-bottom:$em-4x}
 
 .margin-left-0 {margin-left:0}
+.margin-left-1 {margin-left:1px}
 .margin-left-xxs {margin-left:$em-xxs}
 .margin-left-xs {margin-left:$em-xs}
 .margin-left-sm {margin-left:$em-sm}
@@ -272,6 +278,7 @@ $em-4x: 2em !default;
 .margin-left-4x {margin-left:$em-4x}
 
 .margin-right-0 {margin-right:0}
+.margin-right-1 {margin-right:1px}
 .margin-right-xxs {margin-right:$em-xxs}
 .margin-right-xs {margin-right:$em-xs}
 .margin-right-sm {margin-right:$em-sm}
@@ -465,6 +472,7 @@ $em-4x: 2em !default;
 
 /* child targeting classes */
 .child-margin-0 > * {@extend .margin-0}
+.child-margin-1 > * {@extend .margin-1}
 .child-margin-xxs > * {@extend .margin-xxs}
 .child-margin-xs > * {@extend .margin-xs}
 .child-margin-sm > * {@extend .margin-sm}
@@ -472,12 +480,14 @@ $em-4x: 2em !default;
 .child-margin-md > * {@extend .margin-md}
 .child-margin-lg > * {@extend .margin-lg}
 .child-margin-v-0 > * {@extend .margin-v-0}
+.child-margin-v-1 > * {@extend .margin-v-1}
 .child-margin-v-xxs > * {@extend .margin-v-xxs}
 .child-margin-v-xs > * {@extend .margin-v-xs}
 .child-margin-v-sm > * {@extend .margin-v-sm}
 .child-margin-v > * {@extend .margin-v}
 .child-margin-v-md > * {@extend .margin-v-md}
 .child-margin-h-0 > * {@extend .margin-h-0}
+.child-margin-h-1 > * {@extend .margin-h-1}
 .child-margin-h-xxs > * {@extend .margin-h-xxs}
 .child-margin-h-xs > * {@extend .margin-h-xs}
 .child-margin-h-sm > * {@extend .margin-h-sm}
@@ -485,6 +495,7 @@ $em-4x: 2em !default;
 .child-margin-h-md > * {@extend .margin-h-md}
 .child-margin-h-lg > * {@extend .margin-h-lg}
 .child-margin-top-0 > * {@extend .margin-top-0}
+.child-margin-top-1 > * {@extend .margin-top-1}
 .child-margin-top-xxs > * {@extend .margin-top-xxs}
 .child-margin-top-xs > * {@extend .margin-top-xs}
 .child-margin-top-sm > * {@extend .margin-top-sm}
@@ -492,6 +503,7 @@ $em-4x: 2em !default;
 .child-margin-top-md > * {@extend .margin-top-md}
 .child-margin-top-lg > * {@extend .margin-top-lg}
 .child-margin-bottom-0 > * {@extend .margin-bottom-0}
+.child-margin-bottom-1 > * {@extend .margin-bottom-1}
 .child-margin-bottom-xxs > * {@extend .margin-bottom-xxs}
 .child-margin-bottom-xs > * {@extend .margin-bottom-xs}
 .child-margin-bottom-sm > * {@extend .margin-bottom-sm}
@@ -499,6 +511,7 @@ $em-4x: 2em !default;
 .child-margin-bottom-md > * {@extend .margin-bottom-md}
 .child-margin-bottom-lg > * {@extend .margin-bottom-lg}
 .child-margin-left-0 > * {@extend .margin-left-0}
+.child-margin-left-1 > * {@extend .margin-left-1}
 .child-margin-left-xxs > * {@extend .margin-left-xxs}
 .child-margin-left-xs > * {@extend .margin-left-xs}
 .child-margin-left-sm > * {@extend .margin-left-sm}
@@ -506,12 +519,68 @@ $em-4x: 2em !default;
 .child-margin-left-md > * {@extend .margin-left-md}
 .child-margin-left-lg > * {@extend .margin-left-lg}
 .child-margin-right-0 > * {@extend .margin-right-0}
-.child-margin-right-0 > * {@extend .margin-right-0}
+.child-margin-right-1 > * {@extend .margin-right-1}
 .child-margin-right-xs > * {@extend .margin-right-xs}
 .child-margin-right-sm > * {@extend .margin-right-sm}
 .child-margin-right > * {@extend .margin-right}
 .child-margin-right-md > * {@extend .margin-right-md}
 .child-margin-right-lg > * {@extend .margin-right-lg}
+
+/* repeat child targeting class but only for first-child */
+.child-first-margin-0 > *:first-child {@extend .margin-0}
+.child-first-margin-1 > *:first-child {@extend .margin-1}
+.child-first-margin-xxs > *:first-child {@extend .margin-xxs}
+.child-first-margin-xs > *:first-child {@extend .margin-xs}
+.child-first-margin-sm > *:first-child {@extend .margin-sm}
+.child-first-margin > *:first-child {@extend .margin}
+.child-first-margin-md > *:first-child {@extend .margin-md}
+.child-first-margin-lg > *:first-child {@extend .margin-lg}
+.child-first-margin-v-0 > *:first-child {@extend .margin-v-0}
+.child-first-margin-v-1 > *:first-child {@extend .margin-v-1}
+.child-first-margin-v-xxs > *:first-child {@extend .margin-v-xxs}
+.child-first-margin-v-xs > *:first-child {@extend .margin-v-xs}
+.child-first-margin-v-sm > *:first-child {@extend .margin-v-sm}
+.child-first-margin-v > *:first-child {@extend .margin-v}
+.child-first-margin-v-md > *:first-child {@extend .margin-v-md}
+.child-first-margin-h-0 > *:first-child {@extend .margin-h-0}
+.child-first-margin-h-1 > *:first-child {@extend .margin-h-1}
+.child-first-margin-h-xxs > *:first-child {@extend .margin-h-xxs}
+.child-first-margin-h-xs > *:first-child {@extend .margin-h-xs}
+.child-first-margin-h-sm > *:first-child {@extend .margin-h-sm}
+.child-first-margin-h > *:first-child {@extend .margin-h}
+.child-first-margin-h-md > *:first-child {@extend .margin-h-md}
+.child-first-margin-h-lg > *:first-child {@extend .margin-h-lg}
+.child-first-margin-top-0 > *:first-child {@extend .margin-top-0}
+.child-first-margin-top-1 > *:first-child {@extend .margin-top-1}
+.child-first-margin-top-xxs > *:first-child {@extend .margin-top-xxs}
+.child-first-margin-top-xs > *:first-child {@extend .margin-top-xs}
+.child-first-margin-top-sm > *:first-child {@extend .margin-top-sm}
+.child-first-margin-top > *:first-child {@extend .margin-top}
+.child-first-margin-top-md > *:first-child {@extend .margin-top-md}
+.child-first-margin-top-lg > *:first-child {@extend .margin-top-lg}
+.child-first-margin-bottom-0 > *:first-child {@extend .margin-bottom-0}
+.child-first-margin-bottom-1 > *:first-child {@extend .margin-bottom-1}
+.child-first-margin-bottom-xxs > *:first-child {@extend .margin-bottom-xxs}
+.child-first-margin-bottom-xs > *:first-child {@extend .margin-bottom-xs}
+.child-first-margin-bottom-sm > *:first-child {@extend .margin-bottom-sm}
+.child-first-margin-bottom > *:first-child {@extend .margin-bottom}
+.child-first-margin-bottom-md > *:first-child {@extend .margin-bottom-md}
+.child-first-margin-bottom-lg > *:first-child {@extend .margin-bottom-lg}
+.child-first-margin-left-0 > *:first-child {@extend .margin-left-0}
+.child-first-margin-left-1 > *:first-child {@extend .margin-left-1}
+.child-first-margin-left-xxs > *:first-child {@extend .margin-left-xxs}
+.child-first-margin-left-xs > *:first-child {@extend .margin-left-xs}
+.child-first-margin-left-sm > *:first-child {@extend .margin-left-sm}
+.child-first-margin-left > *:first-child {@extend .margin-left}
+.child-first-margin-left-md > *:first-child {@extend .margin-left-md}
+.child-first-margin-left-lg > *:first-child {@extend .margin-left-lg}
+.child-first-margin-right-0 > *:first-child {@extend .margin-right-0}
+.child-first-margin-right-1 > *:first-child {@extend .margin-right-1}
+.child-first-margin-right-xs > *:first-child {@extend .margin-right-xs}
+.child-first-margin-right-sm > *:first-child {@extend .margin-right-sm}
+.child-first-margin-right > *:first-child {@extend .margin-right}
+.child-first-margin-right-md > *:first-child {@extend .margin-right-md}
+.child-first-margin-right-lg > *:first-child {@extend .margin-right-lg}
 
 .table {display:table}
 .thead {display:table-header-group}

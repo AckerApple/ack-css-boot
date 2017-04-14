@@ -1,6 +1,11 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.34] - 2017-04-14
+### Added
+- child class docs
+- added .child-first classes
+
 ## [1.2.31] - 2017-03-31
 ### Added
 - .no-scroll-bars-ever

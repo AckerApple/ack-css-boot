@@ -585,7 +585,9 @@ html(lang="en")
 
         
       .pad-h
-        h4 pad
+        h4.margin-bottom-0 pad
+        .pad-left.text-grey-2x.text-xs
+          |Includes pad-left, pad-right, pad-h, and pad-v
         .inline-block.pad-xxs.border-1-info.valign
           |.pad-xxs
         .inline-block.pad-xs.border-1-info.valign
@@ -601,7 +603,15 @@ html(lang="en")
         .inline-block.pad-4x.border-1-info.valign
           |.pad-4x
       .pad-h
-        h4 margin
+        h4.margin-bottom-0 margin
+        .pad-left.text-grey-2x.text-xs
+          |Includes margin-left, margin-right, margin-h, and margin-v
+        .inline-block.valign.border-1-energized
+          .margin-0.border-1-info
+            |.margin-0
+        .inline-block.valign.border-1-energized
+          .margin-1.border-1-info
+            |.margin-1
         .inline-block.valign.border-1-energized
           .margin-xxs.border-1-info
             |.margin-xxs
@@ -623,6 +633,50 @@ html(lang="en")
         .inline-block.valign.border-1-energized
           .margin-4x.border-1-info
             |.margin-4x
+
+      .pad-h
+        h4.margin-bottom-0 child classes
+        .pad-h.flex-wrap.child-pad-xs
+          div
+            |.child-margin
+            .child-margin.border-1-energized
+              .inline-block.valign.border-1-info
+                |child
+              .inline-block.valign.border-1-info
+                |child
+              .inline-block.valign.border-1-info
+                |child
+          div
+            |.child-margin-left.child-first-margin-left-0
+            div
+              .inline-block.child-margin-left.child-first-margin-left-0.border-1-energized
+                .inline-block.valign.border-1-info
+                  |child
+                .inline-block.valign.border-1-info
+                  |child
+                .inline-block.valign.border-1-info
+                  |child
+          div
+            |.child-pad
+            .child-pad.border-1-energized
+              .inline-block.valign.border-1-info
+                |child
+              .inline-block.valign.border-1-info
+                |child
+              .inline-block.valign.border-1-info
+                |child
+          div
+            |.child-pad-left.child-first-pad-left-0
+            div
+              .inline-block.child-pad-left.child-first-pad-left-0.border-1-energized
+                .inline-block.valign.border-1-info
+                  |child
+                .inline-block.valign.border-1-info
+                  |child
+                .inline-block.valign.border-1-info
+                  |child
+
+
       .pad-h
         h4 table
         .flex-wrap.align-top
