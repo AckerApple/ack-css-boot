@@ -383,7 +383,7 @@
 .hover-opacity-60:hover {
   opacity: 0.6; }
 
-.hover-opacity-50:hover, .opacity-half:hover {
+.hover-opacity-50:hover, .hover-opacity-half:hover {
   opacity: 0.5; }
 
 .hover-opacity-40:hover {
@@ -392,7 +392,7 @@
 .hover-opacity-30:hover {
   opacity: 0.3; }
 
-.hover-opacity-25:hover, .opacity-third:hover {
+.hover-opacity-25:hover, .hover-opacity-third:hover {
   opacity: 0.25; }
 
 .hover-opacity-20:hover {
