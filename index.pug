@@ -419,6 +419,11 @@ html(lang="en")
             |.hover-bg-#{x}
             .text-grey.text-xs (hover with mouse)
 
+        each x in [100,90,80,70,60,50,40,30,20,10,0]
+          .flex-1.text-center.border.border-grey-5x(class="hover-opacity-"+x)
+            |.hover-opacity-#{x}
+            .text-grey.text-xs (hover with mouse)
+
       .flex-wrap.child-margin-xxs.child-pad-xs
         .flex-1.border.border-grey-5x.hover-text-9x
           |.hover-text-9x
@@ -1399,7 +1404,18 @@ html(lang="en")
               |test2
 
     .text-left
-      h2(id="Additional Classes") Additional Classes
+      h2.margin-bottom-0(id="Additional Classes") Additional Classes
+      p.text-grey-2x.text-sm
+        |List of classes, not always an example of class
+
+      .flex.child-margin-xs.child-pad-xs
+        .border.border-grey-3x .overflow
+        .border.border-grey-3x .overflow-hidden
+        .border.border-grey-3x .overflow-x
+        .border.border-grey-3x .overflow-y
+        .border.border-grey-3x .overflow-x-hidden
+        .border.border-grey-3x .overflow-y-hidden
+
       .flex
         .flex-1
           h3 .no-scroll-bars
