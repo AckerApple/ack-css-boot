@@ -404,8 +404,10 @@ html(lang="en")
         .border.border-grey-5x.flex-1.line-height-3-4 .line-height-3-4
         .border.border-grey-5x.flex-1.line-height-2x .line-height-2x
         .border.border-grey-5x.flex-1.line-height-3x .line-height-3x
+        .border.border-grey-5x.flex-1.bg-grey.text-shadow-white-blur .text-shadow-white-blur
+        .border.border-grey-5x.flex-1.text-shadow-grey-blur .text-shadow-grey-blur
 
-      h4 hover-text classes
+      h4 hover- classes
       .flex-wrap.child-margin-xxs.child-pad-xs
         .flex-1.hover-text-shadow-white-blur.bg-grey.text-white.text-center.border.border-grey-5x
           |.hover-text-shadow-white-blur
@@ -415,40 +417,81 @@ html(lang="en")
           .text-grey.text-xs (hover with mouse)
 
         each x in colorArray
-          .flex-1.text-center.border.border-grey-5x(class="hover-bg-"+x)
-            |.hover-bg-#{x}
+          .flex-1.text-center.border-3.border-grey-5x(class="hover-text-"+x+" hover-border-"+x+" hover-bg-"+x)
+            div .hover-bg-#{x}
+            div .hover-text-#{x}
+            div .hover-border-#{x}
             .text-grey.text-xs (hover with mouse)
 
-        each x in [100,90,80,70,60,50,40,30,20,10,0]
-          .flex-1.text-center.border.border-grey-5x(class="hover-opacity-"+x)
+        .flex-1.text-center.bg-grey.border.border-grey-5x.opacity-half(class="hover-opacity-100")
+          |.hover-opacity-100
+          .text-grey.text-xs (hover with mouse)
+        each x in [90,80,70,60,50,40,30,20,10,0]
+          .flex-1.text-center.bg-grey.border.border-grey-5x(class="hover-opacity-"+x)
             |.hover-opacity-#{x}
             .text-grey.text-xs (hover with mouse)
 
       .flex-wrap.child-margin-xxs.child-pad-xs
-        .flex-1.border.border-grey-5x.hover-text-9x
-          |.hover-text-9x
-        .flex-1.border.border-grey-5x.hover-text-8x
-          |.hover-text-8x
-        .flex-1.border.border-grey-5x.hover-text-7x
-          |.hover-text-7x
-        .flex-1.border.border-grey-5x.hover-text-6x
-          |.hover-text-6x
-        .flex-1.border.border-grey-5x.hover-text-5x
-          |.hover-text-5x
-        .flex-1.border.border-grey-5x.hover-text-4x
-          |.hover-text-4x
-        .flex-1.border.border-grey-5x.hover-text-3x
-          |.hover-text-3x
-        .flex-1.border.border-grey-5x.hover-text-2x
-          |.hover-text-2x
-        .flex-1.border.border-grey-5x.hover-text-sm
-          |.hover-text-sm
-        .flex-1.border.border-grey-5x.hover-text-smx
-          |.hover-text-smx
-        .flex-1.border.border-grey-5x.hover-text-xs
-          |.hover-text-xs
-        .flex-1.border.border-grey-5x.hover-text-xxs
-          |.hover-text-xxs
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-9x
+            .pos-abs.width-full.text-center
+              |.hover-text-9x
+          .invisible.text-9x .hover-text-9x
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-8x
+            .pos-abs.width-full.text-center
+              |.hover-text-8x
+          .invisible.text-8x .hover-text-8x
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-7x
+            .pos-abs.width-full.text-center
+              |.hover-text-7x
+          .invisible.text-7x .hover-text-7x
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-6x
+            .pos-abs.width-full.text-center
+              |.hover-text-6x
+          .invisible.text-6x .hover-text-6x
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-5x
+            .pos-abs.width-full.text-center
+              |.hover-text-5x
+          .invisible.text-5x .hover-text-5x
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-4x
+            .pos-abs.width-full.text-center
+              |.hover-text-4x
+          .invisible.text-4x .hover-text-4x
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-3x
+            .pos-abs.width-full.text-center
+              |.hover-text-3x
+          .invisible.text-3x .hover-text-3x
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-2x
+            .pos-abs.width-full.text-center
+              |.hover-text-2x
+          .invisible.text-2x .hover-text-2x
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-sm
+            .pos-abs.width-full.text-center
+              |.hover-text-sm
+          .invisible.text-sm .hover-text-sm
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-smx
+            .pos-abs.width-full.text-center
+              |.hover-text-smx
+          .invisible.text-smx .hover-text-smx
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-xs
+            .pos-abs.width-full.text-center
+              |.hover-text-xs
+          .invisible.text-xs .hover-text-xs
+        .flex-1.border.border-grey-5x
+          .pos-rel.hover-text-xxs
+            .pos-abs.width-full.text-center
+              |.hover-text-xxs
+          .invisible.text-xxs .hover-text-xxs
 
       h2(id="ack-block-boot") ack-block-boot
 
@@ -641,46 +684,32 @@ html(lang="en")
 
       .pad-h
         h4.margin-bottom-0 child classes
-        .pad-h.flex-wrap.child-pad-xs
-          div
-            |.child-margin
-            .child-margin.border-1-energized
-              .inline-block.valign.border-1-info
-                |child
-              .inline-block.valign.border-1-info
-                |child
-              .inline-block.valign.border-1-info
-                |child
-          div
-            |.child-margin-left.child-first-margin-left-0
-            div
-              .inline-block.child-margin-left.child-first-margin-left-0.border-1-energized
+        .pad-h.flex-wrap.child-pad-xs.child-margin-xxs
+          -childClassArray = ['child-margin','child-margin-xxs','child-margin-xs']
+          -childClassArray.push('child-margin-left child-first-margin-left-0')
+          -childClassArray.push('child-pad-xxs','child-pad-xs','child-pad','child-pad-left child-first-pad-left-0')
+          each item in childClassArray
+            .flex-1.border-1-info.pad
+              = item
+              .border-1-energized(class=item)
                 .inline-block.valign.border-1-info
                   |child
                 .inline-block.valign.border-1-info
                   |child
                 .inline-block.valign.border-1-info
                   |child
-          div
-            |.child-pad
-            .child-pad.border-1-energized
-              .inline-block.valign.border-1-info
-                |child
-              .inline-block.valign.border-1-info
-                |child
-              .inline-block.valign.border-1-info
-                |child
-          div
-            |.child-pad-left.child-first-pad-left-0
-            div
-              .inline-block.child-pad-left.child-first-pad-left-0.border-1-energized
-                .inline-block.valign.border-1-info
+          -childClassArray = []
+          -colorArray.forEach(color=>childClassArray.push('child-border-3 child-border-'+color+' child-bg-'+color))
+          each item in childClassArray
+            .flex-1.border-1-info.pad
+              = item
+              .border-1-energized.child-margin-xs.child-pad-xs(class=item)
+                .inline-block.valign
                   |child
-                .inline-block.valign.border-1-info
+                .inline-block.valign
                   |child
-                .inline-block.valign.border-1-info
+                .inline-block.valign
                   |child
-
 
       .pad-h
         h4 table

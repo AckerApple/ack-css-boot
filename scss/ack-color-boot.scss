@@ -79,34 +79,63 @@ $bg-dark:#444444 !default;
 .bg-black {background-color: #000}
 .bg-white {background-color: #FFF}
 
-.child-hover-bg-green > *:hover {background-color: #060}
-.child-hover-bg-orange > *:hover {background-color: #C60}
-.child-hover-bg-red > *:hover {background-color:#900}
-.child-hover-bg-blue > *:hover {background-color: #00F}
-.child-hover-bg-purple > *:hover {background-color: #60C}
-.child-hover-bg-black > *:hover {background-color: #000}
-.child-hover-bg-white > *:hover {background-color: #FFF}
+.child-bg-white > *,.child-bg-lite > * {background-color:white}
+.child-bg-black > * {background-color:black}
+.child-bg-primary > * {background-color:$bg-primary}
+.child-bg-success > * {background-color:$bg-success}
+.child-bg-info > * {background-color:$bg-info}
+.child-bg-warning > * {background-color:$bg-warning}
+.child-bg-danger > * {background-color:$bg-danger}
+.child-bg-grey > * {background-color:$bg-grey}
+.child-bg-grey-xs > *,.child-bg-grey-2x > * {background-color:$bg-grey-2x}
+.child-bg-grey-xxs > *,.child-bg-grey-3x > * {background-color:$bg-grey-3x}
+.child-bg-grey-4x > * {background-color:$bg-grey-4x}
+.child-bg-grey-5x > * {background-color:$bg-grey-5x}
+.child-bg-grey-6x > * {background-color:$bg-grey-6x}
+.child-bg-stable > * {background-color:$bg-stable}
+.child-bg-positive > * {background-color:$bg-positive}
+.child-bg-calm > * {background-color:$bg-calm}
+.child-bg-balanced > * {background-color:$bg-balanced}
+.child-bg-energized > * {background-color:$bg-energized}
+.child-bg-assertive > * {background-color:$bg-assertive}
+.child-bg-royal > * {background-color:$bg-royal}
+.child-bg-dark > * {background-color:$bg-dark}
+.child-bg-green > * {background-color: #060}
+.child-bg-orange > * {background-color: #C60}
+.child-bg-red > * {background-color:#900}
+.child-bg-blue > * {background-color: #00F}
+.child-bg-purple > * {background-color: #60C}
+.child-bg-black > * {background-color: #000}
+.child-bg-white > * {background-color: #FFF}
 
-.border-grey {border-color:#666}
-.border-grey-xs, .border-grey-2x {border-color:#888}
-.border-grey-xxs, .border-grey-3x {border-color:#AAA}
-.border-grey-4x {border-color:#BBB}
-.border-grey-5x {border-color:#CCC}
-.border-grey-6x {border-color:#DDD}
-.border-positive {border-color:#0c60ee}
-.border-calm {border-color:#0a9dc7}
-.border-balanced {border-color:#28a54c}
-.border-energized {border-color:#e6b500}
-.border-assertive {border-color:#e42112}
-.border-royal {border-color:#6b46e5}
-.border-dark {border-color:#111111}
-.border-danger {border-color:#d43f3a}
-.border-warning {border-color:#eea236}
-.border-info {border-color:#46b8da}
-.border-success {border-color:#4cae4c}
-.border-primary {border-color:#2e6da4}
-.border-white {border-color:#FFF}
-.border-black {border-color:#000}
+.child-bg-green > *, .child-hover-bg-green > *:hover {background-color: #060}
+.child-bg-orange > *, .child-hover-bg-orange > *:hover {background-color: #C60}
+.child-bg-red > *, .child-hover-bg-red > *:hover {background-color:#900}
+.child-bg-blue > *, .child-hover-bg-blue > *:hover {background-color: #00F}
+.child-bg-purple > *, .child-hover-bg-purple > *:hover {background-color: #60C}
+.child-bg-black > *, .child-hover-bg-black > *:hover {background-color: #000}
+.child-bg-white > *, .child-hover-bg-white > *:hover {background-color: #FFF}
+
+.child-border-grey > *, .hover-border-grey:hover, .border-grey {border-color:#666}
+.child-border-grey-xs > *, .hover-border-grey-xs:hover, .child-border-grey-2x > *, .hover-border-grey-2x:hover, .border-grey-xs, .border-grey-2x {border-color:#888}
+.child-border-grey-xxs > *, .hover-border-grey-xxs:hover, .child-border-grey-3x > *, .hover-border-grey-3x:hover, .border-grey-xxs, .border-grey-3x {border-color:#AAA}
+.child-border-grey-4x > *, .hover-border-grey-4x:hover, .border-grey-4x {border-color:#BBB}
+.child-border-grey-5x > *, .hover-border-grey-5x:hover, .border-grey-5x {border-color:#CCC}
+.child-border-grey-6x > *, .hover-border-grey-6x:hover, .border-grey-6x {border-color:#DDD}
+.child-border-positive > *, .hover-border-positive:hover, .border-positive {border-color:#0c60ee}
+.child-border-calm > *, .hover-border-calm:hover, .border-calm {border-color:#0a9dc7}
+.child-border-balanced > *, .hover-border-balanced:hover, .border-balanced {border-color:#28a54c}
+.child-border-energized > *, .hover-border-energized:hover, .border-energized {border-color:#e6b500}
+.child-border-assertive > *, .hover-border-assertive:hover, .border-assertive {border-color:#e42112}
+.child-border-royal > *, .hover-border-royal:hover, .border-royal {border-color:#6b46e5}
+.child-border-dark > *, .hover-border-dark:hover, .border-dark {border-color:#111111}
+.child-border-danger > *, .hover-border-danger:hover, .border-danger {border-color:#d43f3a}
+.child-border-warning > *, .hover-border-warning:hover, .border-warning {border-color:#eea236}
+.child-border-info > *, .hover-border-info:hover, .border-info {border-color:#46b8da}
+.child-border-success > *, .hover-border-success:hover, .border-success {border-color:#4cae4c}
+.child-border-primary > *, .hover-border-primary:hover, .border-primary {border-color:#2e6da4}
+.child-border-white > *, .hover-border-white:hover, .border-white {border-color:#FFF}
+.child-border-black > *, .hover-border-black:hover, .border-black {border-color:#000}
 
 .border-1-0,.border-1-black {border-color:#000;border-width:1px;border-style:solid}
 .border-1-f,.border-1-white {border-color:#FFF;border-width:1px;border-style:solid}
@@ -152,8 +181,8 @@ $bg-dark:#444444 !default;
 .child-hover-text-black > *:hover, .hover-text-black:hover {color: #000}
 .child-hover-text-white > *:hover, .hover-text-white:hover {color: #FFF}
 
-.hover-text-shadow-grey-blur:hover {text-shadow:0 0 4px #777}
-.hover-text-shadow-white-blur:hover {text-shadow:0 0 4px #FFF}
+.text-shadow-grey-blur, .hover-text-shadow-grey-blur:hover {text-shadow:0 0 4px #777}
+.text-shadow-white-blur, .hover-text-shadow-white-blur:hover {text-shadow:0 0 4px #FFF}
 
 .child-striped > *:nth-of-type(odd) {background-color: #f1f1f1},
 .table-striped > tbody > tr:nth-of-type(odd) {background-color: #f1f1f1}

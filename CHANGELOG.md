@@ -1,6 +1,12 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.37] - 2017-05-24
+### Added
+- hover-border classes
+- improved examples
+- more child classes
+
 ## [1.2.34] - 2017-04-14
 ### Added
 - child class docs

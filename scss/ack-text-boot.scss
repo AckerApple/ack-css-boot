@@ -12,7 +12,8 @@
 .no-underline, .text-decoration-none {text-decoration:none}
 .italic, .text-italic {font-style: italic}
 
-.strong, .bold, .text-bold, .font-bold, .font-weight-bold {font-weight:bold}
+.bold, .hover-bold:hover {font-weight:bold}
+.strong, .text-bold, .font-bold, .font-weight-bold {font-weight:bold}
 .font-bolder, .font-weight-bolder {font-weight:bolder}
 .font-normal, .font-weight-normal {font-weight:normal}
 .font-lighter, .font-weight-lighter {font-weight:lighter}
