@@ -3131,6 +3131,15 @@ lg >= 1200
 .child-border-primary > *, .hover-border-primary:hover, .border-primary, .table-lines-primary > thead > tr > th, .table-lines-primary > thead > tr > td, .table-lines-primary > tbody > tr > th, .table-lines-primary > tbody > tr > td, .table-lines-primary > tfoot > tr > th, .table-lines-primary > tfoot > tr > td, .table-lines-primary > caption + thead > tr:first-child > th, .table-lines-primary > caption + thead > tr:first-child > td, .table-lines-primary > colgroup + thead > tr:first-child > th, .table-lines-primary > colgroup + thead > tr:first-child > td, .table-lines-primary > thead:first-child > tr:first-child > th, .table-lines-primary > thead:first-child > tr:first-child > td, .table-lines-primary > tbody + tbody {
   border-color: #2e6da4; }
 
+.child-border-green > *, .hover-border-green:hover, .border-green {
+  border-color: green; }
+
+.child-border-red > *, .hover-border-red:hover, .border-red {
+  border-color: red; }
+
+.child-border-blue > *, .hover-border-blue:hover, .border-blue {
+  border-color: blue; }
+
 .child-border-white > *, .hover-border-white:hover, .border-white {
   border-color: #FFF; }
 
