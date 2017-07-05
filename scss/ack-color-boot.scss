@@ -116,29 +116,29 @@ $bg-dark:#444444 !default;
 .child-bg-black > *, .child-hover-bg-black > *:hover {background-color: #000}
 .child-bg-white > *, .child-hover-bg-white > *:hover {background-color: #FFF}
 
-.child-border-grey > *, .hover-border-grey:hover, .border-grey {border-color:#666}
-.child-border-grey-xs > *, .hover-border-grey-xs:hover, .child-border-grey-2x > *, .hover-border-grey-2x:hover, .border-grey-xs, .border-grey-2x {border-color:#888}
-.child-border-grey-xxs > *, .hover-border-grey-xxs:hover, .child-border-grey-3x > *, .hover-border-grey-3x:hover, .border-grey-xxs, .border-grey-3x {border-color:#AAA}
-.child-border-grey-4x > *, .hover-border-grey-4x:hover, .border-grey-4x {border-color:#BBB}
-.child-border-grey-5x > *, .hover-border-grey-5x:hover, .border-grey-5x {border-color:#CCC}
-.child-border-grey-6x > *, .hover-border-grey-6x:hover, .border-grey-6x {border-color:#DDD}
-.child-border-positive > *, .hover-border-positive:hover, .border-positive {border-color:#0c60ee}
-.child-border-calm > *, .hover-border-calm:hover, .border-calm {border-color:#0a9dc7}
-.child-border-balanced > *, .hover-border-balanced:hover, .border-balanced {border-color:#28a54c}
-.child-border-energized > *, .hover-border-energized:hover, .border-energized {border-color:#e6b500}
-.child-border-assertive > *, .hover-border-assertive:hover, .border-assertive {border-color:#e42112}
-.child-border-royal > *, .hover-border-royal:hover, .border-royal {border-color:#6b46e5}
-.child-border-dark > *, .hover-border-dark:hover, .border-dark {border-color:#111111}
-.child-border-danger > *, .hover-border-danger:hover, .border-danger {border-color:#d43f3a}
-.child-border-warning > *, .hover-border-warning:hover, .border-warning {border-color:#eea236}
-.child-border-info > *, .hover-border-info:hover, .border-info {border-color:#46b8da}
-.child-border-success > *, .hover-border-success:hover, .border-success {border-color:#4cae4c}
-.child-border-primary > *, .hover-border-primary:hover, .border-primary {border-color:#2e6da4}
-.child-border-green > *, .hover-border-green:hover, .border-green {border-color:green}
-.child-border-red > *, .hover-border-red:hover, .border-red {border-color:red}
-.child-border-blue > *, .hover-border-blue:hover, .border-blue {border-color:blue}
-.child-border-white > *, .hover-border-white:hover, .border-white {border-color:#FFF}
-.child-border-black > *, .hover-border-black:hover, .border-black {border-color:#000}
+.child-hover-border-grey > *:hover, .child-border-grey > *, .hover-border-grey:hover, .border-grey {border-color:#666}
+.child-hover-border-grey-xs > *:hover, .child-border-grey-xs > *, .hover-border-grey-xs:hover, .child-border-grey-2x > *, .hover-border-grey-2x:hover, .border-grey-xs, .border-grey-2x {border-color:#888}
+.child-hover-border-grey-xxs > *:hover, .child-border-grey-xxs > *, .hover-border-grey-xxs:hover, .child-border-grey-3x > *, .hover-border-grey-3x:hover, .border-grey-xxs, .border-grey-3x {border-color:#AAA}
+.child-hover-border-grey-4x > *:hover, .child-border-grey-4x > *, .hover-border-grey-4x:hover, .border-grey-4x {border-color:#BBB}
+.child-hover-border-grey-5x > *:hover, .child-border-grey-5x > *, .hover-border-grey-5x:hover, .border-grey-5x {border-color:#CCC}
+.child-hover-border-grey-6x > *:hover, .child-border-grey-6x > *, .hover-border-grey-6x:hover, .border-grey-6x {border-color:#DDD}
+.child-hover-border-positive > *:hover, .child-border-positive > *, .hover-border-positive:hover, .border-positive {border-color:#0c60ee}
+.child-hover-border-calm > *:hover, .child-border-calm > *, .hover-border-calm:hover, .border-calm {border-color:#0a9dc7}
+.child-hover-border-balanced > *:hover, .child-border-balanced > *, .hover-border-balanced:hover, .border-balanced {border-color:#28a54c}
+.child-hover-border-energized > *:hover, .child-border-energized > *, .hover-border-energized:hover, .border-energized {border-color:#e6b500}
+.child-hover-border-assertive > *:hover, .child-border-assertive > *, .hover-border-assertive:hover, .border-assertive {border-color:#e42112}
+.child-hover-border-royal > *:hover, .child-border-royal > *, .hover-border-royal:hover, .border-royal {border-color:#6b46e5}
+.child-hover-border-dark > *:hover, .child-border-dark > *, .hover-border-dark:hover, .border-dark {border-color:#111111}
+.child-hover-border-danger > *:hover, .child-border-danger > *, .hover-border-danger:hover, .border-danger {border-color:#d43f3a}
+.child-hover-border-warning > *:hover, .child-border-warning > *, .hover-border-warning:hover, .border-warning {border-color:#eea236}
+.child-hover-border-info > *:hover, .child-border-info > *, .hover-border-info:hover, .border-info {border-color:#46b8da}
+.child-hover-border-success > *:hover, .child-border-success > *, .hover-border-success:hover, .border-success {border-color:#4cae4c}
+.child-hover-border-primary > *:hover, .child-border-primary > *, .hover-border-primary:hover, .border-primary {border-color:#2e6da4}
+.child-hover-border-green > *:hover, .child-border-green > *, .hover-border-green:hover, .border-green {border-color:green}
+.child-hover-border-red > *:hover, .child-border-red > *, .hover-border-red:hover, .border-red {border-color:red}
+.child-hover-border-blue > *:hover, .child-border-blue > *, .hover-border-blue:hover, .border-blue {border-color:blue}
+.child-hover-border-white > *:hover, .child-border-white > *, .hover-border-white:hover, .border-white {border-color:#FFF}
+.child-hover-border-black > *:hover, .child-border-black > *, .hover-border-black:hover, .border-black {border-color:#000}
 
 .border-1-0,.border-1-black {border-color:#000;border-width:1px;border-style:solid}
 .border-1-f,.border-1-white {border-color:#FFF;border-width:1px;border-style:solid}
