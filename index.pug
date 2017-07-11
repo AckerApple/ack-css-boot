@@ -707,7 +707,7 @@ html(lang="en")
                 .inline-block.valign.border-1-info
                   |child
           -childClassArray = []
-          -colorArray.forEach(color=>childClassArray.push('child-border-3 child-border-'+color+' child-bg-'+color))
+          -colorArray.forEach(color=>childClassArray.push('child-radius-5 child-border-3 child-border-'+color+' child-bg-'+color))
           each item in childClassArray
             .flex-1.border-1-info.pad
               = item

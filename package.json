@@ -1,6 +1,6 @@
 {
   "name": "ack-css-boot",
-  "version": "1.2.39",
+  "version": "1.2.40",
   "description": "A base set of short-hand css helper classes. Includes available classes that are commonly used for styling buttons, form inputs, and such.",
   "main": "index.js",
   "scripts": {

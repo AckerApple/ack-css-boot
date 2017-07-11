@@ -1,6 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.40] - 2017-06-11
+### Added
+- .child-radius classes
+
 ## [1.2.37] - 2017-05-24
 ### Added
 - hover-border classes
