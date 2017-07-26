@@ -19,8 +19,13 @@
 .flex-stack, .flex-stacked, .flex-column, .flex-columns, .flex-direction-column
 {flex-direction: column;@extend .flex}
 
-.flex-stack-reverse, .flex-column-reverse, .flex-columns-reverse, .flex-direction-column-reverse
+.flex-reverse
+{flex-direction: row-reverse;@extend .flex}
+
+.flex-stack-reverse, .flex-column-reverse, .flex-columns-reverse, .flex-direction-column-reverse,
+.flex-reverse.flex-stacked, .flex-reverse.flex-stack
 {flex-direction: column-reverse;@extend .flex}
+
 
 .flex-inline, .flex-row, .flex-rows, .flex-direction-row
 {flex-direction: row;@extend .flex}
@@ -28,7 +33,8 @@
 .flex-row-wrap, .flex-wrap-rows, .flex-wrap-inline, .flex-flow-inline
 {flex-wrap:wrap;flex-direction:row;@extend .flex}
 
-.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stack, .flex-wrap-stacked, .flex-flow-stack, .flex-flow-stacked
+.flex-column-wrap, .flex-wrap-columns, .flex-wrap-stack, .flex-wrap-stacked, .flex-flow-stack, .flex-flow-stacked,
+.flex-stacked.flex-wrap, .flex-stack.flex-wrap
 {flex-wrap:wrap;flex-direction:column;@extend .flex}
 
 .justify-left {justify-content:flex-start}

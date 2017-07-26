@@ -1,6 +1,9 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.42] - 2017-07-26
+- added .flex-reverse
+
 ## [1.2.40] - 2017-06-11
 ### Added
 - .child-radius classes
