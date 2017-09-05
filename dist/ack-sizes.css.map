@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "ack-sizes.css",
+	"sources": [
+		"../scss/ack-sizes.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

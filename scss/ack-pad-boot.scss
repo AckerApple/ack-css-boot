@@ -1,0 +1,71 @@
+@import "./ack-sizes";
+
+.pad-0 {padding:0}
+.pad-xxs {padding:$em-xxs}
+.pad-xs {padding:$em-xs}
+.pad-smx {padding:$em-smx}
+.pad-sm {padding:$em-sm}
+.pad {padding:$em}
+.pad-2x, .pad-md {padding:$em-md}
+.pad-3x, .pad-lg {padding:$em-lg}
+.pad-4x {padding:$em-4x}
+
+.pad-v-0 {padding-top:0;padding-bottom:0}
+.pad-v-xxs {padding-top:$em-xxs;padding-bottom:$em-xxs}
+.pad-v-xs {padding-top:$em-xs;padding-bottom:$em-xs}
+.pad-v-smx {padding-top:$em-smx;padding-bottom:$em-smx}
+.pad-v-sm {padding-top:$em-sm;padding-bottom:$em-sm}
+.pad-v {padding-top:$em;padding-bottom:$em}
+.pad-v-2x, .pad-v-md {padding-top:$em-md;padding-bottom:$em-md}
+.pad-v-3x, .pad-v-lg {padding-top:$em-lg;padding-bottom:$em-lg}
+.pad-v-4x {padding-top:$em-4x;padding-bottom:$em-4x}
+
+.pad-h-0 {padding-left:0;padding-right:0}
+.pad-h-xxs {padding-left:$em-xxs;padding-right:$em-xxs}
+.pad-h-xs {padding-left:$em-xs;padding-right:$em-xs}
+.pad-h-smx {padding-left:$em-smx;padding-right:$em-smx}
+.pad-h-sm {padding-left:$em-sm;padding-right:$em-sm}
+.pad-h {padding-left:$em;padding-right:$em}
+.pad-h-2x, .pad-h-md {padding-left:$em-md;padding-right:$em-md}
+.pad-h-3x, .pad-h-lg {padding-left:$em-lg;padding-right:$em-lg}
+.pad-h-4x {padding-left:$em-4x;padding-right:$em-4x}
+
+.pad-top-0 {padding-top:0}
+.pad-top-xxs {padding-top:$em-xxs}
+.pad-top-xs {padding-top:$em-xs}
+.pad-top-smx {padding-top:$em-smx}
+.pad-top-sm {padding-top:$em-sm}
+.pad-top {padding-top:$em}
+.pad-top-2x, .pad-top-md {padding-top:$em-md}
+.pad-top-3x, .pad-top-lg {padding-top:$em-lg}
+.pad-top-4x {padding-top:$em-4x}
+
+.pad-bottom-0 {padding-bottom:0}
+.pad-bottom-xxs {padding-bottom:$em-xxs}
+.pad-bottom-xs {padding-bottom:$em-xs}
+.pad-bottom-smx {padding-bottom:$em-smx}
+.pad-bottom-sm {padding-bottom:$em-sm}
+.pad-bottom {padding-bottom:$em}
+.pad-bottom-2x, .pad-bottom-md {padding-bottom:$em-md}
+.pad-bottom-3x, .pad-bottom-lg {padding-bottom:$em-lg}
+.pad-bottom-4x {padding-bottom:$em-4x}
+
+.pad-left-0 {padding-left:0}
+.pad-left-xxs {padding-left:$em-xxs}
+.pad-left-xs {padding-left:$em-xs}
+.pad-left-smx {padding-left:$em-smx}
+.pad-left-sm {padding-left:$em-sm}
+.pad-left {padding-left:$em}
+.pad-left-2x, .pad-left-md {padding-left:$em-md}
+.pad-left-3x, .pad-left-lg {padding-left:$em-lg}
+.pad-left-4x {padding-left:$em-4x}
+
+.pad-right-0 {padding-right:0}
+.pad-right-xxs {padding-right:$em-xxs}
+.pad-right-xs {padding-right:$em-xs}
+.pad-right-smx {padding-right:$em-smx}
+.pad-right-sm {padding-right:$em-sm}
+.pad-right {padding-right:$em}
+.pad-right-2x, .pad-right-md {padding-right:$em-md}
+.pad-right-3x, .pad-right-lg {padding-right:$em-lg}
+.pad-right-4x {padding-right:$em-4x}
