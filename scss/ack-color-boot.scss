@@ -246,6 +246,9 @@ $bg-dark:#444444 !default;
 .child-striped-dark > *:nth-of-type(odd),
 .table-striped-dark > tbody > tr:nth-of-type(odd)
 {background-color:$bg-dark}
+.child-striped-white > *:nth-of-type(odd),
+.table-striped-white > tbody > tr:nth-of-type(odd)
+{background-color:white}
 
 /* anti sub classes */
 [class*="child-striped"] > *.bg-primary,
@@ -305,6 +308,9 @@ $bg-dark:#444444 !default;
 [class*="child-striped"] > *.bg-dark,
 [class*="table-striped"] > tbody > tr.bg-dark
 {background-color:$bg-dark}
+[class*="child-striped"] > *.bg-white,
+[class*="table-striped"] > tbody > tr.bg-white
+{background-color:white}
 
 .table-hover > tbody > tr:hover {background-color: #f5f5f5}
 .child-hover-bg-primary > *:hover,
