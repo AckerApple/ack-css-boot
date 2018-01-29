@@ -1,6 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.] - 2018-01-
+- Added border-h classes
+- Added border-v classes
+
 ## [1.2.42] - 2017-07-26
 - added .flex-reverse
 

@@ -1,6 +1,9 @@
 # ack-css-boot
 A base set of short-hand css helper classes. Includes available classes that are commonly used for styling buttons, form inputs, and such.
 
+[![NPM version](https://img.shields.io/npm/v/ack-css-boot.svg?style=flat-square)](https://www.npmjs.com/package/ack-css-boot)
+[![dependencies](https://david-dm.org/ackerapple/ack-css-boot/status.svg)](https://david-dm.org/ackerapple/ack-css-boot)
+
 Many commonly used short-hand classes, that are found in [Ionic](https://www.npmjs.com/package/ionic) and [Bootstrap](https://www.npmjs.com/package/bootstrap-css), can be found here.
 
 ### Table of Contents
