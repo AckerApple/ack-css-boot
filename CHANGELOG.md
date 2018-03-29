@@ -1,7 +1,14 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
-## [1.2.] - 2018-01-
+## [1.2.47] - 2018-03-29
+- Added 150 as a width height
+- added child-width-* child-height-* classes
+- code sample pre tag default no margin
+- added more child-margin-* classes
+- Added .hover-strong (.hover-bold already existed)
+
+## [1.2.46] - 2018-01-29
 - Added border-h classes
 - Added border-v classes
 

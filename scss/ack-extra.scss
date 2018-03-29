@@ -17,5 +17,8 @@
   line-height:1.6em;
 }
 
+/** some browsers have default margin on pre tags */
+pre.code-sample{margin:0}
+
 /*.code-sample::-webkit-scrollbar {display:none}
 .code-sample::-moz-scrollbar {display:none}*/
