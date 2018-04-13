@@ -426,6 +426,9 @@
 .block, .display-block {
   display: block; }
 
+.child-last-block > :last-child {
+  display: block; }
+
 .width-auto {
   width: auto; }
 
@@ -437,6 +440,9 @@
 
 .width-half, .half-width {
   width: 50%; }
+
+.child-last-height-full > :last-child {
+  height: 100%; }
 
 .child-height-0 > *,
 .height-0 {
@@ -2383,11 +2389,15 @@
   padding-left: 0.8em;
   padding-right: 0.8em; }
 
-.child-pad-h-md > *, .child-first-pad-h-md > *:first-child {
+.child-pad-h-2x > *, .child-pad-h-md > *,
+.child-first-pad-h-2x > *:first-child,
+.child-first-pad-h-md > *:first-child {
   padding-left: 1em;
   padding-right: 1em; }
 
-.child-pad-h-lg > *, .child-first-pad-h-lg > *:first-child {
+.child-pad-h-3x > *, .child-pad-h-lg > *,
+.child-first-pad-h-3x > *:first-child,
+.child-first-pad-h-lg > *:first-child {
   padding-left: 1.5em;
   padding-right: 1.5em; }
 
@@ -2406,10 +2416,14 @@
 .child-pad-top > *, .child-first-pad-top > *:first-child {
   padding-top: 0.8em; }
 
-.child-pad-top-md > *, .child-first-pad-top-md > *:first-child {
+.child-pad-top-2x > *, .child-pad-top-md > *,
+.child-first-pad-top-2x > *:first-child,
+.child-first-pad-top-md > *:first-child {
   padding-top: 1em; }
 
-.child-pad-top-lg > *, .child-first-pad-top-lg > *:first-child {
+.child-pad-top-3x > *, .child-pad-top-lg > *,
+.child-first-pad-top-3x > *:first-child,
+.child-first-pad-top-lg > *:first-child {
   padding-top: 1.5em; }
 
 .child-pad-bottom-0 > *, .child-first-pad-bottom-0 > *:first-child {
@@ -2427,10 +2441,16 @@
 .child-pad-bottom > *, .child-first-pad-bottom > *:first-child {
   padding-bottom: 0.8em; }
 
-.child-pad-bottom-md > *, .child-first-pad-bottom-md > *:first-child {
+.child-pad-bottom-2x > *,
+.child-pad-bottom-md > *,
+.child-first-pad-bottom-2x > *:first-child,
+.child-first-pad-bottom-md > *:first-child {
   padding-bottom: 1em; }
 
-.child-pad-bottom-lg > *, .child-first-pad-bottom-lg > *:first-child {
+.child-pad-bottom-3x > *,
+.child-pad-bottom-lg > *,
+.child-first-pad-bottom-3x > *:first-child,
+.child-first-pad-bottom-lg > *:first-child {
   padding-bottom: 1.5em; }
 
 .child-pad-left-0 > *, .child-first-pad-left-0 > *:first-child {
@@ -2482,7 +2502,6 @@
 .child-pad-right-3x > *, .child-first-pad-right-3x > *:first-child {
   padding-right: 1.5em; }
 
-.child-pad-right-lg > *, .child-first-pad-right-lg > *:first-child,
 .child-pad-right-4x > *, .child-first-pad-right-4x > *:first-child {
   padding-right: 2em; }
 

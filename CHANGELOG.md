@@ -1,6 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.48] - 2018-04-12
+- .child-last-block
+- .child-last-height-full
+
 ## [1.2.47] - 2018-03-29
 - Added 150 as a width height
 - added child-width-* child-height-* classes
