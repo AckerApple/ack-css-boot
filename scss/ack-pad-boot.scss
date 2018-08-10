@@ -97,9 +97,11 @@
 {padding:$em}
 
 .child-pad-md > *, .child-first-pad-md > *:first-child
+.child-pad-2x > *, .child-first-pad-2x > *:first-child
 {padding:$em-md}
 
-.child-pad-lg > *, .child-first-pad-lg > *:first-child
+.child-pad-lg > *, .child-first-pad-lg > *:first-child,
+.child-pad-3x > *, .child-first-pad-3x > *:first-child
 {padding:$em-lg}
 
 .child-pad-v-0 > *, .child-first-pad-v-0 > *:first-child
@@ -230,6 +232,9 @@
 {padding-right:0}
 
 .child-pad-right-0 > *, .child-first-pad-right-0 > *:first-child
+{padding-right:$em-xxs}
+
+.child-pad-right-xxs > *, .child-first-pad-right-xxs > *:first-child
 {padding-right:$em-xxs}
 
 .child-pad-right-xs > *, .child-first-pad-right-xs > *:first-child

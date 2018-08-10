@@ -1,6 +1,18 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.49] - 2018-04-10
+- Added
+  - bg-grey-7x
+  - more line-height values above 100
+  - .bold-100 through .bold-900
+  - .strong-100 through .strong-900
+  - .child-pad-right-xxs
+  - .child-flex1
+  - .child-flex-1
+  - .child-flex2
+  - .child-flex-2
+
 ## [1.2.48] - 2018-04-12
 - .child-last-block
 - .child-last-height-full

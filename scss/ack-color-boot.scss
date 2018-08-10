@@ -9,6 +9,7 @@ $bg-grey-3x:#BBB !default;
 $bg-grey-4x:#CCC !default;
 $bg-grey-5x:#DDD !default;
 $bg-grey-6x:#EEE !default;
+$bg-grey-7x:#DDD !default;
 $bg-stable:#f8f8f8 !default;
 $bg-positive:#387ef5 !default;
 $bg-calm:#11c1f3 !default;
@@ -63,6 +64,7 @@ $bg-dark:#444444 !default;
 .bg-grey-4x {background-color:$bg-grey-4x}
 .bg-grey-5x {background-color:$bg-grey-5x}
 .bg-grey-6x {background-color:$bg-grey-6x}
+.bg-grey-7x {background-color:$bg-grey-7x}
 .bg-stable {background-color:$bg-stable}
 .bg-positive {background-color:$bg-positive}
 .bg-calm {background-color:$bg-calm}
@@ -92,6 +94,7 @@ $bg-dark:#444444 !default;
 .child-bg-grey-4x > * {background-color:$bg-grey-4x}
 .child-bg-grey-5x > * {background-color:$bg-grey-5x}
 .child-bg-grey-6x > * {background-color:$bg-grey-6x}
+.child-bg-grey-7x > * {background-color:$bg-grey-7x}
 .child-bg-stable > * {background-color:$bg-stable}
 .child-bg-positive > * {background-color:$bg-positive}
 .child-bg-calm > * {background-color:$bg-calm}
@@ -223,6 +226,9 @@ $bg-dark:#444444 !default;
 .child-striped-grey-6x > *:nth-of-type(odd),
 .table-striped-grey-6x > tbody > tr:nth-of-type(odd)
 {background-color:$bg-grey-6x}
+.child-striped-grey-7x > *:nth-of-type(odd),
+.table-striped-grey-7x > tbody > tr:nth-of-type(odd)
+{background-color:$bg-grey-7x}
 .child-striped-stable > *:nth-of-type(odd),
 .table-striped-stable > tbody > tr:nth-of-type(odd)
 {background-color:$bg-stable}
@@ -318,6 +324,17 @@ $bg-dark:#444444 !default;
 .hover-bg-primary:hover, .table-hover-primary > tbody > tr:hover,
 [class*="table-striped"].table-hover-primary > tbody > tr:hover
 {background-color:$bg-primary}
+
+.child-hover-bg-white > *:hover,
+.hover-bg-white:hover, .table-hover-white > tbody > tr:hover,
+[class*="table-striped"].table-hover-white > tbody > tr:hover
+{background-color:#FFF}
+
+.child-hover-bg-black > *:hover,
+.hover-bg-black:hover, .table-hover-black > tbody > tr:hover,
+[class*="table-striped"].table-hover-black > tbody > tr:hover
+{background-color:#000}
+
 .child-hover-bg-success > *:hover,
 .hover-bg-success:hover, .table-hover-success > tbody > tr:hover,
 [class*="table-striped"].table-hover-success > tbody > tr:hover
