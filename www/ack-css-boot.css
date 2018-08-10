@@ -3454,7 +3454,7 @@ lg >= 1200
   background-color: #EEE; }
 
 .bg-grey-7x {
-  background-color: #DDD; }
+  background-color: #f2f2f2; }
 
 .bg-stable {
   background-color: #f8f8f8; }
@@ -3541,7 +3541,7 @@ lg >= 1200
   background-color: #EEE; }
 
 .child-bg-grey-7x > * {
-  background-color: #DDD; }
+  background-color: #f2f2f2; }
 
 .child-bg-stable > * {
   background-color: #f8f8f8; }
@@ -3864,7 +3864,7 @@ lg >= 1200
 
 .child-striped-grey-7x > *:nth-of-type(odd),
 .table-striped-grey-7x > tbody > tr:nth-of-type(odd) {
-  background-color: #DDD; }
+  background-color: #f2f2f2; }
 
 .child-striped-stable > *:nth-of-type(odd),
 .table-striped-stable > tbody > tr:nth-of-type(odd) {
