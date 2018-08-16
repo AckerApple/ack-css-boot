@@ -59,6 +59,13 @@
 .text-xs {font-size:75%}
 .text-xxs {font-size:65%}
 
+.stroke,
+.stroke-1 {-webkit-text-stroke-width: 1px}
+.stroke-2 {-webkit-text-stroke-width: 2px}
+.stroke-3 {-webkit-text-stroke-width: 3px}
+.stroke-4 {-webkit-text-stroke-width: 4px}
+.stroke-5 {-webkit-text-stroke-width: 5px}
+
 .hover-text-9x:hover {font-size:260%}
 .hover-text-8x:hover {font-size:230%}
 .hover-text-7x:hover {font-size:200%}

@@ -1,7 +1,9 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
-## [1.2.49] - 2018-04-10
+## [1.2.51] - 2018-08-16
+
+## [1.2.49] - 2018-08-01
 - Added
   - bg-grey-7x
   - more line-height values above 100
