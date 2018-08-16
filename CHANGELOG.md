@@ -2,6 +2,13 @@
 All notable changes to this project will be documented here.
 
 ## [1.2.51] - 2018-08-16
+- added stroke
+  - .stroke
+  - .stroke-1
+  - .stroke-2
+  - .stroke-3
+  - .stroke-4
+  - .stroke-5
 
 ## [1.2.49] - 2018-08-01
 - Added
