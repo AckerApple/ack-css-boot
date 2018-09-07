@@ -81,6 +81,27 @@
 .font-900, .font-weight-900 {
   font-weight: 900; }
 
+.letter-spacing-xxs {
+  letter-spacing: -0.2em; }
+
+.letter-spacing-xs {
+  letter-spacing: -0.15em; }
+
+.letter-spacing-smx {
+  letter-spacing: -0.1em; }
+
+.letter-spacing-sm {
+  letter-spacing: -0.05em; }
+
+.letter-spacing-2x {
+  letter-spacing: .1em; }
+
+.letter-spacing-3x {
+  letter-spacing: .25em; }
+
+.letter-spacing-4x {
+  letter-spacing: .5em; }
+
 .text-left {
   text-align: left; }
 

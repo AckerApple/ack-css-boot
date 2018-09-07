@@ -1,6 +1,15 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.52] - 2018-08-16
+- added letter-spacing
+  - .letter-spacing-xxs
+  - .letter-spacing-smx
+  - .letter-spacing-sm
+  - .letter-spacing-2x
+  - .letter-spacing-3x
+  - .letter-spacing-4x
+
 ## [1.2.51] - 2018-08-16
 - added stroke
   - .stroke
