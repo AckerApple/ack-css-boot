@@ -1,6 +1,7 @@
 @import "./ack-sizes";
 
 .pad-0 {padding:0}
+.pad-1 {padding:1px}
 .pad-xxs {padding:$em-xxs}
 .pad-xs {padding:$em-xs}
 .pad-smx {padding:$em-smx}
@@ -11,6 +12,7 @@
 .pad-4x {padding:$em-4x}
 
 .pad-v-0 {padding-top:0;padding-bottom:0}
+.pad-v-1 {padding-top:1px;padding-bottom:1px}
 .pad-v-xxs {padding-top:$em-xxs;padding-bottom:$em-xxs}
 .pad-v-xs {padding-top:$em-xs;padding-bottom:$em-xs}
 .pad-v-smx {padding-top:$em-smx;padding-bottom:$em-smx}
@@ -21,6 +23,7 @@
 .pad-v-4x {padding-top:$em-4x;padding-bottom:$em-4x}
 
 .pad-h-0 {padding-left:0;padding-right:0}
+.pad-h-1 {padding-left:1px;padding-right:1px}
 .pad-h-xxs {padding-left:$em-xxs;padding-right:$em-xxs}
 .pad-h-xs {padding-left:$em-xs;padding-right:$em-xs}
 .pad-h-smx {padding-left:$em-smx;padding-right:$em-smx}
@@ -31,6 +34,7 @@
 .pad-h-4x {padding-left:$em-4x;padding-right:$em-4x}
 
 .pad-top-0 {padding-top:0}
+.pad-top-1 {padding-top:1px}
 .pad-top-xxs {padding-top:$em-xxs}
 .pad-top-xs {padding-top:$em-xs}
 .pad-top-smx {padding-top:$em-smx}
@@ -41,6 +45,7 @@
 .pad-top-4x {padding-top:$em-4x}
 
 .pad-bottom-0 {padding-bottom:0}
+.pad-bottom-1 {padding-bottom:1px}
 .pad-bottom-xxs {padding-bottom:$em-xxs}
 .pad-bottom-xs {padding-bottom:$em-xs}
 .pad-bottom-smx {padding-bottom:$em-smx}
@@ -51,6 +56,7 @@
 .pad-bottom-4x {padding-bottom:$em-4x}
 
 .pad-left-0 {padding-left:0}
+.pad-left-1 {padding-left:1px}
 .pad-left-xxs {padding-left:$em-xxs}
 .pad-left-xs {padding-left:$em-xs}
 .pad-left-smx {padding-left:$em-smx}
@@ -61,6 +67,7 @@
 .pad-left-4x {padding-left:$em-4x}
 
 .pad-right-0 {padding-right:0}
+.pad-right-1 {padding-right:1px}
 .pad-right-xxs {padding-right:$em-xxs}
 .pad-right-xs {padding-right:$em-xs}
 .pad-right-smx {padding-right:$em-smx}
@@ -83,6 +90,9 @@
 /* TABLE PADDING CLASSES */
 .child-pad-0 > *, .child-first-pad-0 > *:first-child
 {padding:0}
+
+.child-pad-1 > *, .child-first-pad-0 > *:first-child
+{padding:1px}
 
 .child-pad-xxs > *, .child-first-pad-xxs > *:first-child
 {padding:$em-xxs}
@@ -107,6 +117,9 @@
 .child-pad-v-0 > *, .child-first-pad-v-0 > *:first-child
 {padding-top:0;padding-bottom:0}
 
+.child-pad-v-1 > *, .child-first-pad-v-1 > *:first-child
+{padding-top:1px;padding-bottom:1px}
+
 .child-pad-v-xxs > *, .child-first-pad-v-xxs > *:first-child
 {padding-top:$em-xxs;padding-bottom:$em-xxs}
 
@@ -127,6 +140,9 @@
 
 .child-pad-h-0 > *, .child-first-pad-h-0 > *:first-child
 {padding-left:0;padding-right:0}
+
+.child-pad-h-1 > *, .child-first-pad-h-1 > *:first-child
+{padding-left:1px;padding-right:1px}
 
 .child-pad-h-xxs > *, .child-first-pad-h-xxs > *:first-child
 {padding-left:$em-xxs;padding-right:$em-xxs}
@@ -153,6 +169,9 @@
 .child-pad-top-0 > *, .child-first-pad-top-0 > *:first-child
 {padding-top:0}
 
+.child-pad-top-1 > *, .child-first-pad-top-1 > *:first-child
+{padding-top:1px}
+
 .child-pad-top-xxs > *, .child-first-pad-top-xxs > *:first-child
 {padding-top:$em-xxs}
 
@@ -177,6 +196,9 @@
 
 .child-pad-bottom-0 > *, .child-first-pad-bottom-0 > *:first-child
 {padding-bottom:0}
+
+.child-pad-bottom-1 > *, .child-first-pad-bottom-1 > *:first-child
+{padding-bottom:1px}
 
 .child-pad-bottom-xxs > *, .child-first-pad-bottom-xxs > *:first-child
 {padding-bottom:$em-xxs}
@@ -205,6 +227,9 @@
 .child-pad-left-0 > *, .child-first-pad-left-0 > *:first-child
 {padding-left:0}
 
+.child-pad-left-1 > *, .child-first-pad-left-1 > *:first-child
+{padding-left:1px}
+
 .child-pad-left-xxs > *, .child-first-pad-left-xxs > *:first-child
 {padding-left:$em-xxs}
 
@@ -231,8 +256,8 @@
 .child-pad-right-0 > *, .child-first-pad-right-0 > *:first-child
 {padding-right:0}
 
-.child-pad-right-0 > *, .child-first-pad-right-0 > *:first-child
-{padding-right:$em-xxs}
+.child-pad-right-1 > *, .child-first-pad-right-1 > *:first-child
+{padding-right:1px}
 
 .child-pad-right-xxs > *, .child-first-pad-right-xxs > *:first-child
 {padding-right:$em-xxs}

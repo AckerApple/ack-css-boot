@@ -1,6 +1,10 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.53] - 2018-11-01
+- added .valign-text-top
+- added .flex1-5 and child-flex1-5
+
 ## [1.2.52] - 2018-08-16
 - added letter-spacing
   - .letter-spacing-xxs
