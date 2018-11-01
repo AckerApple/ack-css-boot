@@ -289,6 +289,9 @@
 .flex-1 {
   flex-grow: 1; }
 
+.flex-1-5 {
+  flex-grow: 1.5; }
+
 .flex-grow-2, .child-flex-2 > *,
 .flex-2 {
   flex-grow: 2; }
