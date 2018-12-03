@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/ackerapple/ack-css-boot#readme",
   "devDependencies": {
-    "ack-reload": "^2.0.7",
-    "node-sass": "^4.5.0",
-    "pug": "^2.0.0-beta11",
+    "ack-reload": "^2.0.12",
+    "node-sass": "^4.10.0",
+    "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
