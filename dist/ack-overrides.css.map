@@ -5,5 +5,5 @@
 		"../scss/ack-overrides.scss"
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,CAAC,CAAE,AAAA,MAAM,AAAC,CAAC,MAAM,CAAC,OAAO,CAAG"
+	"mappings": "AAAA,AAAA,CAAC,CAAE,MAAM,AAAC,CAAC,MAAM,CAAC,OAAO,CAAE"
 }
