@@ -34,12 +34,19 @@
 .cursor-pointer {cursor:pointer}
 
 
-.overflow-hidden {overflow:hidden}
-.overflow, .overflow-auto {overflow:auto}
-.overflow-y, .overflow-y-auto {overflow-y:auto}
-.overflow-y-hidden {overflow-y:hidden}
-.overflow-x, .overflow-x-auto {overflow-x:auto}
-.overflow-x-hidden {overflow-x:hidden}
+.touch-scroll{-webkit-overflow-scrolling: touch}
+.overflow, .overflow-auto {
+  @extend .touch-scroll;overflow:auto
+}
+.overflow-y, .overflow-y-auto {
+  @extend .touch-scroll;overflow-y:auto
+}
+.overflow-x, .overflow-x-auto {
+  @extend .touch-scroll;overflow-x:auto
+}
+.overflow-hidden{overflow:hidden}
+.overflow-x-hidden{overflow-x:hidden}
+.overflow-y-hidden{overflow-y:hidden}
 
 
 .hide,.hidden,.display-none {display:none}

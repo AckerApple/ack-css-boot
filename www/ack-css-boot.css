@@ -462,8 +462,8 @@
 .cursor-pointer {
   cursor: pointer; }
 
-.overflow-hidden {
-  overflow: hidden; }
+.touch-scroll, .overflow, .overflow-auto, .overflow-y, .overflow-y-auto, .overflow-x, .overflow-x-auto {
+  -webkit-overflow-scrolling: touch; }
 
 .overflow, .overflow-auto {
   overflow: auto; }
@@ -471,14 +471,17 @@
 .overflow-y, .overflow-y-auto {
   overflow-y: auto; }
 
-.overflow-y-hidden {
-  overflow-y: hidden; }
-
 .overflow-x, .overflow-x-auto {
   overflow-x: auto; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
 .overflow-x-hidden {
   overflow-x: hidden; }
+
+.overflow-y-hidden {
+  overflow-y: hidden; }
 
 .hide, .hidden, .display-none {
   display: none; }
@@ -1936,7 +1939,7 @@
 .margin-xs, .child-margin-xs > *, .child-first-margin-xs > *:first-child {
   margin: 0.4em; }
 
-.margin-smx {
+.margin-smx, .child-margin-smx > * {
   margin: 0.5em; }
 
 .margin-sm, .child-margin-sm > *, .child-first-margin-sm > *:first-child {
@@ -2426,6 +2429,9 @@
 
 .child-pad-xs > *, .child-first-pad-xs > *:first-child {
   padding: 0.4em; }
+
+.child-pad-smx > *, .child-first-pad-smx > *:first-child {
+  padding: 0.5em; }
 
 .child-pad-sm > *, .child-first-pad-sm > *:first-child {
   padding: 0.6em; }
@@ -3181,6 +3187,8 @@ lg >= 1200
     overflow: hidden !important; } }
 
 @media print {
+  .print-no-bg {
+    background-color: transparent !important; }
   .hide-print, .hidden-print {
     display: none !important; } }
 

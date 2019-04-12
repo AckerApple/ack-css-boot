@@ -112,6 +112,10 @@ lg >= 1200
   }
 }
 @media print {
+  .print-no-bg{
+    background-color:transparent !important;
+  }
+
   .hide-print, .hidden-print {
     display: none !important;
   }

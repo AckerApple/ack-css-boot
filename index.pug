@@ -1552,12 +1552,16 @@ html(lang="en")
         |List of classes, not always an example of class demonstratable
 
       .flex.child-margin-xs.child-pad-xs
+        .border.border-grey-3x .touch-scroll
         .border.border-grey-3x .overflow
-        .border.border-grey-3x .overflow-hidden
         .border.border-grey-3x .overflow-x
         .border.border-grey-3x .overflow-y
+        .border.border-grey-3x .overflow-hidden
         .border.border-grey-3x .overflow-x-hidden
         .border.border-grey-3x .overflow-y-hidden
+
+      .bg-grey.margin-bottom.pad
+        |NOTE: .overflow, .overflow-x, .overflow-y enable smooth scrolling for iOS Safari by adding -webkit-overflow-scrolling: touch aka the .touch-scroll class
 
       .flex
         .flex-1

@@ -1,6 +1,14 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.56] - 2019-04-12
+- new .print-no-bg
+- moved block, inline-block and such above flex classes to give flex priority
+- added child-pad-smx
+- added child-margin-smx
+- added .touch-scroll
+- All overflow auto classes has touch scroll to them
+
 ## [1.2.55] - 2018-12-03
 - removed scroll bard for Edge
 
