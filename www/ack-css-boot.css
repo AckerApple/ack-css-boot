@@ -4193,7 +4193,9 @@ lg >= 1200
   background-color: #444444; }
 
 .no-scroll-bars {
-  -ms-overflow-style: none; }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /*-ms-autohiding-scrollbar*/ }
 
 .no-scroll-bars::-webkit-scrollbar {
   display: none; }

@@ -1,6 +1,9 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.57] - 2019-04-26
+- Added `.no-scroll-bars` definition of `scrollbar-width: none` for firefox
+
 ## [1.2.56] - 2019-04-12
 - new .print-no-bg
 - moved block, inline-block and such above flex classes to give flex priority

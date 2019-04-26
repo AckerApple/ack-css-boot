@@ -1,4 +1,8 @@
-.no-scroll-bars{-ms-overflow-style: none/*-ms-autohiding-scrollbar*/}
+.no-scroll-bars{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /*-ms-autohiding-scrollbar*/
+}
 .no-scroll-bars::-webkit-scrollbar {display:none}
 .no-scroll-bars::-moz-scrollbar {display:none}
 
