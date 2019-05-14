@@ -1,6 +1,9 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [1.2.58] - 2019-05-14
+- added .text-justify
+
 ## [1.2.57] - 2019-04-26
 - Added `.no-scroll-bars` definition of `scrollbar-width: none` for firefox
 

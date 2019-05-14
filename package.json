@@ -1,6 +1,6 @@
 {
   "name": "ack-css-boot",
-  "version": "1.2.57",
+  "version": "1.2.58",
   "description": "A base set of short-hand css helper classes. Includes available classes that are commonly used for styling buttons, form inputs, and such.",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/ackerapple/ack-css-boot#readme",
   "devDependencies": {
     "ack-reload": "^2.0.12",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.12.0",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
   }
