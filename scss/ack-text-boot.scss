@@ -21,6 +21,9 @@
 .text-line-no-skip, .underline-no-skip{
   text-decoration-skip-ink:none
 }
+.underline-under{
+  text-underline-position:under;
+}
 
 .bold, .hover-bold:hover, .hover-strong {font-weight:bold}
 .strong, .text-bold, .font-bold, .font-weight-bold {font-weight:bold}
