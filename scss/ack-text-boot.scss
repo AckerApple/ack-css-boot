@@ -8,10 +8,19 @@
 
 .text-overflow {text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 
-.strike, .strike-through, .line-through {text-decoration: line-through;}
-.text-underline,.underline {text-decoration:underline}
-.no-underline, .text-decoration-none {text-decoration:none}
 .italic, .text-italic {font-style: italic}
+.strike, .strike-through, .line-through {
+  text-decoration: line-through;
+}
+.text-underline,.underline {
+  text-decoration:underline
+}
+.no-underline, .text-decoration-none {
+  text-decoration:none
+}
+.text-line-no-skip, .underline-no-skip{
+  text-decoration-skip-ink:none
+}
 
 .bold, .hover-bold:hover, .hover-strong {font-weight:bold}
 .strong, .text-bold, .font-bold, .font-weight-bold {font-weight:bold}

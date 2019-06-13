@@ -408,7 +408,22 @@ html(lang="en")
         .border.border-grey-5x.flex-1.text-smx .text-smx
         .border.border-grey-5x.flex-1.text-xs .text-xs
         .border.border-grey-5x.flex-1.text-xxs .text-xxs
-        .border.border-grey-5x.flex-1.text-underline .text-underline, .underline
+        .border.border-grey-5x.flex-1
+          .text-underline
+            |.text-underline, .underline
+          br
+          br
+          .text-2x
+            |line skips demo:
+            span.underline aagbbjccyddjee
+        .border.border-grey-5x.flex-1
+          .text-underline.text-line-no-skip
+            |.underline.text-line-no-skip, .underline.underline-no-skip
+          br
+          br
+          .text-2x
+            |solid line demo:
+            span.text-line-no-skip.text-underline aagbbjccyddjee
         .border.border-grey-5x.flex-1.italic .italic, .text-italic
         .border.border-grey-5x.flex-1.strong .strong, .bold, .text-bold
         .border.border-grey-5x.flex-1.strike .strike, .line-through
