@@ -1,0 +1,403 @@
+.flex-wrap
+  .flex-1.margin-xs.pad.bg-info.border-info.border-3
+    |.bg-info.border-info
+  .flex-1.margin-xs.pad.bg-danger.border-danger.border-3
+    |.bg-danger.border-danger
+  .flex-1.margin-xs.pad.bg-success.border-success.border-3
+    |.bg-success.border-success
+  .flex-1.margin-xs.pad.bg-primary.border-primary.border-3
+    |.bg-primary.border-primary
+  .flex-1.margin-xs.pad.bg-warning.border-warning.border-3
+    |.bg-warning.border-warning
+  .flex-1.margin-xs.pad.bg-grey.border-grey.border-3
+    |.bg-grey.border-grey
+  .flex-1.margin-xs.pad.bg-grey-2x.border-grey-2x.border-3
+    |.bg-grey-2x.border-grey-2x
+  .flex-1.margin-xs.pad.bg-grey-3x.border-grey-3x.border-3
+    |.bg-grey-3x.border-grey-3x
+  .flex-1.margin-xs.pad.bg-grey-4x.border-grey-4x.border-3
+    |.bg-grey-4x.border-grey-4x
+  .flex-1.margin-xs.pad.bg-grey-5x.border-grey-5x.border-3
+    |.bg-grey-5x.border-grey-5x
+  .flex-1.margin-xs.pad.bg-grey-6x.border-grey-6x.border-3
+    |.bg-grey-6x.border-grey-6x
+  .flex-1.margin-xs.pad.bg-assertive.border-assertive.border-3
+    |.bg-assertive.border-assertive
+  .flex-1.margin-xs.pad.bg-balanced.border-balanced.border-3
+    |.bg-balanced.border-balanced
+  .flex-1.margin-xs.pad.bg-royal.border-royal.border-3
+    |.bg-royal.border-royal
+  .flex-1.margin-xs.pad.bg-stable.border-stable.border-3
+    |.bg-stable.border-stable
+  .flex-1.margin-xs.pad.bg-positive.border-positive.border-3
+    |.bg-positive.border-positive
+  .flex-1.margin-xs.pad.bg-calm.border-calm.border-3
+    |.bg-calm.border-calm
+  .flex-1.margin-xs.pad.bg-energized.border-energized.border-3
+    |.bg-energized.border-energized
+  .flex-1.margin-xs.pad.bg-dark.border-dark.border-3
+    |.bg-dark.border-dark
+
+
+.flex-wrap
+  .flex-1.margin-xs.pad.text-positive
+    |.text-positive
+  .flex-1.margin-xs.pad.text-calm
+    |.text-calm
+  .flex-1.margin-xs.pad.text-balanced
+    |.text-balanced
+  .flex-1.margin-xs.pad.text-energized
+    |.text-energized
+  .flex-1.margin-xs.pad.text-assertive
+    |.text-assertive
+  .flex-1.margin-xs.pad.text-royal
+    |.text-royal
+  .flex-1.margin-xs.pad.text-dark
+    |.text-dark
+  .flex-1.margin-xs.pad.text-primary
+    |.text-primary
+  .flex-1.margin-xs.pad.text-success
+    |.text-success
+  .flex-1.margin-xs.pad.text-info
+    |.text-info
+  .flex-1.margin-xs.pad.text-warning
+    |.text-warning
+  .flex-1.margin-xs.pad.text-danger
+    |.text-danger
+  .flex-1.margin-xs.pad.text-grey-lg
+    |.text-grey-lg
+  .flex-1.margin-xs.pad.text-grey-md
+    |.text-grey-md
+  .flex-1.margin-xs.pad.text-grey
+    |.text-grey
+  .flex-1.margin-xs.pad.text-grey-sm
+    |.text-grey-sm, .text-grey-2x
+  .flex-1.margin-xs.pad.text-grey-xs
+    |.text-grey-xs, .text-grey-3x
+  .flex-1.margin-xs.pad.text-grey-4x
+    |.text-grey-4x
+  .flex-1.margin-xs.pad.text-grey-5x
+    |.text-grey-5x
+  .flex-1.margin-xs.pad.text-grey-6x
+    |.text-grey-6x
+  .flex-1.margin-xs.pad.text-green.font-green
+    |.text-green,.font-green
+  .flex-1.margin-xs.pad.text-orange.font-orange
+    |.text-orange,.font-orange
+  .flex-1.margin-xs.pad.text-red.font-red
+    |.text-red,.font-red
+  .flex-1.margin-xs.pad.text-blue.font-blue
+    |.text-blue,.font-blue
+  .flex-1.margin-xs.pad.text-purple.font-purple
+    |.text-purple,.font-purple
+  .flex-1.margin-xs.pad.text-black.font-black
+    |.text-black,.font-black
+  .flex-1.margin-xs.pad.text-white.font-white
+    |.text-white,.font-white
+
+h4 border
+.flex-wrap.align-top
+  .margin.pad.border-1-info
+    |.border-1-info
+  .margin.pad.border.border-success
+    |.border.border-success
+  .margin.pad.border-1-warning.border-dashed
+    |.border-1-warning.border-dashed
+  .margin.pad.border.border-dotted.border-danger
+    |.border.border-dotted.border-danger
+  .margin.pad.border-bottom-1.border-info
+    |.border-bottom-1.border-info
+  .margin.pad.border-bottom-1.border-primary.border-bottom-dotted
+    |.border-bottom-1.border-primary.border-bottom-dotted
+  .margin.pad.border-bottom-1.border-assertive.border-bottom-dashed
+    |.border-bottom-1.border-assertive.border-bottom-dashed
+
+h4 table
+.flex-wrap.align-top
+  .pad-xs
+    h5.margin-bottom-xs
+      br
+      |.table-lines
+    table.table-lines.table-pad-xs.border-collapse
+      thead
+        tr
+          th head1
+          th head2
+          th head3
+      tbody
+        each x in [0,1,2,3]
+          tr
+            td col1
+            td col2
+            td col3
+  each x in colorArray
+    .pad-xs
+      h5.margin-bottom-xs
+        div .table-lines
+        div .table-lines-#{x}
+      table.table-lines.table-pad-xs.border-collapse(class="table-lines-"+x)
+        thead
+          tr
+            th head1
+            th head2
+            th head3
+        tbody
+          each x in [0,1,2,3]
+            tr
+              td col1
+              td col2
+              td col3
+  .pad-xs
+    h5.margin-bottom-xs
+      div .table-striped
+      div .table-hover
+    table.table-hover.table-striped.table-pad-xs
+      thead
+        tr
+          th head1
+          th head2
+          th head3
+      tbody
+        each x in [0,1,2,3]
+          tr
+            td col1
+            td col2
+            td col3
+  each x in colorArray
+    .pad-xs(class=x=='stable'?"bg-grey-3x":null)
+      h5.margin-bottom-xs
+        div .table-striped-#{x}
+        div .table-hover-#{x}
+      table.table-pad-xs(class="table-hover-"+x+" table-striped-"+x)
+        thead
+          tr
+            th head1
+            th head2
+            th head3
+        tbody
+          each x in [0,1,2,3]
+            tr
+              td col1
+              td col2
+              td col3
+  .pad-xs
+    h5.margin-bottom-xs MiXeD ExAmPlE 1
+    table.table-hover-primary.table-striped.table-pad-xs.border-collapse
+      thead
+        tr
+          th head1
+          th head2
+          th head3
+      tbody
+        each x in [0,1,2,3]
+          tr
+            td col1
+            td col2
+            td col3
+        tr.bg-info
+          td col1
+          td col2
+          td col3
+        tr.bg-energized
+          td col1
+          td col2
+          td col3
+  .pad-xs
+    h5.margin-bottom-xs MiXeD ExAmPlE 2
+    table.table-hover-primary.table-striped-warning.table-pad-xs.border-collapse
+      thead
+        tr
+          th head1
+          th head2
+          th head3
+      tbody
+        each x in [0,1,2,3]
+          tr
+            td col1
+            td col2
+            td col3
+        tr.bg-info
+          td col1
+          td col2
+          td col3
+        tr.bg-energized
+          td col1
+          td col2
+          td col3
+  .pad-xs
+    h5.margin-bottom-xs Table by Classes
+    .table.table-hover-primary
+      .thead
+        .tr.child-pad-xs.child-margin-xxs
+          .th.strong head1
+          .th.strong head2
+          .th.strong head3
+      .tbody.child-striped-warning.child-hover-bg-primary
+        each x in [0,1,2,3]
+          .tr.child-pad-xs
+            .td col1
+            .td col2
+            .td col3
+        .tr.bg-info.child-pad-xs.child-margin-xxs
+          .td col1
+          .td col2
+          .td col3
+        .tr.bg-energized.child-pad-xs.child-margin-xxs
+          .td col1
+          .td col2
+          .td col3
+
+h4 child hover targeting
+p Mouse over a child box to see its assigned hover class
+
+h5.text-positive .child-hover-text-positive.child-hover-bg-positive.child-hover-border-positive
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-positive.child-hover-bg-positive.child-hover-border-positive
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-calm .child-hover-text-calm.child-hover-bg-calm.child-hover-border-calm
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-calm.child-hover-bg-calm.child-hover-border-calm
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-balanced .child-hover-text-balanced.child-hover-bg-balanced.child-hover-border-balanced
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-balanced.child-hover-bg-balanced.child-hover-border-balanced
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-energized .child-hover-text-energized.child-hover-bg-energized.child-hover-border-energized
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-energized.child-hover-bg-energized.child-hover-border-energized
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-assertive .child-hover-text-assertive.child-hover-bg-assertive.child-hover-border-assertive
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-assertive.child-hover-bg-assertive.child-hover-border-assertive
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-royal .child-hover-text-royal.child-hover-bg-royal.child-hover-border-royal
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-royal.child-hover-bg-royal.child-hover-border-royal
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-dark .child-hover-text-dark.child-hover-bg-dark.child-hover-border-dark
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-dark.child-hover-bg-dark.child-hover-border-dark
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-primary .child-hover-text-primary.child-hover-bg-primary.child-hover-border-primary
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-primary.child-hover-bg-primary.child-hover-border-primary
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-success .child-hover-text-success.child-hover-bg-success.child-hover-border-success
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-success.child-hover-bg-success.child-hover-border-success
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-info .child-hover-text-info.child-hover-bg-info.child-hover-border-info
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-info.child-hover-bg-info.child-hover-border-info
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-warning .child-hover-text-warning.child-hover-bg-warning.child-hover-border-warning
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-warning.child-hover-bg-warning.child-hover-border-warning
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-danger .child-hover-text-danger.child-hover-bg-danger.child-hover-border-danger
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-danger.child-hover-bg-danger.child-hover-border-danger
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-grey .child-hover-text-grey.child-hover-bg-grey.child-hover-border-grey
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey.child-hover-bg-grey.child-hover-border-grey
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-grey-2x .child-hover-text-grey-2x.child-hover-bg-grey-2x.child-hover-border-grey-2x
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-2x.child-hover-bg-grey-2x.child-hover-border-grey-2x
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-grey-3x .child-hover-text-grey-3x.child-hover-bg-grey-3x.child-hover-border-grey-3x
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-3x.child-hover-bg-grey-3x.child-hover-border-grey-3x
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-grey-4x .child-hover-text-grey-4x.child-hover-bg-grey-4x.child-hover-border-grey-4x
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-4x.child-hover-bg-grey-4x.child-hover-border-grey-4x
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-grey-5x .child-hover-text-grey-5x.child-hover-bg-grey-5x.child-hover-border-grey-5x
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-5x.child-hover-bg-grey-5x.child-hover-border-grey-5x
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-grey-6x .child-hover-text-grey-6x.child-hover-bg-grey-6x.child-hover-border-grey-6x
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-grey-6x.child-hover-bg-grey-6x.child-hover-border-grey-6x
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-green .child-hover-text-green.child-hover-bg-green.child-hover-border-green
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-green.child-hover-bg-green.child-hover-border-green
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-orange .child-hover-text-orange.child-hover-bg-orange.child-hover-border-orange
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-orange.child-hover-bg-orange.child-hover-border-orange
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-red .child-hover-text-red.child-hover-bg-red.child-hover-border-red
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-red.child-hover-bg-red.child-hover-border-red
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-blue .child-hover-text-blue.child-hover-bg-blue.child-hover-border-blue
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-blue.child-hover-bg-blue.child-hover-border-blue
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+h5.text-purple .child-hover-text-purple.child-hover-bg-purple.child-hover-border-purple
+.child-border-2.child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-purple.child-hover-bg-purple.child-hover-border-purple
+  .flex-1 acb
+  .flex-1 123
+  .flex-1 xyz
+
+.bg-grey-2x
+  h5.text-black .child-hover-text-black.child-hover-bg-black
+  .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-black.child-hover-bg-black
+    .flex-1.border.text-white acb
+    .flex-1.border.text-white 123
+    .flex-1.border.text-white xyz
+
+.bg-grey-2x
+  h5.text-white .child-hover-text-white.child-hover-bg-white
+  .child-margin-xs.child-pad-xs.flex-evenly.child-hover-text-white.child-hover-bg-white
+    .flex-1.border acb
+    .flex-1.border 123
+    .flex-1.border xyz

@@ -1,9 +1,11 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
-## [1.2.61] - 2019-06-23
-- addded .underline-no-skip
-- addded .underline-under
+## [1.2.62] - 2019-06-23
+- added .underline-no-skip
+- added .underline-under
+- added width-2 height-2
+- added width height docs
 
 ## [1.2.59] - 2019-05-14
 - added .hyphens

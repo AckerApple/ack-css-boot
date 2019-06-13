@@ -1,0 +1,177 @@
+.flex-wrap.child-pad-sm        
+  .text-2x.border.border-grey-5x.flex-1.font-arial
+    |.font-arial
+  .text-2x.border.border-grey-5x.flex-1.font-times
+    |.font-times
+  .text-2x.border.border-grey-5x.flex-1.font-helvetica
+    |.font-helvetica
+  .text-2x.border.border-grey-5x.flex-1.font-fixed-width
+    |.font-fixed-width or .font-courier
+  .border.border-grey-5x.flex-1.text-9x .text-9x
+  .border.border-grey-5x.flex-1.text-8x .text-8x
+  .border.border-grey-5x.flex-1.text-7x .text-7x
+  .border.border-grey-5x.flex-1.text-6x .text-6x
+  .border.border-grey-5x.flex-1.text-5x .text-5x
+  .border.border-grey-5x.flex-1.text-4x .text-4x
+  .border.border-grey-5x.flex-1.text-3x .text-3x
+  .border.border-grey-5x.flex-1.text-2x .text-2x
+  .border.border-grey-5x.flex-1.text-sm .text-sm
+  .border.border-grey-5x.flex-1.text-smx .text-smx
+  .border.border-grey-5x.flex-1.text-xs .text-xs
+  .border.border-grey-5x.flex-1.text-xxs .text-xxs
+  .border.border-grey-5x.flex-1
+    .text-underline
+      |.text-underline, .underline
+    br
+    br
+    .text-2x
+      |line skips demo:
+      span.underline aagbbjccyddjee
+  .border.border-grey-5x.flex-1
+    .text-underline.text-line-no-skip
+      |.underline.text-line-no-skip, .underline.underline-no-skip
+    br
+    br
+    .text-2x
+      |solid line demo:
+      span.text-line-no-skip.text-underline aagbbjccyddjee
+
+  .border.border-grey-5x.flex-1
+    .text-underline.underline-under
+      |.underline.underline-under
+    br
+    br
+    .text-2x
+      |under baseline:
+      span.underline-under.text-underline aagbbjccyddjee
+  .border.border-grey-5x.flex-1.italic .italic, .text-italic
+  .border.border-grey-5x.flex-1.strong .strong, .bold, .text-bold
+  .border.border-grey-5x.flex-1.strike .strike, .line-through
+  .border.border-grey-5x.flex-1.stroke .stroke
+  .border.border-grey-5x.flex-1.stroke-1 .stroke-1
+  .border.border-grey-5x.flex-1.stroke-2 .stroke-2
+  .border.border-grey-5x.flex-1.stroke-3 .stroke-3
+  .border.border-grey-5x.flex-1.stroke-4 .stroke-4
+  .border.border-grey-5x.flex-1.stroke-5 .stroke-5
+
+  .border.border-grey-5x.flex-1.letter-spacing-4x .letter-spacing-4x
+  .border.border-grey-5x.flex-1.letter-spacing-3x .letter-spacing-3x
+  .border.border-grey-5x.flex-1.letter-spacing-2x .letter-spacing-2x
+  .border.border-grey-5x.flex-1.letter-spacing-sm .letter-spacing-sm
+  .border.border-grey-5x.flex-1.letter-spacing-smx .letter-spacing-smx
+  .border.border-grey-5x.flex-1.letter-spacing-xs .letter-spacing-xs
+  .border.border-grey-5x.flex-1.letter-spacing-xxs .letter-spacing-xxs
+
+  .border.border-grey-5x.flex-1.font-bolder .font-bolder
+  .border.border-grey-5x.flex-1.font-normal .font-normal
+  .border.border-grey-5x.flex-1.font-lighter .font-lighter
+  .border.border-grey-5x.flex-1.font-100 .font-100
+  .border.border-grey-5x.flex-1.font-200 .font-200
+  .border.border-grey-5x.flex-1.font-300 .font-300
+  .border.border-grey-5x.flex-1.font-400 .font-400
+  .border.border-grey-5x.flex-1.font-500 .font-500
+  .border.border-grey-5x.flex-1.font-600 .font-600
+  .border.border-grey-5x.flex-1.font-700 .font-700
+  .border.border-grey-5x.flex-1.font-800 .font-800
+  .border.border-grey-5x.flex-1.font-900 .font-900
+  .border.border-grey-5x.flex-1.line-height-0 .line-height-0
+  .border.border-grey-5x.flex-1.line-height-90 .line-height-90
+  .border.border-grey-5x.flex-1.line-height-80 .line-height-80
+  .border.border-grey-5x.flex-1.line-height-3-4 .line-height-3-4
+  .border.border-grey-5x.flex-1.line-height-70 .line-height-70
+  .border.border-grey-5x.flex-1.line-height-half .line-height-half
+  .border.border-grey-5x.flex-1.line-height-60 .line-height-60
+  .border.border-grey-5x.flex-1.line-height-quarter .line-height-quarter
+  .border.border-grey-5x.flex-1.line-height-third .line-height-third
+  .border.border-grey-5x.flex-1.line-height-2x .line-height-2x
+  .border.border-grey-5x.flex-1.line-height-3x .line-height-3x
+  .border.border-grey-5x.flex-1.bg-grey.text-shadow-white-blur .text-shadow-white-blur
+  .border.border-grey-5x.flex-1.text-shadow-grey-blur .text-shadow-grey-blur
+
+h4 hover- classes
+.flex-wrap.child-margin-xxs.child-pad-xs
+  .flex-1.hover-text-shadow-white-blur.bg-grey.text-white.text-center.border.border-grey-5x
+    |.hover-text-shadow-white-blur
+    .text-xs (hover with mouse)
+  .flex-1.hover-text-shadow-grey-blur.text-center.border.border-grey-5x
+    |.hover-text-shadow-grey-blur
+    .text-grey.text-xs (hover with mouse)
+
+  each x in colorArray
+    .flex-1.text-center.border-3.border-grey-5x(
+      class="hover-text-"+x+" hover-border-"+x+" hover-bg-"+x
+    )
+      div .hover-bg-#{x}
+      div .hover-text-#{x}
+      div .hover-border-#{x}
+      .text-grey.text-xs (hover with mouse)
+
+  .flex-1.text-center.bg-grey.border.border-grey-5x.opacity-half(class="hover-opacity-100")
+    |.hover-opacity-100
+    .text-grey.text-xs (hover with mouse)
+  each x in [90,80,70,60,50,40,30,20,10,0]
+    .flex-1.text-center.bg-grey.border.border-grey-5x(class="hover-opacity-"+x)
+      |.hover-opacity-#{x}
+      .text-grey.text-xs (hover with mouse)
+
+.flex-wrap.child-margin-xxs.child-pad-xs
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-9x
+      .pos-abs.width-full.text-center
+        |.hover-text-9x
+    .invisible.text-9x .hover-text-9x
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-8x
+      .pos-abs.width-full.text-center
+        |.hover-text-8x
+    .invisible.text-8x .hover-text-8x
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-7x
+      .pos-abs.width-full.text-center
+        |.hover-text-7x
+    .invisible.text-7x .hover-text-7x
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-6x
+      .pos-abs.width-full.text-center
+        |.hover-text-6x
+    .invisible.text-6x .hover-text-6x
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-5x
+      .pos-abs.width-full.text-center
+        |.hover-text-5x
+    .invisible.text-5x .hover-text-5x
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-4x
+      .pos-abs.width-full.text-center
+        |.hover-text-4x
+    .invisible.text-4x .hover-text-4x
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-3x
+      .pos-abs.width-full.text-center
+        |.hover-text-3x
+    .invisible.text-3x .hover-text-3x
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-2x
+      .pos-abs.width-full.text-center
+        |.hover-text-2x
+    .invisible.text-2x .hover-text-2x
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-sm
+      .pos-abs.width-full.text-center
+        |.hover-text-sm
+    .invisible.text-sm .hover-text-sm
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-smx
+      .pos-abs.width-full.text-center
+        |.hover-text-smx
+    .invisible.text-smx .hover-text-smx
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-xs
+      .pos-abs.width-full.text-center
+        |.hover-text-xs
+    .invisible.text-xs .hover-text-xs
+  .flex-1.border.border-grey-5x
+    .pos-rel.hover-text-xxs
+      .pos-abs.width-full.text-center
+        |.hover-text-xxs
+    .invisible.text-xxs .hover-text-xxs

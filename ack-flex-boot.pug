@@ -1,0 +1,345 @@
+p.text-muted CSS flex box layout made extremely simple
+p.text-sm.text-info A .flex class exists to set display:flex; but it is hardly needed. All .flex- classes extend .flex
+.pad
+  .flex-wrap.flex-center
+    .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+      h4.margin-top-0 .flex-center
+      .flex-center
+        .pad.bg-info.margin-xs Acker
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+      h4.margin-top-0 .flex-left
+      .flex-left
+        .pad.bg-info.margin-xs Acker
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+      h4.margin-top-0 .flex-right
+      .flex-right
+        .pad.bg-info.margin-xs Acker
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+      h4.margin-top-0 .flex-evenly
+      .flex-evenly
+        .pad.bg-info.margin-xs Acker
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    .flex-1.max-width-400.min-width-300.border-1-info.margin-xs.pad-xs
+      h4.margin-top-0 .flex-apart
+      .flex-apart
+        .pad.bg-info.margin-xs Acker
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+
+  .flex-evenly.flex-wrap
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-valign
+      .flex-valign
+        .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs Apple]
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-valign-center
+      .flex-valign-center
+        .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs Apple]
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-valign-bottom
+      .flex-valign-bottom
+        .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs Apple]
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-fill
+      .flex-fill
+        .pad.bg-info.margin-xs #[.pad-xs Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs Apple]
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-baseline
+      .flex-baseline
+        .pad.bg-info.margin-xs #[.pad-xs.underline Acker]#[.pad-xs Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs.underline Dawn]#[.pad-xs Apple]
+        .pad.bg-info.margin-xs #[.pad-xs.underline Apple]
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-reverse
+      .flex-reverse
+        .pad.bg-info.margin-xs 1 Acker
+        .pad.bg-info.margin-xs 2 Dawn
+        .pad.bg-info.margin-xs 3 Apple
+
+  .flex-wrap.flex-evenly
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-stack
+      .flex-stack
+        .pad.bg-info.margin-xs 1 Acker
+        .pad.bg-info.margin-xs 2 Dawn
+        .pad.bg-info.margin-xs 3 Apple
+    
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-stack.flex-reverse
+      .flex-stack.flex-reverse
+        .pad.bg-info.margin-xs 1 Acker
+        .pad.bg-info.margin-xs 2 Dawn
+        .pad.bg-info.margin-xs 3 Apple
+    
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0
+        div .flex-stack
+        div .flex-center
+      .flex-stack.flex-center
+        .pad.bg-info.margin-xs Acker Dawn Apple
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0
+        div .flex-stack
+        div .flex-left
+      .flex-stack.flex-left
+        .pad.bg-info.margin-xs Acker Dawn Apple
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0
+        div .flex-stack
+        div .flex-right
+      .flex-stack.flex-right
+        .pad.bg-info.margin-xs Acker Dawn Apple
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    //-.stack-reverse
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0 .flex-stack-reverse
+      .flex-stack-reverse
+        .pad.bg-info.margin-xs Acker
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0
+        div .flex-stack-reverse
+        div .flex-center
+      .flex-stack-reverse.flex-center
+        .pad.bg-info.margin-xs Acker Dawn Apple
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0
+        div .flex-stack-reverse
+        div .flex-left
+      .flex-stack-reverse.flex-left
+        .pad.bg-info.margin-xs Acker Dawn Apple
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+    .pad-xs.margin-xs.border-1-info
+      h4.margin-top-0
+        div .flex-stack-reverse
+        div .flex-right
+      .flex-stack-reverse.flex-right
+        .pad.bg-info.margin-xs Acker Dawn Apple
+        .pad.bg-info.margin-xs Dawn
+        .pad.bg-info.margin-xs Apple
+
+
+  h3 Flex Inner Classes
+  //- flex1 flex2 flex3 and so on
+  each size in sizes
+    h4.margin-bottom-xxs #{size[1]} Examples
+    p.pad-left.text-grey.text-sm .flex#{size[0]} is more forceful to achieve desired widths but quicker to create wrapping rows versus .flex-#{size[0]}
+    .flex-wrap
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs.bg-info
+          .text-xs .flex-#{size[0]}
+          br
+          br
+      .flex-1.border-1-warning
+        .pad-xs
+          .text-xs .flex-1
+    .flex-wrap
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs.bg-info
+          .text-xs .flex#{size[0]}
+          br
+          br
+      .flex1.border-1-warning
+        .pad-xs
+          .text-xs .flex1
+    .text-grey-2x.text-center.text-xs
+      |(two element example above)
+    br
+    .flex-wrap
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs.bg-grey-3x
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+    .flex-wrap
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs.bg-grey-3x
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+    .text-grey-2x.text-center.text-xs
+      |(three element example above)
+    br
+    .flex-wrap
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs.bg-info
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+    .flex-wrap
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs.bg-info
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+    .text-grey-2x.text-center.text-xs
+      |(four element example above)
+    br
+    .flex-wrap
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs.bg-grey-3x
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+    .flex-wrap
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs.bg-grey-3x
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+    .text-grey-2x.text-center.text-xs (five element example above)
+    br
+    .flex-wrap
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs.bg-info
+          .text-xs .flex-#{size[0]}
+      .flex-1.border-1-warning
+        .pad-xs
+          .text-xs .flex-1
+      .flex-1.border-1-warning
+        .pad-xs
+          .text-xs .flex-1
+      .flex-1.border-1-warning
+        .pad-xs
+          .text-xs .flex-1
+      .flex-1.border-1-warning
+        .pad-xs
+          .text-xs .flex-1
+      .flex-1.border-1-warning
+        .pad-xs
+          .text-xs .flex-1
+    .flex-wrap
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs.bg-info
+          .text-xs .flex#{size[0]}
+      .flex1.border-1-warning
+        .pad-xs
+          .text-xs .flex1
+      .flex1.border-1-warning
+        .pad-xs
+          .text-xs .flex1
+      .flex1.border-1-warning
+        .pad-xs
+          .text-xs .flex1
+      .flex1.border-1-warning
+        .pad-xs
+          .text-xs .flex1
+      .flex1.border-1-warning
+        .pad-xs
+          .text-xs .flex1
+    .text-grey-2x.text-center.text-xs (six element example above)
+    br
+    .flex-wrap
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs.bg-grey-3x
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+      .border-1-warning(class="flex-"+size[0])
+        .pad-xs
+          .text-xs .flex-#{size[0]}
+    .flex-wrap
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs.bg-grey-3x
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+      .border-1-warning(class="flex"+size[0])
+        .pad-xs
+          .text-xs .flex#{size[0]}
+    .text-grey-2x.text-center.text-xs (seven element example above)
+
+
