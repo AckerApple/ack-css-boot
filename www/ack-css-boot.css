@@ -961,6 +961,18 @@
 .min-width-1000 {
   min-width: 1000px; }
 
+.rotate-45 {
+  transform: rotate(45deg); }
+
+.rotate-90 {
+  transform: rotate(90deg); }
+
+.rotate-135 {
+  transform: rotate(135deg); }
+
+.rotate-180 {
+  transform: rotate(180deg); }
+
 .radius-0, .border-radius-0 {
   border-radius: 0; }
 
