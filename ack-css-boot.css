@@ -36,6 +36,9 @@
 .text-line-no-skip, .underline-no-skip {
   text-decoration-skip-ink: none; }
 
+.underline-under {
+  text-underline-position: under; }
+
 .bold, .hover-bold:hover, .hover-strong {
   font-weight: bold; }
 
@@ -539,6 +542,14 @@
 .child-height-half > *,
 .height-half {
   width: 50%; }
+
+.child-height-2 > *,
+.height-2 {
+  height: 2px; }
+
+.child-width-2 > *,
+.width-2 {
+  width: 2px; }
 
 .child-height-5 > *,
 .height-5 {
