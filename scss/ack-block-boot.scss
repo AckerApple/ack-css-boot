@@ -56,7 +56,7 @@
 
 .inline-block, .display-inline-block {display:inline-block}
 .inline-table, .display-inline-table {display:inline-table}
-.block, .display-block {display:block}
+.block, .display-block, .child-display-block > * {display:block}
 .child-last-block > :last-child {display:block}
 
 
