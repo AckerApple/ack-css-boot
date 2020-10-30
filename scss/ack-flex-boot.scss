@@ -11,8 +11,9 @@
 .flex5 {flex:5 5 50em}
 .flex6 {flex:6 6 60em}
 
-.flex-grow-1,.child-flex-1 > *,
-.flex-1 {flex-grow:1}
+.flex-1 .flex-grow-1,
+.child-last-flex-1,
+.child-flex-1 > * {flex-grow:1}
 .flex-1-5 {flex-grow:1.5}
 .flex-grow-2,.child-flex-2 > *,
 .flex-2 {flex-grow:2}
