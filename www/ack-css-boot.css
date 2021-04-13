@@ -297,7 +297,7 @@
 .flex6 {
   flex: 6 6 60em; }
 
-.flex-1 .flex-grow-1,
+.flex-1, .flex-grow-1,
 .child-last-flex-1,
 .child-flex-1 > * {
   flex-grow: 1; }
@@ -475,6 +475,7 @@
 .cursor-pointer {
   cursor: pointer; }
 
+/* smooth scrolling for ios (kills touch to top) */
 .touch-scroll, .overflow, .overflow-auto, .overflow-y, .overflow-y-auto, .overflow-x, .overflow-x-auto {
   -webkit-overflow-scrolling: touch; }
 

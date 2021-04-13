@@ -34,7 +34,10 @@
 .cursor-pointer {cursor:pointer}
 
 
+
+/* smooth scrolling for ios (kills touch to top) */
 .touch-scroll{-webkit-overflow-scrolling: touch}
+
 .overflow, .overflow-auto {
   @extend .touch-scroll;overflow:auto
 }
