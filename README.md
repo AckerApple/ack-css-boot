@@ -35,6 +35,10 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 @import "./ack-responsive-boot";
 ```
 
+## Development
+
+The scss files do **not** take full advantage of extending and advanced functionality. The way these style classes override each other is too sensitive to have a compiler alter the end result.
+
 ## Resources
 Quick links to examples and source code
 

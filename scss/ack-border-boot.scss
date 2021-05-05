@@ -1,3 +1,5 @@
+/** Do not attempt to reduce duplication in here. Many repeats are actual browser css override tricks (no use of extends without awareness of impact) */
+
 .radius-0, .border-radius-0 {border-radius:0}
 .radius-3, .border-radius-3 {border-radius:3px}
 .radius-4, .border-radius-4 {border-radius:4px}
@@ -98,108 +100,103 @@
 .border-collapse {border-collapse:collapse}
 .border-separate, .border-collapse-seperate {border-collapse:separate}
 
-.border-black {border-color:#000}
-.border-default {
-  border-style:solid;@extend .border-black
-}
+.border,.border-1 {border-width:1px;border-style:solid;}
+.border-v, .border-v-1 {border-left-width:1px;border-right-width:1px;border-left-style:solid;border-right-style:solid;border:black;}
+.border-h, .border-h-1 {border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border:black;}
+.border-top, .border-top-1 {border-top-width:1px;border-top-style:solid;border:black;}
+.border-right, .border-right-1 {border-right-width:1px;border-right-style:solid;border:black;}
+.border-left, .border-left-1 {border-left-width:1px;border-left-style:solid;border:black;}
+.border-bottom, .border-bottom-1 {border-bottom-width:1px;border-bottom-style:solid;border:black;}
+.border-2 {border-width:2px;border-style:solid;}
+.border-3 {border-width:3px;border-style:solid;}
+.border-4 {border-width:4px;border-style:solid;}
+.border-5 {border-width:5px;border-style:solid;}
+.border-6 {border-width:6px;border-style:solid;}
+.border-7 {border-width:7px;border-style:solid;}
+.border-8 {border-width:8px;border-style:solid;}
+.border-v-2 {border-left-width:2px;border-right-width:2px;border-left-style:solid;border-right-style:solid;border:black;}
+.border-v-3 {border-left-width:3px;border-right-width:3px;border-left-style:solid;border-right-style:solid;border:black;}
+.border-v-4 {border-left-width:4px;border-right-width:4px;border-left-style:solid;border-right-style:solid;border:black;}
+.border-v-5 {border-left-width:5px;border-right-width:5px;border-left-style:solid;border-right-style:solid;border:black;}
+.border-v-6 {border-left-width:6px;border-right-width:6px;border-left-style:solid;border-right-style:solid;border:black;}
+.border-v-7 {border-left-width:7px;border-right-width:7px;border-left-style:solid;border-right-style:solid;border:black;}
+.border-v-8 {border-left-width:8px;border-right-width:8px;border-left-style:solid;border-right-style:solid;border:black;}
+.border-h-2 {border-top-width:2px;border-bottom-width:2px;border-top-style:solid;border-bottom-style:solid;border:black;}
+.border-h-3 {border-top-width:3px;border-bottom-width:3px;border-top-style:solid;border-bottom-style:solid;border:black;}
+.border-h-4 {border-top-width:4px;border-bottom-width:4px;border-top-style:solid;border-bottom-style:solid;border:black;}
+.border-h-5 {border-top-width:5px;border-bottom-width:5px;border-top-style:solid;border-bottom-style:solid;border:black;}
+.border-h-6 {border-top-width:6px;border-bottom-width:6px;border-top-style:solid;border-bottom-style:solid;border:black;}
+.border-h-7 {border-top-width:7px;border-bottom-width:7px;border-top-style:solid;border-bottom-style:solid;border:black;}
+.border-h-8 {border-top-width:8px;border-bottom-width:8px;border-top-style:solid;border-bottom-style:solid;border:black;}
+.border-top-2 {border-top-width:2px;border-top-style:solid;border:black;}
+.border-top-3 {border-top-width:3px;border-top-style:solid;border:black;}
+.border-top-4 {border-top-width:4px;border-top-style:solid;border:black;}
+.border-top-5 {border-top-width:5px;border-top-style:solid;border:black;}
+.border-top-6 {border-top-width:6px;border-top-style:solid;border:black;}
+.border-top-7 {border-top-width:7px;border-top-style:solid;border:black;}
+.border-top-8 {border-top-width:8px;border-top-style:solid;border:black;}
+.border-right-2 {border-right-width:2px;border-right-style:solid;border:black;}
+.border-right-3 {border-right-width:3px;border-right-style:solid;border:black;}
+.border-right-4 {border-right-width:4px;border-right-style:solid;border:black;}
+.border-right-5 {border-right-width:5px;border-right-style:solid;border:black;}
+.border-right-6 {border-right-width:6px;border-right-style:solid;border:black;}
+.border-right-7 {border-right-width:7px;border-right-style:solid;border:black;}
+.border-right-8 {border-right-width:8px;border-right-style:solid;border:black;}
+.border-bottom-2 {border-bottom-width:2px;border-bottom-style:solid;border:black;}
+.border-bottom-3 {border-bottom-width:3px;border-bottom-style:solid;border:black;}
+.border-bottom-4 {border-bottom-width:4px;border-bottom-style:solid;border:black;}
+.border-bottom-5 {border-bottom-width:5px;border-bottom-style:solid;border:black;}
+.border-bottom-6 {border-bottom-width:6px;border-bottom-style:solid;border:black;}
+.border-bottom-7 {border-bottom-width:7px;border-bottom-style:solid;border:black;}
+.border-bottom-8 {border-bottom-width:8px;border-bottom-style:solid;border:black;}
+.border-left-2 {border-left-width:2px;border-left-style:solid;border:black;}
+.border-left-3 {border-left-width:3px;border-left-style:solid;border:black;}
+.border-left-4 {border-left-width:4px;border-left-style:solid;border:black;}
+.border-left-5 {border-left-width:5px;border-left-style:solid;border:black;}
+.border-left-6 {border-left-width:6px;border-left-style:solid;border:black;}
+.border-left-7 {border-left-width:7px;border-left-style:solid;border:black;}
+.border-left-8 {border-left-width:8px;border-left-style:solid;border:black;}
 
-.border,.border-1 {border-width:1px;@extend .border-default}
-.border-v, .border-v-1 {border-left-width:1px;border-right-width:1px;border-left-style:solid;border-right-style:solid;@extend .border-black}
-.border-h, .border-h-1 {border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;@extend .border-black}
-.border-top, .border-top-1 {border-top-width:1px;border-top-style:solid;@extend .border-black}
-.border-right, .border-right-1 {border-right-width:1px;border-right-style:solid;@extend .border-black}
-.border-left, .border-left-1 {border-left-width:1px;border-left-style:solid;@extend .border-black}
-.border-bottom, .border-bottom-1 {border-bottom-width:1px;border-bottom-style:solid;@extend .border-black}
-.border-2 {border-width:2px;@extend .border-default}
-.border-3 {border-width:3px;@extend .border-default}
-.border-4 {border-width:4px;@extend .border-default}
-.border-5 {border-width:5px;@extend .border-default}
-.border-6 {border-width:6px;@extend .border-default}
-.border-7 {border-width:7px;@extend .border-default}
-.border-8 {border-width:8px;@extend .border-default}
-.border-v-2 {border-left-width:2px;border-right-width:2px;border-left-style:solid;border-right-style:solid;@extend .border-black}
-.border-v-3 {border-left-width:3px;border-right-width:3px;border-left-style:solid;border-right-style:solid;@extend .border-black}
-.border-v-4 {border-left-width:4px;border-right-width:4px;border-left-style:solid;border-right-style:solid;@extend .border-black}
-.border-v-5 {border-left-width:5px;border-right-width:5px;border-left-style:solid;border-right-style:solid;@extend .border-black}
-.border-v-6 {border-left-width:6px;border-right-width:6px;border-left-style:solid;border-right-style:solid;@extend .border-black}
-.border-v-7 {border-left-width:7px;border-right-width:7px;border-left-style:solid;border-right-style:solid;@extend .border-black}
-.border-v-8 {border-left-width:8px;border-right-width:8px;border-left-style:solid;border-right-style:solid;@extend .border-black}
-.border-h-2 {border-top-width:2px;border-bottom-width:2px;border-top-style:solid;border-bottom-style:solid;@extend .border-black}
-.border-h-3 {border-top-width:3px;border-bottom-width:3px;border-top-style:solid;border-bottom-style:solid;@extend .border-black}
-.border-h-4 {border-top-width:4px;border-bottom-width:4px;border-top-style:solid;border-bottom-style:solid;@extend .border-black}
-.border-h-5 {border-top-width:5px;border-bottom-width:5px;border-top-style:solid;border-bottom-style:solid;@extend .border-black}
-.border-h-6 {border-top-width:6px;border-bottom-width:6px;border-top-style:solid;border-bottom-style:solid;@extend .border-black}
-.border-h-7 {border-top-width:7px;border-bottom-width:7px;border-top-style:solid;border-bottom-style:solid;@extend .border-black}
-.border-h-8 {border-top-width:8px;border-bottom-width:8px;border-top-style:solid;border-bottom-style:solid;@extend .border-black}
-.border-top-2 {border-top-width:2px;border-top-style:solid;@extend .border-black}
-.border-top-3 {border-top-width:3px;border-top-style:solid;@extend .border-black}
-.border-top-4 {border-top-width:4px;border-top-style:solid;@extend .border-black}
-.border-top-5 {border-top-width:5px;border-top-style:solid;@extend .border-black}
-.border-top-6 {border-top-width:6px;border-top-style:solid;@extend .border-black}
-.border-top-7 {border-top-width:7px;border-top-style:solid;@extend .border-black}
-.border-top-8 {border-top-width:8px;border-top-style:solid;@extend .border-black}
-.border-right-2 {border-right-width:2px;border-right-style:solid;@extend .border-black}
-.border-right-3 {border-right-width:3px;border-right-style:solid;@extend .border-black}
-.border-right-4 {border-right-width:4px;border-right-style:solid;@extend .border-black}
-.border-right-5 {border-right-width:5px;border-right-style:solid;@extend .border-black}
-.border-right-6 {border-right-width:6px;border-right-style:solid;@extend .border-black}
-.border-right-7 {border-right-width:7px;border-right-style:solid;@extend .border-black}
-.border-right-8 {border-right-width:8px;border-right-style:solid;@extend .border-black}
-.border-bottom-2 {border-bottom-width:2px;border-bottom-style:solid;@extend .border-black}
-.border-bottom-3 {border-bottom-width:3px;border-bottom-style:solid;@extend .border-black}
-.border-bottom-4 {border-bottom-width:4px;border-bottom-style:solid;@extend .border-black}
-.border-bottom-5 {border-bottom-width:5px;border-bottom-style:solid;@extend .border-black}
-.border-bottom-6 {border-bottom-width:6px;border-bottom-style:solid;@extend .border-black}
-.border-bottom-7 {border-bottom-width:7px;border-bottom-style:solid;@extend .border-black}
-.border-bottom-8 {border-bottom-width:8px;border-bottom-style:solid;@extend .border-black}
-.border-left-2 {border-left-width:2px;border-left-style:solid;@extend .border-black}
-.border-left-3 {border-left-width:3px;border-left-style:solid;@extend .border-black}
-.border-left-4 {border-left-width:4px;border-left-style:solid;@extend .border-black}
-.border-left-5 {border-left-width:5px;border-left-style:solid;@extend .border-black}
-.border-left-6 {border-left-width:6px;border-left-style:solid;@extend .border-black}
-.border-left-7 {border-left-width:7px;border-left-style:solid;@extend .border-black}
-.border-left-8 {border-left-width:8px;border-left-style:solid;@extend .border-black}
-
-.child-border > *, .child-border-1 > * {border-width:1px;border-style:solid;@extend .border-black}
-.child-border-top > *, .child-border-top-1 > * {border-top-width:1px;border-top-style:solid;@extend .border-black}
-.child-border-right > *, .child-border-right-1 > * {border-right-width:1px;border-right-style:solid;@extend .border-black}
-.child-border-left > *, .child-border-left-1 > * {border-left-width:1px;border-left-style:solid;@extend .border-black}
-.child-border-bottom, .child-border-bottom-1 > * {border-bottom-width:1px;border-bottom-style:solid;@extend .border-black}
-.child-border-2 > * {border-width:2px;border-style:solid;@extend .border-black}
-.child-border-3 > * {border-width:3px;border-style:solid;@extend .border-black}
-.child-border-4 > * {border-width:4px;border-style:solid;@extend .border-black}
-.child-border-5 > * {border-width:5px;border-style:solid;@extend .border-black}
-.child-border-6 > * {border-width:6px;border-style:solid;@extend .border-black}
-.child-border-7 > * {border-width:7px;border-style:solid;@extend .border-black}
-.child-border-8 > * {border-width:8px;border-style:solid;@extend .border-black}
-.child-border-top-2 > * {border-top-width:2px;border-top-style:solid;@extend .border-black}
-.child-border-top-3 > * {border-top-width:3px;border-top-style:solid;@extend .border-black}
-.child-border-top-4 > * {border-top-width:4px;border-top-style:solid;@extend .border-black}
-.child-border-top-5 > * {border-top-width:5px;border-top-style:solid;@extend .border-black}
-.child-border-top-6 > * {border-top-width:6px;border-top-style:solid;@extend .border-black}
-.child-border-top-7 > * {border-top-width:7px;border-top-style:solid;@extend .border-black}
-.child-border-top-8 > * {border-top-width:8px;border-top-style:solid;@extend .border-black}
-.child-border-right-2 > * {border-right-width:2px;border-right-style:solid;@extend .border-black}
-.child-border-right-3 > * {border-right-width:3px;border-right-style:solid;@extend .border-black}
-.child-border-right-4 > * {border-right-width:4px;border-right-style:solid;@extend .border-black}
-.child-border-right-5 > * {border-right-width:5px;border-right-style:solid;@extend .border-black}
-.child-border-right-6 > * {border-right-width:6px;border-right-style:solid;@extend .border-black}
-.child-border-right-7 > * {border-right-width:7px;border-right-style:solid;@extend .border-black}
-.child-border-right-8 > * {border-right-width:8px;border-right-style:solid;@extend .border-black}
-.child-border-bottom-2 > * {border-bottom-width:2px;border-bottom-style:solid;@extend .border-black}
-.child-border-bottom-3 > * {border-bottom-width:3px;border-bottom-style:solid;@extend .border-black}
-.child-border-bottom-4 > * {border-bottom-width:4px;border-bottom-style:solid;@extend .border-black}
-.child-border-bottom-5 > * {border-bottom-width:5px;border-bottom-style:solid;@extend .border-black}
-.child-border-bottom-6 > * {border-bottom-width:6px;border-bottom-style:solid;@extend .border-black}
-.child-border-bottom-7 > * {border-bottom-width:7px;border-bottom-style:solid;@extend .border-black}
-.child-border-bottom-8 > * {border-bottom-width:8px;border-bottom-style:solid;@extend .border-black}
-.child-border-left-2 > * {border-left-width:2px;border-left-style:solid;@extend .border-black}
-.child-border-left-3 > * {border-left-width:3px;border-left-style:solid;@extend .border-black}
-.child-border-left-4 > * {border-left-width:4px;border-left-style:solid;@extend .border-black}
-.child-border-left-5 > * {border-left-width:5px;border-left-style:solid;@extend .border-black}
-.child-border-left-6 > * {border-left-width:6px;border-left-style:solid;@extend .border-black}
-.child-border-left-7 > * {border-left-width:7px;border-left-style:solid;@extend .border-black}
-.child-border-left-8 > * {border-left-width:8px;border-left-style:solid;@extend .border-black}
+.child-border > *, .child-border-1 > * {border-width:1px;border-style:solid;border:black;}
+.child-border-top > *, .child-border-top-1 > * {border-top-width:1px;border-top-style:solid;border:black;}
+.child-border-right > *, .child-border-right-1 > * {border-right-width:1px;border-right-style:solid;border:black;}
+.child-border-left > *, .child-border-left-1 > * {border-left-width:1px;border-left-style:solid;border:black;}
+.child-border-bottom, .child-border-bottom-1 > * {border-bottom-width:1px;border-bottom-style:solid;border:black;}
+.child-border-2 > * {border-width:2px;border-style:solid;border:black;}
+.child-border-3 > * {border-width:3px;border-style:solid;border:black;}
+.child-border-4 > * {border-width:4px;border-style:solid;border:black;}
+.child-border-5 > * {border-width:5px;border-style:solid;border:black;}
+.child-border-6 > * {border-width:6px;border-style:solid;border:black;}
+.child-border-7 > * {border-width:7px;border-style:solid;border:black;}
+.child-border-8 > * {border-width:8px;border-style:solid;border:black;}
+.child-border-top-2 > * {border-top-width:2px;border-top-style:solid;border:black;}
+.child-border-top-3 > * {border-top-width:3px;border-top-style:solid;border:black;}
+.child-border-top-4 > * {border-top-width:4px;border-top-style:solid;border:black;}
+.child-border-top-5 > * {border-top-width:5px;border-top-style:solid;border:black;}
+.child-border-top-6 > * {border-top-width:6px;border-top-style:solid;border:black;}
+.child-border-top-7 > * {border-top-width:7px;border-top-style:solid;border:black;}
+.child-border-top-8 > * {border-top-width:8px;border-top-style:solid;border:black;}
+.child-border-right-2 > * {border-right-width:2px;border-right-style:solid;border:black;}
+.child-border-right-3 > * {border-right-width:3px;border-right-style:solid;border:black;}
+.child-border-right-4 > * {border-right-width:4px;border-right-style:solid;border:black;}
+.child-border-right-5 > * {border-right-width:5px;border-right-style:solid;border:black;}
+.child-border-right-6 > * {border-right-width:6px;border-right-style:solid;border:black;}
+.child-border-right-7 > * {border-right-width:7px;border-right-style:solid;border:black;}
+.child-border-right-8 > * {border-right-width:8px;border-right-style:solid;border:black;}
+.child-border-bottom-2 > * {border-bottom-width:2px;border-bottom-style:solid;border:black;}
+.child-border-bottom-3 > * {border-bottom-width:3px;border-bottom-style:solid;border:black;}
+.child-border-bottom-4 > * {border-bottom-width:4px;border-bottom-style:solid;border:black;}
+.child-border-bottom-5 > * {border-bottom-width:5px;border-bottom-style:solid;border:black;}
+.child-border-bottom-6 > * {border-bottom-width:6px;border-bottom-style:solid;border:black;}
+.child-border-bottom-7 > * {border-bottom-width:7px;border-bottom-style:solid;border:black;}
+.child-border-bottom-8 > * {border-bottom-width:8px;border-bottom-style:solid;border:black;}
+.child-border-left-2 > * {border-left-width:2px;border-left-style:solid;border:black;}
+.child-border-left-3 > * {border-left-width:3px;border-left-style:solid;border:black;}
+.child-border-left-4 > * {border-left-width:4px;border-left-style:solid;border:black;}
+.child-border-left-5 > * {border-left-width:5px;border-left-style:solid;border:black;}
+.child-border-left-6 > * {border-left-width:6px;border-left-style:solid;border:black;}
+.child-border-left-7 > * {border-left-width:7px;border-left-style:solid;border:black;}
+.child-border-left-8 > * {border-left-width:8px;border-left-style:solid;border:black;}
 
 .border-1-positive,
 .border-1-calm,
