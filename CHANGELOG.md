@@ -1,6 +1,15 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [2.0.0] - 2021-5-5
+- border-v and border-h treatments swapped
+  - border-v used to add border to top and bottom
+    - border-v stands for border-verticals
+    - The borders now run vertically be specifying left and right borders
+  - border-h used to add border to sides
+    - border-h stands for border-horizontals
+    - The borders now run horizontally be specifying top and bottom borders
+
 ## [1.2.63] - 2019-06-23
 - added .underline-no-skip
 - added .underline-under
