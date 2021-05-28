@@ -14,19 +14,19 @@
 .opacity-10 {opacity:0.1}
 .opacity-0 {opacity:0}
 
-.hover-opacity-100:hover {opacity:1}
-.hover-opacity-90:hover {opacity:0.9}
-.hover-opacity-80:hover {opacity:0.8}
-.hover-opacity-75:hover {opacity:0.75}
-.hover-opacity-70:hover {opacity:0.7}
-.hover-opacity-60:hover {opacity:0.6}
-.hover-opacity-50:hover, .hover-opacity-half:hover {opacity:0.5}
-.hover-opacity-40:hover {opacity:0.4}
-.hover-opacity-30:hover {opacity:0.3}
-.hover-opacity-25:hover, .hover-opacity-third:hover {opacity:0.25}
-.hover-opacity-20:hover {opacity:0.2}
-.hover-opacity-10:hover {opacity:0.1}
-.hover-opacity-0:hover {opacity:0}
+.active-opacity-100:active, .hover-opacity-100:hover {opacity:1}
+.active-opacity-90:active, .hover-opacity-90:hover {opacity:0.9}
+.active-opacity-80:active, .hover-opacity-80:hover {opacity:0.8}
+.active-opacity-75:active, .hover-opacity-75:hover {opacity:0.75}
+.active-opacity-70:active, .hover-opacity-70:hover {opacity:0.7}
+.active-opacity-60:active, .hover-opacity-60:hover {opacity:0.6}
+.active-opacity-50:active, .hover-opacity-50:hover, .active-opacity-half:active, .hover-opacity-half:hover {opacity:0.5}
+.active-opacity-40:active, .hover-opacity-40:hover {opacity:0.4}
+.active-opacity-30:active, .hover-opacity-30:hover {opacity:0.3}
+.active-opacity-25:active, .hover-opacity-25:hover, .active-opacity-third:active, .hover-opacity-third:hover {opacity:0.25}
+.active-opacity-20:active, .hover-opacity-20:hover {opacity:0.2}
+.active-opacity-10:active, .hover-opacity-10:hover {opacity:0.1}
+.active-opacity-0:active, .hover-opacity-0:hover {opacity:0}
 
 .no-a-style, .no-a-style a {color:inherit}
 .no-a-style, .no-a-style a, .no-a-style:hover, .no-a-style a:hover {text-decoration:inherit}

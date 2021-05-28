@@ -25,7 +25,9 @@
   text-underline-position:under;
 }
 
-.bold, .hover-bold:hover, .hover-strong {font-weight:bold}
+.bold, .hover-bold:hover, .hover-strong,
+.active-bold:active, .active-strong
+{font-weight:bold}
 .strong, .text-bold, .font-bold, .font-weight-bold {font-weight:bold}
 .bolder, .font-bolder, .font-weight-bolder {font-weight:bolder}
 .font-normal, .font-weight-normal {font-weight:normal}
@@ -88,18 +90,42 @@
 .stroke-4 {-webkit-text-stroke-width: 4px}
 .stroke-5 {-webkit-text-stroke-width: 5px}
 
-.hover-text-9x:hover {font-size:260%}
-.hover-text-8x:hover {font-size:230%}
-.hover-text-7x:hover {font-size:200%}
-.hover-text-6x:hover {font-size:185%}
-.hover-text-5x:hover {font-size:160%}
-.hover-text-4x:hover {font-size:145%}
-.hover-text-3x:hover, .text-lg:hover {font-size:130%}
-.hover-text-2x:hover, .text-md:hover {font-size:115%}
-.hover-text-sm:hover {font-size:90%}
-.hover-text-smx:hover {font-size:85%}
-.hover-text-xs:hover {font-size:75%}
-.hover-text-xxs:hover {font-size:65%}
+.active-text-9x:active,
+.hover-text-9x:hover
+{font-size:260%}
+.active-text-8x:active,
+.hover-text-8x:hover
+{font-size:230%}
+.active-text-7x:active,
+.hover-text-7x:hover
+{font-size:200%}
+.active-text-6x:active,
+.hover-text-6x:hover
+{font-size:185%}
+.active-text-5x:active,
+.hover-text-5x:hover
+{font-size:160%}
+.active-text-4x:active,
+.hover-text-4x:hover
+{font-size:145%}
+.active-text-3x:active,
+.hover-text-3x:hover
+{font-size:130%}
+.active-text-2x:active,
+.hover-text-2x:hover
+{font-size:115%}
+.active-text-sm:active,
+.hover-text-sm:hover
+{font-size:90%}
+.active-text-smx:active,
+.hover-text-smx:hover
+{font-size:85%}
+.active-text-xs:active,
+.hover-text-xs:hover
+{font-size:75%}
+.active-text-xxs:active,
+.hover-text-xxs:hover
+{font-size:65%}
 
 .line-height-0 {line-height:0}
 .line-height-quarter {line-height:25%}
