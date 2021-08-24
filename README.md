@@ -4,6 +4,8 @@ A base set of short-hand css helper classes. Includes available classes that are
 [![NPM version](https://img.shields.io/npm/v/ack-css-boot.svg?style=flat-square)](https://www.npmjs.com/package/ack-css-boot)
 [![dependencies](https://david-dm.org/ackerapple/ack-css-boot/status.svg)](https://david-dm.org/ackerapple/ack-css-boot)
 
+[🚀 review examples here](https://ackerapple.github.io/ack-css-boot/)
+
 Many commonly used short-hand classes, that are found in [Ionic](https://www.npmjs.com/package/ionic) and [Bootstrap](https://www.npmjs.com/package/bootstrap-css), can be found here.
 
 ### Table of Contents
@@ -14,7 +16,7 @@ Many commonly used short-hand classes, that are found in [Ionic](https://www.npm
 ## Usage and Examples
 Learn about css short-hand classes such as .pad, .margin, .text-lg, and more...
 
-[tap here to see demos](https://ackerapple.github.io/ack-css-boot/)
+[🚀 review examples here](https://ackerapple.github.io/ack-css-boot/)
 
 All examples seen below, are written in [Sass](http://sass-lang.com/) and then compiled to css in the /dist folder.
 

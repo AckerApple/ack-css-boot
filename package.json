@@ -1,17 +1,18 @@
 {
   "name": "ack-css-boot",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "description": "A base set of short-hand css helper classes. Includes available classes that are commonly used for styling buttons, form inputs, and such.",
   "main": "index.js",
   "scripts": {
     "start": "ack-reload -d www",
+    "patch:version": "npm --no-git-tag-version version patch",
     "build": "npm run build:css && npm run build:index",
     "build:css": "npm run build:css:dist && npm run build:css:www",
     "build:css:dist": "node-sass scss/ -o dist/ --output-style compressed --source-map true",
     "build:css:www": "node-sass scss/ack-css-boot.scss -o www/ --output-style true",
     "build:index": "pug index.pug --out www",
-    "save": "git add . && git commit -m \"save\"",
-    "deploy": "npm run build && npm run save && npm publish"
+    "save": "git add . && git commit -m \"save\" && git push",
+    "deploy": "npm run build && npm run patch:version && npm run save && npm publish"
   },
   "repository": {
     "type": "git",

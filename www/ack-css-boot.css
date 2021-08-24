@@ -91,6 +91,9 @@
 .font-900, .font-weight-900 {
   font-weight: 900; }
 
+.letter-spacing-xxxs {
+  letter-spacing: -0.05em; }
+
 .letter-spacing-xxs {
   letter-spacing: -0.2em; }
 
@@ -169,6 +172,9 @@
 .text-xxs {
   font-size: 65%; }
 
+.text-xxxs {
+  font-size: 50%; }
+
 .stroke,
 .stroke-1 {
   -webkit-text-stroke-width: 1px; }
@@ -185,53 +191,44 @@
 .stroke-5 {
   -webkit-text-stroke-width: 5px; }
 
-.active-text-9x:active,
-.hover-text-9x:hover {
+.active-text-9x:active, .hover-text-9x:hover {
   font-size: 260%; }
 
-.active-text-8x:active,
-.hover-text-8x:hover {
+.active-text-8x:active, .hover-text-8x:hover {
   font-size: 230%; }
 
-.active-text-7x:active,
-.hover-text-7x:hover {
+.active-text-7x:active, .hover-text-7x:hover {
   font-size: 200%; }
 
-.active-text-6x:active,
-.hover-text-6x:hover {
+.active-text-6x:active, .hover-text-6x:hover {
   font-size: 185%; }
 
-.active-text-5x:active,
-.hover-text-5x:hover {
+.active-text-5x:active, .hover-text-5x:hover {
   font-size: 160%; }
 
-.active-text-4x:active,
-.hover-text-4x:hover {
+.active-text-4x:active, .hover-text-4x:hover {
   font-size: 145%; }
 
-.active-text-3x:active,
-.hover-text-3x:hover {
+.active-text-3x:active, .hover-text-3x:hover {
   font-size: 130%; }
 
-.active-text-2x:active,
-.hover-text-2x:hover {
+.active-text-2x:active, .hover-text-2x:hover {
   font-size: 115%; }
 
-.active-text-sm:active,
-.hover-text-sm:hover {
+.active-text-sm:active, .hover-text-sm:hover {
   font-size: 90%; }
 
-.active-text-smx:active,
-.hover-text-smx:hover {
+.active-text-smx:active, .hover-text-smx:hover {
   font-size: 85%; }
 
-.active-text-xs:active,
-.hover-text-xs:hover {
+.active-text-xs:active, .hover-text-xs:hover {
   font-size: 75%; }
 
-.active-text-xxs:active,
-.hover-text-xxs:hover {
+.active-text-xxs:active, .hover-text-xxs:hover {
   font-size: 65%; }
+
+.active-text-xxxs:active, .hover-text-xxxs:hover {
+  font-size: 50%; }
 
 .line-height-0 {
   line-height: 0; }
