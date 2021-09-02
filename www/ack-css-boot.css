@@ -3654,86 +3654,89 @@ lg >= 1200
     max-height: 0 !important;
     overflow: hidden !important; } }
 
-.text-positive {
+.color-positive, .text-positive {
   color: #0c60ee; }
 
-.text-calm {
+.color-calm, .text-calm {
   color: #0a9dc7; }
 
-.text-balanced {
+.color-balanced, .text-balanced {
   color: #28a54c; }
 
-.text-energized {
+.color-energized, .text-energized {
   color: #e6b500; }
 
-.text-assertive {
+.color-assertive, .text-assertive {
   color: #e42112; }
 
-.text-royal {
+.color-royal, .text-royal {
   color: #6b46e5; }
 
-.text-dark {
+.color-dark, .text-dark {
   color: #111111; }
 
-.text-primary {
+.color-primary, .text-primary {
   color: #337ab7; }
 
-.text-success {
+.color-success, .text-success {
   color: #3c763d; }
 
-.text-info {
+.color-info, .text-info {
   color: #31708f; }
 
-.text-warning {
+.color-warning, .text-warning {
   color: #8a6d3b; }
 
-.text-danger {
+.color-danger, .text-danger {
   color: #a94442; }
 
-.text-grey-lg, .text-muted-lg {
+.color-grey-lg, .text-grey-lg, .text-muted-lg {
   color: #333; }
 
-.text-grey-md, .text-muted-md {
+.color-grey-md, .text-grey-md, .text-muted-md {
   color: #555; }
 
-.text-grey, .text-muted {
+.grey, .color-grey, .text-grey, .text-muted {
   color: #777; }
 
-.text-grey-2x, .text-grey-sm, .text-muted-sm, .text-muted-2x {
+.color-grey-2x, .text-grey-2x, .text-grey-sm, .text-muted-sm, .text-muted-2x {
   color: #999; }
 
-.text-grey-3x, .text-grey-xs, .text-muted-xs, .text-muted-3x {
+.color-grey-3x, .text-grey-3x, .text-grey-xs, .text-muted-xs, .text-muted-3x {
   color: #BBB; }
 
-.text-grey-4x, .text-grey-xxs, .text-muted-xxs, .text-muted-4x {
+.color-grey-4x, .text-grey-4x, .text-grey-xxs, .text-muted-xxs, .text-muted-4x {
   color: #CCC; }
 
-.text-grey-5x {
+.color-grey-5x, .text-grey-5x {
   color: #DDD; }
 
-.text-grey-6x {
+.color-grey-6x, .text-grey-6x {
   color: #EEE; }
 
-.text-green, .font-green {
+.green, .color-green, .text-green {
   color: #060; }
 
-.text-orange, .font-orange {
+.orange, .color-orange, .text-orange {
   color: #C60; }
 
-.text-red, .font-red {
+.yellow, .color-yellow, .text-yellow {
+  color: yellow; }
+
+.red, .color-red, .text-red {
   color: #900; }
 
-.text-blue, .font-blue {
-  color: #00F; }
+.blue, .color-blue, .text-blue {
+  color: blue; }
 
-.text-purple, .font-purple {
+.purple, .color-purple, .text-purple {
   color: #60C; }
 
-.text-black, .font-black {
-  color: #000; }
+.black, .color-black, .text-black {
+  color: black; }
 
-.text-white, .font-white {
-  color: #FFF; }
+.white, .color-white, .text-white {
+  color: white; }
 
 .bg-white, .bg-lite {
   background-color: white; }
