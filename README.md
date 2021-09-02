@@ -32,6 +32,7 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 @import "./ack-flex-boot";
 @import "./ack-color-boot";
 @import "./ack-block-boot";
+@import "./ack-width-height";
 @import "./ack-position-boot";
 @import "./ack-form-boot";
 @import "./ack-responsive-boot";
@@ -52,6 +53,8 @@ Quick links to examples and source code
   - [scss/ack-color-boot.scss](https://github.com/AckerApple/ack-css-boot/blob/master/scss/ack-color-boot.scss)
 - [ack-block-boot](https://ackerapple.github.io/ack-css-boot/#ack-block-boot)
   - [scss/ack-block-boot.scss](https://github.com/AckerApple/ack-css-boot/blob/master/scss/ack-block-boot.scss)
+- [ack-width-height](https://ackerapple.github.io/ack-css-boot/#ack-width-height)
+  - [scss/ack-width-height.scss](https://github.com/AckerApple/ack-css-boot/blob/master/scss/ack-width-height.scss)
 - [ack-position-boot](https://ackerapple.github.io/ack-css-boot/#ack-position-boot)
   - [scss/ack-position-boot.scss](https://github.com/AckerApple/ack-css-boot/blob/master/scss/ack-position-boot.scss)
 - [ack-form-boot](https://ackerapple.github.io/ack-css-boot/#ack-form-boot)

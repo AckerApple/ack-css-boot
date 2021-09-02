@@ -1,0 +1,31 @@
+-mainDimArray = [2,5,10,15,20,30,40,50,60,70,80,90,100];
+-dimArray = [...mainDimArray, 150,200,300];
+-xDimArray = [400,600,700,800,900,1000,"full"]
+//-dimArray.push(100,150,200,300,400,600,700,800,900,1000,"full");
+
+.pad-h
+  h4 width & heights
+  .child-pad.flex-wrap.text-center
+    each item in dimArray
+      .flex1
+        .flex-center
+          .border(
+            class="width-"+item+" height-"+item
+          )
+        |.width-#{item} .height-#{item}
+  .child-pad.flex-wrap.text-center
+    each item in mainDimArray
+      .flex1
+        .flex-center
+          .border(
+            class="width-"+item+"vw height-"+item+"vh"
+          )
+        |.width-#{item}vw .height-#{item}vh
+  .pad.border
+    |other widths & heights
+    .child-pad.flex-wrap.text-center
+      each item in xDimArray
+        .flex1
+          |.width-#{item} .height-#{item}
+    hr
+    |Many other similar undocumented sizes exist for .max-width-*, min-width-*, .max-height-*, min-height-*

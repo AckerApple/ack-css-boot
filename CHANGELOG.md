@@ -1,6 +1,9 @@
 # ack-css-boot - Change Log
 All notable changes to this project will be documented here.
 
+## [2.2.2] - 2021-09-02
+- New width height vw/vh classes
+
 ## [2.1.1] - 2021-08-24
 - added xxxs
 
