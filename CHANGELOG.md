@@ -2,7 +2,8 @@
 All notable changes to this project will be documented here.
 
 
-## [3.0.0] - 2021-09-02
+## [3.0.2] - 2021-09-02
+- updated dev dependencies
 - New width height vw/vh classes
 - Removed .font-color use .text-color or .color-color (ex: .text-red .color-red)
 - Added .color-name and simple text colors as .red, .blue, and so on... (added yellow)
