@@ -3,6 +3,7 @@ All notable changes to this project will be documented here.
 
 
 ## [3.0.2] - 2021-09-02
+- Moved active classes lower than hover classes to ensure they fire
 - updated dev dependencies
 - New width height vw/vh classes
 - Removed .font-color use .text-color or .color-color (ex: .text-red .color-red)

@@ -114,19 +114,21 @@ $bg-dark:#444444 !default;
 .child-bg-black > * {background-color: #000}
 .child-bg-white > * {background-color: #FFF}
 
-.child-bg-green > *, .child-hover-bg-green > *:hover,
+.child-bg-green > *, .child-hover-bg-green > *:hover {background-color: #060}
+.child-bg-orange > *, .child-hover-bg-orange > *:hover {background-color: #C60}
+.child-bg-red > *, .child-hover-bg-red > *:hover {background-color:#900}
+.child-bg-blue > *, .child-hover-bg-blue > *:hover {background-color: #00F}
+.child-bg-purple > *, .child-hover-bg-purple > *:hover {background-color: #60C}
+.child-bg-black > *, .child-hover-bg-black > *:hover {background-color: #000}
+.child-bg-white > *, .child-hover-bg-white > *:hover {background-color: #FFF}
+
+/** click active color changing (must be after and separate from hover) */
 .child-active-bg-green > *:active {background-color: #060}
-.child-bg-orange > *, .child-hover-bg-orange > *:hover,
 .child-active-bg-orange > *:active {background-color: #C60}
-.child-bg-red > *, .child-hover-bg-red > *:hover,
 .child-active-bg-red > *:active {background-color:#900}
-.child-bg-blue > *, .child-hover-bg-blue > *:hover,
 .child-active-bg-blue > *:active {background-color: #00F}
-.child-bg-purple > *, .child-hover-bg-purple > *:hover,
 .child-active-bg-purple > *:active {background-color: #60C}
-.child-bg-black > *, .child-hover-bg-black > *:hover,
 .child-active-bg-black > *:active {background-color: #000}
-.child-bg-white > *, .child-hover-bg-white > *:hover,
 .child-active-bg-white > *:active {background-color: #FFF}
 
 /** hover and active border coloring */
@@ -205,100 +207,88 @@ $bg-dark:#444444 !default;
 .child-hover-border-energized > *:active,
 .child-border-energized > *,
 .hover-border-energized:hover,
-.active-border-energized:active,
-.border-energized
-{border-color:#e6b500}
+.border-energized {border-color:#e6b500}
 .child-hover-border-assertive > *:hover,
 .child-hover-border-assertive > *:active,
 .child-border-assertive > *,
 .hover-border-assertive:hover,
-.active-border-assertive:active,
-.border-assertive
-{border-color:#e42112}
+.border-assertive {border-color:#e42112}
 .child-hover-border-royal > *:hover,
 .child-hover-border-royal > *:active,
 .child-border-royal > *,
 .hover-border-royal:hover,
-.active-border-royal:active,
-.border-royal
-{border-color:#6b46e5}
+.border-royal {border-color:#6b46e5}
 .child-hover-border-dark > *:hover,
 .child-hover-border-dark > *:active,
 .child-border-dark > *,
 .hover-border-dark:hover,
-.active-border-dark:active,
-.border-dark
-{border-color:#111111}
+.border-dark {border-color:#111111}
 .child-hover-border-danger > *:hover,
 .child-hover-border-danger > *:active,
 .child-border-danger > *,
 .hover-border-danger:hover,
-.active-border-danger:active,
-.border-danger
-{border-color:#d43f3a}
+.border-danger {border-color:#d43f3a}
 .child-hover-border-warning > *:hover,
 .child-hover-border-warning > *:active,
 .child-border-warning > *,
 .hover-border-warning:hover,
-.active-border-warning:active,
-.border-warning
-{border-color:#eea236}
+.border-warning {border-color:#eea236}
 .child-hover-border-info > *:hover,
 .child-hover-border-info > *:active,
 .child-border-info > *,
 .hover-border-info:hover,
-.active-border-info:active,
-.border-info
-{border-color:#46b8da}
+.border-info {border-color:#46b8da}
 .child-hover-border-success > *:hover,
 .child-hover-border-success > *:active,
 .child-border-success > *,
 .hover-border-success:hover,
-.active-border-success:active,
-.border-success
-{border-color:#4cae4c}
+.border-success {border-color:#4cae4c}
 .child-hover-border-primary > *:hover,
 .child-hover-border-primary > *:active,
 .child-border-primary > *,
 .hover-border-primary:hover,
-.active-border-primary:active,
-.border-primary
-{border-color:#2e6da4}
+.border-primary {border-color:#2e6da4}
 .child-hover-border-green > *:hover,
 .child-hover-border-green > *:active,
 .child-border-green > *,
 .hover-border-green:hover,
-.active-border-green:active,
-.border-green
-{border-color:green}
+.border-green {border-color:green}
 .child-hover-border-red > *:hover,
 .child-hover-border-red > *:active,
 .child-border-red > *,
 .hover-border-red:hover,
-.active-border-red:active,
-.border-red
-{border-color:red}
+.border-red {border-color:red}
 .child-hover-border-blue > *:hover,
 .child-hover-border-blue > *:active,
 .child-border-blue > *,
 .hover-border-blue:hover,
-.active-border-blue:active,
-.border-blue
-{border-color:blue}
+.border-blue {border-color:blue}
 .child-hover-border-white > *:hover,
 .child-hover-border-white > *:active,
 .child-border-white > *,
 .hover-border-white:hover,
-.active-border-white:active,
-.border-white
-{border-color:#FFF}
+.border-white {border-color:#FFF}
 .child-hover-border-black > *:hover,
 .child-hover-border-black > *:active,
 .child-border-black > *,
 .hover-border-black:hover,
-.active-border-black:active,
-.border-black
-{border-color:#000}
+.border-black {border-color:#000}
+
+/** click active color changing (must be after and separate from hover) */
+.active-border-energized:active {border-color:#e6b500}
+.active-border-assertive:active {border-color:#e42112}
+.active-border-royal:active {border-color:#6b46e5}
+.active-border-dark:active {border-color:#111111}
+.active-border-danger:active {border-color:#d43f3a}
+.active-border-warning:active {border-color:#eea236}
+.active-border-info:active {border-color:#46b8da}
+.active-border-success:active {border-color:#4cae4c}
+.active-border-primary:active {border-color:#2e6da4}
+.active-border-green:active {border-color:green}
+.active-border-red:active {border-color:red}
+.active-border-blue:active {border-color:blue}
+.active-border-white:active {border-color:#FFF}
+.active-border-black:active {border-color:#000}
 
 .border-1-0,.border-1-black {border-color:#000;border-width:1px;border-style:solid}
 .border-1-f,.border-1-white {border-color:#FFF;border-width:1px;border-style:solid}
