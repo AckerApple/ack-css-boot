@@ -39,7 +39,7 @@
 .underline-under {
   text-underline-position: under; }
 
-.bold, .hover-bold:hover, .hover-strong,
+.bold, .hover-bold:hover, .hover-strong:hover,
 .active-bold:active, .active-strong {
   font-weight: bold; }
 
