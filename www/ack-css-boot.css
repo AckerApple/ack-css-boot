@@ -3934,25 +3934,25 @@ lg >= 1200
   background-color: #FFF; }
 
 /** click active color changing (must be after and separate from hover) */
-.child-active-bg-green > *:active {
+.active-bg-green:active, .child-active-bg-green > *:active {
   background-color: #060; }
 
-.child-active-bg-orange > *:active {
+.active-bg-orange:active, .child-active-bg-orange > *:active {
   background-color: #C60; }
 
-.child-active-bg-red > *:active {
+.active-bg-red:active, .child-active-bg-red > *:active {
   background-color: #900; }
 
-.child-active-bg-blue > *:active {
+.active-bg-blue:active, .child-active-bg-blue > *:active {
   background-color: #00F; }
 
-.child-active-bg-purple > *:active {
+.active-bg-purple:active, .child-active-bg-purple > *:active {
   background-color: #60C; }
 
-.child-active-bg-black > *:active {
+.active-bg-black:active, .child-active-bg-black > *:active {
   background-color: #000; }
 
-.child-active-bg-white > *:active {
+.active-bg-white:active, .child-active-bg-white > *:active {
   background-color: #FFF; }
 
 /** hover and active border coloring */
@@ -4462,83 +4462,98 @@ lg >= 1200
 
 .child-hover-text-positive > *:hover,
 .child-hover-text-positive > *:active,
-.hover-text-positive:hover .active-text-positive:active {
+.hover-text-positive:hover,
+.active-text-positive:active {
   color: #0c60ee; }
 
 .child-hover-text-calm > *:hover,
 .child-hover-text-calm > *:active,
-.hover-text-calm:hover .active-text-calm:active {
+.hover-text-calm:hover,
+.active-text-calm:active {
   color: #0a9dc7; }
 
 .child-hover-text-balanced > *:hover,
 .child-hover-text-balanced > *:active,
-.hover-text-balanced:hover .active-text-balanced:active {
+.hover-text-balanced:hover,
+.active-text-balanced:active {
   color: #28a54c; }
 
 .child-hover-text-energized > *:hover,
 .child-hover-text-energized > *:active,
-.hover-text-energized:hover .active-text-energized:active {
+.hover-text-energized:hover,
+.active-text-energized:active {
   color: #e6b500; }
 
 .child-hover-text-assertive > *:hover,
 .child-hover-text-assertive > *:active,
-.hover-text-assertive:hover .active-text-assertive:active {
+.hover-text-assertive:hover,
+.active-text-assertive:active {
   color: #e42112; }
 
 .child-hover-text-royal > *:hover,
 .child-hover-text-royal > *:active,
-.hover-text-royal:hover .active-text-royal:active {
+.hover-text-royal:hover,
+.active-text-royal:active {
   color: #6b46e5; }
 
 .child-hover-text-dark > *:hover,
 .child-hover-text-dark > *:active,
-.hover-text-dark:hover .active-text-dark:active {
+.hover-text-dark:hover,
+.active-text-dark:active {
   color: #111111; }
 
 .child-hover-text-primary > *:hover,
 .child-hover-text-primary > *:active,
-.hover-text-primary:hover .active-text-primary:active {
+.hover-text-primary:hover,
+.active-text-primary:active {
   color: #337ab7; }
 
 .child-hover-text-success > *:hover,
 .child-hover-text-success > *:active,
-.hover-text-success:hover .active-text-success:active {
+.hover-text-success:hover,
+.active-text-success:active {
   color: #3c763d; }
 
 .child-hover-text-info > *:hover,
 .child-hover-text-info > *:active,
-.hover-text-info:hover .active-text-info:active {
+.hover-text-info:hover,
+.active-text-info:active {
   color: #31708f; }
 
 .child-hover-text-warning > *:hover,
 .child-hover-text-warning > *:active,
-.hover-text-warning:hover .active-text-warning:active {
+.hover-text-warning:hover,
+.active-text-warning:active {
   color: #8a6d3b; }
 
 .child-hover-text-danger > *:hover,
 .child-hover-text-danger > *:active,
-.hover-text-danger:hover .active-text-danger:active {
+.hover-text-danger:hover,
+.active-text-danger:active {
   color: #a94442; }
 
 .child-hover-text-grey-lg > *:hover,
 .child-hover-text-grey-lg > *:active,
 .hover-text-grey-lg:hover,
 .active-text-grey-lg:active,
-.hover-text-muted-lg:hover .active-text-muted-lg:active {
+.hover-text-muted-lg:hover,
+.active-text-muted-lg:active {
   color: #333; }
 
 .child-hover-text-grey-md > *:hover,
 .child-hover-text-grey-md > *:active,
 .hover-text-grey-md:hover,
 .active-text-grey-md:active,
-.hover-text-muted-md:hover .active-text-muted-md:active {
+.hover-text-muted-md:hover,
+.active-text-muted-md:active {
   color: #555; }
 
 .child-hover-text-grey > *:hover,
 .child-hover-text-grey > *:active,
 .hover-text-grey:hover,
 .active-text-grey:active,
-.hover-text-muted:hover .active-text-muted:active {
+.hover-text-muted:hover,
+.active-text-muted:active {
   color: #777; }
 
 .child-hover-text-grey-2x > *:hover,
@@ -4549,7 +4564,8 @@ lg >= 1200
 .active-text-grey-sm:active,
 .hover-text-muted-sm:hover,
 .active-text-muted-sm:active,
-.hover-text-muted-2x:hover .active-text-muted-2x:active {
+.hover-text-muted-2x:hover,
+.active-text-muted-2x:active {
   color: #999; }
 
 .child-hover-text-grey-3x > *:hover,
@@ -4560,7 +4576,8 @@ lg >= 1200
 .active-text-grey-xs:active,
 .hover-text-muted-xs:hover,
 .active-text-muted-xs:active,
-.hover-text-muted-3x:hover .active-text-muted-3x:active {
+.hover-text-muted-3x:hover,
+.active-text-muted-3x:active {
   color: #BBB; }
 
 .child-hover-text-grey-4x > *:hover,
@@ -4571,52 +4588,62 @@ lg >= 1200
 .active-text-grey-xxs:active,
 .hover-text-muted-xxs:hover,
 .active-text-muted-xxs:active,
-.hover-text-muted-4x:hover .active-text-muted-4x:active {
+.hover-text-muted-4x:hover,
+.active-text-muted-4x:active {
   color: #CCC; }
 
 .child-hover-text-grey-5x > *:hover,
 .child-hover-text-grey-5x > *:active,
-.hover-text-grey-5x:hover .active-text-grey-5x:active {
+.hover-text-grey-5x:hover,
+.active-text-grey-5x:active {
   color: #DDD; }
 
 .child-hover-text-grey-6x > *:hover,
 .child-hover-text-grey-6x > *:active,
-.hover-text-grey-6x:hover .active-text-grey-6x:active {
+.hover-text-grey-6x:hover,
+.active-text-grey-6x:active {
   color: #EEE; }
 
 .child-hover-text-green > *:hover,
 .child-hover-text-green > *:active,
-.hover-text-green:hover .active-text-green:active {
+.hover-text-green:hover,
+.active-text-green:active {
   color: #060; }
 
 .child-hover-text-orange > *:hover,
 .child-hover-text-orange > *:active,
-.hover-text-orange:hover .active-text-orange:active {
+.hover-text-orange:hover,
+.active-text-orange:active {
   color: #C60; }
 
 .child-hover-text-red > *:hover,
 .child-hover-text-red > *:active,
-.hover-text-red:hover .active-text-red:active {
+.hover-text-red:hover,
+.active-text-red:active {
   color: #900; }
 
 .child-hover-text-blue > *:hover,
 .child-hover-text-blue > *:active,
-.hover-text-blue:hover .active-text-blue:active {
+.hover-text-blue:hover,
+.active-text-blue:active {
   color: #00F; }
 
 .child-hover-text-purple > *:hover,
 .child-hover-text-purple > *:active,
-.hover-text-purple:hover .active-text-purple:active {
+.hover-text-purple:hover,
+.active-text-purple:active {
   color: #60C; }
 
 .child-hover-text-black > *:hover,
 .child-hover-text-black > *:active,
-.hover-text-black:hover .active-text-black:active {
+.hover-text-black:hover,
+.active-text-black:active {
   color: #000; }
 
 .child-hover-text-white > *:hover,
 .child-hover-text-white > *:active,
-.hover-text-white:hover .active-text-white:active {
+.hover-text-white:hover,
+.active-text-white:active {
   color: #FFF; }
 
 .text-shadow-grey-blur,
@@ -4925,6 +4952,7 @@ lg >= 1200
 [class*="table-striped"].table-hover-dark > tbody > tr:hover {
   background-color: #444444; }
 
+/** start: actives */
 .child-active-bg-primary > *:active,
 .table-active-primary > tbody > tr:active,
 [class*="table-striped"].table-hover-primary > tbody > tr:active,
@@ -5049,6 +5077,7 @@ lg >= 1200
 .active-bg-dark:active {
   background-color: #444444; }
 
+/** end: actives */
 .no-scroll-bars {
   scrollbar-width: none;
   -ms-overflow-style: none;
