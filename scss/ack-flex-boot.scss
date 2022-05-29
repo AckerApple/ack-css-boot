@@ -62,13 +62,13 @@
 .justify-space-around {justify-content:space-around}
 .flex-evenly, .flex-space-around {@extend .flex, .justify-space-around}
 
-.flex-valign, .flex-top, .flex-valign-top {align-items:flex-start;@extend .flex}
+.align-top, .flex-valign, .flex-top, .flex-valign-top {align-items:flex-start;@extend .flex}
 
 .align-center {align-items:center}
 .flex-valign-center, .flex-valign-middle {@extend .flex, .align-center}
 
 .align-bottom,.align-end {align-items:flex-end}
-.flex-valign-bottom {@extend .flex, .align-bottom}
+.flex-bottom, .flex-valign-bottom {@extend .flex, .align-bottom}
 
 .align-fill, .align-stretch {align-items:stretch}
 .flex-fill {@extend .flex, .align-fill}

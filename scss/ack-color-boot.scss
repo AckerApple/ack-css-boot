@@ -77,7 +77,7 @@ $bg-dark:#444444 !default;
 .bg-royal {background-color:$bg-royal}
 .bg-dark {background-color:$bg-dark}
 .bg-green {background-color: #060}
-.bg-orange {background-color: #C60}
+.bg-orange {background-color: rgb(255, 129, 2)}
 .bg-red {background-color:#900}
 .bg-blue {background-color: #00F}
 .bg-purple {background-color: #60C}
@@ -107,7 +107,7 @@ $bg-dark:#444444 !default;
 .child-bg-royal > * {background-color:$bg-royal}
 .child-bg-dark > * {background-color:$bg-dark}
 .child-bg-green > * {background-color: #060}
-.child-bg-orange > * {background-color: #C60}
+.child-bg-orange > * {background-color: rgb(255, 129, 2)}
 .child-bg-red > * {background-color:#900}
 .child-bg-blue > * {background-color: #00F}
 .child-bg-purple > * {background-color: #60C}
@@ -115,7 +115,7 @@ $bg-dark:#444444 !default;
 .child-bg-white > * {background-color: #FFF}
 
 .child-bg-green > *, .child-hover-bg-green > *:hover {background-color: #060}
-.child-bg-orange > *, .child-hover-bg-orange > *:hover {background-color: #C60}
+.child-bg-orange > *, .child-hover-bg-orange > *:hover {background-color: rgb(255, 129, 2)}
 .child-bg-red > *, .child-hover-bg-red > *:hover {background-color:#900}
 .child-bg-blue > *, .child-hover-bg-blue > *:hover {background-color: #00F}
 .child-bg-purple > *, .child-hover-bg-purple > *:hover {background-color: #60C}
@@ -124,7 +124,7 @@ $bg-dark:#444444 !default;
 
 /** click active color changing (must be after and separate from hover) */
 .active-bg-green:active, .child-active-bg-green > *:active {background-color: #060}
-.active-bg-orange:active, .child-active-bg-orange > *:active {background-color: #C60}
+.active-bg-orange:active, .child-active-bg-orange > *:active {background-color: rgb(255, 129, 2)}
 .active-bg-red:active, .child-active-bg-red > *:active {background-color:#900}
 .active-bg-blue:active, .child-active-bg-blue > *:active {background-color: #00F}
 .active-bg-purple:active, .child-active-bg-purple > *:active {background-color: #60C}
@@ -233,6 +233,11 @@ $bg-dark:#444444 !default;
 .child-border-warning > *,
 .hover-border-warning:hover,
 .border-warning {border-color:#eea236}
+.child-hover-border-orange > *:hover,
+.child-hover-border-orange > *:active,
+.child-border-orange > *,
+.hover-border-orange:hover,
+.border-orange {border-color: #C60}
 .child-hover-border-info > *:hover,
 .child-hover-border-info > *:active,
 .child-border-info > *,
