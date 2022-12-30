@@ -30,6 +30,7 @@ All examples seen below, are written in [Sass](http://sass-lang.com/) and then c
 ```
 @import "./ack-text-boot";
 @import "./ack-flex-boot";
+@import "./ack-gap-boot";
 @import "./ack-color-boot";
 @import "./ack-block-boot";
 @import "./ack-width-height";
@@ -49,6 +50,8 @@ Quick links to examples and source code
   - [scss/ack-text-boot.scss](https://github.com/AckerApple/ack-css-boot/blob/master/scss/ack-text-boot.scss)
 - [ack-flex-boot](https://ackerapple.github.io/ack-css-boot/#ack-flex-boot)
   - [scss/ack-flex-boot.scss](https://github.com/AckerApple/ack-css-boot/blob/master/scss/ack-flex-boot.scss)
+- [ack-gap-boot](https://ackerapple.github.io/ack-css-boot/#ack-gap-boot)
+  - [scss/ack-gap-boot.scss](https://github.com/AckerApple/ack-css-boot/blob/master/scss/ack-gap-boot.scss)
 - [ack-color-boot](https://ackerapple.github.io/ack-css-boot/#ack-color-boot)
   - [scss/ack-color-boot.scss](https://github.com/AckerApple/ack-css-boot/blob/master/scss/ack-color-boot.scss)
 - [ack-block-boot](https://ackerapple.github.io/ack-css-boot/#ack-block-boot)

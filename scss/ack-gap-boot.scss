@@ -1,0 +1,37 @@
+@import "./ack-sizes";
+
+.gap-0 {gap:0}
+.gap-1 {gap:1px}
+.gap-xxs {gap:$em-xxs}
+.gap-xs {gap:$em-xs}
+.gap-smx {gap:$em-smx}
+.gap-sm {gap:$em-sm}
+.gap {gap:$em}
+.gap-2x, .gap-md {gap:$em-md}
+.gap-3x, .gap-lg {gap:$em-lg}
+.gap-4x {gap:$em-4x}
+.gap-5x {gap:$em-5x}
+
+.row-gap-0 {row-gap:0}
+.row-gap-1 {row-gap:1px}
+.row-gap-xxs {row-gap:$em-xxs}
+.row-gap-xs {row-gap:$em-xs}
+.row-gap-smx {row-gap:$em-smx}
+.row-gap-sm {row-gap:$em-sm}
+.row-gap {row-gap:$em}
+.row-gap-2x, .row-gap-md {row-gap:$em-md}
+.row-gap-3x, .row-gap-lg {row-gap:$em-lg}
+.row-gap-4x {row-gap:$em-4x}
+.row-gap-5x {row-gap:$em-5x}
+
+.column-gap-0 {column-gap:0}
+.column-gap-1 {column-gap:1px}
+.column-gap-xxs {column-gap:$em-xxs}
+.column-gap-xs {column-gap:$em-xs}
+.column-gap-smx {column-gap:$em-smx}
+.column-gap-sm {column-gap:$em-sm}
+.column-gap {column-gap:$em}
+.column-gap-2x, .column-gap-md {column-gap:$em-md}
+.column-gap-3x, .column-gap-lg {column-gap:$em-lg}
+.column-gap-4x {column-gap:$em-4x}
+.column-gap-5x {column-gap:$em-5x}
