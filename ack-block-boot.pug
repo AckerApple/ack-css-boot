@@ -37,6 +37,19 @@
 
 .flex-wrap
 .pad-h
+  h4 pos - position
+.flex-wrap
+  .flex-1.pad.margin.pos-rel.border.height-100.flex-valign-center
+      .pos-rel .pos-rel
+  .flex-1.pad.margin.pos-rel.border.height-100.flex-valign-center
+      .pos-abs .pos-abs
+  .flex-1.pad.margin.pos-rel.border.height-100.flex-valign-center
+      .pos-fixed .pos-fixed
+  .flex-1.pad.margin.pos-rel.border.height-100.flex-valign-center
+      .pos-sticky .pos-sticky
+
+.flex-wrap
+.pad-h
   h4 opacity
 .flex-wrap
   .flex-1.text-white.pad.margin.bg-black.opacity-90 .opacity-90
@@ -262,7 +275,8 @@ include ./ack-margin-boot.pug
             |child
 
 .pad-h
-  h4 table
+  h3 table
+  
   .flex-wrap.align-top
     .pad-xs
       h5 .border-collapse
@@ -278,25 +292,67 @@ include ./ack-margin-boot.pug
               td.bg-info col1
               td.bg-info col2
               td.bg-info col3
+
     .pad-xs
-      h5 .table-body-height-overflow
-      table.table-pad.table-body-height-overflow.border-collapse
-        thead
-          tr
-            th.bg-info head1
-            th.bg-info head2
-            th.bg-info head3
-        tbody.max-height-200.max-width-200
-          each x in [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+      h5 overflow
+      <p>.overflow thead.pos-sticky</p>
+      .max-height-300.max-width-300.overflow
+        table
+          thead.pos-sticky.top-0
             tr
-              td.bg-info col1
-              td.bg-info col2
-              td.bg-info col3
-              td.bg-info col4
-              td.bg-info col5
-              td.bg-info col6
-              td.bg-info col7
-              td.bg-info col8
+              each x in [1,2,3,4,5,6,7,8]
+                th.bg-info head#{x}
+          tbody
+            each x in [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+              tr
+                td.bg-info col1
+                td.bg-info col2
+                td.bg-info col3
+                td.bg-info col4
+                td.bg-info col5
+                td.bg-info col6
+                td.bg-info col7
+                td.bg-info col8
+
+    .pad-xs
+      h5 .table-flex-lt-sm
+      <p>less than small(992px) then table's tbody rows become flex display</p>
+      table.table-flex-lt-sm.pad.bg-info
+        thead.hide-lt-sm
+          tr
+            each x in [1,2,3,4,5,6,7,8]
+              th.bg-dark.text-white head#{x}
+        tbody
+          each x in [0,1,2,3,4,5,6]
+            tr.gap
+              td
+                strong.hide-gt-sm head1: 
+                |col1
+              td
+                strong.hide-gt-sm head2: 
+                |col2
+              td
+                strong.hide-gt-sm head3: 
+                |col3
+              td
+                strong.hide-gt-sm head4: 
+                |col4
+              td
+                strong.hide-gt-sm head5: 
+                |col5
+              td
+                strong.hide-gt-sm head6: 
+                |col6
+              td
+                strong.hide-gt-sm head7: 
+                |col7
+              td
+                strong.hide-gt-sm head8: 
+                |col8
+              td.hide-gt-sm.width-full
+                br
+
+
     .pad-xs
       h5 .table-lines
       table.table-pad.border-collapse.table-lines

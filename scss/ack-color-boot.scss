@@ -471,11 +471,13 @@ $bg-dark:#444444 !default;
 .active-text-white:active
 {color: #FFF}
 
-.text-shadow-grey-blur,
+.text-shadow, .text-shadow-grey-blur,
 .active-text-shadow-grey-blur:active,
 .hover-text-shadow-grey-blur:hover
 {text-shadow:0 0 4px #777}
-.text-shadow-white-blur,
+.text-shadow-white,.text-shadow-white-blur,
+.active-text-shadow-white:active,
+.hover-text-shadow-white:hover,
 .active-text-shadow-white-blur:active,
 .hover-text-shadow-white-blur:hover
 {text-shadow:0 0 4px #FFF}

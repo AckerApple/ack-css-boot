@@ -2949,34 +2949,6 @@
 .child-pad-right-4x > *, .child-first-pad-right-4x > *:first-child {
   padding-right: 2em; }
 
-/* table overflow Doesn't work on small screens. Columns can become unmatched
-
-table.table-body-height-overflow {
-  display: table;width:100%;
-}
-
-table.table-body-height-overflow thead,
-table.table-body-height-overflow tbody {
-  width: 100%;
-}
-
-table.table-body-height-overflow thead {
-  overflow-y: scroll;
-  display: table;
-  table-layout: fixed;
-}
-
-table.table-body-height-overflow tbody {
-  overflow: auto;display: block;
-}
-
-table.table-body-height-overflow tr {
-  width: 100%;
-  text-align: left;
-  display: table;
-  table-layout: fixed;
-}
-*/
 .table {
   display: table; }
 
@@ -2994,6 +2966,26 @@ table.table-body-height-overflow tr {
 
 .td, .th, .table-cell {
   display: table-cell; }
+
+/** EXAMPLE:
+    <table class="table-flex-lt-sm">
+      <thead class="hide-lt-sm pos-sticky top-0">
+        <tr><th>col name</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>
+        <strong class="hide-gt-sm">col name</strong>
+        ...data...
+      </td></tr>
+      </tbody>
+    </table>
+  </div>
+*/
+/** less than small and table's tbody rows become flex display */
+@media (max-width: 993px) {
+  .table-flex-lt-sm tbody tr {
+    display: flex;
+    flex-wrap: wrap; } }
 
 /* TABLE PADDING CLASSES */
 .table-pad-0 > tbody > tr > td, .table-pad-0 > tbody > tr > th, .table-pad-0 > tfoot > tr > td,
@@ -3354,6 +3346,9 @@ table > tfoot > tr > th.pad-right-lg, table > thead > tr > td.pad-right-lg, tabl
 
 .pos-fixed, .pos-fix {
   position: fixed; }
+
+.pos-sticky {
+  position: sticky; }
 
 .z-index-1 {
   z-index: 1; }
@@ -4752,12 +4747,14 @@ lg >= 1200
 .active-text-white:active {
   color: #FFF; }
 
-.text-shadow-grey-blur,
+.text-shadow, .text-shadow-grey-blur,
 .active-text-shadow-grey-blur:active,
 .hover-text-shadow-grey-blur:hover {
   text-shadow: 0 0 4px #777; }
 
-.text-shadow-white-blur,
+.text-shadow-white, .text-shadow-white-blur,
+.active-text-shadow-white:active,
+.hover-text-shadow-white:hover,
 .active-text-shadow-white-blur:active,
 .hover-text-shadow-white-blur:hover {
   text-shadow: 0 0 4px #FFF; }

@@ -1,43 +1,33 @@
 @import "./ack-sizes";
 
-/* table overflow Doesn't work on small screens. Columns can become unmatched
-
-table.table-body-height-overflow {
-  display: table;width:100%;
-}
-
-table.table-body-height-overflow thead,
-table.table-body-height-overflow tbody {
-  width: 100%;
-}
-
-table.table-body-height-overflow thead {
-  overflow-y: scroll;
-  display: table;
-  table-layout: fixed;
-}
-
-table.table-body-height-overflow tbody {
-  overflow: auto;display: block;
-}
-
-table.table-body-height-overflow tr {
-  width: 100%;
-  text-align: left;
-  display: table;
-  table-layout: fixed;
-}
-*/
-
-
-
-
 .table {display:table}
 .thead {display:table-header-group}
 .tbody {display:table-row-group}
 .tfoot {display:table-footer-group}
 .tr, .table-row {display:table-row}
 .td, .th, .table-cell {display:table-cell}
+
+/** EXAMPLE:
+    <table class="table-flex-lt-sm">
+      <thead class="hide-lt-sm pos-sticky top-0">
+        <tr><th>col name</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>
+        <strong class="hide-gt-sm">col name</strong>
+        ...data...
+      </td></tr>
+      </tbody>
+    </table>
+  </div>
+*/
+/** less than small and table's tbody rows become flex display */
+@media (max-width: 993px) {
+  .table-flex-lt-sm tbody tr {
+    display:flex;flex-wrap:wrap;
+  }
+}
+
 
 /* TABLE PADDING CLASSES */
 .table-pad-0>tbody>tr>td, .table-pad-0>tbody>tr>th, .table-pad-0>tfoot>tr>td,
