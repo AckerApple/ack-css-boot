@@ -22,8 +22,14 @@
   </div>
 */
 /** less than small and table's tbody rows become flex display */
-@media (max-width: 993px) {
+@media (max-width: $px-sm) {
   .table-flex-lt-sm tbody tr {
+    display:flex;flex-wrap:wrap;
+  }
+}
+
+@media (max-width: $px-md) {
+  .table-flex-lt-md tbody tr {
     display:flex;flex-wrap:wrap;
   }
 }

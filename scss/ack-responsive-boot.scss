@@ -9,6 +9,9 @@ lg >= 1200
 .hide-width,.hide-height,.hide-max-width,.hide-max-height - classes that allow for css width animations
 */
 
+@import "./ack-sizes";
+
+
 @media (max-width: 437px) {
   .hide-xxs, .hidden-xxs {
     display: none !important;
@@ -177,7 +180,7 @@ lg >= 1200
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: $px-sm) {
   .hide-gt-sm, .hide-above-sm, .hidden-above-sm{
     display: none !important;
   }
@@ -195,7 +198,7 @@ lg >= 1200
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: $px-md) {
   .hide-gt-md, .hide-above-md, .hidden-above-md{
     display: none !important;
   }

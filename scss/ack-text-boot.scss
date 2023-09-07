@@ -12,7 +12,8 @@
 .strike, .strike-through, .line-through {
   text-decoration: line-through;
 }
-.text-underline,.underline {
+.text-underline,.underline,
+.active-underline:active, .hover-underline:hover {
   text-decoration:underline
 }
 .no-underline, .text-decoration-none {

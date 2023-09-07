@@ -15,6 +15,7 @@ $bg-positive:#387ef5 !default;
 $bg-calm:#11c1f3 !default;
 $bg-balanced:#33cd5f !default;
 $bg-energized:#ffc900 !default;
+$bg-yellow:yellow !default;
 $bg-assertive:#ef473a !default;
 $bg-royal:#886aea !default;
 $bg-dark:#444444 !default;
@@ -73,6 +74,7 @@ $bg-dark:#444444 !default;
 .bg-calm {background-color:$bg-calm}
 .bg-balanced {background-color:$bg-balanced}
 .bg-energized {background-color:$bg-energized}
+.bg-yellow {background-color:$bg-yellow}
 .bg-assertive {background-color:$bg-assertive}
 .bg-royal {background-color:$bg-royal}
 .bg-dark {background-color:$bg-dark}
@@ -103,6 +105,7 @@ $bg-dark:#444444 !default;
 .child-bg-calm > * {background-color:$bg-calm}
 .child-bg-balanced > * {background-color:$bg-balanced}
 .child-bg-energized > * {background-color:$bg-energized}
+.child-bg-yellow > * {background-color:$bg-yellow}
 .child-bg-assertive > * {background-color:$bg-assertive}
 .child-bg-royal > * {background-color:$bg-royal}
 .child-bg-dark > * {background-color:$bg-dark}
@@ -536,6 +539,9 @@ $bg-dark:#444444 !default;
 .child-striped-energized > *:nth-of-type(odd),
 .table-striped-energized > tbody > tr:nth-of-type(odd)
 {background-color:$bg-energized}
+.child-striped-yellow > *:nth-of-type(odd),
+.table-striped-yellow > tbody > tr:nth-of-type(odd)
+{background-color:$bg-yellow}
 .child-striped-assertive > *:nth-of-type(odd),
 .table-striped-assertive > tbody > tr:nth-of-type(odd)
 {background-color:$bg-assertive}
@@ -597,6 +603,9 @@ $bg-dark:#444444 !default;
 {background-color:$bg-balanced}
 [class*="child-striped"] > *.bg-energized,
 [class*="table-striped"] > tbody > tr.bg-energized
+{background-color:$bg-energized}
+[class*="child-striped"] > *.bg-yellow,
+[class*="table-striped"] > tbody > tr.bg-yellow
 {background-color:$bg-energized}
 [class*="child-striped"] > *.bg-assertive,
 [class*="table-striped"] > tbody > tr.bg-assertive
@@ -720,6 +729,12 @@ $bg-dark:#444444 !default;
 [class*="table-striped"].table-hover-energized > tbody > tr:hover
 {background-color:$bg-energized}
 
+.child-hover-bg-yellow > *:hover,
+.hover-bg-yellow:hover,
+.table-hover-yellow > tbody > tr:hover,
+[class*="table-striped"].table-hover-yellow > tbody > tr:hover
+{background-color:$bg-yellow}
+
 .child-hover-bg-assertive > *:hover,
 .hover-bg-assertive:hover,
 .table-hover-assertive > tbody > tr:hover,
@@ -826,6 +841,11 @@ $bg-dark:#444444 !default;
 .table-active-energized > tbody > tr:active,
 [class*="table-striped"].table-hover-energized > tbody > tr:active,
 .active-bg-energized:active {background-color:$bg-energized}
+
+.child-active-bg-yellow > *:active,
+.table-active-yellow > tbody > tr:active,
+[class*="table-striped"].table-hover-yellow > tbody > tr:active,
+.active-bg-yellow:active {background-color:$bg-yellow}
 
 .child-active-bg-assertive > *:active,
 .table-active-assertive > tbody > tr:active,

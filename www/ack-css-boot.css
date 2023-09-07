@@ -27,7 +27,8 @@
 .strike, .strike-through, .line-through {
   text-decoration: line-through; }
 
-.text-underline, .underline {
+.text-underline, .underline,
+.active-underline:active, .hover-underline:hover {
   text-decoration: underline; }
 
 .no-underline, .text-decoration-none {
@@ -2168,6 +2169,9 @@
 .child-lines > * {
   border-color: #DDD; }
 
+.outline-inset {
+  outline: inset; }
+
 .bg-size-cover {
   background-size: cover; }
 
@@ -2984,6 +2988,11 @@
 /** less than small and table's tbody rows become flex display */
 @media (max-width: 993px) {
   .table-flex-lt-sm tbody tr {
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media (max-width: 1201px) {
+  .table-flex-lt-md tbody tr {
     display: flex;
     flex-wrap: wrap; } }
 
@@ -3889,6 +3898,9 @@ lg >= 1200
 .bg-energized {
   background-color: #ffc900; }
 
+.bg-yellow {
+  background-color: yellow; }
+
 .bg-assertive {
   background-color: #ef473a; }
 
@@ -3975,6 +3987,9 @@ lg >= 1200
 
 .child-bg-energized > * {
   background-color: #ffc900; }
+
+.child-bg-yellow > * {
+  background-color: yellow; }
 
 .child-bg-assertive > * {
   background-color: #ef473a; }
@@ -4831,6 +4846,10 @@ lg >= 1200
 .table-striped-energized > tbody > tr:nth-of-type(odd) {
   background-color: #ffc900; }
 
+.child-striped-yellow > *:nth-of-type(odd),
+.table-striped-yellow > tbody > tr:nth-of-type(odd) {
+  background-color: yellow; }
+
 .child-striped-assertive > *:nth-of-type(odd),
 .table-striped-assertive > tbody > tr:nth-of-type(odd) {
   background-color: #ef473a; }
@@ -4910,6 +4929,10 @@ lg >= 1200
 
 [class*="child-striped"] > *.bg-energized,
 [class*="table-striped"] > tbody > tr.bg-energized {
+  background-color: #ffc900; }
+
+[class*="child-striped"] > *.bg-yellow,
+[class*="table-striped"] > tbody > tr.bg-yellow {
   background-color: #ffc900; }
 
 [class*="child-striped"] > *.bg-assertive,
@@ -5037,6 +5060,12 @@ lg >= 1200
 [class*="table-striped"].table-hover-energized > tbody > tr:hover {
   background-color: #ffc900; }
 
+.child-hover-bg-yellow > *:hover,
+.hover-bg-yellow:hover,
+.table-hover-yellow > tbody > tr:hover,
+[class*="table-striped"].table-hover-yellow > tbody > tr:hover {
+  background-color: yellow; }
+
 .child-hover-bg-assertive > *:hover,
 .hover-bg-assertive:hover,
 .table-hover-assertive > tbody > tr:hover,
@@ -5161,6 +5190,12 @@ lg >= 1200
 [class*="table-striped"].table-hover-energized > tbody > tr:active,
 .active-bg-energized:active {
   background-color: #ffc900; }
+
+.child-active-bg-yellow > *:active,
+.table-active-yellow > tbody > tr:active,
+[class*="table-striped"].table-hover-yellow > tbody > tr:active,
+.active-bg-yellow:active {
+  background-color: yellow; }
 
 .child-active-bg-assertive > *:active,
 .table-active-assertive > tbody > tr:active,

@@ -249,3 +249,5 @@
 .child-lines > * {
   @extend .border-bottom;border-color:#DDD
 }
+
+.outline-inset {outline: inset}

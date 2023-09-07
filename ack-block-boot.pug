@@ -70,6 +70,8 @@
   .flex-wrap.align-top
     .bg-info.margin.pad.border
       |.border
+    .bg-info.margin.pad.border.outline-inset
+      |.border.outline-inset
     .bg-info.margin.pad.border-1
       |.border-1
     .bg-info.margin.pad.border-2
@@ -318,6 +320,43 @@ include ./ack-margin-boot.pug
       h5 .table-flex-lt-sm
       <p>less than small(992px) then table's tbody rows become flex display</p>
       table.table-flex-lt-sm.pad.bg-info
+        thead.hide-lt-sm
+          tr
+            each x in [1,2,3,4,5,6,7,8]
+              th.bg-dark.text-white head#{x}
+        tbody
+          each x in [0,1,2,3,4,5,6]
+            tr.gap
+              td
+                strong.hide-gt-sm head1: 
+                |col1
+              td
+                strong.hide-gt-sm head2: 
+                |col2
+              td
+                strong.hide-gt-sm head3: 
+                |col3
+              td
+                strong.hide-gt-sm head4: 
+                |col4
+              td
+                strong.hide-gt-sm head5: 
+                |col5
+              td
+                strong.hide-gt-sm head6: 
+                |col6
+              td
+                strong.hide-gt-sm head7: 
+                |col7
+              td
+                strong.hide-gt-sm head8: 
+                |col8
+              td.hide-gt-sm.width-full
+                br
+    .pad-xs
+      h5 .table-flex-lt-md
+      <p>less than small(992px) then table's tbody rows become flex display</p>
+      table.table-flex-lt-md.pad.bg-info
         thead.hide-lt-sm
           tr
             each x in [1,2,3,4,5,6,7,8]
